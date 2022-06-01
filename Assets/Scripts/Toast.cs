@@ -2,40 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
-public class HomeMenu : MonoBehaviour
+public class Toast : MonoBehaviour
 {
-    public GameObject btnTouchMe;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    public void TouchMe()
-    {
-        var hafScreenWidth = Screen.width /2 ;
-        var hafScreenHeight = Screen.height /2 ;
-
-        var y = Random.Range(-hafScreenHeight, hafScreenHeight);
-        var x = Random.Range(-hafScreenWidth, hafScreenWidth);
-
-        btnTouchMe.GetComponent<RectTransform>().anchoredPosition = new Vector2(x, y);
-    }
-
-    public void GameStart()
-    {
-        GameManager.Instance.StartGame();
-        gameObject.SetActive(false);
-    }
-
+    
     public void SaySomething(string message)
     {
         showToast(message,1);
