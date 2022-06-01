@@ -9,6 +9,8 @@ public class SpawnManager : MonoBehaviour
     // Start is called before the first frame update
     public GameObject tilePrefab;
 
+    public CatController[] cats;
+
     public int width = 6;
     public int height = 6;
 
@@ -89,44 +91,49 @@ public class SpawnManager : MonoBehaviour
 
     public void RePlay()
     {
-        _oldPos = Vector3.zero;
-
-        if (PoolObjects?.Count > 0)
+        foreach (var cat in cats)
         {
-            for (int i = PoolObjects.Count - 1; i >= 0; i--)
-            {
-                Destroy(PoolObjects[i]);
-            }
+            cat.ReplayGame();
         }
         
-        PoolObjects = new List<GameObject>();
-
-        var size = tilePrefab.GetComponent<BoxCollider2D>().size;
-        var scale = tilePrefab.transform.localScale.x;
-
-        Dictionary<Color, int> colorId = new Dictionary<Color, int>();
-
-        for (int i = 0; i < color.Length; i++)
-        {
-            colorId.Add(color[i],4);
-        }
-
-        for (int y = 0; y < height; y++)
-        {
-            for (int i = 0; i < width; i++)
-            {
-                var go = Instantiate(tilePrefab, transform);
-                //go.SetActive(false);
-                go.transform.localPosition = _oldPos;
-                go.name = $"{i} - {y}";
-                _oldPos.x += (size.x *scale);
-
-                Color color = GetRandomColor(colorId);
-                go.GetComponent<Tile>().SetColor(color);
-                PoolObjects.Add(go);
-            }
-            _oldPos.x = 0;
-            _oldPos.y += (size.y * scale);
-        }
+        // _oldPos = Vector3.zero;
+        //
+        // if (PoolObjects?.Count > 0)
+        // {
+        //     for (int i = PoolObjects.Count - 1; i >= 0; i--)
+        //     {
+        //         Destroy(PoolObjects[i]);
+        //     }
+        // }
+        //
+        // PoolObjects = new List<GameObject>();
+        //
+        // var size = tilePrefab.GetComponent<BoxCollider2D>().size;
+        // var scale = tilePrefab.transform.localScale.x;
+        //
+        // Dictionary<Color, int> colorId = new Dictionary<Color, int>();
+        //
+        // for (int i = 0; i < color.Length; i++)
+        // {
+        //     colorId.Add(color[i],4);
+        // }
+        //
+        // for (int y = 0; y < height; y++)
+        // {
+        //     for (int i = 0; i < width; i++)
+        //     {
+        //         var go = Instantiate(tilePrefab, transform);
+        //         //go.SetActive(false);
+        //         go.transform.localPosition = _oldPos;
+        //         go.name = $"{i} - {y}";
+        //         _oldPos.x += (size.x *scale);
+        //
+        //         Color color = GetRandomColor(colorId);
+        //         go.GetComponent<Tile>().SetColor(color);
+        //         PoolObjects.Add(go);
+        //     }
+        //     _oldPos.x = 0;
+        //     _oldPos.y += (size.y * scale);
+        // }
     }
 }
