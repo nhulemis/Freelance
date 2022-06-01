@@ -36,7 +36,7 @@ public class PlayerController : MonoBehaviour
 
             if (isCounting)
             {
-                count += 0.05f;
+                count += 0.3f;
                 float val = count * defaultForce;
                 txtForce.text = $"Force: {val.ToString("0.0")}";
             }
@@ -51,7 +51,7 @@ public class PlayerController : MonoBehaviour
 #if UNITY_EDITOR
 
 
-        if (Input.GetMouseButtonDown(0) && GameManager.Instance.isGameOver == false)
+        if (Input.GetKeyDown(KeyCode.Space) && GameManager.Instance.isGameOver == false)
         {
             isCounting = true;
         }
@@ -63,7 +63,7 @@ public class PlayerController : MonoBehaviour
             txtForce.text = $"Force: {val.ToString("0.0")}";
         }
         
-        if (Input.GetMouseButtonUp(0))
+        if (Input.GetKeyUp(KeyCode.Space))
         {
             isCounting = false;
             Jumping();
