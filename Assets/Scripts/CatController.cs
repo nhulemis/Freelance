@@ -12,7 +12,7 @@ public class CatController : MonoBehaviour
     public bool isPlayer;
 
     public Vector3 startPos;
-    void Start()
+    void Awake()
     {
         startPos = transform.position;
     }
