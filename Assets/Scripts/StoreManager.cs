@@ -26,7 +26,7 @@ public class StoreManager : MonoBehaviour
 
     public void OnPurchaseComplete(Product prod)
     {
-        _toast.SaySomething(prod.definition.id + " - " + prod.Description().title);
+        _toast.SaySomething(prod.definition.id );
     }
 
     public void OnPurchaseFailed(Product product, PurchaseFailureReason reason)
