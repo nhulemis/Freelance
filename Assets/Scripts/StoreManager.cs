@@ -1,17 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Purchasing;
+using Product = UnityEngine.Purchasing.Product;
 
 public class StoreManager : MonoBehaviour
 {
     private string buyNotThing = "com.DefaultCompany.StepJump.BuySomething";
 
     private string unlockLevel = "com.DefaultCompany.StepJump.UnlockLevel";
+
+    private Toast _toast;
     // Start is called before the first frame update
     void Start()
     {
-        
+        _toast = FindObjectOfType<Toast>();
     }
 
     // Update is called once per frame
@@ -22,20 +26,12 @@ public class StoreManager : MonoBehaviour
 
     public void OnPurchaseComplete(Product prod)
     {
-        if (prod.definition.id == unlockLevel)
-        {
-            Debug.Log("unlock");    
-        }
-
-        if (prod.definition.id == buyNotThing)
-        {
-            Debug.Log("nothing");
-        }
+        _toast.SaySomething(prod.definition.id + " - " + prod.Description().title);
     }
 
     public void OnPurchaseFailed(Product product, PurchaseFailureReason reason)
     {
-        Debug.Log($"{product.definition.id} failed 'coz {reason}");
+        _toast.SaySomething($"{product.definition.id} failed 'coz {reason}");
     }
     
 }
