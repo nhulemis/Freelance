@@ -35,8 +35,6 @@ public class SpawnManager : MonoBehaviour
             seconds = tile;
             StartCoroutine(ResetColor());
         }
-        
-        
     }
 
     IEnumerator EarnSameColor()

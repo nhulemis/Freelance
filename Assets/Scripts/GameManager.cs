@@ -39,7 +39,7 @@ public class GameManager : MonoBehaviour
         isGameOver = true;
         sceneMng.LoseGame();
         isGameStart = false;
-        // spawnMng.RePlay();
+       
     }
 
     public void StartGame()
@@ -48,5 +48,33 @@ public class GameManager : MonoBehaviour
         Score = 0;
         isGameStart = true;
         spawnMng.RePlay();
+    }
+    
+    IEnumerator fadeInAndOut(TextMeshProUGUI targetText, bool fadeIn, float duration)
+    {
+        //Set Values depending on if fadeIn or fadeOut
+        float a, b;
+        if (fadeIn)
+        {
+            a = 0f;
+            b = 1f;
+        }
+        else
+        {
+            a = 1f;
+            b = 0f;
+        }
+
+        Color currentColor = Color.clear;
+        float counter = 0f;
+
+        while (counter < duration)
+        {
+            counter += Time.deltaTime;
+            float alpha = Mathf.Lerp(a, b, counter / duration);
+
+            targetText.color = new Color(currentColor.r, currentColor.g, currentColor.b, alpha);
+            yield return null;
+        }
     }
 }
