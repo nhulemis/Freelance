@@ -31,7 +31,12 @@ public class GameManager : MonoBehaviour
     public void CountScore()
     {
         Score++;
-        txtScore.text = GameManager.Instance.Score.ToString();
+        txtScore.text = "Sc. "+GameManager.Instance.Score.ToString();
+    }
+
+    public void WinGame()
+    {
+        txtScore.text = $"<color=yellow>You Win !!</color>\n Sc.{Score}";
     }
 
     public void GameLose()
@@ -46,6 +51,7 @@ public class GameManager : MonoBehaviour
     {
         isGameOver = false;
         Score = 0;
+        txtScore.text = "Sc. "+GameManager.Instance.Score.ToString();
         isGameStart = true;
         spawnMng.RePlay();
     }

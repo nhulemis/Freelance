@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class SpawnManager : MonoBehaviour
 {
-    public PlayerController player;
+    //public PlayerController player;
     // Start is called before the first frame update
     public GameObject tilePrefab;
 
@@ -19,6 +19,7 @@ public class SpawnManager : MonoBehaviour
 
     [SerializeField] private Color[] color;
 
+    public bool AllowInput = true;
     public void SetTile(Tile tile)
     {
         if (first == null)
@@ -28,13 +29,23 @@ public class SpawnManager : MonoBehaviour
         else if (first.color == tile.color)
         {
             seconds = tile;
+            AllowInput = false;
             StartCoroutine(EarnSameColor());
+            GameManager.Instance.CountScore();
+
+            CheckWinCondition();
         }
         else
         {
             seconds = tile;
+            AllowInput = false;
             StartCoroutine(ResetColor());
         }
+    }
+
+    private void CheckWinCondition()
+    {
+        
     }
 
     IEnumerator EarnSameColor()
@@ -44,6 +55,8 @@ public class SpawnManager : MonoBehaviour
         seconds.gameObject.SetActive(false);
         first = null;
         seconds = null;
+        AllowInput = true;
+
     }
     
     IEnumerator ResetColor()
@@ -53,6 +66,7 @@ public class SpawnManager : MonoBehaviour
         seconds.spriteRenderer.color = Color.white;
         first = null;
         seconds = null;
+        AllowInput = true;
     }
     
     void Start()

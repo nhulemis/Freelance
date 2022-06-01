@@ -16,6 +16,10 @@ public class Tile : MonoBehaviour , IPointerDownHandler
 
     public void OnPointerDown(PointerEventData eventData)
     {
+        if (!GameManager.Instance.spawnMng.AllowInput)
+        {
+            return;
+        }
         spriteRenderer.color = color;
         
         GameManager.Instance.spawnMng.SetTile(this);
