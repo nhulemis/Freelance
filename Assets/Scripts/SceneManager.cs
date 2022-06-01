@@ -16,6 +16,6 @@ public class SceneManager : MonoBehaviour
 
     public void LoseGame()
     {
-        Instantiate(LoseGamePopup, mainCanvas.transform);
+        LoseGamePopup.SetActive(true);
     }
 }

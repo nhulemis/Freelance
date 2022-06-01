@@ -21,6 +21,11 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!GameManager.Instance.isGameStart)
+        {
+            return;
+        }
+        
         if (Input.touches.Length > 0 && GameManager.Instance.isGameOver == false)
         {
             var touch = Input.touches[0];
@@ -32,7 +37,8 @@ public class PlayerController : MonoBehaviour
             if (isCounting)
             {
                 count += 0.05f;
-                Debug.Log($"Count {count}");
+                float val = count * defaultForce;
+                txtForce.text = $"Force: {val.ToString("0.0")}";
             }
 
             if (touch.phase == TouchPhase.Canceled || touch.phase == TouchPhase.Ended)
@@ -73,13 +79,14 @@ public class PlayerController : MonoBehaviour
     {
         if (transform.position.y < -5 && GameManager.Instance.isGameOver == false)
         {
-            GameManager.Instance.isGameOver = true;
+            GameManager.Instance.GameLose();
         }
     }
 
     private void Jumping()
     {
         Vector2 force = Vector2.one * count * defaultForce;
+        force.x /= 2;
         rb.AddForce(force);
     }
 
@@ -92,5 +99,12 @@ public class PlayerController : MonoBehaviour
             OldCol = col.gameObject;
             GameManager.Instance.CountScore();
         }
+    }
+
+    public void Replay()
+    {
+        rb.isKinematic = true;
+        transform.position = Vector2.up * 3;
+        rb.isKinematic = false;
     }
 }

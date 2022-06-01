@@ -17,7 +17,7 @@ PlayerSettings:
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
-  m_ShowUnitySplashScreen: 1
+  m_ShowUnitySplashScreen: 0
   m_ShowUnitySplashLogo: 1
   m_SplashScreenOverlayOpacity: 1
   m_SplashScreenAnimation: 1
@@ -154,7 +154,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Android: com.neptundigital.perfectjump
+    Android: com.DefaultCompany.StepJump
     iPhone: com.coldmathewgames.orbyball
   buildNumber:
     Standalone: 0
@@ -249,8 +249,8 @@ PlayerSettings:
   AndroidTargetDevices: 0
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: /Users/matejhlad/Desktop/UnityAssetsPublisher/stencylAmazon.keystore
-  AndroidKeyaliasName: thumbsapp
+  AndroidKeystoreName: '{inproject}: Key/key.keystore'
+  AndroidKeyaliasName: stepjump
   AndroidBuildApkPerCpuArchitecture: 0
   AndroidTVCompatibility: 1
   AndroidIsGame: 1
@@ -871,6 +871,8 @@ PlayerSettings:
   XboxOneOverrideIdentityPublisher: 
   vrEditorSettings: {}
   cloudServicesEnabled:
+    Legacy Analytics: 1
+    Purchasing: 1
     UNet: 1
   luminIcon:
     m_Name: 
@@ -888,7 +890,7 @@ PlayerSettings:
   cloudProjectId: 6fb37882-f070-4f1e-9c84-e4c5ce80e255
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: 
+  projectName: StepJump
   organizationId: nhulemis
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class SpawnManager : MonoBehaviour
 {
+    public PlayerController player;
     // Start is called before the first frame update
     public GameObject tilePrefab;
     public Queue<GameObject> PoolObjects { get; set; }
@@ -43,5 +44,20 @@ public class SpawnManager : MonoBehaviour
 
         _oldPos.x += x;
         _oldPos.y = y;
+    }
+
+    public void RePlay()
+    {
+        _oldPos = Vector3.zero;
+        foreach (var obj in PoolObjects)
+        {
+            obj.gameObject.SetActive(false);
+        }
+        for (int i = 0; i < 5; i++)
+        {
+            SpawnOne();
+        }
+        
+        player.Replay();
     }
 }
