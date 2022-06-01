@@ -32,8 +32,10 @@ public class HomeMenu : MonoBehaviour
 
     public void GameStart()
     {
-        GameManager.Instance.StartGame();
-        gameObject.SetActive(false);
+        // GameManager.Instance.StartGame();
+        // gameObject.SetActive(false);
+
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Step");
     }
 
     public void SaySomething(string message)

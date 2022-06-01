@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
+using UnityEngine.SceneManagement;
 using Random = UnityEngine.Random;
 
 public class CatController : MonoBehaviour
@@ -67,6 +68,8 @@ public class CatController : MonoBehaviour
         {
             isGoal = true;
         }
+        
+        
     }
 
     public void ReplayGame()
