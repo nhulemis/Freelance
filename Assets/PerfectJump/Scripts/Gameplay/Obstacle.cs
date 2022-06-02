@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using ayxd_b;
 
 public class Obstacle : MonoBehaviour
 {

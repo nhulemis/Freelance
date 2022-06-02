@@ -49,7 +49,7 @@ public class ScoreManager : MonoBehaviour
     public void UpdateScore(int value)
     {
         currentScore += value;
-        currentScoreLabel.text = currentScore.ToString();
+       // currentScoreLabel.text = currentScore.ToString();
     }
 
     //reset current score
