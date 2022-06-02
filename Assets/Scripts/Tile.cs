@@ -16,10 +16,10 @@ public class Tile : MonoBehaviour , IPointerDownHandler
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        if (!GameManager.Instance.spawnMng.AllowInput)
-        {
-            return;
-        }
+        // if (!GameManager.Instance.spawnMng.AllowInput)
+        // {
+        //     return;
+        // }
         spriteRenderer.color = color;
         
         GameManager.Instance.spawnMng.SetTile(this);
@@ -27,6 +27,10 @@ public class Tile : MonoBehaviour , IPointerDownHandler
 
     public void SetColor(Color color)
     {
-        this.color = color;
+        if (spriteRenderer == null)
+        {
+            spriteRenderer = GetComponent<SpriteRenderer>();
+        }
+        spriteRenderer.color = color;
     }
 }
