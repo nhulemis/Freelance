@@ -38,6 +38,12 @@ public class HomeMenu : MonoBehaviour
         UnityEngine.SceneManagement.SceneManager.LoadScene("Step");
     }
 
+    public void Game2Start()
+    {
+        GameManager.Instance.StartGame();
+        gameObject.SetActive(false);
+    }
+
     public void SaySomething(string message)
     {
         showToast(message,1);
