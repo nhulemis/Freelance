@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using System.Security.Cryptography;
 using TMPro;
 using UnityEngine;
@@ -20,7 +21,7 @@ public class GameManager : MonoBehaviour
     {
         if (Instance != null)
         {
-            Destroy(this);
+            Destroy(gameObject);
         }
 
         Instance = this;
@@ -48,5 +49,19 @@ public class GameManager : MonoBehaviour
         Score = 0;
         isGameStart = true;
         spawnMng.RePlay();
+    }
+    
+    public static async void ExampleAsync()
+    {
+        string[] lines = { "First line", "Second line", "Third line" };
+        using StreamWriter file = new("WriteLines2.txt");
+
+        foreach (string line in lines)
+        {
+            if (!line.Contains("Second"))
+            {
+                await file.WriteLineAsync(line);
+            }
+        }
     }
 }

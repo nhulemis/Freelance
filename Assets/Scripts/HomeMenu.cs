@@ -1,7 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
+using System.Threading.Tasks;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class HomeMenu : MonoBehaviour
@@ -29,11 +32,29 @@ public class HomeMenu : MonoBehaviour
 
         btnTouchMe.GetComponent<RectTransform>().anchoredPosition = new Vector2(x, y);
     }
+    public static async Task ExampleAsync()
+    {
+        string[] lines = { "First line", "Second line", "Third line" };
+        using StreamWriter file = new("WriteLines2.txt");
+
+        foreach (string line in lines)
+        {
+            if (!line.Contains("Second"))
+            {
+                await file.WriteLineAsync(line);
+            }
+        }
+    }
 
     public void GameStart()
     {
         GameManager.Instance.StartGame();
         gameObject.SetActive(false);
+    }
+
+    public void Game2Start()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("SampleScene 1");
     }
 
     public void SaySomething(string message)
