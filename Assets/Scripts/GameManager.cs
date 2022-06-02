@@ -11,7 +11,7 @@ namespace ayxd
     {
         public static GameManager Instance;
 
-        public SceneManager sceneMng;
+        public SceneMng sceneMng;
         public bool isGameOver;
 
         public bool isGameStart;

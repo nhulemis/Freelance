@@ -4,6 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using ayxd;
+using UnityEngine.SceneManagement;
 
 public class HomeMenu : MonoBehaviour
 {
@@ -39,7 +40,12 @@ public class HomeMenu : MonoBehaviour
 
     public void StartGame2()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene("Game");
+        UnityEngine.SceneManagement.SceneManager.LoadScene("mainScene");
+    }
+
+    public void StartGame3()
+    {
+        SceneManager.LoadScene("Game");
     }
 
     public void SaySomething(string message)

@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -6,8 +7,22 @@ using UnityEngine.UI;
 
 public class UIController : MonoBehaviour
 {
-    [SerializeField]
-    GameObject MenuPanel;
+    public void convert()
+    {
+        float fValue = 0.123456f;
+        int iValue = (int)fValue;
+        Debug.Log("int val: " +iValue);
+         
+        iValue = Mathf.FloorToInt(fValue);
+        Debug.Log("int val: " +iValue);
+         
+        iValue = Mathf.CeilToInt(fValue);
+        Debug.Log("int val: " +iValue);
+         
+        iValue = Mathf.RoundToInt(fValue);
+        Debug.Log("int val: " +iValue);
+    }
+    //
 
     [SerializeField]
     GameObject PausePanel;
@@ -56,7 +71,7 @@ public class UIController : MonoBehaviour
 
     void OnBackClick()
     {
-        TheGlobals.sManager.allAudio[0].Play();
+        // TheGlobals.sManager.allAudio[0].Play();
         if (!PausePanel.activeInHierarchy)
         {
             PauseGame();
@@ -88,16 +103,21 @@ public class UIController : MonoBehaviour
         }
     }
 
+    private void Start()
+    {
+        StartGame();
+    }
+
     public void StartGame()
     {
         GarbageCollectionManager.CollectGarbage();
         Time.timeScale = 1f;
-        MenuPanel.SetActive(false);
+        //MenuPanel.SetActive(false);
         TutorialText.gameObject.SetActive(true);
         _spawner.Spawner();
         TheGlobals.playingMode = true;
         StartCoroutine(FadeoutTutorial());
-        TheGlobals.sManager.bgMusic.volume = 0.6f;
+        //TheGlobals.sManager.bgMusic.volume = 0.6f;
     }
 
     public void PauseGame()

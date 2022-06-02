@@ -10,9 +10,7 @@ public class SoundManager : MonoBehaviour
     [SerializeField]
     Sprite[] MusicSprite;
 
-    public AudioSource[] allAudio;
-
-    public AudioSource bgMusic;
+    //
 
     MenuController menuController;
 
@@ -60,41 +58,41 @@ public class SoundManager : MonoBehaviour
 
     public void SetSoundSprites()
     {
-        menuController.Sound.sprite = SoundSprite[GamePreferences.Sound];
+       // menuController.Sound.sprite = SoundSprite[GamePreferences.Sound];
     }
 
     public void SetMusicSprites()
     {
-        menuController.Music.sprite = MusicSprite[GamePreferences.Music];
+        ////menuController.Music.sprite = MusicSprite[GamePreferences.Music];
     }
 
     public void ManageAudioVolume()
     {
         if (GamePreferences.Sound == 0)
         {
-            foreach (AudioSource _AS in allAudio)
-            {
-                _AS.mute = true;
-            }
+            // foreach (AudioSource _AS in allAudio)
+            // {
+            //     _AS.mute = true;
+            // }
         }
         else if(GamePreferences.Sound==1)
         {
-            foreach (AudioSource _AS in allAudio)
-            {
-                _AS.mute = false;
-            }
+            // foreach (AudioSource _AS in allAudio)
+            // {
+            //     _AS.mute = false;
+            // }
         }
     }
 
     public void ManageBGVolume()
     {
-        if (GamePreferences.Music == 0)
-        {
-            bgMusic.mute = true;
-        }
-        else if (GamePreferences.Music == 1)
-        {
-            bgMusic.mute = false;
-        }
+        // if (GamePreferences.Music == 0)
+        // {
+        //     bgMusic.mute = true;
+        // }
+        // else if (GamePreferences.Music == 1)
+        // {
+        //     bgMusic.mute = false;
+        // }
     }
 }

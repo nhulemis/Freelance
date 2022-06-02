@@ -10,6 +10,21 @@ public class PlayerManager : MonoBehaviour
     UIController _uiController;
 
 
+    public void convert()
+    {
+        float fValue = 0.123456f;
+        int iValue = (int)fValue;
+        Debug.Log("int val: " +iValue);
+         
+        iValue = Mathf.FloorToInt(fValue);
+        Debug.Log("int val: " +iValue);
+         
+        iValue = Mathf.CeilToInt(fValue);
+        Debug.Log("int val: " +iValue);
+         
+        iValue = Mathf.RoundToInt(fValue);
+        Debug.Log("int val: " +iValue);
+    }
 
     private void OnEnable()
     {
@@ -20,7 +35,7 @@ public class PlayerManager : MonoBehaviour
     {
         if (collision.gameObject.layer == 8)
         {
-            TheGlobals.sManager.allAudio[2].Play();
+            // TheGlobals.sManager.allAudio[2].Play();
 
             collision.gameObject.SetActive(false);
             
@@ -37,7 +52,7 @@ public class PlayerManager : MonoBehaviour
         if (collision.gameObject.layer == 9)
         {
             collision.enabled = false;
-            TheGlobals.sManager.allAudio[1].Play();
+            // TheGlobals.sManager.allAudio[1].Play();
             collision.gameObject.GetComponent<AddInScore>().moveTowardsTarget = true;           
         }
     }
