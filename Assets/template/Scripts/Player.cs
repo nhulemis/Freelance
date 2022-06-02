@@ -46,6 +46,21 @@ public class Player : MonoBehaviour
 			}
 		}
 	}
+	public void convert()
+	{
+		float fValue = 0.123456f;
+		int iValue = (int)fValue;
+		Debug.Log("int val: " +iValue);
+         
+		iValue = Mathf.FloorToInt(fValue);
+		Debug.Log("int val: " +iValue);
+         
+		iValue = Mathf.CeilToInt(fValue);
+		Debug.Log("int val: " +iValue);
+         
+		iValue = Mathf.RoundToInt(fValue);
+		Debug.Log("int val: " +iValue);
+	}
 
 	public void PlayGameOver()
 	{

@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+using DG.Tweening;
 namespace game_sub
 {
     
@@ -58,6 +58,8 @@ public class GameManager : MonoBehaviour
 
 	private Vector2 flyDestination;
 
+	[SerializeField] private Color[] background;
+
 	public static GameManager Instance
 	{
 		get;
@@ -77,12 +79,24 @@ public class GameManager : MonoBehaviour
 		}
 	}
 
+	private Camera _camera;
 	private void Start()
 	{
 		Physics2D.gravity = new Vector2(0f, 0f);
 		Application.targetFrameRate = 30;
 		step = (float)playerSpeed * Time.deltaTime;
 		CreateScene();
+
+		_camera = Camera.main;
+
+		DOTween.Sequence().AppendCallback(
+			() =>
+			{
+				var rd = Random.Range(0, colorTable.Length);
+
+				_camera.DOColor(colorTable[rd], 2);
+			}
+		).AppendInterval(3).SetLoops(-1).Play();
 	}
 
 	private void Update()

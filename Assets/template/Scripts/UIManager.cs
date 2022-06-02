@@ -27,6 +27,7 @@ public class UIManager : MonoBehaviour
 		gameOverGui.SetActive(value: false);
 		gameState = GameState1.MENU;
 	}
+	
 
 	public void convert()
 	{
