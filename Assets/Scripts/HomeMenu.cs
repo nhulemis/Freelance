@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using game_main;
+using UnityEngine.SceneManagement;
 
 public class HomeMenu : MonoBehaviour
 {
@@ -34,6 +36,11 @@ public class HomeMenu : MonoBehaviour
     {
         GameManager.Instance.StartGame();
         gameObject.SetActive(false);
+    }
+
+    public void StartGameX()
+    {
+        SceneManager.LoadScene("GameScene");
     }
 
     public void SaySomething(string message)

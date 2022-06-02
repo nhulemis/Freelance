@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using game_main;
 
 public class PlayerController : MonoBehaviour
 {
