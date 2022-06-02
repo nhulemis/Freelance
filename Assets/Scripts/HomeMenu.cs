@@ -51,7 +51,7 @@ public class HomeMenu : MonoBehaviour
 
     public void GameStart()
     {
-        GameManager.Instance.StartGame();
+        GameMng.Instance.StartGame();
         gameObject.SetActive(false);
     }
 

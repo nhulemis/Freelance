@@ -38,65 +38,65 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!GameManager.Instance.isGameStart)
-        {
-            return;
-        }
-        
-        if (Input.touches.Length > 0 && GameManager.Instance.isGameOver == false)
-        {
-            var touch = Input.touches[0];
-            if (touch.phase == TouchPhase.Began)
-            {
-                isCounting = true;
-            }
-
-            if (isCounting)
-            {
-                count += 0.3f;
-                float val = count * defaultForce;
-                txtForce.text = $"Force: {val.ToString("0.0")}";
-            }
-
-            if (touch.phase == TouchPhase.Canceled || touch.phase == TouchPhase.Ended)
-            {
-                isCounting = false;
-                Jumping();
-                count = 0f;
-            }
-        }
-#if UNITY_EDITOR
-
-
-        if (Input.GetKeyDown(KeyCode.Space) && GameManager.Instance.isGameOver == false)
-        {
-            isCounting = true;
-        }
-
-        if (isCounting)
-        {
-            count += 0.05f;
-            float val = count * defaultForce;
-            txtForce.text = $"Force: {val.ToString("0.0")}";
-        }
-        
-        if (Input.GetKeyUp(KeyCode.Space))
-        {
-            isCounting = false;
-            Jumping();
-            count = 0f;
-        }
-#endif
-       
+//         if (!GameMng.Instance.isGameStart)
+//         {
+//             return;
+//         }
+//         
+//         if (Input.touches.Length > 0 && GameMng.Instance.isGameOver == false)
+//         {
+//             var touch = Input.touches[0];
+//             if (touch.phase == TouchPhase.Began)
+//             {
+//                 isCounting = true;
+//             }
+//
+//             if (isCounting)
+//             {
+//                 count += 0.3f;
+//                 float val = count * defaultForce;
+//                 txtForce.text = $"Force: {val.ToString("0.0")}";
+//             }
+//
+//             if (touch.phase == TouchPhase.Canceled || touch.phase == TouchPhase.Ended)
+//             {
+//                 isCounting = false;
+//                 Jumping();
+//                 count = 0f;
+//             }
+//         }
+// #if UNITY_EDITOR
+//
+//
+//         if (Input.GetKeyDown(KeyCode.Space) && GameMng.Instance.isGameOver == false)
+//         {
+//             isCounting = true;
+//         }
+//
+//         if (isCounting)
+//         {
+//             count += 0.05f;
+//             float val = count * defaultForce;
+//             txtForce.text = $"Force: {val.ToString("0.0")}";
+//         }
+//         
+//         if (Input.GetKeyUp(KeyCode.Space))
+//         {
+//             isCounting = false;
+//             Jumping();
+//             count = 0f;
+//         }
+// #endif
+//        
         
         
     }
 
     private void LateUpdate()
     {
-        if (transform.position.y < -5 && GameManager.Instance.isGameOver == false)
+        if (transform.position.y < -5 && GameMng.Instance.isGameOver == false)
         {
-            GameManager.Instance.GameLose();
+            GameMng.Instance.GameLose();
         }
     }
 
@@ -114,7 +114,7 @@ public class PlayerController : MonoBehaviour
             rb.velocity = Vector2.up;            
             Debug.Log($"Count {count}");
             OldCol = col.gameObject;
-            GameManager.Instance.CountScore();
+            GameMng.Instance.CountScore();
         }
     }
 

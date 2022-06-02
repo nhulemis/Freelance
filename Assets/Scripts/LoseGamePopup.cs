@@ -10,7 +10,7 @@ public class LoseGamePopup : MonoBehaviour
 
     public void PlayAgain()
     {
-        GameManager.Instance.StartGame();
+        GameMng.Instance.StartGame();
     }
 
     public void GoHome()
