@@ -27,6 +27,8 @@ public class GameManager : MonoBehaviour
 	[Space(5f)]
 	public List<GameObject> bottomSmashers;
 
+	public Transform upsidedown;
+
 	[Space(5f)]
 	public float moveDistance;
 
@@ -77,6 +79,22 @@ public class GameManager : MonoBehaviour
 		screenSize = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0f));
 		StartCoroutine(CreateScene());
 	}
+	
+	public void convert()
+	{
+		float fValue = 0.123456f;
+		int iValue = (int)fValue;
+		Debug.Log("int val: " +iValue);
+         
+		iValue = Mathf.FloorToInt(fValue);
+		Debug.Log("int val: " +iValue);
+         
+		iValue = Mathf.CeilToInt(fValue);
+		Debug.Log("int val: " +iValue);
+         
+		iValue = Mathf.RoundToInt(fValue);
+		Debug.Log("int val: " +iValue);
+	}
 
 	private void Update()
 	{
@@ -91,13 +109,13 @@ public class GameManager : MonoBehaviour
 				if (currentPosition < numOfSmashers)
 				{
 					currentPosition++;
-					AudioManager.Instance.PlayEffects(AudioManager.Instance.buttonClick);
+					//AudioManager.Instance.PlayEffects(AudioManager.Instance.buttonClick);
 				}
 			}
 			else if (currentPosition > 0)
 			{
 				currentPosition--;
-				AudioManager.Instance.PlayEffects(AudioManager.Instance.buttonClick);
+				//AudioManager.Instance.PlayEffects(AudioManager.Instance.buttonClick);
 			}
 			if (currentPosition >= numOfSmashers)
 			{
@@ -160,7 +178,7 @@ public class GameManager : MonoBehaviour
 		for (int i = 0; i < numOfSmashers; i++)
 		{
 			float num2 = UnityEngine.Random.Range(screenSize.y - 0.6f * screenSize.y, screenSize.y - 0.2f * screenSize.y);
-			lastSmasher = UnityEngine.Object.Instantiate(smasherPrefab);
+			lastSmasher = UnityEngine.Object.Instantiate(smasherPrefab,upsidedown);
 			lastSmasher.transform.localScale = new Vector2(num, num2);
 			lastSmasher.transform.position = new Vector2(0f - screenSize.x + ((float)i + 0.5f) * num, 0f - screenSize.y + num2 / 2f);
 			bottomSmashers.Add(lastSmasher);
@@ -168,7 +186,8 @@ public class GameManager : MonoBehaviour
 		for (int j = 0; j < numOfSmashers; j++)
 		{
 			float num2 = 2f * screenSize.y - bottomSmashers[j].gameObject.transform.localScale.y;
-			lastSmasher = UnityEngine.Object.Instantiate(smasherPrefab);
+			lastSmasher = UnityEngine.Object.Instantiate(smasherPrefab,upsidedown);
+			
 			lastSmasher.transform.localScale = new Vector2(num, num2);
 			if (j == indexShorterSmasher)
 			{
@@ -185,6 +204,7 @@ public class GameManager : MonoBehaviour
 		AudioManager.Instance.PlayEffects(AudioManager.Instance.slide);
 		uIManager.gameState = GameState.MOVINGSMASHERS;
 		yield return new WaitForSeconds(0.1f);
+		//upsidedown.localRotation = new Quaternion(0f, 0f, 180f,0);
 		gameOverlay.GetComponent<Animator>().Play("GameOverlayHide");
 	}
 

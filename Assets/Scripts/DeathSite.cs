@@ -20,7 +20,7 @@ public class DeathSite : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D col)
     {
-       // col.gameObject.SetActive(false);
-       // GameManager.Instance.spawnMng.SpawnOne();
+       col.gameObject.SetActive(false);
+       GameMng.Instance.spawnMng.SpawnOne();
     }
 }

@@ -38,33 +38,33 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-//         if (!GameMng.Instance.isGameStart)
-//         {
-//             return;
-//         }
-//         
-//         if (Input.touches.Length > 0 && GameMng.Instance.isGameOver == false)
-//         {
-//             var touch = Input.touches[0];
-//             if (touch.phase == TouchPhase.Began)
-//             {
-//                 isCounting = true;
-//             }
-//
-//             if (isCounting)
-//             {
-//                 count += 0.3f;
-//                 float val = count * defaultForce;
-//                 txtForce.text = $"Force: {val.ToString("0.0")}";
-//             }
-//
-//             if (touch.phase == TouchPhase.Canceled || touch.phase == TouchPhase.Ended)
-//             {
-//                 isCounting = false;
-//                 Jumping();
-//                 count = 0f;
-//             }
-//         }
+         if (!GameMng.Instance.isGameStart)
+         {
+             return;
+         }
+         
+         if (Input.touches.Length > 0 && GameMng.Instance.isGameOver == false)
+         {
+             var touch = Input.touches[0];
+             if (touch.phase == TouchPhase.Began)
+             {
+                 isCounting = true;
+             }
+
+             if (isCounting)
+             {
+                 count += 0.3f;
+                 float val = count * defaultForce;
+                 txtForce.text = $"Force: {val.ToString("0.0")}";
+             }
+
+             if (touch.phase == TouchPhase.Canceled || touch.phase == TouchPhase.Ended)
+             {
+                 isCounting = false;
+                 Jumping();
+                 count = 0f;
+             }
+         }
 // #if UNITY_EDITOR
 //
 //
