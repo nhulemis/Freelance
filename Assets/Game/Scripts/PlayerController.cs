@@ -1,0 +1,127 @@
+﻿using System.Collections;
+using UnityEngine;
+
+namespace Game.Scripts
+{
+	public class PlayerController : MonoBehaviour
+	{
+		private Rigidbody rb;
+		public bool isBuilding;
+
+    
+		public float speed;
+		private Vector3 staticPos;
+		private Animator anim;
+		Vector3 direction;
+   
+		//Reference
+		public static PlayerController instance;
+		void Awake(){
+			if(instance==null)instance=this;
+			else if(instance!=this)Destroy(this.gameObject);
+
+			rb=GetComponent<Rigidbody>();
+		}
+		// Start is called before the first frame update
+		void Start()
+		{
+			anim=GetComponent<Animator>();
+        
+			anim.SetFloat("Blend",0,1f,0);
+			direction=Vector3.forward;
+
+		}
+
+
+		// Update is called once per frame
+		void FixedUpdate()
+		{
+			if(!IsGrounded() && !isBuilding){
+				anim.SetFloat("Blend",0.33f,.33f,0.333f);
+			}else{
+				anim.SetFloat("Blend",1,1f,1);
+
+			}
+			switch(GameManager.instance.state){
+				case GameManager.GameState.play :
+					if(!isBuilding){
+						transform.Translate(transform.forward*speed*Time.deltaTime, Space.World);
+
+					}
+					else{
+						rb.velocity=Vector3.zero;
+						Vector3 newPlace=new Vector3(staticPos.x,staticPos.y,staticPos.z);
+						transform.position=newPlace;
+					}
+					break; 
+			}
+
+		}
+		public void build(bool state){
+			isBuilding=state;
+
+
+		}public void setStaticPos(Vector3 s){
+			staticPos=s;
+
+		}public Vector3 getPlayerPos(){
+			return this.transform.position;
+		}
+		public void jump(int n=1){
+			rb.AddForce(new Vector3(0,n/15,0)*speed*5*n);
+		}
+		private void OnCollisionEnter(Collision other){
+			if(other.gameObject.tag=="Finish"){
+				MissDetector.instance.setCurrency();
+				print("Level Ended win");
+				speed=0;
+				anim.SetTrigger("Endgame");
+				GameManager.instance.winLevel();
+			}
+        
+			if(other.gameObject.tag=="Obstacle"){
+				print("Level Loose");
+				speed=0;
+				anim.enabled=false;
+				GameManager.instance.gameStop();
+				GameManager.instance.looseLevel();
+			}
+		}
+		public void faceOtherWay(){
+         
+			StartCoroutine("cc",0f);
+			// Invoke("changeDirection",.5f);
+
+		}float targetRot=0;
+		IEnumerator cc(){
+			if(targetRot>-90)
+				targetRot-=10;
+			StairBuilder.instance.updateOffset();
+			Quaternion target = Quaternion.Euler(0,targetRot, 0);
+			transform.rotation= Quaternion.Slerp(transform.rotation, target, .8f);
+			yield return new WaitForSeconds(.1f);
+			if(targetRot>-90)
+				StartCoroutine("cc",0f);
+
+		}
+
+		private void changeDirection(){
+			//direction=-Vector3.forward;
+
+		}
+		bool IsGrounded() {
+			return Physics.Raycast(transform.position, -Vector3.up, .5f + 0.1f);
+		}
+		public void startanim(){
+			anim.SetTrigger("Start");
+		}
+		public Quaternion getPlayerRotation(){
+			return this.gameObject.transform.rotation;
+		}
+		public Vector3 getPlayerAngles(){
+			return this.gameObject.transform.localEulerAngles;
+		}
+
+ 
+	}
+}
