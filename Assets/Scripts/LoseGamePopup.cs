@@ -5,7 +5,6 @@ using UnityEngine;
 using game_main;
 public class LoseGamePopup : MonoBehaviour
 {
-
     public TextMeshProUGUI Score;
 
     public void PlayAgain()
@@ -13,8 +12,4 @@ public class LoseGamePopup : MonoBehaviour
         GameMng.Instance.StartGame();
     }
 
-    public void GoHome()
-    {
-        
-    }
 }

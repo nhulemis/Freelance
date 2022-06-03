@@ -8,11 +8,11 @@ public class SceneMng : MonoBehaviour
     public Canvas mainCanvas;
 
     public GameObject LoseGamePopup;
-
-    private void Start()
-    {
-        mainCanvas = FindObjectOfType<Canvas>();
-    }
+    //
+    // private void Start()
+    // {
+    //     mainCanvas = FindObjectOfType<Canvas>();
+    // }
 
     public void LoseGame()
     {
