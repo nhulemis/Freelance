@@ -20,23 +20,6 @@ public class HomeMenu : MonoBehaviour
     {
         
     }
-    
-    
-    public void convert()
-    {
-        float fValue = 0.123456f;
-        int iValue = (int)fValue;
-        Debug.Log("int val: " +iValue);
-         
-        iValue = Mathf.FloorToInt(fValue);
-        Debug.Log("int val: " +iValue);
-         
-        iValue = Mathf.CeilToInt(fValue);
-        Debug.Log("int val: " +iValue);
-         
-        iValue = Mathf.RoundToInt(fValue);
-        Debug.Log("int val: " +iValue);
-    }
 
     public void TouchMe()
     {
@@ -51,11 +34,11 @@ public class HomeMenu : MonoBehaviour
 
     public void GameStart()
     {
-        GameMng.Instance.StartGame();
+        GameManager.Instance.StartGame();
         gameObject.SetActive(false);
     }
 
-    public void StartGameB()
+    public void StartGameX()
     {
         SceneManager.LoadScene("GameScene");
     }
