@@ -21,6 +21,6 @@ public class DeathSite : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D col)
     {
        // col.gameObject.SetActive(false);
-       // GameManager.Instance.spawnMng.SpawnOne();
+       // GameMng.Instance.spawnMng.SpawnOne();
     }
 }
