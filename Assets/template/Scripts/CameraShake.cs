@@ -1,12 +1,15 @@
 using UnityEngine;
 
-public class CameraShake : MonoBehaviour
+namespace template.Scripts
 {
-	private void Start()
+	public class CameraShake : MonoBehaviour
 	{
-	}
+		private void Start()
+		{
+		}
 
-	private void Update()
-	{
+		private void Update()
+		{
+		}
 	}
 }

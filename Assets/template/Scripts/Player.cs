@@ -1,69 +1,71 @@
 using UnityEngine;
-using game_sub;
 
-public class Player : MonoBehaviour
+namespace template.Scripts
 {
-	public GameObject bulletPrefab;
-
-	public Vector2 targetPos;
-
-	private SpriteRenderer rend;
-
-	private Animator animator;
-
-	private bool inside;
-
-	private bool changedColor;
-
-	private void Start()
+	public class Player : MonoBehaviour
 	{
-		rend = GetComponent<SpriteRenderer>();
-		animator = GetComponent<Animator>();
-	}
+		public GameObject bulletPrefab;
 
-	private void OnTriggerExit2D(Collider2D collision)
-	{
-		if (collision.CompareTag("Obstacle"))
+		public Vector2 targetPos;
+
+		private SpriteRenderer rend;
+
+		private Animator animator;
+
+		private bool inside;
+
+		private bool changedColor;
+
+		private void Start()
 		{
-			inside = false;
-			changedColor = false;
+			rend = GetComponent<SpriteRenderer>();
+			animator = GetComponent<Animator>();
 		}
-	}
 
-	private void OnTriggerEnter2D(Collider2D collision)
-	{
-		if (GameManager.Instance.uIManager.gameState != GameState1.GAMEOVER)
+		private void OnTriggerExit2D(Collider2D collision)
 		{
-			if (collision.CompareTag("Shield") && !inside && !changedColor)
+			if (collision.CompareTag("Obstacle"))
 			{
-				changedColor = true;
-				rend.color = collision.GetComponent<SpriteRenderer>().color;
-				UnityEngine.Object.Destroy(collision.gameObject.transform.parent.gameObject);
-			}
-			if (collision.CompareTag("Obstacle") && !inside)
-			{
-				inside = true;
+				inside = false;
+				changedColor = false;
 			}
 		}
-	}
 
-	public void PlayGameOver()
-	{
-		animator.Play("PlayerDeath");
-	}
+		private void OnTriggerEnter2D(Collider2D collision)
+		{
+			if (GameManager.Instance.uIManager.gameState != GameState1.GAMEOVER)
+			{
+				if (collision.CompareTag("Shield") && !inside && !changedColor)
+				{
+					changedColor = true;
+					rend.color = collision.GetComponent<SpriteRenderer>().color;
+					UnityEngine.Object.Destroy(collision.gameObject.transform.parent.gameObject);
+				}
+				if (collision.CompareTag("Obstacle") && !inside)
+				{
+					inside = true;
+				}
+			}
+		}
 
-	public void ResetPlayer()
-	{
-		animator.Play("PlayerIdle");
-	}
+		public void PlayGameOver()
+		{
+			animator.Play("PlayerDeath");
+		}
 
-	public void ShotBullet()
-	{
-		GameObject gameObject = UnityEngine.Object.Instantiate(bulletPrefab);
-		gameObject.transform.position = (Vector2)base.transform.position;
-		gameObject.GetComponent<SpriteRenderer>().color = rend.color;
-		Vector2 a = targetPos - (Vector2)base.transform.position;
-		a.Normalize();
-		gameObject.GetComponent<Rigidbody2D>().AddForce(a * 900f);
+		public void ResetPlayer()
+		{
+			animator.Play("PlayerIdle");
+		}
+
+		public void ShotBullet()
+		{
+			GameObject gameObject = UnityEngine.Object.Instantiate(bulletPrefab);
+			gameObject.transform.position = (Vector2)base.transform.position;
+			gameObject.GetComponent<SpriteRenderer>().color = rend.color;
+			Vector2 a = targetPos - (Vector2)base.transform.position;
+			a.Normalize();
+			gameObject.GetComponent<Rigidbody2D>().AddForce(a * 900f);
+		}
 	}
 }

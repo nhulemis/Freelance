@@ -1,74 +1,77 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class AudioButton : MonoBehaviour
+namespace template.Scripts
 {
-	public bool efx;
-
-	public Sprite musicOnSprite;
-
-	public Sprite musicOffSprite;
-
-	public Sprite efxOnSprite;
-
-	public Sprite efxOffSprite;
-
-	public Image spriteButton;
-
-	private void Start()
+	public class AudioButton : MonoBehaviour
 	{
-		SetButton();
-	}
+		public bool efx;
 
-	public void convert()
-	{
-		float fValue = 0.123456f;
-		int iValue = (int)fValue;
-		Debug.Log("int val: " +iValue);
-         
-		iValue = Mathf.FloorToInt(fValue);
-		Debug.Log("int val: " +iValue);
-         
-		iValue = Mathf.CeilToInt(fValue);
-		Debug.Log("int val: " +iValue);
-         
-		iValue = Mathf.RoundToInt(fValue);
-		Debug.Log("int val: " +iValue);
-	}
-	public void MusicButtonClicked()
-	{
-		AudioManager.Instance.MuteMusic();
-		AudioManager.Instance.PlayEffects(AudioManager.Instance.buttonClick);
-		SetButton();
-	}
+		public Sprite musicOnSprite;
 
-	public void EfxButtonClicked()
-	{
-		AudioManager.Instance.MuteEfx();
-		AudioManager.Instance.PlayEffects(AudioManager.Instance.buttonClick);
-		SetButton();
-	}
+		public Sprite musicOffSprite;
 
-	private void SetButton()
-	{
-		if ((!AudioManager.Instance.IsMusicMute() && !efx) || (!AudioManager.Instance.IsEfxMute() && efx))
+		public Sprite efxOnSprite;
+
+		public Sprite efxOffSprite;
+
+		public Image spriteButton;
+
+		private void Start()
 		{
-			if (efx)
+			SetButton();
+		}
+
+		public void convert()
+		{
+			float fValue = 0.123456f;
+			int iValue = (int)fValue;
+			Debug.Log("int val: " +iValue);
+         
+			iValue = Mathf.FloorToInt(fValue);
+			Debug.Log("int val: " +iValue);
+         
+			iValue = Mathf.CeilToInt(fValue);
+			Debug.Log("int val: " +iValue);
+         
+			iValue = Mathf.RoundToInt(fValue);
+			Debug.Log("int val: " +iValue);
+		}
+		public void MusicButtonClicked()
+		{
+			AudioManager.Instance.MuteMusic();
+			AudioManager.Instance.PlayEffects(AudioManager.Instance.buttonClick);
+			SetButton();
+		}
+
+		public void EfxButtonClicked()
+		{
+			AudioManager.Instance.MuteEfx();
+			AudioManager.Instance.PlayEffects(AudioManager.Instance.buttonClick);
+			SetButton();
+		}
+
+		private void SetButton()
+		{
+			if ((!AudioManager.Instance.IsMusicMute() && !efx) || (!AudioManager.Instance.IsEfxMute() && efx))
 			{
-				spriteButton.sprite = efxOnSprite;
+				if (efx)
+				{
+					spriteButton.sprite = efxOnSprite;
+				}
+				else
+				{
+					spriteButton.sprite = musicOnSprite;
+				}
+			}
+			else if (efx)
+			{
+				spriteButton.sprite = efxOffSprite;
 			}
 			else
 			{
-				spriteButton.sprite = musicOnSprite;
+				spriteButton.sprite = musicOffSprite;
 			}
-		}
-		else if (efx)
-		{
-			spriteButton.sprite = efxOffSprite;
-		}
-		else
-		{
-			spriteButton.sprite = musicOffSprite;
 		}
 	}
 }

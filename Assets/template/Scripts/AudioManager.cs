@@ -1,111 +1,114 @@
 using UnityEngine;
 
-public class AudioManager : MonoBehaviour
+namespace template.Scripts
 {
-	public static AudioManager Instance;
-
-	[Header("Audio Sources")]
-	public AudioSource efxSource;
-
-	public AudioSource musicSource;
-
-	[Header("Background Music")]
-	public AudioClip menuMusic;
-
-	public AudioClip gameMusic;
-
-	[Header("Sound Effects")]
-	public AudioClip buttonClick;
-
-	public AudioClip gameOver;
-
-	public AudioClip bullet;
-
-	private bool muteMusic;
-
-	private bool muteEfx;
-
-	private void Awake()
+	public class AudioManager : MonoBehaviour
 	{
-		if (Instance == null)
-		{
-			Instance = this;
-		}
-		else if (Instance != this)
-		{
-			UnityEngine.Object.Destroy(base.gameObject);
-		}
-		Object.DontDestroyOnLoad(base.gameObject);
-	}
+		public static AudioManager Instance;
 
-	private void Start()
-	{
-		muteMusic = ((PlayerPrefs.GetInt("MuteMusic") == 1) ? true : false);
-		muteEfx = ((PlayerPrefs.GetInt("MuteEfx") == 1) ? true : false);
-		PlayMusic(menuMusic);
-	}
+		[Header("Audio Sources")]
+		public AudioSource efxSource;
 
-	public void PlayMusic(AudioClip clip)
-	{
-		if (!muteMusic)
+		public AudioSource musicSource;
+
+		[Header("Background Music")]
+		public AudioClip menuMusic;
+
+		public AudioClip gameMusic;
+
+		[Header("Sound Effects")]
+		public AudioClip buttonClick;
+
+		public AudioClip gameOver;
+
+		public AudioClip bullet;
+
+		private bool muteMusic;
+
+		private bool muteEfx;
+
+		private void Awake()
 		{
-			musicSource.clip = clip;
-			if (!musicSource.isPlaying)
+			if (Instance == null)
 			{
-				musicSource.Play();
+				Instance = this;
+			}
+			else if (Instance != this)
+			{
+				UnityEngine.Object.Destroy(base.gameObject);
+			}
+			Object.DontDestroyOnLoad(base.gameObject);
+		}
+
+		private void Start()
+		{
+			muteMusic = ((PlayerPrefs.GetInt("MuteMusic") == 1) ? true : false);
+			muteEfx = ((PlayerPrefs.GetInt("MuteEfx") == 1) ? true : false);
+			PlayMusic(menuMusic);
+		}
+
+		public void PlayMusic(AudioClip clip)
+		{
+			if (!muteMusic)
+			{
+				musicSource.clip = clip;
+				if (!musicSource.isPlaying)
+				{
+					musicSource.Play();
+				}
 			}
 		}
-	}
 
-	private void StopMusic()
-	{
-		musicSource.Stop();
-	}
-
-	public void PlayEffects(AudioClip clip)
-	{
-		if (!muteEfx)
+		private void StopMusic()
 		{
-			efxSource.PlayOneShot(clip);
+			musicSource.Stop();
 		}
-	}
 
-	public void MuteMusic()
-	{
-		if (muteMusic)
+		public void PlayEffects(AudioClip clip)
 		{
-			muteMusic = false;
-			PlayMusic(menuMusic);
-			PlayerPrefs.SetInt("MuteMusic", 0);
+			if (!muteEfx)
+			{
+				efxSource.PlayOneShot(clip);
+			}
 		}
-		else
-		{
-			muteMusic = true;
-			StopMusic();
-			PlayerPrefs.SetInt("MuteMusic", 1);
-		}
-	}
 
-	public void MuteEfx()
-	{
-		if (muteEfx)
+		public void MuteMusic()
 		{
-			PlayerPrefs.SetInt("MuteEfx", 0);
+			if (muteMusic)
+			{
+				muteMusic = false;
+				PlayMusic(menuMusic);
+				PlayerPrefs.SetInt("MuteMusic", 0);
+			}
+			else
+			{
+				muteMusic = true;
+				StopMusic();
+				PlayerPrefs.SetInt("MuteMusic", 1);
+			}
 		}
-		else
+
+		public void MuteEfx()
 		{
-			PlayerPrefs.SetInt("MuteEfx", 1);
+			if (muteEfx)
+			{
+				PlayerPrefs.SetInt("MuteEfx", 0);
+			}
+			else
+			{
+				PlayerPrefs.SetInt("MuteEfx", 1);
+			}
+			muteEfx = !muteEfx;
 		}
-		muteEfx = !muteEfx;
-	}
 
-	public bool IsMusicMute()
-	{
-		return muteMusic;
-	}
+		public bool IsMusicMute()
+		{
+			return muteMusic;
+		}
 
-	public bool IsEfxMute()
-	{
-		return muteEfx;
+		public bool IsEfxMute()
+		{
+			return muteEfx;
+		}
 	}
 }

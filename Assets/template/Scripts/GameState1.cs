@@ -1,7 +1,10 @@
-public enum GameState1
+namespace template.Scripts
 {
-	MENU,
-	PLAYING,
-	PAUSED,
-	GAMEOVER
+	public enum GameState1
+	{
+		MENU,
+		PLAYING,
+		PAUSED,
+		GAMEOVER
+	}
 }
