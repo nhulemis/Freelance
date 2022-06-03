@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using game_main;
 using UnityEngine;
 
 public class SpawnManager : MonoBehaviour
@@ -33,7 +34,7 @@ public class SpawnManager : MonoBehaviour
             seconds = tile;
             AllowInput = false;
             StartCoroutine(EarnSameColor());
-            GameManager.Instance.CountScore();
+            GameMng.Instance.CountScore();
 
             CheckWinCondition();
         }

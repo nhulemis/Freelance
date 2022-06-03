@@ -55,7 +55,7 @@ public class HomeMenu : MonoBehaviour
         gameObject.SetActive(false);
     }
 
-    public void StartGameX()
+    public void StartGameB()
     {
         SceneManager.LoadScene("GameScene");
     }

@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
+using game_main;
 using Random = UnityEngine.Random;
 
 public class CatController : MonoBehaviour
@@ -60,7 +61,7 @@ public class CatController : MonoBehaviour
         if (isPlayer && col.CompareTag("Goal"))
         {
             Debug.Log("complete");
-            GameManager.Instance.sceneMng.LoseGame();
+            GameMng.Instance.sceneMng.LoseGame();
         }
 
         if (col.CompareTag("Goal"))

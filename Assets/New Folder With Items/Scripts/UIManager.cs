@@ -57,14 +57,14 @@ public class UIManager : MonoBehaviour
 
 	public void ShowMainMenu()
 	{
-		ScoreManager.Instance.ResetCurrentScore();
-		clicked = true;
-		mainMenuGui.SetActive(value: true);
-		gameplayGui.SetActive(value: false);
-		gameOverGui.SetActive(value: false);
-		gameState = GameState.MENU;
-		AudioManager.Instance.PlayEffects(AudioManager.Instance.buttonClick);
-		GameManager.Instance.OnHomeClicked();
+		// ScoreManager.Instance.ResetCurrentScore();
+		// clicked = true;
+		// mainMenuGui.SetActive(value: true);
+		// gameplayGui.SetActive(value: false);
+		// gameOverGui.SetActive(value: false);
+		// gameState = GameState.MENU;
+		// AudioManager.Instance.PlayEffects(AudioManager.Instance.buttonClick);
+		// GameManager.Instance.OnHomeClicked();
 	}
 
 	public void ShowGameplay()

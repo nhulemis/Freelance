@@ -53,11 +53,11 @@ public class AudioManager : MonoBehaviour
 	{
 		if (!muteMusic)
 		{
-			musicSource.clip = clip;
-			if (!musicSource.isPlaying)
-			{
-				musicSource.Play();
-			}
+			// musicSource.clip = clip;
+			// if (!musicSource.isPlaying)
+			// {
+			// 	musicSource.Play();
+			// }
 		}
 	}
 
@@ -68,39 +68,39 @@ public class AudioManager : MonoBehaviour
 
 	public void PlayEffects(AudioClip clip)
 	{
-		if (!muteEfx)
-		{
-			efxSource.PlayOneShot(clip);
-		}
+		// if (!muteEfx)
+		// {
+		// 	efxSource.PlayOneShot(clip);
+		// }
 	}
 
 	public void MuteMusic()
 	{
-		if (muteMusic)
-		{
-			muteMusic = false;
-			PlayMusic(menuMusic);
-			PlayerPrefs.SetInt("MuteMusic", 0);
-		}
-		else
-		{
-			muteMusic = true;
-			StopMusic();
-			PlayerPrefs.SetInt("MuteMusic", 1);
-		}
+		// if (muteMusic)
+		// {
+		// 	muteMusic = false;
+		// 	PlayMusic(menuMusic);
+		// 	PlayerPrefs.SetInt("MuteMusic", 0);
+		// }
+		// else
+		// {
+		// 	muteMusic = true;
+		// 	StopMusic();
+		// 	PlayerPrefs.SetInt("MuteMusic", 1);
+		// }
 	}
 
 	public void MuteEfx()
 	{
-		if (muteEfx)
-		{
-			PlayerPrefs.SetInt("MuteEfx", 0);
-		}
-		else
-		{
-			PlayerPrefs.SetInt("MuteEfx", 1);
-		}
-		muteEfx = !muteEfx;
+		// if (muteEfx)
+		// {
+		// 	PlayerPrefs.SetInt("MuteEfx", 0);
+		// }
+		// else
+		// {
+		// 	PlayerPrefs.SetInt("MuteEfx", 1);
+		// }
+		// muteEfx = !muteEfx;
 	}
 
 	public bool IsMusicMute()
