@@ -27,7 +27,7 @@ public class UiManager : MonoBehaviour
      void Awake(){
      	if(instance==null)instance=this;
      	else if(instance!=this)Destroy(this.gameObject);
-     	Advertisements.Instance.Initialize(); 
+     	//Advertisements.Instance.Initialize(); 
 
 
      }
@@ -38,7 +38,7 @@ public class UiManager : MonoBehaviour
       currentlevel=PlayerPrefs.GetInt("current_level");
         setCurrentLevel();
         setTotalScore();
-        Advertisements.Instance.ShowBanner(BannerPosition.BOTTOM);
+        //Advertisements.Instance.ShowBanner(BannerPosition.BOTTOM);
     }
 
 
@@ -62,7 +62,7 @@ public class UiManager : MonoBehaviour
     	SceneManager.LoadScene("1");
     }
     public void win(){
-    	Advertisements.Instance.ShowInterstitial();
+    	//Advertisements.Instance.ShowInterstitial();
     	 updateTotalScore();
     	 if(currentlevel<levelCount){
            currentlevel++;
@@ -92,13 +92,7 @@ public class UiManager : MonoBehaviour
     }
     private void setCurrentLevel(){
     	
-    	int loadedLevel=SceneManager.GetActiveScene().buildIndex;
-    	if(currentlevel!=loadedLevel){
-    		SceneManager.LoadScene(currentlevel);
-    	}
-    	int clt= currentlevel;
-    	clt++;
-    	currentlevelText.text="Level"+clt.ToString();
+    	
 
     }
 }
