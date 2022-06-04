@@ -19,6 +19,16 @@ namespace Samurai.Scripts
         void Update()
         {
             if(Time.timeScale>0)
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
                 this.transform.position=new  Vector3(this.transform.position.x,obj.transform.position.y,transform.position.z);  
         }
         private void OnCollisionEnter(Collision other){

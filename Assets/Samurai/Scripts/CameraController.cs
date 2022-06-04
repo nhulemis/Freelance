@@ -11,6 +11,15 @@ namespace Samurai.Scripts
         public static CameraController instance;
         void Awake(){
             if(instance==null){
+                
+                
+                
+                
+                
+                
+                
+                
+                
                 instance=this;
 
             }else if(instance!=this){

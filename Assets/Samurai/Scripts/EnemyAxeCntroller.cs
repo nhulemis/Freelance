@@ -43,11 +43,11 @@ namespace Samurai.Scripts
             switch(GameManager.instance.currentState){
                 case GameManager.GameState.play :
                     if(isAlive)
-                        move();
+                        moove();
                     break;
             }
         }
-        private void move(){
+        private void moove(){
             rb.MovePosition(this.transform.position+this.transform.forward*Time.deltaTime*speed);
          
         }

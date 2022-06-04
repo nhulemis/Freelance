@@ -9,6 +9,15 @@ namespace Samurai.Scripts
         [SerializeField]
         private Transform target;
         [SerializeField]
+        
+        
+        
+        
+        
+        
+        
+        
+        
         private Transform shootPos;
         [SerializeField]
         private Animator anim;

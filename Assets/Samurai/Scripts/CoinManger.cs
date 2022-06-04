@@ -23,6 +23,15 @@ namespace Samurai.Scripts
 		}
 		private void prepareCoin(){
 			GameObject coin;
+			
+			
+			
+			
+			
+			
+			
+			
+			
 			for(int i=0;i<maxCoin;i++){
        
 				coin=Instantiate(animateCoinPrefab);

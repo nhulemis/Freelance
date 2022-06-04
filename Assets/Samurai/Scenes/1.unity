@@ -213,160 +213,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb6e52f37bca2404fac00b69fd8d21f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initialization: 1
-  initialized: 0
-  simulationType: 0
-  objectType: 0
-  demolitionType: 1
-  physics:
-    materialType: 8
-    material: {fileID: 0}
-    massBy: 1
-    mass: 55.4
-    colliderType: 0
-    useGravity: 1
-    dampening: 5
-    recorder: 0
-    exclude: 0
-    destructible: 0
-    materialSolidity: 1
-    rotation: {x: 0, y: 0, z: 0, w: 1}
-    position: {x: 0, y: 0, z: 0}
-    velocity: {x: 0, y: 0, z: 0}
-    initScale: {x: 1, y: 1, z: 1}
-    initPosition: {x: 0, y: 0, z: 0}
-    initRotation: {x: 0, y: 0, z: 0, w: 1}
-    rigidBody: {fileID: 0}
-    meshCollider: {fileID: 0}
-    clusterColliders: []
-  activation:
-    byVelocity: 0
-    byOffset: 0
-    byDamage: 0
-    byActivator: 0
-    byImpact: 0
-    byConnectivity: 0
-    unyielding: 0
-    activated: 0
-  restriction:
-    enable: 0
-    breakAction: 9
-    actionDelay: 0
-    checkInterval: 5
-    distance: 30
-    position: 0
-    target: {fileID: 0}
-    collider: {fileID: 0}
-    region: 0
-    broke: 0
-  limitations:
-    solidity: 10
-    depth: 0
-    time: 0.05
-    size: 0.01
-    sliceByBlade: 1
-    slicePlanes: []
-    contactPoint: {x: 0, y: 0, z: 0}
-    demolitionShould: 0
-    demolished: 0
-    birthTime: 0
-    bboxSize: 0
-    currentDepth: 0
-    bound:
-      m_Center: {x: 0, y: 0, z: 0}
-      m_Extent: {x: 0, y: 0, z: 0}
-    ancestor: {fileID: 0}
-    descendants: []
-  meshDemolition:
-    amount: 3
-    variation: 0
-    depthFade: 0.01
-    contactBias: 0
-    seed: 1
-    useShatter: 0
-    meshInput: 9
-    properties:
-      colliderType: 0
-      sizeFilter: 0
-      decompose: 0
-      removeCollinear: 1
-      layer: 
-    runtimeCaching:
-      type: 0
-      frames: 3
-      fragments: 1
-      skipFirstDemolition: 0
-      inProgress: 0
-      wasUsed: 0
-      stop: 0
-    badMesh: 0
-    shatterMode: 1
-    totalAmount: 0
-    innerSubId: 0
-    compressPrefab: 1
-    cacheRotationStart: {x: 0, y: 0, z: 0, w: 1}
-    mesh: {fileID: 0}
-    scrShatter: {fileID: 0}
-  clusterDemolition:
-    meshDemolition: 0
-    connectivity: 0
-    contactRadius: 15
-    cluster:
-      id: 0
-      tm: {fileID: 0}
-      rootParent: {fileID: 0}
-      depth: 0
-    damageRadius: 0
-  referenceDemolition:
-    reference: {fileID: 0}
-    randomList: []
-    addRigid: 1
-  materials:
-    innerMaterial: {fileID: 0}
-    mappingScale: 0.1
-    outerMaterial: {fileID: 0}
-    needNewMat: 0
-  damage:
-    enable: 0
-    maxDamage: 100
-    currentDamage: 0
-    collect: 0
-    multiplier: 1
-  fading:
-    onDemolition: 1
-    onActivation: 0
-    lifeType: 4
-    lifeTime: 7
-    lifeVariation: 3
-    fadeType: 0
-    fadeTime: 5
-    sizeFilter: 0
-    state: 0
-    stop: 0
-    position: {x: 0, y: 0, z: 0}
-  reset:
-    transform: 1
-    damage: 1
-    action: 0
-    destroyDelay: 1
-    mesh: 4
-    fragments: 0
-    toBeDestroyed: 0
-    counter: 0
-  meshes: []
-  pivots: []
-  rfMeshes: []
-  subIds: []
-  fragments: []
-  cacheRotation: {x: 0, y: 0, z: 0, w: 0}
-  transForm: {fileID: 0}
-  rootChild: {fileID: 0}
-  rootParent: {fileID: 0}
-  meshFilter: {fileID: 0}
-  meshRenderer: {fileID: 0}
-  skinnedMeshRend: {fileID: 0}
-  debrisList: []
-  dustList: []
 --- !u!23 &341604034
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -495,160 +341,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb6e52f37bca2404fac00b69fd8d21f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initialization: 1
-  initialized: 0
-  simulationType: 0
-  objectType: 0
-  demolitionType: 1
-  physics:
-    materialType: 8
-    material: {fileID: 0}
-    massBy: 1
-    mass: 55.4
-    colliderType: 0
-    useGravity: 1
-    dampening: 5
-    recorder: 0
-    exclude: 0
-    destructible: 0
-    materialSolidity: 1
-    rotation: {x: 0, y: 0, z: 0, w: 1}
-    position: {x: 0, y: 0, z: 0}
-    velocity: {x: 0, y: 0, z: 0}
-    initScale: {x: 1, y: 1, z: 1}
-    initPosition: {x: 0, y: 0, z: 0}
-    initRotation: {x: 0, y: 0, z: 0, w: 1}
-    rigidBody: {fileID: 0}
-    meshCollider: {fileID: 0}
-    clusterColliders: []
-  activation:
-    byVelocity: 0
-    byOffset: 0
-    byDamage: 0
-    byActivator: 0
-    byImpact: 0
-    byConnectivity: 0
-    unyielding: 0
-    activated: 0
-  restriction:
-    enable: 0
-    breakAction: 9
-    actionDelay: 0
-    checkInterval: 5
-    distance: 30
-    position: 0
-    target: {fileID: 0}
-    collider: {fileID: 0}
-    region: 0
-    broke: 0
-  limitations:
-    solidity: 10
-    depth: 0
-    time: 0.05
-    size: 0.01
-    sliceByBlade: 1
-    slicePlanes: []
-    contactPoint: {x: 0, y: 0, z: 0}
-    demolitionShould: 0
-    demolished: 0
-    birthTime: 0
-    bboxSize: 0
-    currentDepth: 0
-    bound:
-      m_Center: {x: 0, y: 0, z: 0}
-      m_Extent: {x: 0, y: 0, z: 0}
-    ancestor: {fileID: 0}
-    descendants: []
-  meshDemolition:
-    amount: 3
-    variation: 0
-    depthFade: 0.01
-    contactBias: 0
-    seed: 1
-    useShatter: 0
-    meshInput: 9
-    properties:
-      colliderType: 0
-      sizeFilter: 0
-      decompose: 0
-      removeCollinear: 1
-      layer: 
-    runtimeCaching:
-      type: 0
-      frames: 3
-      fragments: 1
-      skipFirstDemolition: 0
-      inProgress: 0
-      wasUsed: 0
-      stop: 0
-    badMesh: 0
-    shatterMode: 1
-    totalAmount: 0
-    innerSubId: 0
-    compressPrefab: 1
-    cacheRotationStart: {x: 0, y: 0, z: 0, w: 1}
-    mesh: {fileID: 0}
-    scrShatter: {fileID: 0}
-  clusterDemolition:
-    meshDemolition: 0
-    connectivity: 0
-    contactRadius: 15
-    cluster:
-      id: 0
-      tm: {fileID: 0}
-      rootParent: {fileID: 0}
-      depth: 0
-    damageRadius: 0
-  referenceDemolition:
-    reference: {fileID: 0}
-    randomList: []
-    addRigid: 1
-  materials:
-    innerMaterial: {fileID: 0}
-    mappingScale: 0.1
-    outerMaterial: {fileID: 0}
-    needNewMat: 0
-  damage:
-    enable: 0
-    maxDamage: 100
-    currentDamage: 0
-    collect: 0
-    multiplier: 1
-  fading:
-    onDemolition: 1
-    onActivation: 0
-    lifeType: 4
-    lifeTime: 7
-    lifeVariation: 3
-    fadeType: 0
-    fadeTime: 5
-    sizeFilter: 0
-    state: 0
-    stop: 0
-    position: {x: 0, y: 0, z: 0}
-  reset:
-    transform: 1
-    damage: 1
-    action: 0
-    destroyDelay: 1
-    mesh: 4
-    fragments: 0
-    toBeDestroyed: 0
-    counter: 0
-  meshes: []
-  pivots: []
-  rfMeshes: []
-  subIds: []
-  fragments: []
-  cacheRotation: {x: 0, y: 0, z: 0, w: 0}
-  transForm: {fileID: 0}
-  rootChild: {fileID: 0}
-  rootParent: {fileID: 0}
-  meshFilter: {fileID: 0}
-  meshRenderer: {fileID: 0}
-  skinnedMeshRend: {fileID: 0}
-  debrisList: []
-  dustList: []
 --- !u!23 &381870945
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -923,6 +615,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!224 &887062004 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 3825219789629432348, guid: 7ac48c187a9fe4ee78541b11d14e11f5,
+    type: 3}
+  m_PrefabInstance: {fileID: 3825219790300484547}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &892191501
 GameObject:
   m_ObjectHideFlags: 0
@@ -968,6 +666,140 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &903190037
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 903190038}
+  - component: {fileID: 903190041}
+  - component: {fileID: 903190040}
+  - component: {fileID: 903190039}
+  m_Layer: 5
+  m_Name: NextButton (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &903190038
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 903190037}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1573185623}
+  m_Father: {fileID: 887062004}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0.00000071525574, y: 181}
+  m_SizeDelta: {x: 213.04553, y: 43.640533}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &903190039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 903190037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 3
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 903190040}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3825219790300484549}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: goooNextLevel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &903190040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 903190037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.078431375}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 0
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: d26abd6f19530014fb9188c2af803de2, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &903190041
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 903190037}
+  m_CullTransparentMesh: 0
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -1114,160 +946,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb6e52f37bca2404fac00b69fd8d21f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initialization: 1
-  initialized: 0
-  simulationType: 0
-  objectType: 0
-  demolitionType: 1
-  physics:
-    materialType: 8
-    material: {fileID: 0}
-    massBy: 1
-    mass: 55.4
-    colliderType: 0
-    useGravity: 1
-    dampening: 5
-    recorder: 0
-    exclude: 0
-    destructible: 0
-    materialSolidity: 1
-    rotation: {x: 0, y: 0, z: 0, w: 1}
-    position: {x: 0, y: 0, z: 0}
-    velocity: {x: 0, y: 0, z: 0}
-    initScale: {x: 1, y: 1, z: 1}
-    initPosition: {x: 0, y: 0, z: 0}
-    initRotation: {x: 0, y: 0, z: 0, w: 1}
-    rigidBody: {fileID: 0}
-    meshCollider: {fileID: 0}
-    clusterColliders: []
-  activation:
-    byVelocity: 0
-    byOffset: 0
-    byDamage: 0
-    byActivator: 0
-    byImpact: 0
-    byConnectivity: 0
-    unyielding: 0
-    activated: 0
-  restriction:
-    enable: 0
-    breakAction: 9
-    actionDelay: 0
-    checkInterval: 5
-    distance: 30
-    position: 0
-    target: {fileID: 0}
-    collider: {fileID: 0}
-    region: 0
-    broke: 0
-  limitations:
-    solidity: 10
-    depth: 0
-    time: 0.05
-    size: 0.01
-    sliceByBlade: 1
-    slicePlanes: []
-    contactPoint: {x: 0, y: 0, z: 0}
-    demolitionShould: 0
-    demolished: 0
-    birthTime: 0
-    bboxSize: 0
-    currentDepth: 0
-    bound:
-      m_Center: {x: 0, y: 0, z: 0}
-      m_Extent: {x: 0, y: 0, z: 0}
-    ancestor: {fileID: 0}
-    descendants: []
-  meshDemolition:
-    amount: 3
-    variation: 0
-    depthFade: 0.01
-    contactBias: 0
-    seed: 1
-    useShatter: 0
-    meshInput: 9
-    properties:
-      colliderType: 0
-      sizeFilter: 0
-      decompose: 0
-      removeCollinear: 1
-      layer: 
-    runtimeCaching:
-      type: 0
-      frames: 3
-      fragments: 1
-      skipFirstDemolition: 0
-      inProgress: 0
-      wasUsed: 0
-      stop: 0
-    badMesh: 0
-    shatterMode: 1
-    totalAmount: 0
-    innerSubId: 0
-    compressPrefab: 1
-    cacheRotationStart: {x: 0, y: 0, z: 0, w: 1}
-    mesh: {fileID: 0}
-    scrShatter: {fileID: 0}
-  clusterDemolition:
-    meshDemolition: 0
-    connectivity: 0
-    contactRadius: 15
-    cluster:
-      id: 0
-      tm: {fileID: 0}
-      rootParent: {fileID: 0}
-      depth: 0
-    damageRadius: 0
-  referenceDemolition:
-    reference: {fileID: 0}
-    randomList: []
-    addRigid: 1
-  materials:
-    innerMaterial: {fileID: 0}
-    mappingScale: 0.1
-    outerMaterial: {fileID: 0}
-    needNewMat: 0
-  damage:
-    enable: 0
-    maxDamage: 100
-    currentDamage: 0
-    collect: 0
-    multiplier: 1
-  fading:
-    onDemolition: 1
-    onActivation: 0
-    lifeType: 4
-    lifeTime: 7
-    lifeVariation: 3
-    fadeType: 0
-    fadeTime: 5
-    sizeFilter: 0
-    state: 0
-    stop: 0
-    position: {x: 0, y: 0, z: 0}
-  reset:
-    transform: 1
-    damage: 1
-    action: 0
-    destroyDelay: 1
-    mesh: 4
-    fragments: 0
-    toBeDestroyed: 0
-    counter: 0
-  meshes: []
-  pivots: []
-  rfMeshes: []
-  subIds: []
-  fragments: []
-  cacheRotation: {x: 0, y: 0, z: 0, w: 0}
-  transForm: {fileID: 0}
-  rootChild: {fileID: 0}
-  rootParent: {fileID: 0}
-  meshFilter: {fileID: 0}
-  meshRenderer: {fileID: 0}
-  skinnedMeshRend: {fileID: 0}
-  debrisList: []
-  dustList: []
 --- !u!23 &966666981
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1406,160 +1084,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb6e52f37bca2404fac00b69fd8d21f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initialization: 1
-  initialized: 0
-  simulationType: 0
-  objectType: 0
-  demolitionType: 1
-  physics:
-    materialType: 8
-    material: {fileID: 0}
-    massBy: 1
-    mass: 55.4
-    colliderType: 0
-    useGravity: 1
-    dampening: 5
-    recorder: 0
-    exclude: 0
-    destructible: 0
-    materialSolidity: 1
-    rotation: {x: 0, y: 0, z: 0, w: 1}
-    position: {x: 0, y: 0, z: 0}
-    velocity: {x: 0, y: 0, z: 0}
-    initScale: {x: 1, y: 1, z: 1}
-    initPosition: {x: 0, y: 0, z: 0}
-    initRotation: {x: 0, y: 0, z: 0, w: 1}
-    rigidBody: {fileID: 0}
-    meshCollider: {fileID: 0}
-    clusterColliders: []
-  activation:
-    byVelocity: 0
-    byOffset: 0
-    byDamage: 0
-    byActivator: 0
-    byImpact: 0
-    byConnectivity: 0
-    unyielding: 0
-    activated: 0
-  restriction:
-    enable: 0
-    breakAction: 9
-    actionDelay: 0
-    checkInterval: 5
-    distance: 30
-    position: 0
-    target: {fileID: 0}
-    collider: {fileID: 0}
-    region: 0
-    broke: 0
-  limitations:
-    solidity: 7.75
-    depth: 4
-    time: 0.05
-    size: 0.01
-    sliceByBlade: 1
-    slicePlanes: []
-    contactPoint: {x: 0, y: 0, z: 0}
-    demolitionShould: 0
-    demolished: 0
-    birthTime: 0
-    bboxSize: 0
-    currentDepth: 0
-    bound:
-      m_Center: {x: 0, y: 0, z: 0}
-      m_Extent: {x: 0, y: 0, z: 0}
-    ancestor: {fileID: 0}
-    descendants: []
-  meshDemolition:
-    amount: 3
-    variation: 0
-    depthFade: 0.01
-    contactBias: 0
-    seed: 1
-    useShatter: 0
-    meshInput: 9
-    properties:
-      colliderType: 0
-      sizeFilter: 0
-      decompose: 0
-      removeCollinear: 1
-      layer: 
-    runtimeCaching:
-      type: 0
-      frames: 3
-      fragments: 1
-      skipFirstDemolition: 0
-      inProgress: 0
-      wasUsed: 0
-      stop: 0
-    badMesh: 0
-    shatterMode: 1
-    totalAmount: 0
-    innerSubId: 0
-    compressPrefab: 1
-    cacheRotationStart: {x: 0, y: 0, z: 0, w: 1}
-    mesh: {fileID: 0}
-    scrShatter: {fileID: 0}
-  clusterDemolition:
-    meshDemolition: 0
-    connectivity: 0
-    contactRadius: 15
-    cluster:
-      id: 0
-      tm: {fileID: 0}
-      rootParent: {fileID: 0}
-      depth: 0
-    damageRadius: 0
-  referenceDemolition:
-    reference: {fileID: 0}
-    randomList: []
-    addRigid: 1
-  materials:
-    innerMaterial: {fileID: 0}
-    mappingScale: 0.1
-    outerMaterial: {fileID: 0}
-    needNewMat: 0
-  damage:
-    enable: 0
-    maxDamage: 100
-    currentDamage: 0
-    collect: 0
-    multiplier: 1
-  fading:
-    onDemolition: 1
-    onActivation: 0
-    lifeType: 4
-    lifeTime: 7
-    lifeVariation: 3
-    fadeType: 0
-    fadeTime: 5
-    sizeFilter: 0
-    state: 0
-    stop: 0
-    position: {x: 0, y: 0, z: 0}
-  reset:
-    transform: 1
-    damage: 1
-    action: 0
-    destroyDelay: 1
-    mesh: 4
-    fragments: 0
-    toBeDestroyed: 0
-    counter: 0
-  meshes: []
-  pivots: []
-  rfMeshes: []
-  subIds: []
-  fragments: []
-  cacheRotation: {x: 0, y: 0, z: 0, w: 0}
-  transForm: {fileID: 0}
-  rootChild: {fileID: 0}
-  rootParent: {fileID: 0}
-  meshFilter: {fileID: 0}
-  meshRenderer: {fileID: 0}
-  skinnedMeshRend: {fileID: 0}
-  debrisList: []
-  dustList: []
 --- !u!23 &1044601638
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1789,160 +1313,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb6e52f37bca2404fac00b69fd8d21f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initialization: 1
-  initialized: 0
-  simulationType: 0
-  objectType: 0
-  demolitionType: 1
-  physics:
-    materialType: 8
-    material: {fileID: 0}
-    massBy: 1
-    mass: 55.4
-    colliderType: 0
-    useGravity: 1
-    dampening: 5
-    recorder: 0
-    exclude: 0
-    destructible: 0
-    materialSolidity: 1
-    rotation: {x: 0, y: 0, z: 0, w: 1}
-    position: {x: 0, y: 0, z: 0}
-    velocity: {x: 0, y: 0, z: 0}
-    initScale: {x: 1, y: 1, z: 1}
-    initPosition: {x: 0, y: 0, z: 0}
-    initRotation: {x: 0, y: 0, z: 0, w: 1}
-    rigidBody: {fileID: 0}
-    meshCollider: {fileID: 0}
-    clusterColliders: []
-  activation:
-    byVelocity: 0
-    byOffset: 0
-    byDamage: 0
-    byActivator: 0
-    byImpact: 0
-    byConnectivity: 0
-    unyielding: 0
-    activated: 0
-  restriction:
-    enable: 0
-    breakAction: 9
-    actionDelay: 0
-    checkInterval: 5
-    distance: 30
-    position: 0
-    target: {fileID: 0}
-    collider: {fileID: 0}
-    region: 0
-    broke: 0
-  limitations:
-    solidity: 7.75
-    depth: 4
-    time: 0.05
-    size: 0.01
-    sliceByBlade: 1
-    slicePlanes: []
-    contactPoint: {x: 0, y: 0, z: 0}
-    demolitionShould: 0
-    demolished: 0
-    birthTime: 0
-    bboxSize: 0
-    currentDepth: 0
-    bound:
-      m_Center: {x: 0, y: 0, z: 0}
-      m_Extent: {x: 0, y: 0, z: 0}
-    ancestor: {fileID: 0}
-    descendants: []
-  meshDemolition:
-    amount: 3
-    variation: 0
-    depthFade: 0.01
-    contactBias: 0
-    seed: 1
-    useShatter: 0
-    meshInput: 9
-    properties:
-      colliderType: 0
-      sizeFilter: 0
-      decompose: 0
-      removeCollinear: 1
-      layer: 
-    runtimeCaching:
-      type: 0
-      frames: 3
-      fragments: 1
-      skipFirstDemolition: 0
-      inProgress: 0
-      wasUsed: 0
-      stop: 0
-    badMesh: 0
-    shatterMode: 1
-    totalAmount: 0
-    innerSubId: 0
-    compressPrefab: 1
-    cacheRotationStart: {x: 0, y: 0, z: 0, w: 1}
-    mesh: {fileID: 0}
-    scrShatter: {fileID: 0}
-  clusterDemolition:
-    meshDemolition: 0
-    connectivity: 0
-    contactRadius: 15
-    cluster:
-      id: 0
-      tm: {fileID: 0}
-      rootParent: {fileID: 0}
-      depth: 0
-    damageRadius: 0
-  referenceDemolition:
-    reference: {fileID: 0}
-    randomList: []
-    addRigid: 1
-  materials:
-    innerMaterial: {fileID: 0}
-    mappingScale: 0.1
-    outerMaterial: {fileID: 0}
-    needNewMat: 0
-  damage:
-    enable: 0
-    maxDamage: 100
-    currentDamage: 0
-    collect: 0
-    multiplier: 1
-  fading:
-    onDemolition: 1
-    onActivation: 0
-    lifeType: 4
-    lifeTime: 7
-    lifeVariation: 3
-    fadeType: 0
-    fadeTime: 5
-    sizeFilter: 0
-    state: 0
-    stop: 0
-    position: {x: 0, y: 0, z: 0}
-  reset:
-    transform: 1
-    damage: 1
-    action: 0
-    destroyDelay: 1
-    mesh: 4
-    fragments: 0
-    toBeDestroyed: 0
-    counter: 0
-  meshes: []
-  pivots: []
-  rfMeshes: []
-  subIds: []
-  fragments: []
-  cacheRotation: {x: 0, y: 0, z: 0, w: 0}
-  transForm: {fileID: 0}
-  rootChild: {fileID: 0}
-  rootParent: {fileID: 0}
-  meshFilter: {fileID: 0}
-  meshRenderer: {fileID: 0}
-  skinnedMeshRend: {fileID: 0}
-  debrisList: []
-  dustList: []
 --- !u!23 &1221321890
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2148,160 +1518,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb6e52f37bca2404fac00b69fd8d21f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initialization: 1
-  initialized: 0
-  simulationType: 0
-  objectType: 0
-  demolitionType: 1
-  physics:
-    materialType: 8
-    material: {fileID: 0}
-    massBy: 1
-    mass: 55.4
-    colliderType: 0
-    useGravity: 1
-    dampening: 5
-    recorder: 0
-    exclude: 0
-    destructible: 0
-    materialSolidity: 1
-    rotation: {x: 0, y: 0, z: 0, w: 1}
-    position: {x: 0, y: 0, z: 0}
-    velocity: {x: 0, y: 0, z: 0}
-    initScale: {x: 1, y: 1, z: 1}
-    initPosition: {x: 0, y: 0, z: 0}
-    initRotation: {x: 0, y: 0, z: 0, w: 1}
-    rigidBody: {fileID: 0}
-    meshCollider: {fileID: 0}
-    clusterColliders: []
-  activation:
-    byVelocity: 0
-    byOffset: 0
-    byDamage: 0
-    byActivator: 0
-    byImpact: 0
-    byConnectivity: 0
-    unyielding: 0
-    activated: 0
-  restriction:
-    enable: 0
-    breakAction: 9
-    actionDelay: 0
-    checkInterval: 5
-    distance: 30
-    position: 0
-    target: {fileID: 0}
-    collider: {fileID: 0}
-    region: 0
-    broke: 0
-  limitations:
-    solidity: 7.75
-    depth: 4
-    time: 0.05
-    size: 0.01
-    sliceByBlade: 1
-    slicePlanes: []
-    contactPoint: {x: 0, y: 0, z: 0}
-    demolitionShould: 0
-    demolished: 0
-    birthTime: 0
-    bboxSize: 0
-    currentDepth: 0
-    bound:
-      m_Center: {x: 0, y: 0, z: 0}
-      m_Extent: {x: 0, y: 0, z: 0}
-    ancestor: {fileID: 0}
-    descendants: []
-  meshDemolition:
-    amount: 3
-    variation: 0
-    depthFade: 0.01
-    contactBias: 0
-    seed: 1
-    useShatter: 0
-    meshInput: 9
-    properties:
-      colliderType: 0
-      sizeFilter: 0
-      decompose: 0
-      removeCollinear: 1
-      layer: 
-    runtimeCaching:
-      type: 0
-      frames: 3
-      fragments: 1
-      skipFirstDemolition: 0
-      inProgress: 0
-      wasUsed: 0
-      stop: 0
-    badMesh: 0
-    shatterMode: 1
-    totalAmount: 0
-    innerSubId: 0
-    compressPrefab: 1
-    cacheRotationStart: {x: 0, y: 0, z: 0, w: 1}
-    mesh: {fileID: 0}
-    scrShatter: {fileID: 0}
-  clusterDemolition:
-    meshDemolition: 0
-    connectivity: 0
-    contactRadius: 15
-    cluster:
-      id: 0
-      tm: {fileID: 0}
-      rootParent: {fileID: 0}
-      depth: 0
-    damageRadius: 0
-  referenceDemolition:
-    reference: {fileID: 0}
-    randomList: []
-    addRigid: 1
-  materials:
-    innerMaterial: {fileID: 0}
-    mappingScale: 0.1
-    outerMaterial: {fileID: 0}
-    needNewMat: 0
-  damage:
-    enable: 0
-    maxDamage: 100
-    currentDamage: 0
-    collect: 0
-    multiplier: 1
-  fading:
-    onDemolition: 1
-    onActivation: 0
-    lifeType: 4
-    lifeTime: 7
-    lifeVariation: 3
-    fadeType: 0
-    fadeTime: 5
-    sizeFilter: 0
-    state: 0
-    stop: 0
-    position: {x: 0, y: 0, z: 0}
-  reset:
-    transform: 1
-    damage: 1
-    action: 0
-    destroyDelay: 1
-    mesh: 4
-    fragments: 0
-    toBeDestroyed: 0
-    counter: 0
-  meshes: []
-  pivots: []
-  rfMeshes: []
-  subIds: []
-  fragments: []
-  cacheRotation: {x: 0, y: 0, z: 0, w: 0}
-  transForm: {fileID: 0}
-  rootChild: {fileID: 0}
-  rootParent: {fileID: 0}
-  meshFilter: {fileID: 0}
-  meshRenderer: {fileID: 0}
-  skinnedMeshRend: {fileID: 0}
-  debrisList: []
-  dustList: []
 --- !u!23 &1356214698
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2398,160 +1614,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb6e52f37bca2404fac00b69fd8d21f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initialization: 1
-  initialized: 0
-  simulationType: 0
-  objectType: 0
-  demolitionType: 1
-  physics:
-    materialType: 8
-    material: {fileID: 0}
-    massBy: 1
-    mass: 55.4
-    colliderType: 0
-    useGravity: 1
-    dampening: 5
-    recorder: 0
-    exclude: 0
-    destructible: 0
-    materialSolidity: 1
-    rotation: {x: 0, y: 0, z: 0, w: 1}
-    position: {x: 0, y: 0, z: 0}
-    velocity: {x: 0, y: 0, z: 0}
-    initScale: {x: 1, y: 1, z: 1}
-    initPosition: {x: 0, y: 0, z: 0}
-    initRotation: {x: 0, y: 0, z: 0, w: 1}
-    rigidBody: {fileID: 0}
-    meshCollider: {fileID: 0}
-    clusterColliders: []
-  activation:
-    byVelocity: 0
-    byOffset: 0
-    byDamage: 0
-    byActivator: 0
-    byImpact: 0
-    byConnectivity: 0
-    unyielding: 0
-    activated: 0
-  restriction:
-    enable: 0
-    breakAction: 9
-    actionDelay: 0
-    checkInterval: 5
-    distance: 30
-    position: 0
-    target: {fileID: 0}
-    collider: {fileID: 0}
-    region: 0
-    broke: 0
-  limitations:
-    solidity: 7.75
-    depth: 4
-    time: 0.05
-    size: 0.01
-    sliceByBlade: 1
-    slicePlanes: []
-    contactPoint: {x: 0, y: 0, z: 0}
-    demolitionShould: 0
-    demolished: 0
-    birthTime: 0
-    bboxSize: 0
-    currentDepth: 0
-    bound:
-      m_Center: {x: 0, y: 0, z: 0}
-      m_Extent: {x: 0, y: 0, z: 0}
-    ancestor: {fileID: 0}
-    descendants: []
-  meshDemolition:
-    amount: 3
-    variation: 0
-    depthFade: 0.01
-    contactBias: 0
-    seed: 1
-    useShatter: 0
-    meshInput: 9
-    properties:
-      colliderType: 0
-      sizeFilter: 0
-      decompose: 0
-      removeCollinear: 1
-      layer: 
-    runtimeCaching:
-      type: 0
-      frames: 3
-      fragments: 1
-      skipFirstDemolition: 0
-      inProgress: 0
-      wasUsed: 0
-      stop: 0
-    badMesh: 0
-    shatterMode: 1
-    totalAmount: 0
-    innerSubId: 0
-    compressPrefab: 1
-    cacheRotationStart: {x: 0, y: 0, z: 0, w: 1}
-    mesh: {fileID: 0}
-    scrShatter: {fileID: 0}
-  clusterDemolition:
-    meshDemolition: 0
-    connectivity: 0
-    contactRadius: 15
-    cluster:
-      id: 0
-      tm: {fileID: 0}
-      rootParent: {fileID: 0}
-      depth: 0
-    damageRadius: 0
-  referenceDemolition:
-    reference: {fileID: 0}
-    randomList: []
-    addRigid: 1
-  materials:
-    innerMaterial: {fileID: 0}
-    mappingScale: 0.1
-    outerMaterial: {fileID: 0}
-    needNewMat: 0
-  damage:
-    enable: 0
-    maxDamage: 100
-    currentDamage: 0
-    collect: 0
-    multiplier: 1
-  fading:
-    onDemolition: 1
-    onActivation: 0
-    lifeType: 4
-    lifeTime: 7
-    lifeVariation: 3
-    fadeType: 0
-    fadeTime: 5
-    sizeFilter: 0
-    state: 0
-    stop: 0
-    position: {x: 0, y: 0, z: 0}
-  reset:
-    transform: 1
-    damage: 1
-    action: 0
-    destroyDelay: 1
-    mesh: 4
-    fragments: 0
-    toBeDestroyed: 0
-    counter: 0
-  meshes: []
-  pivots: []
-  rfMeshes: []
-  subIds: []
-  fragments: []
-  cacheRotation: {x: 0, y: 0, z: 0, w: 0}
-  transForm: {fileID: 0}
-  rootChild: {fileID: 0}
-  rootParent: {fileID: 0}
-  meshFilter: {fileID: 0}
-  meshRenderer: {fileID: 0}
-  skinnedMeshRend: {fileID: 0}
-  debrisList: []
-  dustList: []
 --- !u!23 &1487905795
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2669,6 +1731,88 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1573185622
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1573185623}
+  - component: {fileID: 1573185625}
+  - component: {fileID: 1573185624}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1573185623
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1573185622}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.7662734, y: 1.1633, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 903190038}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1573185624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1573185622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 4beb055f07aaff244873dec698d0363e, type: 3}
+    m_FontSize: 25
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Next
+
+'
+--- !u!222 &1573185625
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1573185622}
+  m_CullTransparentMesh: 0
 --- !u!4 &1672077378 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7152850741380963809, guid: 1b9ce6ab2e35e48298fa6eeb033fce49,
@@ -2846,160 +1990,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb6e52f37bca2404fac00b69fd8d21f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initialization: 1
-  initialized: 0
-  simulationType: 0
-  objectType: 0
-  demolitionType: 1
-  physics:
-    materialType: 8
-    material: {fileID: 0}
-    massBy: 1
-    mass: 55.4
-    colliderType: 0
-    useGravity: 1
-    dampening: 5
-    recorder: 0
-    exclude: 0
-    destructible: 0
-    materialSolidity: 1
-    rotation: {x: 0, y: 0, z: 0, w: 1}
-    position: {x: 0, y: 0, z: 0}
-    velocity: {x: 0, y: 0, z: 0}
-    initScale: {x: 1, y: 1, z: 1}
-    initPosition: {x: 0, y: 0, z: 0}
-    initRotation: {x: 0, y: 0, z: 0, w: 1}
-    rigidBody: {fileID: 0}
-    meshCollider: {fileID: 0}
-    clusterColliders: []
-  activation:
-    byVelocity: 0
-    byOffset: 0
-    byDamage: 0
-    byActivator: 0
-    byImpact: 0
-    byConnectivity: 0
-    unyielding: 0
-    activated: 0
-  restriction:
-    enable: 0
-    breakAction: 9
-    actionDelay: 0
-    checkInterval: 5
-    distance: 30
-    position: 0
-    target: {fileID: 0}
-    collider: {fileID: 0}
-    region: 0
-    broke: 0
-  limitations:
-    solidity: 10
-    depth: 0
-    time: 0.05
-    size: 0.01
-    sliceByBlade: 1
-    slicePlanes: []
-    contactPoint: {x: 0, y: 0, z: 0}
-    demolitionShould: 0
-    demolished: 0
-    birthTime: 0
-    bboxSize: 0
-    currentDepth: 0
-    bound:
-      m_Center: {x: 0, y: 0, z: 0}
-      m_Extent: {x: 0, y: 0, z: 0}
-    ancestor: {fileID: 0}
-    descendants: []
-  meshDemolition:
-    amount: 3
-    variation: 0
-    depthFade: 0.01
-    contactBias: 0
-    seed: 1
-    useShatter: 0
-    meshInput: 9
-    properties:
-      colliderType: 0
-      sizeFilter: 0
-      decompose: 0
-      removeCollinear: 1
-      layer: 
-    runtimeCaching:
-      type: 0
-      frames: 3
-      fragments: 1
-      skipFirstDemolition: 0
-      inProgress: 0
-      wasUsed: 0
-      stop: 0
-    badMesh: 0
-    shatterMode: 1
-    totalAmount: 0
-    innerSubId: 0
-    compressPrefab: 1
-    cacheRotationStart: {x: 0, y: 0, z: 0, w: 1}
-    mesh: {fileID: 0}
-    scrShatter: {fileID: 0}
-  clusterDemolition:
-    meshDemolition: 0
-    connectivity: 0
-    contactRadius: 15
-    cluster:
-      id: 0
-      tm: {fileID: 0}
-      rootParent: {fileID: 0}
-      depth: 0
-    damageRadius: 0
-  referenceDemolition:
-    reference: {fileID: 0}
-    randomList: []
-    addRigid: 1
-  materials:
-    innerMaterial: {fileID: 0}
-    mappingScale: 0.1
-    outerMaterial: {fileID: 0}
-    needNewMat: 0
-  damage:
-    enable: 0
-    maxDamage: 100
-    currentDamage: 0
-    collect: 0
-    multiplier: 1
-  fading:
-    onDemolition: 1
-    onActivation: 0
-    lifeType: 4
-    lifeTime: 7
-    lifeVariation: 3
-    fadeType: 0
-    fadeTime: 5
-    sizeFilter: 0
-    state: 0
-    stop: 0
-    position: {x: 0, y: 0, z: 0}
-  reset:
-    transform: 1
-    damage: 1
-    action: 0
-    destroyDelay: 1
-    mesh: 4
-    fragments: 0
-    toBeDestroyed: 0
-    counter: 0
-  meshes: []
-  pivots: []
-  rfMeshes: []
-  subIds: []
-  fragments: []
-  cacheRotation: {x: 0, y: 0, z: 0, w: 0}
-  transForm: {fileID: 0}
-  rootChild: {fileID: 0}
-  rootParent: {fileID: 0}
-  meshFilter: {fileID: 0}
-  meshRenderer: {fileID: 0}
-  skinnedMeshRend: {fileID: 0}
-  debrisList: []
-  dustList: []
 --- !u!23 &1701046836
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3193,160 +2183,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb6e52f37bca2404fac00b69fd8d21f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initialization: 1
-  initialized: 0
-  simulationType: 0
-  objectType: 0
-  demolitionType: 1
-  physics:
-    materialType: 8
-    material: {fileID: 0}
-    massBy: 1
-    mass: 55.4
-    colliderType: 0
-    useGravity: 1
-    dampening: 5
-    recorder: 0
-    exclude: 0
-    destructible: 0
-    materialSolidity: 1
-    rotation: {x: 0, y: 0, z: 0, w: 1}
-    position: {x: 0, y: 0, z: 0}
-    velocity: {x: 0, y: 0, z: 0}
-    initScale: {x: 1, y: 1, z: 1}
-    initPosition: {x: 0, y: 0, z: 0}
-    initRotation: {x: 0, y: 0, z: 0, w: 1}
-    rigidBody: {fileID: 0}
-    meshCollider: {fileID: 0}
-    clusterColliders: []
-  activation:
-    byVelocity: 0
-    byOffset: 0
-    byDamage: 0
-    byActivator: 0
-    byImpact: 0
-    byConnectivity: 0
-    unyielding: 0
-    activated: 0
-  restriction:
-    enable: 0
-    breakAction: 9
-    actionDelay: 0
-    checkInterval: 5
-    distance: 30
-    position: 0
-    target: {fileID: 0}
-    collider: {fileID: 0}
-    region: 0
-    broke: 0
-  limitations:
-    solidity: 10
-    depth: 0
-    time: 0.05
-    size: 0.01
-    sliceByBlade: 1
-    slicePlanes: []
-    contactPoint: {x: 0, y: 0, z: 0}
-    demolitionShould: 0
-    demolished: 0
-    birthTime: 0
-    bboxSize: 0
-    currentDepth: 0
-    bound:
-      m_Center: {x: 0, y: 0, z: 0}
-      m_Extent: {x: 0, y: 0, z: 0}
-    ancestor: {fileID: 0}
-    descendants: []
-  meshDemolition:
-    amount: 3
-    variation: 0
-    depthFade: 0.01
-    contactBias: 0
-    seed: 1
-    useShatter: 0
-    meshInput: 9
-    properties:
-      colliderType: 0
-      sizeFilter: 0
-      decompose: 0
-      removeCollinear: 1
-      layer: 
-    runtimeCaching:
-      type: 0
-      frames: 3
-      fragments: 1
-      skipFirstDemolition: 0
-      inProgress: 0
-      wasUsed: 0
-      stop: 0
-    badMesh: 0
-    shatterMode: 1
-    totalAmount: 0
-    innerSubId: 0
-    compressPrefab: 1
-    cacheRotationStart: {x: 0, y: 0, z: 0, w: 1}
-    mesh: {fileID: 0}
-    scrShatter: {fileID: 0}
-  clusterDemolition:
-    meshDemolition: 0
-    connectivity: 0
-    contactRadius: 15
-    cluster:
-      id: 0
-      tm: {fileID: 0}
-      rootParent: {fileID: 0}
-      depth: 0
-    damageRadius: 0
-  referenceDemolition:
-    reference: {fileID: 0}
-    randomList: []
-    addRigid: 1
-  materials:
-    innerMaterial: {fileID: 0}
-    mappingScale: 0.1
-    outerMaterial: {fileID: 0}
-    needNewMat: 0
-  damage:
-    enable: 0
-    maxDamage: 100
-    currentDamage: 0
-    collect: 0
-    multiplier: 1
-  fading:
-    onDemolition: 1
-    onActivation: 0
-    lifeType: 4
-    lifeTime: 7
-    lifeVariation: 3
-    fadeType: 0
-    fadeTime: 5
-    sizeFilter: 0
-    state: 0
-    stop: 0
-    position: {x: 0, y: 0, z: 0}
-  reset:
-    transform: 1
-    damage: 1
-    action: 0
-    destroyDelay: 1
-    mesh: 4
-    fragments: 0
-    toBeDestroyed: 0
-    counter: 0
-  meshes: []
-  pivots: []
-  rfMeshes: []
-  subIds: []
-  fragments: []
-  cacheRotation: {x: 0, y: 0, z: 0, w: 0}
-  transForm: {fileID: 0}
-  rootChild: {fileID: 0}
-  rootParent: {fileID: 0}
-  meshFilter: {fileID: 0}
-  meshRenderer: {fileID: 0}
-  skinnedMeshRend: {fileID: 0}
-  debrisList: []
-  dustList: []
 --- !u!23 &1991691270
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3404,10 +2240,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3825219789425221423, guid: 7ac48c187a9fe4ee78541b11d14e11f5,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3825219789426422950, guid: 7ac48c187a9fe4ee78541b11d14e11f5,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3825219789629432349, guid: 7ac48c187a9fe4ee78541b11d14e11f5,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3825219790029026816, guid: 7ac48c187a9fe4ee78541b11d14e11f5,
         type: 3}
@@ -3539,6 +2385,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ui
       objectReference: {fileID: 0}
+    - target: {fileID: 4686524346495465747, guid: 7ac48c187a9fe4ee78541b11d14e11f5,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7467437992814681541, guid: 7ac48c187a9fe4ee78541b11d14e11f5,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7757270901152211208, guid: 7ac48c187a9fe4ee78541b11d14e11f5,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8927566538425499986, guid: 7ac48c187a9fe4ee78541b11d14e11f5,
         type: 3}
       propertyPath: m_IsActive
@@ -3552,6 +2413,18 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 3825219790300484547}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &3825219790300484549 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3825219790029026816, guid: 7ac48c187a9fe4ee78541b11d14e11f5,
+    type: 3}
+  m_PrefabInstance: {fileID: 3825219790300484547}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a9bc05d6d75c4d1fa698853cba2d956, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &5064844358305043623
 PrefabInstance:
   m_ObjectHideFlags: 0

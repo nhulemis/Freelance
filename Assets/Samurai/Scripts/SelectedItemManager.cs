@@ -8,6 +8,17 @@ namespace Samurai.Scripts
 		public static SelectedItemManager instance;
 		public Transform parent;
 
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 
 		void Awake(){
 			if(instance==null){
