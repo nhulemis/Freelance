@@ -1,24 +1,25 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class SwordController : MonoBehaviour
+namespace Samurai.Scripts
 {
-    // Start is called before the first frame update
-    void Start()
-    {
+	public class SwordController : MonoBehaviour
+	{
+		// Start is called before the first frame update
+		void Start()
+		{
         
-    }
+		}
 
-    // Update is called once per frame
-    void Update()
-    {
+		// Update is called once per frame
+		void Update()
+		{
         
-    }
-    private void OnTriggerEnter(Collider other){
+		}
+		private void OnTriggerEnter(Collider other){
     	
-    		print("Yoo Sword Slice");
-    		Handheld.Vibrate();
+			print("Yoo Sword Slice");
+			Handheld.Vibrate();
     	
-    }
+		}
+	}
 }
