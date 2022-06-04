@@ -1,10 +1,11 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class EnvironmentPart : MonoBehaviour
+namespace Arrow.Script
 {
+	public class EnvironmentPart : MonoBehaviour
+	{
 
 	
+	}
 }
 

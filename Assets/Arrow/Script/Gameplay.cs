@@ -1,177 +1,177 @@
 ﻿//using MEC;
-using System.Collections.Generic;
-using System.Linq;
-using UnityEngine;
-using RoadCreator;
+
 using System.Collections;
-using DG.Tweening;
-using UnityEngine.UI;
+using UnityEngine;
+
 //using GameAnalyticsSDK;
 
-public class Gameplay : MonoBehaviour
+namespace Arrow.Script
 {
-	public enum GameState
+	public class Gameplay : MonoBehaviour
 	{
-		Init,
-		Play,
-		Lose,
-		Win,
-		Pause,
-		Resume,
-		Revive
-	}
-
-	[SerializeField] Camera mainCamera;
-	public Camera Camera => mainCamera;
-	private PlayerController character;
-	[SerializeField] Level level;
-	public Level Level => level;
-	[SerializeField] CameraController cameraController;
-	[SerializeField] int levelCount;
-	[SerializeField] ElementAnalysis elementAnalysis;
-
-	public bool Finished { get; private set; } = false;
-	public int EarnedGem { get; set; } = 0;
-
-	public static Gameplay Instance;
-	public float RoadWidth => level.Width;
-	public float Speed { get; set; } = 10;
-
-	private void Awake()
-	{
-		Instance = this;
-		character = GameObject.FindObjectOfType<PlayerController>();	
-	}
-
-	private void OnDestroy()
-	{
-		Instance = null;
-	}
-
-	private void Start()
-	{
-		
-		ChangeState(GameState.Init);
-		Init();
-	}
-
-	public void ChangeState(GameState state)
-	{
-	}
-
-	public void Init()
-	{
-
-		print("GamePlay Init");
-		cameraController.ChaseEnable = true;
-		Finished = true;
-		if(level != null)
+		public enum GameState
 		{
-			level = Instantiate(level);
+			Init,
+			Play,
+			Lose,
+			Win,
+			Pause,
+			Resume,
+			Revive
 		}
-		
-		else
+
+		[SerializeField] Camera mainCamera;
+		public Camera Camera => mainCamera;
+		private PlayerController character;
+		[SerializeField] Level level;
+		public Level Level => level;
+		[SerializeField] CameraController cameraController;
+		[SerializeField] int levelCount;
+		[SerializeField] ElementAnalysis elementAnalysis;
+
+		public bool Finished { get; private set; } = false;
+		public int EarnedGem { get; set; } = 0;
+
+		public static Gameplay Instance;
+		public float RoadWidth => level.Width;
+		public float Speed { get; set; } = 10;
+
+		private void Awake()
 		{
-			print("Yepp Generate Level");
-			level = elementAnalysis.GenerateLevel(Random.Range(0.6f, 1f));
+			Instance = this;
+			character = GameObject.FindObjectOfType<PlayerController>();	
 		}
+
+		private void OnDestroy()
+		{
+			Instance = null;
+		}
+
+		private void Start()
+		{
 		
-		level.transform.SetParent(transform);
-		level.Init();
-		character.MoveTo(level.CurrentPart.GetPointAtTime(GameConstanst.StartPosition / level.CurrentPart.Length));
-		Speed = level.CurrentPart.Speed;
-		EarnedGem = 0;
+			ChangeState1(GameState.Init);
+			Ini2t();
+		}
+
+		public void ChangeState1(GameState state)
+		{
+		}
+
+		public void Ini2t()
+		{
+
+			print("GamePlay Init");
+			cameraController.ChaseEnable = true;
+			Finished = true;
+			if(level != null)
+			{
+				level = Instantiate(level);
+			}
 		
-	}
+			else
+			{
+				print("Yepp Generate Level");
+				level = elementAnalysis.GenerateLevel(Random.Range(0.6f, 1f));
+			}
+		
+			level.transform.SetParent(transform);
+			level.Init();
+			character.MoveTo(level.CurrentPart.GetPointAtTime(GameConstanst.StartPosition / level.CurrentPart.Length));
+			Speed = level.CurrentPart.Speed;
+			EarnedGem = 0;
+		
+		}
 
-	public void Play()
-	{	
-		ChangeState(GameState.Play);		
-	}
+		public void Play()
+		{	
+			ChangeState1(GameState.Play);		
+		}
 
-	public void Lose()
-    {
-		ChangeState(GameState.Lose);
-    }
+		public void Lose()
+		{
+			ChangeState1(GameState.Lose);
+		}
 
-	public void Win()
-	{
-		ChangeState(GameState.Win);
-	}
+		public void Win()
+		{
+			ChangeState1(GameState.Win);
+		}
 
    
-    public void DoFrame()
-	{
-		if(!Finished)
+		public void DoFrame()
 		{
-			level.DoFrame();
-		}
+			if(!Finished)
+			{
+				level.DoFrame();
+			}
 		
-		character.DoFrame();
+			character.DoFrame();
 
-	    if (!character.HitObstacle)
-		{
-			cameraController.Chase(character.FollowCam);
+			if (!character.HitObstacle)
+			{
+				cameraController.Chase(character.FollowCam);
+			}
+
 		}
-
-	}
 	
-	public void Land()
-	{
-
-		if(Finished)
+		public void Land()
 		{
-			return;
-		}
+
+			if(Finished)
+			{
+				return;
+			}
 		
-		Finished = true;
+			Finished = true;
 	  
-	}
+		}
 	
-	public void SpeedUp()
-	{
-		var targetSpeed = level.CurrentPart.Speed * 8f;
-		StartCoroutine(IEChangeSpeed(targetSpeed, 5));
-	}
-
-	Coroutine speedDownCoroutine;
-	public void SpeedDown()
-	{
-		var targetSpeed = level.CurrentPart.Speed * 0.8f;
-		if(Speed <= targetSpeed)
+		public void SpeedUp()
 		{
-			return;
+			var targetSpeed = level.CurrentPart.Speed * 8f;
+			StartCoroutine(IEChangeSpeed(targetSpeed, 5));
 		}
 
-		if(speedDownCoroutine != null)
-			StopCoroutine(speedDownCoroutine);
-		speedDownCoroutine = StartCoroutine(IEChangeSpeed(targetSpeed, 1f));
-	}
+		Coroutine speedDownCoroutine;
+		public void SpeedDown()
+		{
+			var targetSpeed = level.CurrentPart.Speed * 0.8f;
+			if(Speed <= targetSpeed)
+			{
+				return;
+			}
 
-	IEnumerator IEChangeSpeed(float target, float totalTime)
-	{
-		Speed = target;
-		yield return new WaitForSeconds(totalTime);
-		Speed = level.CurrentPart.Speed;
-	}
+			if(speedDownCoroutine != null)
+				StopCoroutine(speedDownCoroutine);
+			speedDownCoroutine = StartCoroutine(IEChangeSpeed(targetSpeed, 1f));
+		}
 
-	public void ShowKeyAmount()
-	{
+		IEnumerator IEChangeSpeed(float target, float totalTime)
+		{
+			Speed = target;
+			yield return new WaitForSeconds(totalTime);
+			Speed = level.CurrentPart.Speed;
+		}
+
+		public void ShowKeyAmount()
+		{
 		
-	}
+		}
 
-	private void Update()
-	{
-		DoFrame();
-	} 
-	public void finish()
-    {
-		Finished = true;
+		private void Update()
+		{
+			DoFrame();
+		} 
+		public void finish()
+		{
+			Finished = true;
 		
-    }
-	public void startPlay()
-    {
-		Finished = false;
+		}
+		public void startPlay()
+		{
+			Finished = false;
 
+		}
 	}
 }

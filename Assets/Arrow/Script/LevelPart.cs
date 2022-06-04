@@ -1,39 +1,40 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public abstract class LevelPart : MonoBehaviour
+namespace Arrow.Script
 {
-	public float Width => 3;
-	[SerializeField] float speed = 10;
-	public float Speed => speed;
-	public LevelPart Backward;
-	public LevelPart Next;
-
-	public abstract void Init();
-	public abstract Vector3 GetPointAtTime(float t);
-	public abstract Quaternion GetDirectionAtTime(float t);
-	public abstract float Length { get; }
-	public abstract Vector3 EndPoint { get; }
-	public abstract Vector3 OutDirection { get; }
-	public abstract bool IsAirLine { get; }
-
-	public virtual void Enter()
+	public abstract class LevelPart : MonoBehaviour
 	{
+		public float Width => 3;
+		[SerializeField] float speed = 10;
+		public float Speed => speed;
+		public LevelPart Backward;
+		public LevelPart Next;
 
-	}
+		public abstract void Init();
+		public abstract Vector3 GetPointAtTime(float t);
+		public abstract Quaternion GetDirectionAtTime(float t);
+		public abstract float Length { get; }
+		public abstract Vector3 EndPoint { get; }
+		public abstract Vector3 OutDirection { get; }
+		public abstract bool IsAirLine { get; }
 
-	public virtual void Exit()
-	{
-
-	}
-
-	public void SetActiveEnvironment(bool _active)
-	{
-		var environmentParts = GetComponentsInChildren<EnvironmentPart>(true);
-		foreach (var e in environmentParts)
+		public virtual void Enter()
 		{
-			e.gameObject.SetActive(_active);
+
+		}
+
+		public virtual void Exit()
+		{
+
+		}
+
+		public void SetActiveEnvironm1ent(bool _active)
+		{
+			var environmentParts = GetComponentsInChildren<EnvironmentPart>(true);
+			foreach (var e in environmentParts)
+			{
+				e.gameObject.SetActive(_active);
+			}
 		}
 	}
 }

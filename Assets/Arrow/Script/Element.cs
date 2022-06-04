@@ -1,93 +1,96 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 using RoadCreator;
+using UnityEngine;
 
-public abstract class Element : MonoBehaviour
+namespace Arrow.Script
 {
-	[SerializeField] float position;
-	public float Position
-    {
-		get
-        {
-			return groupElement == null ? position : position + groupElement.Position;
-        }
-    }
-	public float LocalPosition => position;
-	public void SetPosition(float p)
+	public abstract class Element : MonoBehaviour
 	{
-		position = p;
-	}
-	public abstract void Init();
-	public abstract void OnHit(GameObject collider);
-	protected GroupPath groupPath;
-	protected GroupElement groupElement;
-
-	float lastPosition = 0.001f;
-	float tmpPos;
-	public void UpdatePosition()
-    {
-		groupElement = transform.parent != null ? transform.parent.GetComponent<GroupElement>() : null;
-		if(groupElement == null)
+		[SerializeField] float position;
+		public float Position
 		{
-			groupPath = GetComponentInParent<GroupPath>();
-		} else
-		{
-			groupPath = transform.parent != null ? transform.parent.GetComponentInParent<GroupPath>() : null;
+			get
+			{
+				return groupElement == null ? position : position + groupElement.Position;
+			}
 		}
-
-		if (groupPath == null)
-        {
-			return;
-        }
-
-		if (!groupPath.Initialized)
+		public float LocalPosition => position;
+		public void SetPosition(float p)
 		{
-			return;
+			position = p;
 		}
+		public abstract void Init();
+		public abstract void OnHit(GameObject collider);
+		protected GroupPath groupPath;
+		protected GroupElement groupElement;
 
-
-		if (lastPosition == position)
+		float lastPosition = 0.001f;
+		float tmpPos;
+		public void UpdatePosition()
 		{
-			return;
-		}
+			groupElement = transform.parent != null ? transform.parent.GetComponent<GroupElement>() : null;
+			if(groupElement == null)
+			{
+				groupPath = GetComponentInParent<GroupPath>();
+			} else
+			{
+				groupPath = transform.parent != null ? transform.parent.GetComponentInParent<GroupPath>() : null;
+			}
 
-		if (groupElement != null)
-		{
-			//Debug.LogError(gameObject.gameObject + ", " + groupElement.name + ", " + Position + "," + groupPath.Length);
-		}
+			if (groupPath == null)
+			{
+				return;
+			}
+
+			if (!groupPath.Initialized)
+			{
+				return;
+			}
+
+
+			if (lastPosition == position)
+			{
+				return;
+			}
+
+			if (groupElement != null)
+			{
+				//Debug.LogError(gameObject.gameObject + ", " + groupElement.name + ", " + Position + "," + groupPath.Length);
+			}
 			
-		float tmpPos = Mathf.Clamp01(Position / groupPath.Length);
-		transform.position = groupPath.GetPointAtTime(tmpPos);
-		transform.rotation = groupPath.GetDirectionAtTime(tmpPos);
-		lastPosition = position;
-	}
-	protected virtual void ManualValidate()
-    {
+			float tmpPos = Mathf.Clamp01(Position / groupPath.Length);
+			transform.position = groupPath.GetPointAtTime(tmpPos);
+			transform.rotation = groupPath.GetDirectionAtTime(tmpPos);
+			lastPosition = position;
+		}
+		protected virtual void ManualValidate()
+		{
 
-    }
+		}
 
 #if UNITY_EDITOR
-	private void OnValidate()
-	{
-		if (!isActiveAndEnabled)
+		private void OnValidate()
 		{
-			return;
-		}
+			if (!isActiveAndEnabled)
+			{
+				return;
+			}
 
-		if (Application.isPlaying)
-		{
-			return;
+			if (Application.isPlaying)
+			{
+				return;
+			}
+			UpdatePosition();
+			ManualValidate();
 		}
-		UpdatePosition();
-		ManualValidate();
-	}
 #endif
-}
+	}
 
-[System.Serializable]
-public struct ElementData
-{
-	public float position;
-	public Element element;
+	[System.Serializable]
+	public struct ElementData
+	{
+		public float position;
+		public Element element;
+	}
 }

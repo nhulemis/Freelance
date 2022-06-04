@@ -1,25 +1,26 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class StageController : MonoBehaviour
+namespace Arrow.Script
 {
-    public BossController[] boss;
-    // Start is called before the first frame update
-    void Start()
+    public class StageController : MonoBehaviour
     {
-        boss = this.GetComponentsInChildren<BossController>();
-    }
+        public BossController[] boss;
+        // Start is called before the first frame update
+        void Start()
+        {
+            boss = this.GetComponentsInChildren<BossController>();
+        }
 
-    // Update is called once per frame
-    void Update()
-    {
+        // Update is called once per frame
+        void Update()
+        {
         
-    }
+        }
 
-    public BossController[] getBosses()
-    {
-        return boss;
-    }
+        public BossController[] getBosses()
+        {
+            return boss;
+        }
 
+    }
 }
