@@ -32,10 +32,13 @@ namespace FashionWalkingDeath.Scripts
         {
 
         }
-        protected void move()
+        protected void move1()
         {
             if (canWalk)
             {
+                
+                
+                
                 this.transform.Translate(Vector3.forward * Time.deltaTime * movementSpeed);
             }
             else if (isStartShow)

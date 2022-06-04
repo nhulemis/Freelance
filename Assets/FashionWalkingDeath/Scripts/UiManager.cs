@@ -70,24 +70,15 @@ namespace FashionWalkingDeath.Scripts
             
             outFitFeedbackUi.SetActive(true);
         }
-        public void reloadLevel()
+        public void ReloadLevel()
         {
             SceneManager.LoadScene("FashionWalkingDeath/Scenes/Scenes/MainScene");
         }
         public void looseLevel1()
         {
-            
-            
-            
-            
-            looseLevelUi.SetActive(true);
-            outFitFeedbackUi.SetActive(false);
-            
-            
-            
-            
+            ReloadLevel();
         }
-        public void completeLevel()
+        public void completeLevel1()
         {
 
             completedLevelUi.SetActive(true);
@@ -113,7 +104,7 @@ namespace FashionWalkingDeath.Scripts
                 currentLevel = 0;
             PlayerPrefs.SetInt("CurrentLevelIndex", currentLevel);
 
-            reloadLevel();
+            ReloadLevel();
 
         }
         public void enableConceptUi1()

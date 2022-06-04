@@ -14,6 +14,10 @@ namespace FashionWalkingDeath.Scripts
         private void Awake()
         {
             if (!instance) instance = this;
+            
+            
+            
+            
             else if (instance != this) Destroy(this.gameObject);
         }
 
@@ -33,6 +37,9 @@ namespace FashionWalkingDeath.Scripts
             int currentLevelIndex = PlayerPrefs.GetInt("CurrentLevelIndex");
             if (currentLevelIndex >= levelsData.Length)
                 currentLevelIndex = 0;
+            
+            
+            
             return levelsData[currentLevelIndex];
         }
         public Sprite[] getCurrentLevelSprite(int avatarIndex)
@@ -48,6 +55,18 @@ namespace FashionWalkingDeath.Scripts
             {
                 data = levelsData[currentLevelIndex].retriveshoesItems();
             }
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
             else if (avatarIndex == 2)
             {
                 data = levelsData[currentLevelIndex].retriveSkirtItems();

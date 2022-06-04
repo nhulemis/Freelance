@@ -18,7 +18,7 @@ namespace FashionWalkingDeath.Scripts
         void Awake()
         {
             makeMainCharacter();
-            makeAiCharacter();
+            makeAiCharacte1r();
         }
 
         // Update is called once per frame
@@ -32,9 +32,12 @@ namespace FashionWalkingDeath.Scripts
             playerObject.GetComponent<CharacterManager>().setMainStartPos(playerMainStartPos);
             playerObject.transform.position = mainCharacterPos.position;
         }
-        private void makeAiCharacter() {
+        private void makeAiCharacte1r() {
 
             GameObject aiObject = Instantiate(aiCharacterObject, Vector3.zero, Quaternion.identity);
+            
+            
+            
             aiObject.transform.position = aiCharacterPos.position;
 
 

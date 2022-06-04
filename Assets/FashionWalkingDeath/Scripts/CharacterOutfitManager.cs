@@ -64,7 +64,7 @@ namespace FashionWalkingDeath.Scripts
                 {
                     print("Select Tshirt Outfit");
                     //NpcOutfitController.instance.changeOutfit(avataIndex);
-                    sportOutfitS.selectTshirtOutfits(index, avataIndex);
+                    sportOutfitS.selectTshirtOutfits1(index, avataIndex);
 
                 }
                 if (avataIndex == 1)

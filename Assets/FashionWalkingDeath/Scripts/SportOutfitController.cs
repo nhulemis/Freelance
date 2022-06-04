@@ -21,9 +21,13 @@ namespace FashionWalkingDeath.Scripts
         {
 
         }
-        public void selectTshirtOutfits(int levelIndex, int hairIndex)
+        public void selectTshirtOutfits1(int levelIndex, int hairIndex)
         {
             disableTopOutfit();
+            
+            
+            
+            
             print("Changing Sport Hair levele index : " + levelIndex + " & selected hair is :" + hairIndex);
             sportLevels[0].selectTshirtItem(levelIndex);
         }
@@ -31,6 +35,11 @@ namespace FashionWalkingDeath.Scripts
         {
             print("Changing Sport Hair levele index : " + levelIndex + " & selected hair is :" + hairIndex);
             sportLevels[0].selectHairItem(levelIndex);
+            
+            
+            
+            
+            
         }
         public void selectShoeOutfits(int levelIndex, int hairIndex)
         {

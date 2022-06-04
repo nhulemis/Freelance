@@ -29,6 +29,11 @@ namespace FashionWalkingDeath.Scripts
             nightClubLevels[0].selectTopDressItem(levelIndex);
         }
         public void selectHairOutfits(int levelIndex,int hairIndex)
+        
+        
+        
+        
+        
         {
             print("Changing Hair levele index : " + levelIndex + " & selected hair is :" + hairIndex);
             nightClubLevels[0].selectHairItem(levelIndex);

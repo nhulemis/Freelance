@@ -67,7 +67,7 @@ namespace FashionWalkingDeath.Scripts
                 }
                 else
                 {
-                    move();
+                    move1();
                 }
 
             }
@@ -140,7 +140,7 @@ namespace FashionWalkingDeath.Scripts
         }
         public void delatWin()
         {
-            UiManager.instance.completeLevel();
+            UiManager.instance.completeLevel1();
 
         }
         public void cry()

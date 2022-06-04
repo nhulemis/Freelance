@@ -29,7 +29,13 @@ namespace FashionWalkingDeath.Scripts
         }
         public void updateFeedbackProgress()
         {
+            
+            
             print("Update Player Feedback Ui");
+            
+            
+            
+            
             float filled = progressFill.fillAmount;
             if (filled < 1f)
             {

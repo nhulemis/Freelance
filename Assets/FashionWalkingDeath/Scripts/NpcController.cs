@@ -23,7 +23,7 @@ namespace FashionWalkingDeath.Scripts
         // Update is called once per frame
         void Update()
         {
-            move();
+            move1();
         }
         public void enableRunAnimto()
         {
