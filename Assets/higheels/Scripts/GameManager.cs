@@ -1,36 +1,44 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class GameManager : MonoBehaviour
+namespace higheels.Scripts
 {
-    public enum GameState { wait,play,end};
-    public GameState currentGameState;
-    public static GameManager instance;
-    private void Awake()
+    public class GameManager : MonoBehaviour
     {
-        if (!instance) instance = this;
-        else if (instance != this) Destroy(this.gameObject);
-    }
-    // Start is called before the first frame update
-    void Start()
-    {
+        public enum GameState { wait,play,end};
+        public GameState currentGameState;
+        public static GameManager instance;
+        private void Awake()
+        {
+            if (!instance) instance = this;
+            else if (instance != this) Destroy(this.gameObject);
+        }
+        // Start is called before the first frame update
+        void Start()
+        {
         
-    }
+        }
 
-    // Update is called once per frame
-    void Update()
-    {
+        // Update is called once per frame
+        void Update()
+        {
         
-    }
-    public void startPlay()
-    {
-        currentGameState = GameState.play;
+        }
+        public void startPlay()
+        {
+            currentGameState = GameState.play;
+
+        }
+        public void endPlay()
+        
+        
+        
+        
+        {
+            
+            
+            
+            currentGameState = GameState.end;
+        }
 
     }
-    public void endPlay()
-    {
-        currentGameState = GameState.end;
-    }
-
 }

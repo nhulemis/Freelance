@@ -1,63 +1,70 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class HeelStand : MonoBehaviour
+namespace higheels.Scripts
 {
-    public int childIndex;
-    [SerializeField]
-    GameObject effect;
-    GameObject effectHolder;
-    Vector3 effectLocalPosition;
-    // Start is called before the first frame update
-    void Start()
+    public class HeelStand : MonoBehaviour
     {
-        effectLocalPosition = new Vector3(0, -.9f, .12f);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-    private void OnTriggerEnter(Collider other)
-    {
-        //effectHolder.SetActive(true);
-        //effectHolder.transform.position = other.transform.position;
-        if (other.gameObject.CompareTag("Bridge Slide"))
+        public int childIndex;
+        [SerializeField]
+        GameObject effect;
+        GameObject effectHolder;
+        Vector3 effectLocalPosition;
+        // Start is called before the first frame update
+        void Start()
         {
-            createSlidesEffect();
+            effectLocalPosition = new Vector3(0, -.9f, .12f);
         }
-        if (other.gameObject.CompareTag("End"))
+
+        // Update is called once per frame
+        void Update()
         {
-            if (effectHolder)
+        
+        }
+        private void OnTriggerEnter(Collider other)
+        {
+            //effectHolder.SetActive(true);
+            
+            
+            
+            //effectHolder.transform.position = other.transform.position;
+            if (other.gameObject.CompareTag("Bridge Slide"))
             {
-                Destroy(effectHolder);
+                
+                
+                
+                createSlidesEffect();
+            }
+            if (other.gameObject.CompareTag("End"))
+            {
+                if (effectHolder)
+                {
+                    Destroy(effectHolder);
+                }
             }
         }
-    }
-    private void OnTriggerStay(Collider other)
-    {
-        if (other.gameObject.CompareTag("Bridge Slide"))
+        private void OnTriggerStay(Collider other)
         {
-            //effectHolder.transform.position = other.contacts[0].point;
-            if(effectHolder)
-            effectHolder.transform.localPosition =effectLocalPosition ;
+            if (other.gameObject.CompareTag("Bridge Slide"))
+            {
+                //effectHolder.transform.position = other.contacts[0].point;
+                if(effectHolder)
+                    effectHolder.transform.localPosition =effectLocalPosition ;
+            }
         }
-    }
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.gameObject.CompareTag("Bridge Slide"))
+        private void OnTriggerExit(Collider other)
         {
-            if(effectHolder)
-            Destroy(effectHolder);
+            if (other.gameObject.CompareTag("Bridge Slide"))
+            {
+                if(effectHolder)
+                    Destroy(effectHolder);
+            }
+
+        }
+        private void createSlidesEffect()
+        {
+            effectHolder = Instantiate(effect, Vector3.zero, Quaternion.identity, this.transform);
+
         }
 
     }
-    private void createSlidesEffect()
-    {
-        effectHolder = Instantiate(effect, Vector3.zero, Quaternion.identity, this.transform);
-
-    }
-
 }
