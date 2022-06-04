@@ -5,8 +5,22 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
+
+
 public class HomeMenu : MonoBehaviour
 {
+    
+    public  static bool isGameStart;
+
+    public void SetStart(bool v)
+    {
+        isGameStart = v;
+    }
+
+    public static void SetStartS(bool v)
+    {
+        isGameStart = v;
+    }
     public GameObject btnTouchMe;
     // Start is called before the first frame update
     void Start()
