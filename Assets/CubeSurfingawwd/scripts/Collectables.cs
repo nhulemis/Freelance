@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace CubeSurfing.scripts
+namespace CubeSurfingawwd.scripts
 {
     public class Collectables : MonoBehaviour
     {

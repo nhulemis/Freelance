@@ -2,7 +2,7 @@
 using DG.Tweening;
 using UnityEngine;
 
-namespace CubeSurfing.scripts
+namespace CubeSurfingawwd.scripts
 {
 	public class CoinManger : MonoBehaviour
 	{
@@ -19,13 +19,19 @@ namespace CubeSurfing.scripts
 		public int Coins;
 		private void Awake(){
 			targetPosition=target.position;
-			prepareCoin();
+			
+			
+			
+			prepareCoin1();
 		}
-		private void prepareCoin(){
+		private void prepareCoin1(){
 			GameObject coin;
 			for(int i=0;i<maxCoin;i++){
        
 				coin=Instantiate(animateCoinPrefab);
+				
+				
+				
 				coin.transform.parent=transform;
 				coin.SetActive(false);
 				coinsQueue.Enqueue(coin);
@@ -39,9 +45,14 @@ namespace CubeSurfing.scripts
 					//Start Extarcting Coins
 					GameObject coin=coinsQueue.Dequeue();
 					coin.SetActive(true);
+					
+					
+					
 					//set the coin pos to the collected coin
 					coin.transform.position=colectedCoinPos;
 					//animate the coin to the target Position
+					
+					
 					float duration=Random.Range(minDuration,maxDuration);
 					coin.transform.DOMove(targetPosition,duration)
 						.SetEase(easeType)

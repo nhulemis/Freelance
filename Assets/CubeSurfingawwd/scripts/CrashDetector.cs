@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace CubeSurfing.scripts
+namespace CubeSurfingawwd.scripts
 {
     public class CrashDetector : MonoBehaviour
     {
@@ -19,6 +19,10 @@ namespace CubeSurfing.scripts
         {
             if (collision.transform.tag == "up")
             {
+                
+                
+                
+                
                 CharactereController.state = CharactereController.gameState.stop;
             
             }

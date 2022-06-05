@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace CubeSurfing.scripts
+namespace CubeSurfingawwd.scripts
 {
     public class CamController : MonoBehaviour
     {
@@ -26,6 +26,9 @@ namespace CubeSurfing.scripts
         {
             if(canTurn)
                 transform.RotateAround(target.position,Vector3.up,Time.deltaTime*20);
+            
+            
+            
             transform.localPosition = Vector3.Lerp(this.transform.localPosition,new Vector3(transform.localPosition.x,(target.position.y-offset.y)/2 ,transform.localPosition.z),inputSmooth);
   
         }

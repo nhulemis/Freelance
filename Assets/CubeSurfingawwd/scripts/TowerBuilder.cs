@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-namespace CubeSurfing.scripts
+namespace CubeSurfingawwd.scripts
 {
     public class TowerBuilder : MonoBehaviour
     {
@@ -46,7 +46,7 @@ namespace CubeSurfing.scripts
                 if (color.color == other.gameObject.GetComponent<MeshRenderer>().material.color)
                 {
                     cubeCollectSound.Play();
-                    player.Instances.jump();
+                    player.Instances.jump1();
                     current_up.tag = "Untagged";
 
                     current_up = other.gameObject;
@@ -77,7 +77,7 @@ namespace CubeSurfing.scripts
             {
                 //print("Yeahhh More Speed");
                 speedUp.Play();
-                CharactereController.instance.changeSpped(10);
+                CharactereController.instance.changeSpped1(10);
                 CamController.instance.activateSpeed();
             }if (other.gameObject.tag == "Coin")
             {

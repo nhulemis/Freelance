@@ -2,7 +2,7 @@
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-namespace CubeSurfing.scripts{
+namespace CubeSurfingawwd.scripts{
 public class GameManager : MonoBehaviour
 {
     public GameObject idlePanel;
@@ -39,17 +39,11 @@ public class GameManager : MonoBehaviour
             if (Instance != this)
                 Destroy(this);
         }
-       //GoogleAdMobController.instance.RequestAndLoadInterstitialAd();
-          //Advertisements.Instance.Initialize(); 
-          
-          
-          
+       
+        
           
        ingame.SetActive(false);
-        int i = PlayerPrefs.GetInt("current_level");
-        if(SceneManager.GetActiveScene().buildIndex!=i){
-            SceneManager.LoadScene(i);
-        }
+       
           setLevel();
            oldScore=PlayerPrefs.GetInt("current_score");
            globalScore.text=oldScore.ToString();
@@ -142,7 +136,7 @@ public class GameManager : MonoBehaviour
        
         
 
-      SceneManager.LoadScene("1" );
+      SceneManager.LoadScene("3" );
        
     }
     public void addScore(Vector3 position)
@@ -158,7 +152,7 @@ public class GameManager : MonoBehaviour
     public void loadscene()
     {
         
-            SceneManager.LoadScene("1");
+            SceneManager.LoadScene("3");
     }
     private void setLevel(){
          int i = PlayerPrefs.GetInt("current_level");

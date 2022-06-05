@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-namespace CubeSurfing.scripts
+namespace CubeSurfingawwd.scripts
 {
     public class SliderController : MonoBehaviour
     {
@@ -15,6 +15,9 @@ namespace CubeSurfing.scripts
         {
             playerTrans=GameObject.FindGameObjectWithTag("Player").transform;
             startPos=playerTrans.position;
+            
+            
+            
             endpos=GameObject.FindGameObjectWithTag("Ending").transform.position;
             distance=(endpos-startPos).magnitude;
         

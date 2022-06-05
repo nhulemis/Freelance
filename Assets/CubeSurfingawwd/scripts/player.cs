@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-namespace CubeSurfing.scripts
+namespace CubeSurfingawwd.scripts
 {
     public class player : MonoBehaviour
     {
@@ -21,8 +21,11 @@ namespace CubeSurfing.scripts
                     Destroy(this);
             }
             render=this.GetComponent<Renderer>();
+            
+            
+            
             mat.mainTexture =mTexture;
-            activateCharactere();
+            activateCharactere1();
         }
 
         // Update is called once per frame
@@ -36,17 +39,23 @@ namespace CubeSurfing.scripts
             {
                 CharactereController.state = CharactereController.gameState.stop;
                 GameManager.Instance.gameloose();
+                
+                
+                
             }else if (collision.gameObject.tag == "Finish")
             {
                 CamController.instance.startTurning();
                 anim.SetBool("Dance", true);
+                
+                
+                
                 CharactereController.state = CharactereController.gameState.stop;
                 GameManager.Instance.gameWin();
                 GameManager.Instance.addLevel();
 
             }
         }
-        public void jump()
+        public void jump1()
         {
             StartCoroutine("start_jump");
 
@@ -58,7 +67,7 @@ namespace CubeSurfing.scripts
             anim.SetBool("Fall", false);
 
         }
-        private void activateCharactere(){
+        private void activateCharactere1(){
             int  charactereLength=this.transform.childCount;
             int selectedChatactere=PlayerPrefs.GetInt("SelectedCharactere");
             for(int i=0;i<charactereLength;i++){

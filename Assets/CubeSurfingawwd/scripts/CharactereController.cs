@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace CubeSurfing.scripts
+namespace CubeSurfingawwd.scripts
 {
     public class CharactereController : MonoBehaviour
     {
@@ -13,6 +13,10 @@ namespace CubeSurfing.scripts
         private Vector3 direction;
         private float t = 1;  
         private float minx, maxx;
+        
+        
+        
+        
         private bool forward;
         private bool left;
         private Vector3 offset;
@@ -29,6 +33,10 @@ namespace CubeSurfing.scripts
             left = false;
             minx = -1.95f;
             maxx = 1.95f;
+            
+            
+            
+            
             forward = true;
             direction = transform.forward;
             state = gameState.stop;
@@ -43,6 +51,10 @@ namespace CubeSurfing.scripts
                 targetpos.y = 0;
            
                 Quaternion newrotation = Quaternion.LookRotation(targetpos);
+                
+                
+                
+                
                 transform.rotation = Quaternion.Lerp(this.transform.rotation, newrotation, Time.deltaTime * 10);
             }
             if (left)
@@ -113,9 +125,15 @@ namespace CubeSurfing.scripts
                 curentpos = Vector3.zero;
                 offset = Vector3.zero;
                 t = -1;
+                
+                
+                
                 direction = transform.right;
                 rotate = true;
                 forward = false;
+                
+                
+                
             }
             if (other.gameObject.tag == "left")
             {
@@ -123,6 +141,10 @@ namespace CubeSurfing.scripts
                 maxx = 114.5f;
                 curentpos = Vector3.zero;
                 offset = Vector3.zero;
+                
+                
+                
+                
                 t = 1;
                 direction =- transform.right;
                 left = true;
@@ -136,11 +158,14 @@ namespace CubeSurfing.scripts
 
 
         }
-        public void changeSpped(int value){
+        public void changeSpped1(int value){
             speed+=value;
-            Invoke("resetSpeed",2f);
+            Invoke("resetSpeed1",2f);
         }
-        private void resetSpeed(){
+        private void resetSpeed1(){
+            
+            
+            
             speed=12;
         }
 

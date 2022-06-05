@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-namespace CubeSurfing.scripts
+namespace CubeSurfingawwd.scripts
 {
 	public class SettingItemButton : MonoBehaviour
 	{
