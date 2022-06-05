@@ -12,6 +12,8 @@ namespace Samurai.Scripts
             obj=GameObject.FindWithTag("AttackSlicer");
 
             rb=GetComponent<Rigidbody>();
+            
+            
             Destroy(this.gameObject,4f);
         }
 
@@ -33,6 +35,8 @@ namespace Samurai.Scripts
         }
         private void OnCollisionEnter(Collision other){
             if(other.gameObject.CompareTag("Sword")){
+                
+                
                 print("Sword and Bullet Collsion");
                 rb.velocity=Vector3.zero;
             }

@@ -9,6 +9,8 @@ namespace Samurai.Scripts
         public bool rotate;
         private bool stop=false;
         public static CameraController instance;
+        
+        
         void Awake(){
             if(instance==null){
                 
@@ -23,6 +25,8 @@ namespace Samurai.Scripts
                 instance=this;
 
             }else if(instance!=this){
+                
+                
                 Destroy(this.gameObject);
             }
         }
@@ -49,10 +53,10 @@ namespace Samurai.Scripts
             }
     	
         }
-        public void startRotating(){
+        public void startRotatingu(){
             rotate=true;
         }
-        public void stopFollowing(){
+        public void stopFollowingk(){
             stop=true;
         }
 

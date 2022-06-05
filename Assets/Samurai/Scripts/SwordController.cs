@@ -17,8 +17,6 @@ namespace Samurai.Scripts
 		}
 		private void OnTriggerEnter(Collider other){
     	
-			print("Yoo Sword Slice");
-			Handheld.Vibrate();
     	
 		}
 	}

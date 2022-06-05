@@ -12,7 +12,6 @@ namespace Samurai.Scripts
         public GameObject playUi;
         public GameObject winUi;
         public GameObject nextButton;
-        public GameObject failUi;
         public GameObject happyUi;
         public GameObject collectedCoin;
         public GameObject xCoinButton;
@@ -66,19 +65,25 @@ namespace Samurai.Scripts
         }
         public void dragToPlay(){
             GameManager.instance.enablePlayMode();
-            startPlayMode();
+            startPlayModel();
         }
-        public void startPlayMode(){
+        public void startPlayModel(){
             playUi.SetActive(false);
 
         }
-        public void win(){
+        public void winh(){
         
             winUi.SetActive(true);
+            
+            
+            
             StartCoroutine("paneelsDelay",.5f);
         } 
         IEnumerator paneelsDelay(){
             happyUi.SetActive(true);
+            
+            
+            
             yield return new WaitForSeconds(2f);
             collectedCoin.SetActive(true);
        
@@ -86,12 +91,12 @@ namespace Samurai.Scripts
         
         
         
-            StartCoroutine("coinTextIncremetorDelay");
+            StartCoroutine("coinTextIncremetorDelayr");
             xCoinButton.SetActive(true);
 
         }
         int tempCoin=0;
-        IEnumerator coinTextIncremetorDelay(){
+        IEnumerator coinTextIncremetorDelayr(){
             coinM.animate(coinSP.position,1);
             yield return new WaitForSeconds(.00001f);
             if(tempCoin<200){
@@ -109,12 +114,14 @@ namespace Samurai.Scripts
 
 
         }
-        public void levelFail()
+        public void levelFail1()
         {
 
             goooNextLevel();
         }
         public void retry(){
+            
+            
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);        
         }
         public void skipLevel(){      
@@ -122,10 +129,9 @@ namespace Samurai.Scripts
         }
         public void goooNextLevel(){
         
-            SceneManager.LoadScene("1");
+            SceneManager.LoadScene("3");
         }
         public void gooShopping(){
-            SceneManager.LoadScene("Shop");
         }
         private void setLevelText(){
             currentLevelText.text="level:"+currentLevel;

@@ -30,7 +30,7 @@ namespace Samurai.Scripts
             currentState=GameState.play;
         } public void enableEndyMode(){
             currentState=GameState.end;
-            UiManager.instance.win();
+            UiManager.instance.winh();
 
         } public void enableWaitMode(){
             currentState=GameState.wait;

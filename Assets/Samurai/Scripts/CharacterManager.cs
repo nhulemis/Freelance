@@ -27,7 +27,7 @@ namespace Samurai.Scripts
         void Start()
         {
             rb=GetComponent<Rigidbody>();
-            selectCharactere(); 
+            selectCharactereh(); 
         }
 
         // Update is called once per frame
@@ -73,14 +73,14 @@ namespace Samurai.Scripts
                         anim.SetBool("inAir",true);
 
                     }
-                    move();
+                    moveu();
                     break;
 
             }
         
          
         }
-        private void move(){
+        private void moveu(){
         
             if(joystick.Horizontal!=0 || joystick.Vertical!=0){
                 if(onGround){
@@ -105,7 +105,6 @@ namespace Samurai.Scripts
 
         }
         private void jump(){
-            print("Jump");
             rb.AddForce((transform.forward*forwardJumpForce+Vector3.up*upJumpForce)*jumpForce);
         }
         private bool isOnGround(){
@@ -133,55 +132,53 @@ namespace Samurai.Scripts
         private void OnCollisionEnter(Collision other){
             if(other.gameObject.CompareTag("Finish")){
                 //
-                print("Level ended");
                 GameManager.instance.enableEndyMode();
             } if(other.gameObject.CompareTag("Bullet")){
                 //
 
                 GameManager.instance.enableWaitMode();
                 anim.SetBool("Run",false);
-                print("Level ended");
                 anim.SetBool("Dead",true);
-                CameraController.instance.stopFollowing();
-                Invoke("levelFailDelay",2f);
+                CameraController.instance.stopFollowingk();
+                Invoke("levelFailDelayu",2f);
                 
             } 
         } 
-        private void levelFailDelay(){
-            UiManager.instance.levelFail();
+        private void levelFailDelayu(){
+            UiManager.instance.levelFail1();
 
         }
         private void OnTriggerEnter(Collider other){
             if(other.gameObject.CompareTag("DeadArea")){
                 //
                 print("Level ended");
-                CameraController.instance.stopFollowing();
-                UiManager.instance.levelFail();
+                CameraController.instance.stopFollowingk();
+                UiManager.instance.levelFail1();
             } 
         } 
-        private void selectCharactere(){
-            int currentSelectedCharaceterIndex=PlayerPrefs.GetInt("SelectedCharactere",0);
-            foreach(Transform child in this.transform){
-                child.gameObject.SetActive(false);
-            }
-            if(currentSelectedCharaceterIndex>transform.childCount){
-                currentSelectedCharaceterIndex=0;
-            }
-            Transform activated=transform.GetChild(currentSelectedCharaceterIndex);
+        private void selectCharactereh(){
+            
+            Transform activated=transform.GetChild(0);
             activated.gameObject.SetActive(true);
+            
+            
             anim=activated.GetComponent<Animator>();
 
         }
         private void characterStop(){
             rb.velocity=Vector3.zero;
             anim.SetBool("Run",false);
+            
+            
             anim.SetBool("Win",true);
-            CameraController.instance.startRotating();
+            CameraController.instance.startRotatingu();
 
 
         }
         private void timeScaler(){
             if(Input.GetMouseButtonDown(0)){
+                
+                
                 Time.timeScale=1;
             } if(Input.GetMouseButtonUp(0)){
                 if(onGround){

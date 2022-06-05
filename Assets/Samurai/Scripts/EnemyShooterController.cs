@@ -42,7 +42,6 @@ namespace Samurai.Scripts
             childrb=this.GetComponentsInChildren<Rigidbody>();
             skinMesh=this.GetComponentInChildren<SkinnedMeshRenderer>();
             rb=this.GetComponent<Rigidbody>();
-            print("Child Count"+this.transform.childCount);
         }
 
         // Update is called once per frame
@@ -102,7 +101,6 @@ namespace Samurai.Scripts
                 skinMesh.GetComponent<Renderer>().material=cutMaterial;
             
             }
-            print("swoooooord");
 
         }
 
