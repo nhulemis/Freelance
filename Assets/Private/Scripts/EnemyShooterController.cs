@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Samurai.Scripts
+namespace Private.Scripts
 {
     public class EnemyShooterController : MonoBehaviour
     {
@@ -47,23 +47,23 @@ namespace Samurai.Scripts
         // Update is called once per frame
         void Update()
         {
-            switch(GameManager.instance.currentState){
-                case GameManager.GameState.play :
-                    if(isAlive){
-                        this.transform.LookAt(target.position);
-                        transform.eulerAngles=new Vector3(0,transform.eulerAngles.y,transform.eulerAngles.z);
-                        float distanceToTarget=Vector3.Distance(target.position,this.transform.position);
-                        //print("DISTANCE tO target IS : "+distanceToTarget);
-                        if(Time.time>lastTimeShoot+3f && distanceToTarget<distanceToShoot){
-                            shoot();
-                            lastTimeShoot=Time.time;
-
-                        }
-
-                    }
-        
-                    break;
-            }
+            // switch(GameManager.instance.currentState){
+            //     case GameManager.GameState.play :
+            //         if(isAlive){
+            //             this.transform.LookAt(target.position);
+            //             transform.eulerAngles=new Vector3(0,transform.eulerAngles.y,transform.eulerAngles.z);
+            //             float distanceToTarget=Vector3.Distance(target.position,this.transform.position);
+            //             //print("DISTANCE tO target IS : "+distanceToTarget);
+            //             if(Time.time>lastTimeShoot+3f && distanceToTarget<distanceToShoot){
+            //                 shoot();
+            //                 lastTimeShoot=Time.time;
+            //
+            //             }
+            //
+            //         }
+            //
+            //         break;
+            // }
         }
         private void shoot(){
             print("Shoot");

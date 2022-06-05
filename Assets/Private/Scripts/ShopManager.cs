@@ -1,8 +1,6 @@
 ﻿using UnityEngine;
-using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
-namespace Samurai.Scripts
+namespace Private.Scripts
 {
 	public class ShopManager : MonoBehaviour
 	{

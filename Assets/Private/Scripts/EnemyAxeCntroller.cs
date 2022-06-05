@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Samurai.Scripts
+namespace Private.Scripts
 {
     public class EnemyAxeCntroller : MonoBehaviour
     {
@@ -24,21 +24,21 @@ namespace Samurai.Scripts
 
         }
 
-        // Update is called once per frame
-        void Update()
-        {
-            switch(GameManager.instance.currentState){
-                case GameManager.GameState.play :
-                    if(isAlive){
-                        anim.SetBool("run",true);
-                        anim.SetFloat("Speed",.7f);
-                        this.transform.LookAt(target);
-                    }
-       
-                    break;
-            }
-        
-        }
+        // // Update is called once per frame
+        // void Update()
+        // {
+        //     // switch(GameManager.instance.currentState){
+        //     //     case GameManager.GameState.play :
+        //     //         if(isAlive){
+        //     //             anim.SetBool("run",true);
+        //     //             anim.SetFloat("Speed",.7f);
+        //     //             this.transform.LookAt(target);
+        //     //         }
+        //     //
+        //     //         break;
+        //     // }
+        //
+        // }
         void FixedUpdate(){
             switch(GameManager.instance.currentState){
                 case GameManager.GameState.play :

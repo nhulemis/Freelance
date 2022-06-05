@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Samurai.Scripts
+namespace Private.Scripts
 {
     public class CameraController : MonoBehaviour
     {

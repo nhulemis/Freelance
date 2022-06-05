@@ -2,7 +2,7 @@
 using DG.Tweening;
 using UnityEngine;
 
-namespace Samurai.Scripts
+namespace Private.Scripts
 {
 	public class CoinManger : MonoBehaviour
 	{

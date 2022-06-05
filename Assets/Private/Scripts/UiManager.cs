@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-namespace Samurai.Scripts
+namespace Private.Scripts
 {
     public class UiManager : MonoBehaviour
     {
@@ -129,7 +129,7 @@ namespace Samurai.Scripts
         }
         public void goooNextLevel(){
         
-            SceneManager.LoadScene("3");
+            SceneManager.LoadScene("4");
         }
         public void gooShopping(){
         }

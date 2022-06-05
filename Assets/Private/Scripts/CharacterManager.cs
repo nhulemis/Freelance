@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Samurai.Scripts
+namespace Private.Scripts
 {
     public class CharacterManager : MonoBehaviour
     {
@@ -38,7 +38,6 @@ namespace Samurai.Scripts
                     timeScaler();
                     Debug.DrawLine(transform.localPosition,-Vector3.up,Color.green);      
                     if(isOnGround()){
-                        print("On onGround");
                         onGround=true;
            
                     }else{
@@ -100,6 +99,7 @@ namespace Samurai.Scripts
             }else{
                 if(onGround)
                     rb.velocity=Vector3.zero;
+                print("daysao");
                 anim.SetBool("Run",false);
             }
 
