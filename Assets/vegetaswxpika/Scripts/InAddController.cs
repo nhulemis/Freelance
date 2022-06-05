@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace vegetasw.Scripts
+namespace vegetaswxpika.Scripts
 {
 	public class InAddController : MonoBehaviour
 	{public class ShoppingCartItem

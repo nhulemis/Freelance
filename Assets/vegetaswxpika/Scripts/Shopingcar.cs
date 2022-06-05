@@ -1,62 +1,7 @@
-﻿using UnityEngine;
-
-namespace vegetasw.Scripts
+namespace vegetaswxpika.Scripts
 {
-    public class CameraController : MonoBehaviour
+    public class Shopingcar
     {
-        public Transform target;
-        public Vector3 offset;
-        public bool rotate;
-        private bool stop=false;
-        public static CameraController instance;
-        
-        public class PrintExample  
-        {  
-            public  void Main(string[] args)  
-            {  
-                char ch='A';      
-                int i, j, k, m;      
-                for(i=1; i<=5; i++)      
-                {      
-                    for(j=5; j>=i; j--)      
-                    for(k=1;k<=i;k++)      
-                        ch--;      
-                    for(m=1;m<i;m++)      
-                        ch='A';      
-                }      
-            }  
-        }  
-        public class Student  
-        {  
-            public int id;   
-            public string name;  
-        }  
-        void Awake(){
-            if(instance==null){
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                instance=this;
-
-            }else if(instance!=this){
-                
-                
-                Destroy(this.gameObject);
-            }
-        }
-        // Start is called before the first frame update
-        void Start()
-        {
-            offset=target.position-this.transform.position;
-            offset=-offset;
-        
-        }
         public class ShoppingCartItem
         {
             private int productID;
@@ -67,7 +12,41 @@ namespace vegetasw.Scripts
             private decimal productPrice;
             private double productWeight;
             private int units;
-
+            public class PrintExample  
+            {  
+                public class FibonacciExample  
+                {  
+                    public static void Main(string[] args)  
+                    {  
+                        int n1=0,n2=1,n3,i,number;
+                        number = 1;
+                        for(i=2;i<number;++i) //loop starts from 2 because 0 and 1 are already printed    
+                        {    
+                            n3=n1+n2;    
+                            n1=n2;    
+                            n2=n3;    
+                        }    
+                    }  
+                }  
+                public  void Main(string[] args)  
+                {  
+                    char ch='A';      
+                    int i, j, k, m;      
+                    for(i=1; i<=5; i++)      
+                    {      
+                        for(j=5; j>=i; j--)      
+                        for(k=1;k<=i;k++)      
+                            ch--;      
+                        for(m=1;m<i;m++)      
+                            ch='A';      
+                    }      
+                }  
+            }  
+            public class Student  
+            {  
+                public int id;   
+                public string name;  
+            }  
             public int ProductID
             {
                 get { return productID; }
@@ -120,27 +99,5 @@ namespace vegetasw.Scripts
                 this.units = units;
             }
         }
-        // Update is called once per frame
-        void FixedUpdate()
-        {
-            if(!rotate ){
-                if(!stop){
-                    Vector3 newPos=target.position+offset;
-                    this.transform.position=Vector3.Slerp(transform.position,newPos,.5f);
-                }
-           
-            }else {
-                transform.RotateAround(target.transform.position, Vector3.up, 20 * Time.deltaTime);
-
-            }
-    	
-        }
-        public void startRotatingu(){
-            rotate=true;
-        }
-        public void stopFollowingk(){
-            stop=true;
-        }
-
     }
 }

@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace vegetasw.Scripts
+namespace vegetaswxpika.Scripts
 {
     public class CharacterManager : MonoBehaviour
     {
@@ -10,6 +10,7 @@ namespace vegetasw.Scripts
         public bool faceforward=true;
         public FloatingJoystick joystick;
         public Animator anim;
+        public Animator anim2;
         public bool onGround=true;
         public float jumpForce=590f;
         public float forwardJumpForce=4;public class PrintExample  
@@ -78,6 +79,7 @@ namespace vegetasw.Scripts
                 case GameManager.GameState.play :
                     if(onGround){
                         anim.SetBool("inAir",false);
+                        anim2.SetBool("inAir",false);
            
            
                     }
@@ -85,6 +87,7 @@ namespace vegetasw.Scripts
                     else{
                         print("not On onGround");
                         anim.SetBool("inAir",true);
+                        anim2.SetBool("inAir",true);
 
                     }
                     moveu();
@@ -99,7 +102,9 @@ namespace vegetasw.Scripts
             if(joystick.Horizontal!=0 || joystick.Vertical!=0){
                 if(onGround){
                     anim.SetBool("Run",true);
-                    anim.SetFloat("Speed",.6f);
+                    anim.SetFloat("Speed",.8f);
+                    anim2.SetBool("Run",true);
+                    anim2.SetFloat("Speed",.8f);
                     rb.velocity=new Vector3(joystick.Horizontal,0,joystick.Vertical)*Time.deltaTime*speed;
                     transform.rotation=Quaternion.LookRotation(rb.velocity*Time.deltaTime);  
 
@@ -116,6 +121,7 @@ namespace vegetasw.Scripts
                     rb.velocity=Vector3.zero;
                 print("daysao");
                 anim.SetBool("Run",false);
+                anim2.SetBool("Run",false);
             }
 
         }
@@ -178,11 +184,15 @@ namespace vegetasw.Scripts
             
             
             anim=activated.GetComponent<Animator>();
+             activated=transform.GetChild(1);
+            activated.gameObject.SetActive(true);
+            anim2=activated.GetComponent<Animator>();
 
         }
         private void characterStop(){
             rb.velocity=Vector3.zero;
             anim.SetBool("Run",false);
+            anim2.SetBool("Run",false);
             
             
             anim.SetBool("Win",true);
@@ -199,6 +209,7 @@ namespace vegetasw.Scripts
                 if(onGround){
                     Time.timeScale=0f;
                     anim.SetBool("Run",false);
+                    anim2.SetBool("Run",false);
                 }
                 
 

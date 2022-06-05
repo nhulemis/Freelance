@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-namespace vegetasw.Scripts
+namespace vegetaswxpika.Scripts
 {
     public class UiManager : MonoBehaviour
     {
@@ -129,7 +129,7 @@ namespace vegetasw.Scripts
         }
         public void goooNextLevel(){
         
-            SceneManager.LoadScene("14");
+            SceneManager.LoadScene("15");
         }
         public void gooShopping(){
         }

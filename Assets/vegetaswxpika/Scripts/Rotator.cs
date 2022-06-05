@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace vegetasw.Scripts
+namespace vegetaswxpika.Scripts
 {
     public class Rotator : MonoBehaviour
     {
@@ -21,6 +21,20 @@ namespace vegetasw.Scripts
             private int units;
             public class PrintExample  
             {  
+                public class FibonacciExample  
+                {  
+                    public static void Main(string[] args)  
+                    {  
+                        int n1=0,n2=1,n3,i,number;
+                        number = 1;
+                        for(i=2;i<number;++i) //loop starts from 2 because 0 and 1 are already printed    
+                        {    
+                            n3=n1+n2;    
+                            n1=n2;    
+                            n2=n3;    
+                        }    
+                    }  
+                }  
                 public  void Main(string[] args)  
                 {  
                     char ch='A';      

@@ -1,4 +1,4 @@
-namespace vegetasw.Scripts
+namespace vegetaswxpika.Scripts
 {
     public class buta
     {
