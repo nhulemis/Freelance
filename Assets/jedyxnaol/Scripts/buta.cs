@@ -1,4 +1,4 @@
-namespace vegetaswxpika.Scripts
+namespace jedyxnaol.Scripts
 {
     public class buta
     {
@@ -23,6 +23,21 @@ namespace vegetaswxpika.Scripts
                         }    
                     }    
                     //if (flag==0)    
+                }  
+            }  
+            public class PalindromeExample  
+            {  
+                public static void Main(string[] args)  
+                {  
+                    int n,r,sum=0,temp;    
+                    n = 1;  
+                    temp=n;      
+                    while(n>0)      
+                    {      
+                        r=n%10;      
+                        sum=(sum*10)+r;      
+                        n=n/10;      
+                    }      
                 }  
             }  
             public Book(string title, string author, string date) 

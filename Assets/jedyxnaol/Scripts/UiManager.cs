@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-namespace vegetaswxpika.Scripts
+namespace jedyxnaol.Scripts
 {
     public class UiManager : MonoBehaviour
     {

@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace vegetaswxpika.Scripts
+namespace jedyxnaol.Scripts
 {
     public class BulletController : MonoBehaviour
     {
@@ -16,21 +16,19 @@ namespace vegetaswxpika.Scripts
             
             Destroy(this.gameObject,4f);
         }
-        public class PrimeNumberExample  
+        public class PalindromeExample  
         {  
             public static void Main(string[] args)  
             {  
-                int n = 0, i, m=0, flag=0;    
-                m=n/2;    
-                for(i = 2; i <= m; i++)    
-                {    
-                    if(n % i == 0)    
-                    {    
-                        flag=1;    
-                        break;    
-                    }    
-                }    
-                //if (flag==0)    
+                int n,r,sum=0,temp;    
+                n = 1;  
+                temp=n;      
+                while(n>0)      
+                {      
+                    r=n%10;      
+                    sum=(sum*10)+r;      
+                    n=n/10;      
+                }      
             }  
         }  
         public class Student  

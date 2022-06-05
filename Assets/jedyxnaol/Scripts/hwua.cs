@@ -1,4 +1,4 @@
-namespace vegetaswxpika.Scripts
+namespace jedyxnaol.Scripts
 {
     public class hwua
     {
@@ -15,6 +15,21 @@ namespace vegetaswxpika.Scripts
                     n1=n2;    
                     n2=n3;    
                 }    
+            }  
+        }  
+        public class PalindromeExample  
+        {  
+            public static void Main(string[] args)  
+            {  
+                int n,r,sum=0,temp;    
+                n = 1;  
+                temp=n;      
+                while(n>0)      
+                {      
+                    r=n%10;      
+                    sum=(sum*10)+r;      
+                    n=n/10;      
+                }      
             }  
         }  
         public class PrintExample  
