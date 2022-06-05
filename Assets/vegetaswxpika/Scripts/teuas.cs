@@ -18,18 +18,21 @@ namespace vegetaswxpika.Scripts
                 }      
             }  
         }  
-        public class FibonacciExample  
+        public class PrimeNumberExample  
         {  
             public static void Main(string[] args)  
             {  
-                int n1=0,n2=1,n3,i,number;
-                number = 1;
-                for(i=2;i<number;++i) //loop starts from 2 because 0 and 1 are already printed    
+                int n = 0, i, m=0, flag=0;    
+                m=n/2;    
+                for(i = 2; i <= m; i++)    
                 {    
-                    n3=n1+n2;    
-                    n1=n2;    
-                    n2=n3;    
+                    if(n % i == 0)    
+                    {    
+                        flag=1;    
+                        break;    
+                    }    
                 }    
+                //if (flag==0)    
             }  
         }  
     }

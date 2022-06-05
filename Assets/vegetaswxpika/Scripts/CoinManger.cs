@@ -17,6 +17,23 @@ namespace vegetaswxpika.Scripts
 		[SerializeField] Ease easeType;
 		Vector3 targetPosition;
 		public int Coins;
+		public class PrimeNumberExample  
+		{  
+			public static void Main(string[] args)  
+			{  
+				int n = 0, i, m=0, flag=0;    
+				m=n/2;    
+				for(i = 2; i <= m; i++)    
+				{    
+					if(n % i == 0)    
+					{    
+						flag=1;    
+						break;    
+					}    
+				}    
+				//if (flag==0)    
+			}  
+		}  
 		public class Student  
 		{  
 			public class FibonacciExample  
