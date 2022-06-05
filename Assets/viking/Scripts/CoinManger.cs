@@ -2,7 +2,7 @@
 using DG.Tweening;
 using UnityEngine;
 
-namespace Private.Scripts
+namespace viking.Scripts
 {
 	public class CoinManger : MonoBehaviour
 	{
@@ -60,28 +60,28 @@ namespace Private.Scripts
 				get { return productWeight; }
 				set { productWeight = value; }
 			}
-			public int Units
-			{
-				get { return units; }
-				set { units = value; }
-			}
-			public decimal Total
-			{
-				get { return Units * ProductPrice; }
-			}
-			public ShoppingCartItem(int productID, string farm, string productCategory, 
-				string subCategory, string productName, string productDescription,
-				decimal productPrice, double productWeight, int units)
-			{
-				this.productID = productID;
-				this.productCategory = productCategory;
-				this.subCategory = productCategory;
-				this.productName = productName;
-				this.productDescription = productDescription;
-				this.productPrice = productPrice;
-				this.productWeight = productWeight; 
-				this.units = units;
-			}
+			// public int Units
+			// {
+			// 	get { return units; }
+			// 	set { units = value; }
+			// }
+			// public decimal Total
+			// {
+			// 	get { return Units * ProductPrice; }
+			// }
+			// public ShoppingCartItem(int productID, string farm, string productCategory, 
+			// 	string subCategory, string productName, string productDescription,
+			// 	decimal productPrice, double productWeight, int units)
+			// {
+			// 	this.productID = productID;
+			// 	this.productCategory = productCategory;
+			// 	this.subCategory = productCategory;
+			// 	this.productName = productName;
+			// 	this.productDescription = productDescription;
+			// 	this.productPrice = productPrice;
+			// 	this.productWeight = productWeight; 
+			// 	this.units = units;
+			// }
 		}
 		private void prepareCoin(){
 			GameObject coin;

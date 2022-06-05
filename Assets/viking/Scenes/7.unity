@@ -2767,7 +2767,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.990566, g: 0.6463559, b: 0.4906105, a: 0.8784314}
+  m_BackGroundColor: {r: 0.2392157, g: 0.58431375, b: 0.5803922, a: 0.8784314}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -3045,7 +3045,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1082273074
 Transform:
   m_ObjectHideFlags: 0
@@ -5127,6 +5127,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ui
       objectReference: {fileID: 0}
+    - target: {fileID: 5346203496075495843, guid: 7ac48c187a9fe4ee78541b11d14e11f5,
+        type: 3}
+      propertyPath: m_text
+      value: <color=red>Viking</color> xx <color=green>runing</color>
+      objectReference: {fileID: 0}
+    - target: {fileID: 5346203496075495843, guid: 7ac48c187a9fe4ee78541b11d14e11f5,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 121.75
+      objectReference: {fileID: 0}
     - target: {fileID: 5346203496561788734, guid: 7ac48c187a9fe4ee78541b11d14e11f5,
         type: 3}
       propertyPath: m_Color.b
@@ -5207,6 +5217,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1556317465606334260, guid: 3c549c1848b3d4297a53b3e8710fcd81,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5064844356495454967, guid: 3c549c1848b3d4297a53b3e8710fcd81,
         type: 3}
       propertyPath: m_TagString
@@ -5320,7 +5335,7 @@ PrefabInstance:
     - target: {fileID: 8611792756618938370, guid: 3c549c1848b3d4297a53b3e8710fcd81,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8611792756618940916, guid: 3c549c1848b3d4297a53b3e8710fcd81,
         type: 3}

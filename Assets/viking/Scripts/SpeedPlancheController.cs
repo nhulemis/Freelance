@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Private.Scripts
+namespace viking.Scripts
 {
 	public class SpeedPlancheController : MonoBehaviour
 	{public class ShoppingCartItem
