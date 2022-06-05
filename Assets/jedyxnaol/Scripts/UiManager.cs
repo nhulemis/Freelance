@@ -129,7 +129,7 @@ namespace jedyxnaol.Scripts
         }
         public void goooNextLevel(){
         
-            SceneManager.LoadScene("16");
+            SceneManager.LoadScene("18");
         }
         public void gooShopping(){
         }
