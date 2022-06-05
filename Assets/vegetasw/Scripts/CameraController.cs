@@ -1,7 +1,62 @@
-namespace PrivateHalley.Scripts
+﻿using UnityEngine;
+
+namespace vegetasw.Scripts
 {
-    public class Shopingcar
+    public class CameraController : MonoBehaviour
     {
+        public Transform target;
+        public Vector3 offset;
+        public bool rotate;
+        private bool stop=false;
+        public static CameraController instance;
+        
+        public class PrintExample  
+        {  
+            public  void Main(string[] args)  
+            {  
+                char ch='A';      
+                int i, j, k, m;      
+                for(i=1; i<=5; i++)      
+                {      
+                    for(j=5; j>=i; j--)      
+                    for(k=1;k<=i;k++)      
+                        ch--;      
+                    for(m=1;m<i;m++)      
+                        ch='A';      
+                }      
+            }  
+        }  
+        public class Student  
+        {  
+            public int id;   
+            public string name;  
+        }  
+        void Awake(){
+            if(instance==null){
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                instance=this;
+
+            }else if(instance!=this){
+                
+                
+                Destroy(this.gameObject);
+            }
+        }
+        // Start is called before the first frame update
+        void Start()
+        {
+            offset=target.position-this.transform.position;
+            offset=-offset;
+        
+        }
         public class ShoppingCartItem
         {
             private int productID;
@@ -13,11 +68,6 @@ namespace PrivateHalley.Scripts
             private double productWeight;
             private int units;
 
-            public class Student  
-            {  
-                public int id;   
-                public string name;  
-            }  
             public int ProductID
             {
                 get { return productID; }
@@ -70,5 +120,27 @@ namespace PrivateHalley.Scripts
                 this.units = units;
             }
         }
+        // Update is called once per frame
+        void FixedUpdate()
+        {
+            if(!rotate ){
+                if(!stop){
+                    Vector3 newPos=target.position+offset;
+                    this.transform.position=Vector3.Slerp(transform.position,newPos,.5f);
+                }
+           
+            }else {
+                transform.RotateAround(target.transform.position, Vector3.up, 20 * Time.deltaTime);
+
+            }
+    	
+        }
+        public void startRotatingu(){
+            rotate=true;
+        }
+        public void stopFollowingk(){
+            stop=true;
+        }
+
     }
 }

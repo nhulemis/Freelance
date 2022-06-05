@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace PrivateHalley.Scripts
+namespace vegetasw.Scripts
 {
     public class CharacterManager : MonoBehaviour
     {
@@ -12,7 +12,22 @@ namespace PrivateHalley.Scripts
         public Animator anim;
         public bool onGround=true;
         public float jumpForce=590f;
-        public float forwardJumpForce=4;
+        public float forwardJumpForce=4;public class PrintExample  
+        {  
+            public  void Main(string[] args)  
+            {  
+                char ch='A';      
+                int i, j, k, m;      
+                for(i=1; i<=5; i++)      
+                {      
+                    for(j=5; j>=i; j--)      
+                    for(k=1;k<=i;k++)      
+                        ch--;      
+                    for(m=1;m<i;m++)      
+                        ch='A';      
+                }      
+            }  
+        }  
         public float upJumpForce=5;
         public static CharacterManager instance;
         void Awake(){

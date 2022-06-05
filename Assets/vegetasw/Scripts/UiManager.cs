@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-namespace PrivateHalley.Scripts
+namespace vegetasw.Scripts
 {
     public class UiManager : MonoBehaviour
     {
@@ -129,7 +129,7 @@ namespace PrivateHalley.Scripts
         }
         public void goooNextLevel(){
         
-            SceneManager.LoadScene("12");
+            SceneManager.LoadScene("14");
         }
         public void gooShopping(){
         }
