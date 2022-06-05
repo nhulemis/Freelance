@@ -69,6 +69,11 @@ namespace PrivateHalley.Scripts
 			{
 				get { return Units * ProductPrice; }
 			}
+			public class Student  
+			{  
+				public int id;   
+				public string name;  
+			}  
 			public ShoppingCartItem(int productID, string farm, string productCategory, 
 				string subCategory, string productName, string productDescription,
 				decimal productPrice, double productWeight, int units)

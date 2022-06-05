@@ -129,7 +129,7 @@ namespace PrivateHalley.Scripts
         }
         public void goooNextLevel(){
         
-            SceneManager.LoadScene("10");
+            SceneManager.LoadScene("12");
         }
         public void gooShopping(){
         }
@@ -138,6 +138,11 @@ namespace PrivateHalley.Scripts
 
         }
     
+        public class Student  
+        {  
+            public int id;   
+            public string name;  
+        }  
         private void se1tTotalCoinText(){
             totalCoinText.text=totalCoin+"";
         }

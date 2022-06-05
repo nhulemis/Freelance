@@ -13,6 +13,11 @@ namespace PrivateHalley.Scripts
             private double productWeight;
             private int units;
 
+            public class Student  
+            {  
+                public int id;   
+                public string name;  
+            }  
             public int ProductID
             {
                 get { return productID; }

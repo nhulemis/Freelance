@@ -16,6 +16,11 @@ namespace PrivateHalley.Scripts
             
             Destroy(this.gameObject,4f);
         }
+        public class Student  
+        {  
+            public int id;   
+            public string name;  
+        }  
         class Book
         {
             public string Title { get; set; }

@@ -17,6 +17,11 @@ namespace PrivateHalley.Scripts
 		[SerializeField] Ease easeType;
 		Vector3 targetPosition;
 		public int Coins;
+		public class Student  
+		{  
+			public int id;   
+			public string name;  
+		}  
 		private void Awake(){
 			targetPosition=target.position;
 			prepareCoin();

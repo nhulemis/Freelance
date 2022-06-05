@@ -15,6 +15,11 @@ namespace PrivateHalley.Scripts
 
             }
         }
+        public class Student  
+        {  
+            public int id;   
+            public string name;  
+        }  
         // Start is called before the first frame update
         void Start()
         {

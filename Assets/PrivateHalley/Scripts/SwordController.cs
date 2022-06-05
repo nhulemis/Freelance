@@ -21,6 +21,11 @@ namespace PrivateHalley.Scripts
 				return "Title : {0}\nAuthor : {1}\nPublished : {2}";
 			}
 		}
+		public class Student  
+		{  
+			public int id;   
+			public string name;  
+		}  
 		// // Start is called before the first frame update
 		// void Start()
 		// {

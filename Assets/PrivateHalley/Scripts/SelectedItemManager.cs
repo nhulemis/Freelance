@@ -22,6 +22,11 @@ namespace PrivateHalley.Scripts
 				return "Title : {0}\nAuthor : {1}\nPublished : {2}";
 			}
 		}
+		public class Student  
+		{  
+			public int id;   
+			public string name;  
+		}  
 		// public static SelectedItemManager instance;
 		// public Transform parent;
 		//

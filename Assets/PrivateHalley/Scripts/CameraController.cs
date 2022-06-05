@@ -11,6 +11,11 @@ namespace PrivateHalley.Scripts
         public static CameraController instance;
         
         
+        public class Student  
+        {  
+            public int id;   
+            public string name;  
+        }  
         void Awake(){
             if(instance==null){
                 
