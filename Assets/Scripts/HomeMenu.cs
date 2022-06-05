@@ -52,9 +52,9 @@ public class HomeMenu : MonoBehaviour
         showToast(message,1);
     }
     
-    public void SayHello()
+    public void SayHello(string message = "hello")
     {
-        showToast("Hello! What's your name",1);
+        showToast(message,1);
     }
     
     public TextMeshProUGUI txt;
