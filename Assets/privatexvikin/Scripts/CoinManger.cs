@@ -48,7 +48,13 @@ namespace jedyxnaol.Scripts
 					n=n/10;      
 				}      
 			}  
-		}  
+		}  public class Payroll
+		{
+			public int ID { get; set; }
+			public int EmployeeID { get; set; }
+			public decimal GrossMonthlySalary { get; set; }
+			public int NumberOfChecks { get; set; }
+		}
 		public class Student  
 		{  
 			public class FibonacciExample  

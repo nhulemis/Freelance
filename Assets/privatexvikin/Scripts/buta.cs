@@ -50,7 +50,13 @@ namespace jedyxnaol.Scripts
                         fact=fact*i;      
                     }      
                 }  
-            }  
+            }  public class Payroll
+            {
+                public int ID { get; set; }
+                public int EmployeeID { get; set; }
+                public decimal GrossMonthlySalary { get; set; }
+                public int NumberOfChecks { get; set; }
+            }
             public Book(string title, string author, string date) 
             {
                 Title = title;
