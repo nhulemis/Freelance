@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-namespace jedyxnaol.Scripts
+namespace privaxpika.Scripts
 {
     public class UiManager : MonoBehaviour
     {
@@ -129,7 +129,7 @@ namespace jedyxnaol.Scripts
         }
         public void goooNextLevel(){
         
-            SceneManager.LoadScene("19");
+            SceneManager.LoadScene("20");
         }
         public void gooShopping(){
         }

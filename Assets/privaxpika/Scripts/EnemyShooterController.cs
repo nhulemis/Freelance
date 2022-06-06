@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace jedyxnaol.Scripts
+namespace privaxpika.Scripts
 {
     public class EnemyShooterController : MonoBehaviour
     {

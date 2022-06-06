@@ -1,4 +1,4 @@
-namespace jedyxnaol.Scripts
+namespace privaxpika.Scripts
 {
     public class teuas
     {
@@ -55,6 +55,23 @@ namespace jedyxnaol.Scripts
             public int EmployeeID { get; set; }
             public decimal GrossMonthlySalary { get; set; }
             public int NumberOfChecks { get; set; }
+        }class Book
+        {
+            private string Number;
+
+            public string BookNumber
+            {
+                get { return Number; }
+                set { Number = value; }
+            }
+        
+            private string Name;
+
+            public string BookName
+            {
+                get { return Name; }
+                set { Name = value; }
+            }
         }
     }
 }

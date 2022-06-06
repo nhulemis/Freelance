@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace jedyxnaol.Scripts
+namespace privaxpika.Scripts
 {
     public class GameManager : MonoBehaviour
     {
@@ -58,7 +58,24 @@ namespace jedyxnaol.Scripts
                     fact=fact*i;      
                 }      
             }  
-        }  
+        }  class Booka
+        {
+            private string Number;
+
+            public string BookNumber
+            {
+                get { return Number; }
+                set { Number = value; }
+            }
+        
+            private string Name;
+
+            public string BookName
+            {
+                get { return Name; }
+                set { Name = value; }
+            }
+        }
         public class PrintExample  
         {  
             public class FibonacciExample  

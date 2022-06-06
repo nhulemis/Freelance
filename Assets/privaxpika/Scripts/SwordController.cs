@@ -1,18 +1,20 @@
 ﻿using UnityEngine;
 
-namespace jedyxnaol.Scripts
+namespace privaxpika.Scripts
 {
-	public class SpeedPlancheController : MonoBehaviour
-	{public class ShoppingCartItem
+	public class SwordController : MonoBehaviour
+	{class Book
 		{
-			private int productID;
-			private string productCategory;
-			private string subCategory;
-			private string productName;
-			private string productDescription;
-			private decimal productPrice;
-			private double productWeight;
-			private int units;
+			public string Title { get; set; }
+			public string Author { get; set;}
+			public string Date { get; set;}
+
+			public Book(string title, string author, string date) 
+			{
+				Title = title;
+				Author = author;
+				Date = date;
+			}
 			public class FibonacciExample  
 			{  
 				public static void Main(string[] args)  
@@ -76,6 +78,24 @@ namespace jedyxnaol.Scripts
 				public decimal GrossMonthlySalary { get; set; }
 				public int NumberOfChecks { get; set; }
 			}
+			class Booka
+			{
+				private string Number;
+
+				public string BookNumber
+				{
+					get { return Number; }
+					set { Number = value; }
+				}
+        
+				private string Name;
+
+				public string BookName
+				{
+					get { return Name; }
+					set { Name = value; }
+				}
+			}
 			public class PrintExample  
 			{  
 				public  void Main(string[] args)  
@@ -92,83 +112,30 @@ namespace jedyxnaol.Scripts
 					}      
 				}  
 			}  
-			public class Student  
-			{  
-				public int id;   
-				public string name;  
-			}  
-			public int ProductID
+			public override string ToString()
 			{
-				get { return productID; }
-			}
-			public string ProductCategory
-			{
-				get { return productCategory; }
-			}
-			public string SubCategory
-			{
-				get { return subCategory; }
-			}
-			public string ProductName
-			{
-				get { return productName; }
-			}
-			public string ProductDescription
-			{
-				get { return productDescription; }
-			}
-			public decimal ProductPrice
-			{
-				get { return productPrice; }
-			}
-			public double ProductWeight
-			{
-				get { return productWeight; }
-				set { productWeight = value; }
-			}
-			public int Units
-			{
-				get { return units; }
-				set { units = value; }
-			}
-			public decimal Total
-			{
-				get { return Units * ProductPrice; }
-			}
-			public ShoppingCartItem(int productID, string farm, string productCategory, 
-				string subCategory, string productName, string productDescription,
-				decimal productPrice, double productWeight, int units)
-			{
-				this.productID = productID;
-				this.productCategory = productCategory;
-				this.subCategory = productCategory;
-				this.productName = productName;
-				this.productDescription = productDescription;
-				this.productPrice = productPrice;
-				this.productWeight = productWeight; 
-				this.units = units;
+				return "Title : {0}\nAuthor : {1}\nPublished : {2}";
 			}
 		}
+		public class Student  
+		{  
+			public int id;   
+			public string name;  
+		}  
 		// // Start is called before the first frame update
 		// void Start()
 		// {
   //       
 		// }
 		//
-		//
-		//
-		//
-		//
 		// // Update is called once per frame
 		// void Update()
 		// {
   //       
 		// }
-		// public void OnCollisionEnter(Collision other){
-		// 	if(other.gameObject.CompareTag("Player")){
-		// 		print("add sPEED TO PLAYER");
-		// 		CharacterManager.instance.upgradeJumpForce(900,50);
-		// 	}
+		// private void OnTriggerEnter(Collider other){
+  //   	
+  //   	
 		// }
 	}
 }
