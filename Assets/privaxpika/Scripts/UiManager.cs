@@ -129,7 +129,7 @@ namespace privaxpika.Scripts
         }
         public void goooNextLevel(){
         
-            SceneManager.LoadScene("21");
+            SceneManager.LoadScene("22");
         }
         public void gooShopping(){
         }
