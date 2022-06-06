@@ -42,6 +42,17 @@ namespace jedyxnaol.Scripts
                     }      
                 }  
             }  
+            public class FactorialExample  
+            {  
+                public static void Main(string[] args)  
+                {  
+                    int i,fact=1,number;      
+                    number= 1;     
+                    for(i=1;i<=number;i++){      
+                        fact=fact*i;      
+                    }      
+                }  
+            }  
             public  void Main(string[] args)  
             {  
                 char ch='A';      
