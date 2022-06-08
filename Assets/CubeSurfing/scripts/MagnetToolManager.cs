@@ -15,6 +15,14 @@ namespace CubeSurfing.scripts
         {
         
         }
+        public class MyClass
+        {
+            public void SomeMethod(int firstParam, float secondParam)
+            {
+				
+            }
+
+        }
         private void OnTriggerEnter(Collider other)
         {
             if (other.gameObject.tag == "towerbuild")

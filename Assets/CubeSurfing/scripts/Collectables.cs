@@ -28,6 +28,14 @@ namespace CubeSurfing.scripts
 
 
         }
+        public class MyClass
+        {
+            public void SomeMethod(int firstParam, float secondParam)
+            {
+				
+            }
+
+        }
         // Update is called once per frame
         void Update()
         {

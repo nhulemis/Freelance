@@ -26,6 +26,14 @@ namespace CubeSurfing.scripts
 			unhideUnloacked();
 
 		}
+		public class MyClass
+		{
+			public void SomeMethod(int firstParam, float secondParam)
+			{
+				
+			}
+
+		}
 		public void  unhideUnloacked(){
 			updateUnloackedCharctere();
 			foreach(string n in unloackedCharactere){

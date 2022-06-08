@@ -39,6 +39,14 @@ namespace CubeSurfing.scripts
 
 
 		}
+		public class MyClass
+		{
+			public void SomeMethod(int firstParam, float secondParam)
+			{
+				
+			}
+
+		}
 		private void prepareCoin(){
 			GameObject coin;
 			for(int i=0;i<maxCoin;i++){

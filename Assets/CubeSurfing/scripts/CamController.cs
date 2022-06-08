@@ -32,6 +32,14 @@ namespace CubeSurfing.scripts
 
 
         }
+        public class MyClass
+        {
+            public void SomeMethod(int firstParam, float secondParam)
+            {
+				
+            }
+
+        }
         // Start is called before the first frame update
         void Start()
         {

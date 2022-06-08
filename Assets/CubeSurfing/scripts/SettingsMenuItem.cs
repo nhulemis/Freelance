@@ -35,6 +35,14 @@ namespace CubeSurfing.scripts
 
 
 		}
+		public class MyClass
+		{
+			public void SomeMethod(int firstParam, float secondParam)
+			{
+				
+			}
+
+		}
 		void Awake ()
 		{
 			img = GetComponent<Image> ();
