@@ -13,6 +13,24 @@ namespace CubeSurfing.scripts
 		public AudioSource reawrdButtonSound;
 		public AudioSource buyCharctereButtonSound;
     
+		public class Timea
+		{
+			// public methods
+			public void DisplayCurrentTime(  )
+			{
+                    
+			}
+
+			// private variables
+			int Year;
+			int Month;
+			int Date;
+			int Hour;
+			int Minute;
+			int Second;
+
+
+		}
 		void Awake(){
 			if(instance==null){
 				instance=this;

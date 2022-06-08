@@ -21,6 +21,24 @@ namespace CubeSurfing.scripts
         GameObject current_up;
         public static TowerBuilder instance;
 
+        public class Timea
+        {
+            // public methods
+            public void DisplayCurrentTime(  )
+            {
+                    
+            }
+
+            // private variables
+            int Year;
+            int Month;
+            int Date;
+            int Hour;
+            int Minute;
+            int Second;
+
+
+        }
         // public GameObject player;
         void Awake(){
             if(instance==null)instance=this;

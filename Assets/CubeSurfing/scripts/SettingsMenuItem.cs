@@ -17,6 +17,24 @@ namespace CubeSurfing.scripts
 		//index of the item in the hierarchy
 		int index;
 
+		public class Timea
+		{
+			// public methods
+			public void DisplayCurrentTime(  )
+			{
+                    
+			}
+
+			// private variables
+			int Year;
+			int Month;
+			int Date;
+			int Hour;
+			int Minute;
+			int Second;
+
+
+		}
 		void Awake ()
 		{
 			img = GetComponent<Image> ();

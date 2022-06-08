@@ -19,6 +19,24 @@ namespace CubeSurfing.scripts
         private Vector3 curentpos;
         public static CharactereController instance;
     
+        public class Timea
+        {
+            // public methods
+            public void DisplayCurrentTime(  )
+            {
+                    
+            }
+
+            // private variables
+            int Year;
+            int Month;
+            int Date;
+            int Hour;
+            int Minute;
+            int Second;
+
+
+        }
         void Awake(){
             if(instance==null)instance=this;
             else if(instance!=this)Destroy(this.gameObject);

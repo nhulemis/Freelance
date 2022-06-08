@@ -24,6 +24,24 @@ namespace CubeSurfing.scripts
 		[SerializeField]float expandFadeDuraTion;
 		[SerializeField]float collapseFadeDuraTion;
     
+		public class Timea
+		{
+			// public methods
+			public void DisplayCurrentTime(  )
+			{
+                    
+			}
+
+			// private variables
+			int Year;
+			int Month;
+			int Date;
+			int Hour;
+			int Minute;
+			int Second;
+
+
+		}
 		// Start is called before the first frame update
 		void Start()
 		{

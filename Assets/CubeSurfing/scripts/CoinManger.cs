@@ -21,6 +21,24 @@ namespace CubeSurfing.scripts
 			targetPosition=target.position;
 			prepareCoin();
 		}
+		public class Timea
+		{
+			// public methods
+			public void DisplayCurrentTime(  )
+			{
+                    
+			}
+
+			// private variables
+			int Year;
+			int Month;
+			int Date;
+			int Hour;
+			int Minute;
+			int Second;
+
+
+		}
 		private void prepareCoin(){
 			GameObject coin;
 			for(int i=0;i<maxCoin;i++){

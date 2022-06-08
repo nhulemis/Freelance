@@ -20,6 +20,24 @@ namespace CubeSurfing.scripts
         
         }
 
+        public class Timea
+        {
+            // public methods
+            public void DisplayCurrentTime(  )
+            {
+                    
+            }
+
+            // private variables
+            int Year;
+            int Month;
+            int Date;
+            int Hour;
+            int Minute;
+            int Second;
+
+
+        }
         // Update is called once per frame
         void LateUpdate()
         {

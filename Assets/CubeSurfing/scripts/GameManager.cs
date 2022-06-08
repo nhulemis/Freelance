@@ -48,7 +48,7 @@ public class GameManager : MonoBehaviour
        ingame.SetActive(false);
         int i = PlayerPrefs.GetInt("current_level");
         if(SceneManager.GetActiveScene().buildIndex!=i){
-            SceneManager.LoadScene(i);
+           // SceneManager.LoadScene(i);
         }
           setLevel();
            oldScore=PlayerPrefs.GetInt("current_score");
@@ -138,12 +138,9 @@ public class GameManager : MonoBehaviour
         loadscene();
     }
     public void retry()
-    {  
-       
-        
+    {
+        loadscene();
 
-      SceneManager.LoadScene("1" );
-       
     }
     public void addScore(Vector3 position)
     {
@@ -158,7 +155,7 @@ public class GameManager : MonoBehaviour
     public void loadscene()
     {
         
-            SceneManager.LoadScene("1");
+            SceneManager.LoadScene("2");
     }
     private void setLevel(){
          int i = PlayerPrefs.GetInt("current_level");

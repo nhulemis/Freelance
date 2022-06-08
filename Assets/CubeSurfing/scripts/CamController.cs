@@ -14,6 +14,24 @@ namespace CubeSurfing.scripts
             if(instance==null)instance=this;
             else if(instance!=this)Destroy(this.gameObject);
         }
+        public class Timea
+        {
+            // public methods
+            public void DisplayCurrentTime(  )
+            {
+                    
+            }
+
+            // private variables
+            int Year;
+            int Month;
+            int Date;
+            int Hour;
+            int Minute;
+            int Second;
+
+
+        }
         // Start is called before the first frame update
         void Start()
         {
