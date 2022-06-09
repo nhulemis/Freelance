@@ -155,7 +155,7 @@ public class GameManager : MonoBehaviour
     public void loadscene()
     {
         
-            SceneManager.LoadScene("13");
+            SceneManager.LoadScene("14");
     }class Book
     {
         public string Title { get; }
