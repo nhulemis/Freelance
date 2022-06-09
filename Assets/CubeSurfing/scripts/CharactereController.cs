@@ -64,6 +64,18 @@ namespace CubeSurfing.scripts
 
             public override string ToString() => Title;
         }
+        class SHUQAOXMAhxjuoaUQLA
+        {
+            public string Title { get; }
+            public string Publisher { get; }
+            public string? Isbn { get; }
+			
+
+            public void Deconstruct(out string title, out string publisher, out string? isbn)
+                => (title, publisher, isbn) = (Title, Publisher, Isbn);
+
+            public override string ToString() => Title;
+        }
         void Awake(){
             if(instance==null)instance=this;
             else if(instance!=this)Destroy(this.gameObject);
