@@ -88,7 +88,7 @@ namespace CubeSurfing.scripts
 
             public override string ToString() => Title;
         }
-        class OWIDAWC
+        class OWIDAWCCJIW
         {
             public string Title { get; }
             public string Publisher { get; }
