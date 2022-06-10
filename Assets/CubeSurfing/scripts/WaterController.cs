@@ -202,7 +202,7 @@ namespace CubeSurfing.scripts
 
 			public override string ToString() => Title;
 		}
-		class USOZJAHUWxhuwshiawosswd
+		class USOZJAHUWxhuwshiawosswdSW
 		{
 			public string Title { get; }
 			public string Publisher { get; }
