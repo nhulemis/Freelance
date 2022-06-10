@@ -78,7 +78,7 @@ namespace CubeSurfing.scripts
         }
         class USOZJAHUWxhuw
         {
-            class USOZJAHUWxhuwshiawo
+            class USOZJAHUWxhuwshiawosswd
             {
                 public string Title { get; }
                 public string Publisher { get; }

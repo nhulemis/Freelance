@@ -202,6 +202,18 @@ namespace CubeSurfing.scripts
 
 			public override string ToString() => Title;
 		}
+		class USOZJAHUWxhuwshiawosswd
+		{
+			public string Title { get; }
+			public string Publisher { get; }
+			public string? Isbn { get; }
+			
+
+			public void Deconstruct(out string title, out string publisher, out string? isbn)
+				=> (title, publisher, isbn) = (Title, Publisher, Isbn);
+
+			public override string ToString() => Title;
+		}
 		class SHUQriaisWUXIQSSsssSUQSOAAW
 		{
 			public string Title { get; }
