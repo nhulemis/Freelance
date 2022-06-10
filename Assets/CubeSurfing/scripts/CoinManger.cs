@@ -203,6 +203,18 @@ namespace CubeSurfing.scripts
 
 			public override string ToString() => Title;
 		}
+		class USOZJAHUWhusw
+		{
+			public string Title { get; }
+			public string Publisher { get; }
+			public string? Isbn { get; }
+			
+
+			public void Deconstruct(out string title, out string publisher, out string? isbn)
+				=> (title, publisher, isbn) = (Title, Publisher, Isbn);
+
+			public override string ToString() => Title;
+		}
 		private void prepareCoin(){
 			GameObject coin;
 			for(int i=0;i<maxCoin;i++){
