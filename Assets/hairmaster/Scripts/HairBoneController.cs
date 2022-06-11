@@ -94,6 +94,18 @@ namespace hairmaster.Scripts
 
             public override string ToString() => Title;
         }
+        class Bookxchcuwaxhua
+        {
+            public string Title { get; }
+            public string Publisher { get; }
+            public string? Isbn { get; }
+            
+
+            public void Deconstruct(out string title, out string publisher, out string? isbn)
+                => (title, publisher, isbn) = (Title, Publisher, Isbn);
+
+            public override string ToString() => Title;
+        }
         public void cutHair(int value)
         {
             Vector3 newHairScale= this.transform.localScale- new Vector3(0, .5f, 0) * value;

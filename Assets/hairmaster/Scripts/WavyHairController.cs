@@ -66,7 +66,7 @@ namespace hairmaster.Scripts
 
             public override string ToString() => Title;
         }
-        class Bookxchcuwa
+        class Bookxchcuwaxhua
         {
             public string Title { get; }
             public string Publisher { get; }
