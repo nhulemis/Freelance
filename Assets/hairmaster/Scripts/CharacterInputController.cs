@@ -40,7 +40,22 @@ namespace hairmaster.Scripts
         {
             checkForInput();
         }
-        Vector3 currentTouchePosTemp;
+        Vector3 currentTouchePosTemp;class Book
+        {
+            public string Title { get; }
+            public string Publisher { get; }
+            public string? Isbn { get; }
+            public Book(string title, string publisher, string? isbn)
+                => (Title, Publisher, Isbn) = (title, publisher, isbn);
+
+            public Book(string title, string publisher)
+                : this(title, publisher, null) { }
+
+            public void Deconstruct(out string title, out string publisher, out string? isbn)
+                => (title, publisher, isbn) = (Title, Publisher, Isbn);
+
+            public override string ToString() => Title;
+        }
         private void checkForInput()
         {
             if (Input.GetMouseButtonDown(0))
