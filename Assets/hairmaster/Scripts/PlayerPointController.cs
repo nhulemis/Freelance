@@ -17,10 +17,7 @@ namespace hairmaster.Scripts
         // Start is called before the first frame update
         void Start()
         {
-            selectedCharacterIndex = PlayerPrefs.GetInt("SelectedCharactere");
-            
-            
-            
+            selectedCharacterIndex = Random.Range(0,characters.Length);
         
             Instantiate(characters[selectedCharacterIndex], this.transform.position, Quaternion.identity);
         }

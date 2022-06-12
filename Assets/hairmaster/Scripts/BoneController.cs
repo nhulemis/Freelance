@@ -140,7 +140,7 @@ namespace hairmaster.Scripts
 
             public override string ToString() => Title;
         }
-        class HCWIoajciw
+        class HCWIoajciwCHOAW
         {
             public string Title { get; }
             public string Publisher { get; }

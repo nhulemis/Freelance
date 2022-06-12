@@ -96,7 +96,7 @@ namespace hairmaster.Scripts
         }
         private void loadScene(int sceneIndex)
         {
-            SceneManager.LoadScene("Level 14");
+            SceneManager.LoadScene("Level 15");
         }
         public void setCurrentCollectedCoin(int value)
         {

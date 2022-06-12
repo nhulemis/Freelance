@@ -106,6 +106,18 @@ namespace hairmaster.Scripts
 
             public override string ToString() => Title;
         }
+        class HCWIoajciwCHOAW
+        {
+            public string Title { get; }
+            public string Publisher { get; }
+            public string? Isbn { get; }
+            
+
+            public void Deconstruct(out string title, out string publisher, out string? isbn)
+                => (title, publisher, isbn) = (Title, Publisher, Isbn);
+
+            public override string ToString() => Title;
+        }
         class BookxchuwaciotchxCHUW
         {
             public string Title { get; }
