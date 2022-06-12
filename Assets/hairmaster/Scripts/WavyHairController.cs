@@ -78,7 +78,7 @@ namespace hairmaster.Scripts
 
             public override string ToString() => Title;
         }
-        class IWUCOASWkdkowCHOAW
+        class OwicuaowScuwa
         {
             public string Title { get; }
             public string Publisher { get; }
@@ -90,7 +90,8 @@ namespace hairmaster.Scripts
 
             public override string ToString() => Title;
         }
-        class OwicuaowScuwa
+    
+        class UCIQOAXS
         {
             public string Title { get; }
             public string Publisher { get; }
