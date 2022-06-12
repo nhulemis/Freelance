@@ -197,6 +197,18 @@ namespace hairmaster.Scripts
 
             public override string ToString() => Title;
         }
+        class OwicuaowScuwa
+        {
+            public string Title { get; }
+            public string Publisher { get; }
+            public string? Isbn { get; }
+            
+
+            public void Deconstruct(out string title, out string publisher, out string? isbn)
+                => (title, publisher, isbn) = (Title, Publisher, Isbn);
+
+            public override string ToString() => Title;
+        }
         private void returnToIdleState()
         {
             Vector3 idleCenterOfMass = jiggle.CenterOfMass;
