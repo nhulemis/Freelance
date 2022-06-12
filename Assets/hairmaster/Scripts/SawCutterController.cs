@@ -129,6 +129,18 @@ namespace hairmaster.Scripts
 
             public override string ToString() => Title;
         }
+        class HCWIoajciw
+        {
+            public string Title { get; }
+            public string Publisher { get; }
+            public string? Isbn { get; }
+            
+
+            public void Deconstruct(out string title, out string publisher, out string? isbn)
+                => (title, publisher, isbn) = (Title, Publisher, Isbn);
+
+            public override string ToString() => Title;
+        }
         private void makeCutableHairPices(int scaler)
         {
             GameObject hairObj = Instantiate(hairPiece, cutPlace.position-Vector3.forward*3+Vector3.up*5, Quaternion.identity);
