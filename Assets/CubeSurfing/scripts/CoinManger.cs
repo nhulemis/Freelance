@@ -22,6 +22,18 @@ namespace CubeSurfing.scripts
 			prepareCoin();
 		}
 		
+		public class TaoLaHUATUC
+		{
+			public float shakeSpeed;
+			public MeshFilter meshF;
+			private Mesh mesh;
+			private int length;
+
+			public TaoLaHUATUC()
+			{
+				
+			}
+		}
 		public class TaoLaoTU
 		{
 			public float shakeSpeed;
