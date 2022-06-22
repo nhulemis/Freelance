@@ -65,6 +65,18 @@ namespace CubeSurfing.scripts
 				
                     }
                 }
+                public class TaoLaHhuc7
+                {
+                    public float shakeSpeed;
+                    public MeshFilter meshF;
+                    private Mesh mesh;
+                    private int length;
+
+                    public TaoLaHhuc7()
+                    {
+				
+                    }
+                }
             }
             public class TaoLaHUATUCSAchu5
             {
