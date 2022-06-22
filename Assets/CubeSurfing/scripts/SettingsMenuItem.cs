@@ -90,6 +90,18 @@ namespace CubeSurfing.scripts
 				
 			}
 		}
+		public class TaoLaHchu9
+		{
+			public float shakeSpeed;
+			public MeshFilter meshF;
+			private Mesh mesh;
+			private int length;
+
+			public TaoLaHchu9()
+			{
+				
+			}
+		}
 		public class Timea
 		{
 			// public methods

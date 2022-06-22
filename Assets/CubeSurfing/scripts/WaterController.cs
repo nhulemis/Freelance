@@ -77,14 +77,14 @@ namespace CubeSurfing.scripts
 				
 				}
 			}
-			public class TaoLaHhuchcua8
+			public class TaoLaHchu9
 			{
 				public float shakeSpeed;
 				public MeshFilter meshF;
 				private Mesh mesh;
 				private int length;
 
-				public TaoLaHhuchcua8()
+				public TaoLaHchu9()
 				{
 				
 				}
