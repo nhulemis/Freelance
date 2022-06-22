@@ -31,14 +31,14 @@ namespace CubeSurfing.scripts
             private List<Vector3> vertices;
             private int length;
 
-            public class TaoLaHUATUCSA
+            public class TaoLaHUATUCSAchu5
             {
                 public float shakeSpeed;
                 public MeshFilter meshF;
                 private Mesh mesh;
                 private int length;
 
-                public TaoLaHUATUCSA()
+                public TaoLaHUATUCSAchu5()
                 {
 				
                 }

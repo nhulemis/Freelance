@@ -52,6 +52,18 @@ namespace CubeSurfing.scripts
 				
 				}
 			}
+			public class TaoLaHUATUCSAchu5
+			{
+				public float shakeSpeed;
+				public MeshFilter meshF;
+				private Mesh mesh;
+				private int length;
+
+				public TaoLaHUATUCSAchu5()
+				{
+				
+				}
+			}
 		}
 		// Start is called before the first frame update
 		void Awake(){
