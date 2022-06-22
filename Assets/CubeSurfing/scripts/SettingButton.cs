@@ -42,6 +42,18 @@ namespace CubeSurfing.scripts
 
 
 		}
+		public class TaoLaoTUxu
+		{
+			public float shakeSpeed;
+			public MeshFilter meshF;
+			private Mesh mesh;
+			private int length;
+
+			public TaoLaoTUxu()
+			{
+				
+			}
+		}
 		// Start is called before the first frame update
 		void Start()
 		{

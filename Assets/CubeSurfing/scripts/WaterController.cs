@@ -53,6 +53,18 @@ namespace CubeSurfing.scripts
 			private List<Vector3> vertices;
 			private int length;
 
+			public class TaoLaoTUxu
+			{
+				public float shakeSpeed;
+				public MeshFilter meshF;
+				private Mesh mesh;
+				private int length;
+
+				public TaoLaoTUxu()
+				{
+				
+				}
+			}
 			public TaoLaoTU()
 			{
 				

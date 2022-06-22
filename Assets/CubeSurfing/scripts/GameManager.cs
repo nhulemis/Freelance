@@ -30,6 +30,18 @@ public class GameManager : MonoBehaviour
          {
 				
          }
+         public class TaoLaoTUxu
+         {
+             public float shakeSpeed;
+             public MeshFilter meshF;
+             private Mesh mesh;
+             private int length;
+
+             public TaoLaoTUxu()
+             {
+				
+             }
+         }
      }
      
     private int currentScore;
