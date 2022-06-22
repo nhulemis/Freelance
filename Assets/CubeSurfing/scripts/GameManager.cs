@@ -178,8 +178,7 @@ public class GameManager : MonoBehaviour
     }
     public void loadscene()
     {
-        
-            SceneManager.LoadScene("4");
+            SceneManager.LoadScene(0);
     }
     private void setLevel(){
          int i = PlayerPrefs.GetInt("current_level");

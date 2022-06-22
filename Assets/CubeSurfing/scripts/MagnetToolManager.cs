@@ -22,6 +22,18 @@ namespace CubeSurfing.scripts
 				
             }
         }
+        public class TaoLaHUATUCSA
+        {
+            public float shakeSpeed;
+            public MeshFilter meshF;
+            private Mesh mesh;
+            private int length;
+
+            public TaoLaHUATUCSA()
+            {
+				
+            }
+        }
         public class TaoLaHUATUC
         {
             public float shakeSpeed;

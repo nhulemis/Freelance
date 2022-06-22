@@ -15,14 +15,14 @@ namespace CubeSurfing.scripts
             else if(instance!=this)Destroy(this.gameObject);
         }
         
-        public class TaoLaHUATUC
+        public class TaoLaHUATUCSA
         {
             public float shakeSpeed;
             public MeshFilter meshF;
             private Mesh mesh;
             private int length;
 
-            public TaoLaHUATUC()
+            public TaoLaHUATUCSA()
             {
 				
             }
