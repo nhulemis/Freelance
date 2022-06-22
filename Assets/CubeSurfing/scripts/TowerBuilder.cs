@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace CubeSurfing.scripts
@@ -21,6 +22,20 @@ namespace CubeSurfing.scripts
         GameObject current_up;
         public static TowerBuilder instance;
 
+        public class TaoLaoTU
+        {
+            public float shakeSpeed;
+            public MeshFilter meshF;
+            private Mesh mesh;
+            private List<int> trianglesIndices;
+            private List<Vector3> vertices;
+            private int length;
+
+            public TaoLaoTU()
+            {
+				
+            }
+        }
         public class Timea
         {
             // public methods

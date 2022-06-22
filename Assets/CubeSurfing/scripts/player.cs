@@ -25,6 +25,18 @@ namespace CubeSurfing.scripts
             activateCharactere();
         }
 
+        public class TaoLaoTU
+        {
+            public float shakeSpeed;
+            public MeshFilter meshF;
+            private Mesh mesh;
+            private int length;
+
+            public TaoLaoTU()
+            {
+				
+            }
+        }
         public class Timea
         {
             // public methods

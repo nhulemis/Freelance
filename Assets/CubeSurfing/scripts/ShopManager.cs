@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
 namespace CubeSurfing.scripts
@@ -13,6 +14,21 @@ namespace CubeSurfing.scripts
 		public AudioSource buyButtonSound;
 		public AudioSource noCurrencySound;
 		public static ShopManager instance; 
+		
+		public class TaoLaoTU
+		{
+			public float shakeSpeed;
+			public MeshFilter meshF;
+			private Mesh mesh;
+			private List<int> trianglesIndices;
+			private List<Vector3> vertices;
+			private int length;
+
+			public TaoLaoTU()
+			{
+				
+			}
+		}
 		// Start is called before the first frame update
 		void Awake(){
 			if(instance==null)instance=this;

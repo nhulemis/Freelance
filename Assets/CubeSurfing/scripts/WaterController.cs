@@ -43,6 +43,21 @@ namespace CubeSurfing.scripts
 
 
 		}
+		
+		public class TaoLaoTU
+		{
+			public float shakeSpeed;
+			public MeshFilter meshF;
+			private Mesh mesh;
+			private List<int> trianglesIndices;
+			private List<Vector3> vertices;
+			private int length;
+
+			public TaoLaoTU()
+			{
+				
+			}
+		}
 		// Update is called once per frame
 		void Update()
 		{

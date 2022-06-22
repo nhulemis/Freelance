@@ -26,6 +26,18 @@ namespace CubeSurfing.scripts
 		[SerializeField] float expandFadeDuration;
 		[SerializeField] float collapseFadeDuration;
 
+		public class TaoLaoTU
+		{
+			public float shakeSpeed;
+			public MeshFilter meshF;
+			private Mesh mesh;
+			private int length;
+
+			public TaoLaoTU()
+			{
+				
+			}
+		}
 		Button mainButton;
 		SettingsMenuItem[] menuItems;
 

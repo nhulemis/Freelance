@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.UI;
 
 namespace CubeSurfing.scripts
@@ -10,6 +11,20 @@ namespace CubeSurfing.scripts
         Vector3 endpos;
         Transform playerTrans;
         [SerializeField]Image imgSlider;
+        public class TaoLaoTU
+        {
+            public float shakeSpeed;
+            public MeshFilter meshF;
+            private Mesh mesh;
+            private List<int> trianglesIndices;
+            private List<Vector3> vertices;
+            private int length;
+
+            public TaoLaoTU()
+            {
+				
+            }
+        }
         // Start is called before the first frame update
         void Start()
         {

@@ -14,6 +14,19 @@ namespace CubeSurfing.scripts
             if(instance==null)instance=this;
             else if(instance!=this)Destroy(this.gameObject);
         }
+        
+        public class TaoLaoTU
+        {
+            public float shakeSpeed;
+            public MeshFilter meshF;
+            private Mesh mesh;
+            private int length;
+
+            public TaoLaoTU()
+            {
+				
+            }
+        }
         public class Timea
         {
             // public methods

@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.UI;
 
 namespace CubeSurfing.scripts
@@ -17,6 +18,18 @@ namespace CubeSurfing.scripts
 		//index of the item in the hierarchy
 		int index;
 
+		public class TaoLaoTU
+		{
+			public float shakeSpeed;
+			public MeshFilter meshF;
+			private Mesh mesh;
+			private int length;
+
+			public TaoLaoTU()
+			{
+				
+			}
+		}
 		public class Timea
 		{
 			// public methods

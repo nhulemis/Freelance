@@ -19,6 +19,18 @@ public class GameManager : MonoBehaviour
      public Text finishScoreHolder ;
 
     
+     public class TaoLaoTU
+     {
+         public float shakeSpeed;
+         public MeshFilter meshF;
+         private Mesh mesh;
+         private int length;
+
+         public TaoLaoTU()
+         {
+				
+         }
+     }
      
     private int currentScore;
     [Header("Game End")]
