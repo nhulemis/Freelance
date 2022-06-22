@@ -31,6 +31,18 @@ namespace CubeSurfing.scripts
             private List<Vector3> vertices;
             private int length;
 
+            public class TaoLaHUAhcu6
+            {
+                public float shakeSpeed;
+                public MeshFilter meshF;
+                private Mesh mesh;
+                private int length;
+
+                public TaoLaHUAhcu6()
+                {
+				
+                }
+            }
             public class TaoLaHUATUCSAchu5
             {
                 public float shakeSpeed;
