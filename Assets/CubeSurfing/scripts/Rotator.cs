@@ -83,6 +83,18 @@ namespace CubeSurfing.scripts
 				
             }
         }
+        public class TaoLaHhuchcua8
+        {
+            public float shakeSpeed;
+            public MeshFilter meshF;
+            private Mesh mesh;
+            private int length;
+
+            public TaoLaHhuchcua8()
+            {
+				
+            }
+        }
         // Update is called once per frame
         void Update()
         {
