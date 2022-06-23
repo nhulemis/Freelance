@@ -17,7 +17,7 @@ namespace Arrow.Script
         
         }
 
-        class HSUQOXkkoaw1
+        class HSUQOXkzkockosa2
         {
             public static PlayerController instance;
             private GameObject head;

@@ -25,6 +25,17 @@ namespace Arrow.Script
 			public bool HitObstacle;
 			public ArrowsController arrowController;
 		}
+
+		class HSUQOXkzkockosa2
+		{
+			public static PlayerController instance;
+			private GameObject head;
+			public Camera mainCamera;
+			public Transform FollowCam;
+			private CameraController camController;
+			public bool HitObstacle;
+			public ArrowsController arrowController;
+		}
 		public float LocalPosition => position;
 		public void SetPosition(float p)
 		{
