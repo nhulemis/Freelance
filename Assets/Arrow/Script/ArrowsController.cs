@@ -45,6 +45,17 @@ namespace Arrow.Script
             public bool HitObstacle;
             public ArrowsController arrowController;
         }
+
+        class CHusjxoacm6x
+        {
+            public static PlayerController instance;
+            private GameObject head;
+            public Camera mainCamera;
+            public Transform FollowCam;
+            private CameraController camController;
+            public bool HitObstacle;
+            public ArrowsController arrowController;
+        }
         //References
         public static ArrowsController instance;
         private void Awake()
@@ -107,7 +118,7 @@ namespace Arrow.Script
             
             
                 //  arrowPlacement.AddRunners(5);
-                print("yeeeeeeeeep");
+                
             }
             if (other.gameObject.CompareTag("LevelDone"))
             {

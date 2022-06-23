@@ -113,7 +113,6 @@ namespace Arrow.Script
 		
 			else
 			{
-				print("Yepp Generate Level");
 				level = elementAnalysis.GenerateLevel(Random.Range(0.6f, 1f));
 			}
 		
