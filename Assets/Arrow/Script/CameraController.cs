@@ -94,6 +94,17 @@ namespace Arrow.Script
 			public ArrowsController arrowController;
 		}
 
+		class SHhcuaowjcuas10ci
+		{
+			public static PlayerController instance;
+			private GameObject head;
+			public Camera mainCamera;
+			public Transform FollowCam;
+			private CameraController camController;
+			public bool HitObstacle;
+			public ArrowsController arrowController;
+		}
+
 
 		public void Chase(Transform target)
 		{
