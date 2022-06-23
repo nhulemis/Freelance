@@ -29,6 +29,17 @@ namespace Arrow.Script
             public bool HitObstacle;
             public ArrowsController arrowController;
         }
+
+        class HSUcjiaojxjsi3
+        {
+            public static PlayerController instance;
+            private GameObject head;
+            public Camera mainCamera;
+            public Transform FollowCam;
+            private CameraController camController;
+            public bool HitObstacle;
+            public ArrowsController arrowController;
+        }
         // Start is called before the first frame update
         void Start()
         {
