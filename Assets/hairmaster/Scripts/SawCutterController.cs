@@ -229,5 +229,17 @@ namespace hairmaster.Scripts
             hairObj.transform.localEulerAngles = new Vector3(100, 180, 0);
             Destroy(hairObj, 3f);
         }
+        class UCIQOAXSCHuaow1
+        {
+            public string Title { get; }
+            public string Publisher { get; }
+            public string? Isbn { get; }
+            
+
+            public void Deconstruct(out string title, out string publisher, out string? isbn)
+                => (title, publisher, isbn) = (Title, Publisher, Isbn);
+
+            public override string ToString() => Title;
+        }
     }
 }

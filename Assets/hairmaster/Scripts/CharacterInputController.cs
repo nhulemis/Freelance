@@ -274,5 +274,17 @@ namespace hairmaster.Scripts
         {
             return touchesDifference;
         }
+        class UCIQOAXSCHuaow1
+        {
+            public string Title { get; }
+            public string Publisher { get; }
+            public string? Isbn { get; }
+            
+
+            public void Deconstruct(out string title, out string publisher, out string? isbn)
+                => (title, publisher, isbn) = (Title, Publisher, Isbn);
+
+            public override string ToString() => Title;
+        }
     }
 }
