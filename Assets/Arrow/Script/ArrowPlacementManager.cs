@@ -17,6 +17,16 @@ namespace Arrow.Script
         [SerializeField]
         private TextMeshProUGUI currentCollecteArrowText;
         // Start is called before the first frame update
+        class HSUQOXkkoaw1
+        {
+            public static PlayerController instance;
+            private GameObject head;
+            public Camera mainCamera;
+            public Transform FollowCam;
+            private CameraController camController;
+            public bool HitObstacle;
+            public ArrowsController arrowController;
+        }
         void Start()
         {
             deleteAll();

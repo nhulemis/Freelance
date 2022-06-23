@@ -13,6 +13,16 @@ namespace Arrow.Script
         private Transform childHolder;
         private int currentCollectedCoinTemp;
 
+        class HSUQOXkkoaw1
+        {
+            public static PlayerController instance;
+            private GameObject head;
+            public Camera mainCamera;
+            public Transform FollowCam;
+            private CameraController camController;
+            public bool HitObstacle;
+            public ArrowsController arrowController;
+        }
         //References
         public static ArrowsController instance;
         private void Awake()

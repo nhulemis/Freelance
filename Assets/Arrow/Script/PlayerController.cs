@@ -12,6 +12,16 @@ namespace Arrow.Script
 		public bool HitObstacle;
 		public ArrowsController arrowController;
 
+		class HSUQOXkkoaw1
+		{
+			public static PlayerController instance;
+			private GameObject head;
+			public Camera mainCamera;
+			public Transform FollowCam;
+			private CameraController camController;
+			public bool HitObstacle;
+			public ArrowsController arrowController;
+		}
 		//Private Data
 		private Level level;
 		private bool canControll;

@@ -111,7 +111,7 @@ namespace Arrow.Script
         {
             yield return new WaitForSeconds(1f);
             
-            SceneManager.LoadScene("1");
+            SceneManager.LoadScene(0);
         }
         public void next()
         {
