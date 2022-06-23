@@ -17,7 +17,7 @@ namespace Arrow.Script
         
         }
 
-        class CHusjxoacm6x
+        class CHusjkjzoskc7c
         {
             public static PlayerController instance;
             private GameObject head;
