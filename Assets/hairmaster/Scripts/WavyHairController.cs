@@ -91,7 +91,7 @@ namespace hairmaster.Scripts
             public override string ToString() => Title;
         }
     
-        class Taochozhcoajwi8c
+        class TaocjoawKosj9
         {
             public string Title { get; }
             public string Publisher { get; }
