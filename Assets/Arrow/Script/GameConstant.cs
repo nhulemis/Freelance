@@ -22,5 +22,6 @@
 		public static float FlyHeight = 5;
 		public static float StartPosition = 5;
 		public static int BABY_VALUE = 1;
+
 	}
 }

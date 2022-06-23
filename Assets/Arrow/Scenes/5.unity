@@ -637,25 +637,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_RenderShadows: 1
-  m_RequiresDepthTextureOption: 2
-  m_RequiresOpaqueTextureOption: 2
-  m_CameraType: 0
-  m_Cameras: []
-  m_RendererIndex: -1
-  m_VolumeLayerMask:
-    serializedVersion: 2
-    m_Bits: 1
-  m_VolumeTrigger: {fileID: 0}
-  m_RenderPostProcessing: 0
-  m_Antialiasing: 0
-  m_AntialiasingQuality: 2
-  m_StopNaN: 0
-  m_Dithering: 0
-  m_ClearDepth: 1
-  m_RequiresDepthTexture: 0
-  m_RequiresColorTexture: 0
-  m_Version: 2
 --- !u!1 &900311762
 GameObject:
   m_ObjectHideFlags: 0
@@ -753,25 +734,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_RenderShadows: 1
-  m_RequiresDepthTextureOption: 2
-  m_RequiresOpaqueTextureOption: 2
-  m_CameraType: 0
-  m_Cameras: []
-  m_RendererIndex: -1
-  m_VolumeLayerMask:
-    serializedVersion: 2
-    m_Bits: 1
-  m_VolumeTrigger: {fileID: 0}
-  m_RenderPostProcessing: 0
-  m_Antialiasing: 0
-  m_AntialiasingQuality: 2
-  m_StopNaN: 0
-  m_Dithering: 0
-  m_ClearDepth: 1
-  m_RequiresDepthTexture: 0
-  m_RequiresColorTexture: 0
-  m_Version: 2
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -810,7 +772,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.07058824, g: 0.47450984, b: 0.3372549, a: 1}
+  m_BackGroundColor: {r: 0.47450984, g: 0.0627451, b: 0.41960788, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -885,25 +847,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_RenderShadows: 1
-  m_RequiresDepthTextureOption: 2
-  m_RequiresOpaqueTextureOption: 2
-  m_CameraType: 0
-  m_Cameras: []
-  m_RendererIndex: 0
-  m_VolumeLayerMask:
-    serializedVersion: 2
-    m_Bits: 1
-  m_VolumeTrigger: {fileID: 0}
-  m_RenderPostProcessing: 1
-  m_Antialiasing: 0
-  m_AntialiasingQuality: 2
-  m_StopNaN: 0
-  m_Dithering: 0
-  m_ClearDepth: 1
-  m_RequiresDepthTexture: 0
-  m_RequiresColorTexture: 0
-  m_Version: 2
 --- !u!1 &996186509
 GameObject:
   m_ObjectHideFlags: 0
@@ -1335,11 +1278,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isGlobal: 1
-  priority: 0
-  blendDistance: 0
-  weight: 1
-  sharedProfile: {fileID: 11400000, guid: c86574f7143ca473ea5a54e0233c0778, type: 2}
 --- !u!4 &1864700814
 Transform:
   m_ObjectHideFlags: 0
@@ -1638,16 +1576,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5730738617886388567, guid: 6e7eeb307ce524b729cf0a37e17c35ee,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 177
-      objectReference: {fileID: 0}
-    - target: {fileID: 5730738617886388567, guid: 6e7eeb307ce524b729cf0a37e17c35ee,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -414
-      objectReference: {fileID: 0}
     - target: {fileID: 5730738617964456505, guid: 6e7eeb307ce524b729cf0a37e17c35ee,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -1688,21 +1616,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5730738617974710440, guid: 6e7eeb307ce524b729cf0a37e17c35ee,
-        type: 3}
-      propertyPath: m_Color.b
-      value: 0.40003887
-      objectReference: {fileID: 0}
-    - target: {fileID: 5730738617974710440, guid: 6e7eeb307ce524b729cf0a37e17c35ee,
-        type: 3}
-      propertyPath: m_Color.g
-      value: 0.5660378
-      objectReference: {fileID: 0}
-    - target: {fileID: 5730738617974710440, guid: 6e7eeb307ce524b729cf0a37e17c35ee,
-        type: 3}
-      propertyPath: m_Color.r
-      value: 0.07742971
-      objectReference: {fileID: 0}
     - target: {fileID: 5730738618210756643, guid: 6e7eeb307ce524b729cf0a37e17c35ee,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -1722,31 +1635,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5730738618663198326, guid: 6e7eeb307ce524b729cf0a37e17c35ee,
-        type: 3}
-      propertyPath: m_Color.b
-      value: 0.40003887
-      objectReference: {fileID: 0}
-    - target: {fileID: 5730738618663198326, guid: 6e7eeb307ce524b729cf0a37e17c35ee,
-        type: 3}
-      propertyPath: m_Color.g
-      value: 0.5660378
-      objectReference: {fileID: 0}
-    - target: {fileID: 5730738618663198326, guid: 6e7eeb307ce524b729cf0a37e17c35ee,
-        type: 3}
-      propertyPath: m_Color.r
-      value: 0.07742971
-      objectReference: {fileID: 0}
-    - target: {fileID: 5730738619399316075, guid: 6e7eeb307ce524b729cf0a37e17c35ee,
-        type: 3}
-      propertyPath: m_text
-      value: <color=blue>Aim</color> xcasc <color=red>chxa7</color>
-      objectReference: {fileID: 0}
-    - target: {fileID: 5730738619399316075, guid: 6e7eeb307ce524b729cf0a37e17c35ee,
-        type: 3}
-      propertyPath: m_fontSize
-      value: 156.3
       objectReference: {fileID: 0}
     - target: {fileID: 5730738619591793544, guid: 6e7eeb307ce524b729cf0a37e17c35ee,
         type: 3}
@@ -1788,25 +1676,5 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5730738619717840118, guid: 6e7eeb307ce524b729cf0a37e17c35ee,
-        type: 3}
-      propertyPath: m_Color.b
-      value: 0.40003887
-      objectReference: {fileID: 0}
-    - target: {fileID: 5730738619717840118, guid: 6e7eeb307ce524b729cf0a37e17c35ee,
-        type: 3}
-      propertyPath: m_Color.g
-      value: 0.5660378
-      objectReference: {fileID: 0}
-    - target: {fileID: 5730738619717840118, guid: 6e7eeb307ce524b729cf0a37e17c35ee,
-        type: 3}
-      propertyPath: m_Color.r
-      value: 0.07742971
-      objectReference: {fileID: 0}
-    - target: {fileID: 8494656345960773896, guid: 6e7eeb307ce524b729cf0a37e17c35ee,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 6285861d4cd9149629376a9f8694bb51, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e7eeb307ce524b729cf0a37e17c35ee, type: 3}
