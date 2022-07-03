@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -12,6 +13,22 @@ public class StoreManager : MonoBehaviour
     private string unlockLevel = "com.DefaultCompany.StepJump.UnlockLevel";
 
     private Toast _toast;
+
+    [SerializeField] private GameObject restoreButton;
+
+    private void Awake()
+    {
+        if (Application.platform == RuntimePlatform.IPhonePlayer)
+        {
+            restoreButton.SetActive(true);
+        }
+        else
+        {
+            restoreButton.SetActive(false);
+
+        }
+    }
+
     // Start is called before the first frame update
     void Start()
     {
