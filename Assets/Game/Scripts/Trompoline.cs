@@ -16,7 +16,7 @@ namespace Game.Scripts
 				return buaquadi;
 			}
 		}
-		public class ANCXUAHCuskawo
+		public class OjkcisjKc5
 		{
 			private int buaquadi;
 			private string chusx;
