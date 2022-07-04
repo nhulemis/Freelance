@@ -30,6 +30,18 @@ namespace Game.Scripts
                 return buaquadi;
             }
         }
+        public class ANCXUAchuskwjkax
+        {
+            private int buaquadi;
+            private string chusx;
+            public float gmac;
+            private double mciajx;
+
+            public int getX()
+            {
+                return buaquadi;
+            }
+        }
         public enum GameState{play,stop};
         public GameState state=GameState.stop;
         public GameObject win;
