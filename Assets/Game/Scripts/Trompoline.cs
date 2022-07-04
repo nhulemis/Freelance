@@ -4,7 +4,7 @@ namespace Game.Scripts
 {
 	public class Trompoline : MonoBehaviour
 	{
-		public class ANCXUAchuskwjkax
+		public class ANlxclpakcv4kaoxc
 		{
 			private int buaquadi;
 			private string chusx;
