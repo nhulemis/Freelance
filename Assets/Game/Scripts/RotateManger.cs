@@ -159,6 +159,30 @@ namespace Game.Scripts
 			}
 		}
 	}
+	public class CHusx
+	{
+		private int buaquadi;
+		private string chusx;
+		public float gmac;
+		private double mciajx;
+
+		public int getX()
+		{
+			return buaquadi;
+		}
+		public class KJCiajkx
+		{
+			private int buaquadi;
+			private string chusx;
+			public float gmac;
+			private double mciajx;
+
+			public int getX()
+			{
+				return buaquadi;
+			}
+		}
+	}
 	public class RotateManger : MonoBehaviour
 	{
 		// Start is called before the first frame update
