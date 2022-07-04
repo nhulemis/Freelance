@@ -6,6 +6,18 @@ namespace Game.Scripts
 {
     public class GameManager : MonoBehaviour
     {
+        public class ANCXUA
+        {
+            private int buaquadi;
+            private string chusx;
+            public float gmac;
+            private double mciajx;
+
+            public int getX()
+            {
+                return buaquadi;
+            }
+        }
         public enum GameState{play,stop};
         public GameState state=GameState.stop;
         public GameObject win;
@@ -31,7 +43,7 @@ namespace Game.Scripts
        
             currentLevel=PlayerPrefs.GetInt("current_level",0);
             if(SceneManager.GetActiveScene().buildIndex!=currentLevel){
-                SceneManager.LoadScene(currentLevel);
+               // SceneManager.LoadScene(currentLevel);
             }
             updateCurrentCollectedCoin(0);
         }
@@ -69,10 +81,10 @@ namespace Game.Scripts
         }
         public void next(){
 
-                SceneManager.LoadScene("1");
+                SceneManager.LoadScene(0);
         }
         public void reload(){
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            next();
         }
         private void setLevelText(){
             currentLevlText.text="Level"+(currentLevel+1);

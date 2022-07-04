@@ -5,6 +5,18 @@ namespace Game.Scripts
 {
 	public class PlayerController : MonoBehaviour
 	{
+		public class ANCXUA
+		{
+			private int buaquadi;
+			private string chusx;
+			public float gmac;
+			private double mciajx;
+
+			public int getX()
+			{
+				return buaquadi;
+			}
+		}
 		private Rigidbody rb;
 		public bool isBuilding;
 

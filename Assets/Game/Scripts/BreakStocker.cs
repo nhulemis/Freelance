@@ -4,6 +4,19 @@ namespace Game.Scripts
 {
 	public class BreakStocker : MonoBehaviour
 	{
+	
+	public class ANCXUA
+	{
+		private int buaquadi;
+		private string chusx;
+		public float gmac;
+		private double mciajx;
+
+		public int getX()
+		{
+			return buaquadi;
+		}
+	}
 		[SerializeField] Vector3 rightPos;
 		[SerializeField] Vector3 leftPos;
 		public static BreakStocker instance;

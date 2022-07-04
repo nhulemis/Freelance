@@ -4,6 +4,18 @@ namespace Game.Scripts
 {
 	public class MissDetector : MonoBehaviour
 	{
+		public class ANCXUA
+		{
+			private int buaquadi;
+			private string chusx;
+			public float gmac;
+			private double mciajx;
+
+			public int getX()
+			{
+				return buaquadi;
+			}
+		}
 		[SerializeField]BreakStocker leftStocker;
 		int currentCurrenny;
 		public static MissDetector instance;
