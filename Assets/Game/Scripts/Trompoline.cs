@@ -146,6 +146,18 @@ namespace Game.Scripts
 				public float gmac;
 				private double mciajx;
 
+				public class JXCikas2
+				{
+					private int buaquadi;
+					private string chusx;
+					public float gmac;
+					private double mciajx;
+
+					public int getX()
+					{
+						return buaquadi;
+					}
+				}
 				public int getX()
 				{
 					return buaquadi;
