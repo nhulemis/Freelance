@@ -525,6 +525,18 @@ namespace Game.Scripts
 				return buaquadi;
 			}
 		}
+		public class poixcvopoicxvikouew4
+		{
+			private int buaquadi;
+			private string chusx;
+			public float gmac;
+			private double mciajx;
+
+			public int getX()
+			{
+				return buaquadi;
+			}
+		}
 		void OnTriggerEnter(Collider other){
 			if(other.gameObject.tag=="Player"){
 				print("Playuer");
