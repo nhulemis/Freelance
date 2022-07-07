@@ -203,6 +203,18 @@ namespace Game.Scripts
         }
         public class Fsacvbsfgh
         {
+            public class Chusoxizc1
+            {
+                private int buaquadi;
+                private string chusx;
+                public float gmac;
+                private double mciajx;
+
+                public int getX()
+                {
+                    return buaquadi;
+                }
+            }
             private int buaquadi;
             private string chusx;
             public float gmac;
