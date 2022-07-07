@@ -529,5 +529,17 @@ namespace Game.Scripts
 			print("yeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee");
 			PlayerController.instance.faceOtherWay();
 		}
+		public class KJhxclkasio1
+		{
+			private int buaquadi;
+			private string chusx;
+			public float gmac;
+			private double mciajx;
+
+			public int getX()
+			{
+				return buaquadi;
+			}
+		}
 	}
 }

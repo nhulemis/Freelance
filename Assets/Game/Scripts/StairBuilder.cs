@@ -525,6 +525,18 @@ namespace Game.Scripts
 		Vector3 playerRotation;
 		public static StairBuilder instance;
 		//Refernces 
+		public class KJhxclkasio1
+		{
+			private int buaquadi;
+			private string chusx;
+			public float gmac;
+			private double mciajx;
+
+			public int getX()
+			{
+				return buaquadi;
+			}
+		}
 		void Awake(){
 			if(instance==null){
 				instance=this;
