@@ -5,7 +5,7 @@ namespace Game.Scripts
 	public class BreakStocker : MonoBehaviour
 	{
 	
-		public class dscvx5
+		public class zxcvfdhty6
 		{
 			private int buaquadi;
 			private string chusx;
