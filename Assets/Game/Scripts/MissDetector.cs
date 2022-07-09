@@ -30,6 +30,127 @@ namespace Game.Scripts
 					return buaquadi;
 				}
 			}
+			public class oijkhnzmc2ioxkjc
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
+			public class oihjkcnzmx3izjck
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
+			public class oiuzjhxkcnm4zxca
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
+			public class poiuhjbnm5xzc
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
+			public class sadcxasddfs6zxc
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
+	
+			public class oiuyhjbn7ịuk
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
+			public class iuygjhbn8kjhbn
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
+			public class oiuyhjbn9ụhnbm
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
+			public class iuyghvbn10izuhj
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
+		public class oiuhjnca1
+		{
+			private int buaquadi;
+			private string chusx;
+			public float gmac;
+			private double mciajx;
+
+			public int getX()
+			{
+				return buaquadi;
+			}
+		}
 			public class ioujksmncxz2oizxjkl
 			{
 				private int buaquadi;
