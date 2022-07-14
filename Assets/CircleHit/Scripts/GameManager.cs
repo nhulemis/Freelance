@@ -102,7 +102,13 @@ public class GameManager : MonoBehaviour
 		{
 			MovePlayer();
 		}
-		else if (Input.GetMouseButton(0) && !shooting && !movingPlayer && !EventSystem.current.IsPointerOverGameObject(0))
+		else if (Input.GetMouseButton(0) && !shooting && !movingPlayer && 
+		         #if UNITY_EDITOR
+		         !EventSystem.current.IsPointerOverGameObject()
+		         #else
+		         !EventSystem.current.IsPointerOverGameObject(0)
+		         #endif
+		         )
 		{
 			shooting = true;
 			StartCoroutine(ShotBall());
