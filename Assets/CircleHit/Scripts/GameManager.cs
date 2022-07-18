@@ -80,6 +80,8 @@ public class GameManager : MonoBehaviour
 		Application.targetFrameRate = 30;
 		step = (float)playerSpeed * Time.deltaTime;
 		CreateScene();
+		
+		GameItemManager.Instance.UpdateEnergy(2);
 	}
 
 	private void Update()
@@ -98,7 +100,7 @@ public class GameManager : MonoBehaviour
 				flyDestination = tempObstacle.transform.position;
 			}
 		}
-		else if (readyToShoot && !movingPlayer && !shooting)
+		else if ((readyToShoot || tempObstacle.GetComponent<Obstacle>().IsPass()) && !movingPlayer && !shooting)
 		{
 			MovePlayer();
 		}
@@ -200,6 +202,15 @@ public class GameManager : MonoBehaviour
 		camObject.GetComponent<CameraFollowTarget>().EnableDisableFollow(status: false);
 	}
 
+	public void ContinueGame()
+	{
+		readyToShoot = false;
+		movingPlayer = false;
+		//scoreManager.ResetCurrentScore();
+		uIManager.ShowGameplay();
+		camObject.GetComponent<CameraFollowTarget>().EnableDisableFollow(status: false);
+	}
+
 	public void ClearScene()
 	{
 		GameObject[] array = GameObject.FindGameObjectsWithTag("Obstacle");
@@ -217,6 +228,7 @@ public class GameManager : MonoBehaviour
 			AudioManager.Instance.PlayEffects(AudioManager.Instance.gameOver);
 			uIManager.ShowGameOver();
 			scoreManager.UpdateScoreGameover();
+			GameItemManager.Instance.UpdateEnergy(-1);
 		}
 	}
 }

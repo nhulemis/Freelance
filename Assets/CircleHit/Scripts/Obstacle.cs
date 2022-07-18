@@ -183,6 +183,11 @@ public class Obstacle : MonoBehaviour
 		}
 	}
 
+	public bool IsPass()
+	{
+		return value <= 0;
+	}
+
 	public void PlayWaveOut()
 	{
 		if (!waving)

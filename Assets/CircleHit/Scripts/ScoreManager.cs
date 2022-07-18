@@ -56,6 +56,7 @@ public class ScoreManager : MonoBehaviour
 		ResetCurrentScore();
 	}
 
+
 	private void UpdateHighScore()
 	{
 		if (currentScore > highScore)
