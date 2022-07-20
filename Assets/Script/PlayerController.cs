@@ -67,7 +67,6 @@ public class PlayerController : MonoBehaviour
 			UiManager.instance.win();
         }else if (other.gameObject.CompareTag("Cash"))
         {
-			print("Yeeeeep Destroy");
 			GameObject parent = other.transform.parent.gameObject;
 			updateFinancialState(parent.transform.position);
 
@@ -77,7 +76,6 @@ public class PlayerController : MonoBehaviour
 		}
 		else if (other.gameObject.CompareTag("Trash"))
 		{
-			print("Yeeeeep Destroy");
 			GameObject parent = other.transform.parent.gameObject;
 			updateFinancialState(parent.transform.position, -.05f);
 
@@ -85,7 +83,6 @@ public class PlayerController : MonoBehaviour
 		}
 		else if (other.gameObject.CompareTag("GoodDoor"))
 		{
-			print("Yeeeeep Destroy");
 			GameObject parent = other.transform.parent.parent.parent.gameObject;
 			updateFinancialState(parent.transform.position, .1f);
 
@@ -94,7 +91,6 @@ public class PlayerController : MonoBehaviour
 		}
 		else if (other.gameObject.CompareTag("BadDoor"))
 		{
-			print("Yeeeeep Destroy");
 			GameObject parent = other.GetComponent<ChoiseDoorController>().getParent();
 			updateFinancialState(parent.transform.position, -.1f);
 

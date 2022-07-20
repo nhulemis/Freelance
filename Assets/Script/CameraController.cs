@@ -12,7 +12,7 @@ public class CameraController : MonoBehaviour
 
 	public void Chase(Transform target)
 	{
-		print("folfoflfofofofofoof");
+		
 		if (!ChaseEnable)
 		{
 			return;

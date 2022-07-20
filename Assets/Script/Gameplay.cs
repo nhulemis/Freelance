@@ -77,7 +77,6 @@ public class Gameplay : MonoBehaviour
 	public void Init()
 	{
 
-		print("GamePlay Init");
 		RenderSettings.fogStartDistance = GameConstanst.FogStartDistanceFar;
 		RenderSettings.fogEndDistance = GameConstanst.FogEndDistanceFar;
 		cameraController.ChaseEnable = true;
@@ -90,7 +89,6 @@ public class Gameplay : MonoBehaviour
 		
 		else
 		{
-			print("Yepp Generate Level");
 			level = elementAnalysis.GenerateLevel(Random.Range(0.6f, 1f));
 		}
 		
