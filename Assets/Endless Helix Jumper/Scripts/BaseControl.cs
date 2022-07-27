@@ -80,6 +80,15 @@ public class BaseControl : MonoBehaviour {
     
   }
 
+  class jkzcvjkaiopizxcklaopiuzxcjhka
+  {
+    private int a;
+    private int b;
+    private float c;
+    private bool d;
+    
+  }
+
 	private void Awake()
 	{
 		scores = GetComponentsInChildren<ScoreTrigger>();

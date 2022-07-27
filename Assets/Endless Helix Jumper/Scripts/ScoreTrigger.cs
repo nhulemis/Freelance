@@ -49,7 +49,8 @@ public class ScoreTrigger : MonoBehaviour {
     private bool d;
     
   }
-  class OICUjkhakjxka
+
+  class jkzcvjkaiopizxcklaopiuzxcjhka
   {
     private int a;
     private int b;
