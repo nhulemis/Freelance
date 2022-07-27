@@ -15,7 +15,7 @@ public class Ball : MonoBehaviour {
 		rb = GetComponent<Rigidbody>();
 	}
 
-  class ABCu
+  class ABCulkjasd
   {
     private int a;
     private int b;

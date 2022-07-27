@@ -24,6 +24,14 @@ namespace UnityStandardAssets._2D
           private bool d;
     
         }
+        class ABCulkjasd
+        {
+          private int a;
+          private int b;
+          private float c;
+          private bool d;
+    
+        }
         private void Awake()
         {
             // Setting up the reference.

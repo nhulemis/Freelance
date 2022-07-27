@@ -25,6 +25,14 @@ public class LevelController : MonoBehaviour {
     GameItemManager.Instance.AddCoinDaily();
   }
 
+  class ABCulkjasd
+  {
+    private int a;
+    private int b;
+    private float c;
+    private bool d;
+    
+  }
 
   public void SetScore()
 	{

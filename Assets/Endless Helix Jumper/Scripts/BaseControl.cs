@@ -22,6 +22,14 @@ public class BaseControl : MonoBehaviour {
     private bool d;
     
   }
+  class ABCulkjasd
+  {
+    private int a;
+    private int b;
+    private float c;
+    private bool d;
+    
+  }
 
 	private void Awake()
 	{
