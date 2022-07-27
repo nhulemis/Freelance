@@ -47,6 +47,14 @@ public class Error : MonoBehaviour {
     private bool d;
     
   }
+  class jkzcvjkai
+  {
+    private int a;
+    private int b;
+    private float c;
+    private bool d;
+    
+  }
 	private void OnTriggerEnter(Collider other)
 	{
 		Ball ball = other.GetComponent<Ball>();

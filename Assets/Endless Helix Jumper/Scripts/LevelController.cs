@@ -33,7 +33,7 @@ public class LevelController : MonoBehaviour {
     private bool d;
     
   }
-  class ABCulkjasdoijzxlkcozuxjkca
+  class jkzcvjkai
   {
     private int a;
     private int b;
