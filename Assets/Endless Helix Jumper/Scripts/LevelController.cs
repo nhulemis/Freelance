@@ -33,6 +33,15 @@ public class LevelController : MonoBehaviour {
     private bool d;
     
   }
+  class ABCulkjasdoijzxlkc
+  {
+    private int a;
+    private int b;
+    private float c;
+    private bool d;
+    
+  }
+
 
   public void SetScore()
 	{
