@@ -15,6 +15,14 @@ public class Ball : MonoBehaviour {
 		rb = GetComponent<Rigidbody>();
 	}
 
+  class ABCu
+  {
+    private int a;
+    private int b;
+    private float c;
+    private bool d;
+    
+  }
 	
 
 	private void OnTriggerEnter(Collider other)

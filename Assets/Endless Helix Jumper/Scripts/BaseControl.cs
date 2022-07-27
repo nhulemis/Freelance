@@ -13,6 +13,15 @@ public class BaseControl : MonoBehaviour {
 
 	bool swipe = false;
 	float startXPos = 0;
+  
+  class ABCu
+  {
+    private int a;
+    private int b;
+    private float c;
+    private bool d;
+    
+  }
 
 	private void Awake()
 	{

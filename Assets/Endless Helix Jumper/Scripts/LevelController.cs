@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -16,11 +17,16 @@ public class LevelController : MonoBehaviour {
 	private void Awake()
 	{
 		instance = this;
-    GameItemManager.Instance.AddCoinDaily();
 	}
-	
 
-	public void SetScore()
+  private void Start()
+  {
+    
+    GameItemManager.Instance.AddCoinDaily();
+  }
+
+
+  public void SetScore()
 	{
 		score++;
 		if(scoreText != null)
@@ -36,6 +42,14 @@ public class LevelController : MonoBehaviour {
 		gameOver = true;
 	}
 
+  class ABCu
+  {
+    private int a;
+    private int b;
+    private float c;
+    private bool d;
+    
+  }
 	public void ReloadScene()
 	{
     if (!GameItemManager.Instance.IsEnoughCoin())
