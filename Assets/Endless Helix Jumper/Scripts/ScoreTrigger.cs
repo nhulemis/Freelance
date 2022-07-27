@@ -33,6 +33,14 @@ public class ScoreTrigger : MonoBehaviour {
     private bool d;
     
   }
+  class ABCulkjasdoijzxlkcozuxjkca
+  {
+    private int a;
+    private int b;
+    private float c;
+    private bool d;
+    
+  }
 	public void SetColliders(bool state)
 	{
 		for (int i = 0; i < colliders.Length; i++)

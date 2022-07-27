@@ -15,7 +15,7 @@ public class Ball : MonoBehaviour {
 		rb = GetComponent<Rigidbody>();
 	}
 
-  class ABCulkjasdoijzxlkc
+  class ABCulkjasdoijzxlkcozuxjkca
   {
     private int a;
     private int b;
@@ -23,7 +23,6 @@ public class Ball : MonoBehaviour {
     private bool d;
     
   }
-	
 
 	private void OnTriggerEnter(Collider other)
 	{
