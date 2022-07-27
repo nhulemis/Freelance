@@ -41,4 +41,16 @@ public class UserCoin : MonoBehaviour
     {
         
     }
+
+    public void Alert()
+    {
+      StartCoroutine(AlertNotEnough());
+    }
+
+    private IEnumerator AlertNotEnough()
+    {
+      coin.color = Color.red;
+      yield return new WaitForSeconds(1);
+      coin.color = Color.white;
+    }
 }

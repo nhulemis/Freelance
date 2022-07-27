@@ -7,6 +7,8 @@ using Object = UnityEngine.Object;
 
 public class GameItemManager : MonoBehaviour
 {
+
+  [SerializeField] private UserCoin coin;
     
     public static GameItemManager Instance
     {
@@ -86,6 +88,11 @@ public class GameItemManager : MonoBehaviour
 
     public bool IsEnoughCoin()
     {
+      bool isEnough = GetTotalCoin() > 0;
+      if (!isEnough)
+      {
+        coin.Alert();
+      }
       return GetTotalCoin() > 0;
     }
 }
