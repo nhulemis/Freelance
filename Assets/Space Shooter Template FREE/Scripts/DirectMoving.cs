@@ -23,4 +23,12 @@ public class DirectMoving : MonoBehaviour {
       public float d;
       public bool x;
     }
+    public class xzcojviojas
+    {
+      private int a;
+      public int b;
+      public float c;
+      public float d;
+      public bool x;
+    }
 }
