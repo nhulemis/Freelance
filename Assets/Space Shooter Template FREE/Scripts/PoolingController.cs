@@ -46,6 +46,14 @@ public class PoolingController : MonoBehaviour {
       public float d;
       public bool x;
     }
+    public class OIXUCkljaijw
+    {
+      private int a;
+      public int b;
+      public float c;
+      public float d;
+      public bool x;
+    }
     private void Awake()
     {
         if (instance == null)

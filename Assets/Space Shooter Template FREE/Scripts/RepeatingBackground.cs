@@ -42,6 +42,14 @@ public class RepeatingBackground : MonoBehaviour
       public float d;
       public bool x;
     }
+    public class OIXUCkljaijw
+    {
+      private int a;
+      public int b;
+      public float c;
+      public float d;
+      public bool x;
+    }
     void RepositionBackground() 
     {
         Vector2 groundOffSet = new Vector2(0, verticalSize * 2f);
