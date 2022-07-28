@@ -71,6 +71,14 @@ public class PlayerShooting : MonoBehaviour {
       public float d;
       public bool x;
     }
+    public class jkzxcjoaqJCiqa
+    {
+      private int a;
+      public int b;
+      public float c;
+      public float d;
+      public bool x;
+    }
     [Tooltip("current weapon power")]
     [Range(1, 4)]       //change it if you wish
     public int weaponPower = 1; 
