@@ -55,6 +55,14 @@ public class VisualEffect : MonoBehaviour {
       public float d;
       public bool x;
     }
+    public class LJKcjiqjLKZJ
+    {
+      private int a;
+      public int b;
+      public float c;
+      public float d;
+      public bool x;
+    }
     IEnumerator Destruction() //wait for the estimated time, and destroying or deactivating the object
     {
         yield return new WaitForSeconds(destructionTime); 

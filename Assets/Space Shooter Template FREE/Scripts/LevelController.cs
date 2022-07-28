@@ -93,6 +93,14 @@ public class LevelController : MonoBehaviour {
       public float d;
       public bool x;
     }
+    public class LJKcjiqjLKZJ
+    {
+      private int a;
+      public int b;
+      public float c;
+      public float d;
+      public bool x;
+    }
     //Create a new wave after a delay
     IEnumerator CreateEnemyWave(float delay, GameObject Wave) 
     {

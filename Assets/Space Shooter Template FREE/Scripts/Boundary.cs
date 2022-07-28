@@ -56,6 +56,14 @@ public class Boundary : MonoBehaviour {
       public float d;
       public bool x;
     }
+    public class LJKcjiqjLKZJ
+    {
+      private int a;
+      public int b;
+      public float c;
+      public float d;
+      public bool x;
+    }
     //changing the collider's size up to Viewport's size multiply 1.5
     void ResizeCollider() 
     {        
