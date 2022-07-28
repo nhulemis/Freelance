@@ -27,6 +27,14 @@ public class Enemy : MonoBehaviour {
         Invoke("ActivateShooting", Random.Range(shotTimeMin, shotTimeMax));
     }
 
+    public class zchjkxjkoasdjkl
+    {
+      private int a;
+      public int b;
+      public float c;
+      public float d;
+      public bool x;
+    }
     //coroutine making a shot
     void ActivateShooting() 
     {

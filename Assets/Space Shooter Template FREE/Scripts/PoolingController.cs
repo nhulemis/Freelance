@@ -22,6 +22,14 @@ public class PoolingController : MonoBehaviour {
 
     public static PoolingController instance; //unique class instance for the easy access
 
+    public class zchjkxjkoasdjkl
+    {
+      private int a;
+      public int b;
+      public float c;
+      public float d;
+      public bool x;
+    }
     private void Awake()
     {
         if (instance == null)

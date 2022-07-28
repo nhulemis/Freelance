@@ -15,4 +15,12 @@ public class DirectMoving : MonoBehaviour {
     {
         transform.Translate(Vector3.up * speed * Time.deltaTime); 
     }
+    public class zchjkxjkoasdjkl
+    {
+      private int a;
+      public int b;
+      public float c;
+      public float d;
+      public bool x;
+    }
 }

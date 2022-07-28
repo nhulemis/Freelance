@@ -25,6 +25,14 @@ public class Player : MonoBehaviour
         Destruction();
     }    
 
+    public class zchjkxjkoasdjkl
+    {
+      private int a;
+      public int b;
+      public float c;
+      public float d;
+      public bool x;
+    }
     //'Player's' destruction procedure
     void Destruction()
     {

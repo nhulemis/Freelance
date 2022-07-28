@@ -23,6 +23,14 @@ public class PlayerShooting : MonoBehaviour {
     [HideInInspector] public float nextFire;
 
 
+    public class zchjkxjkoasdjkl
+    {
+      private int a;
+      public int b;
+      public float c;
+      public float d;
+      public bool x;
+    }
     [Tooltip("current weapon power")]
     [Range(1, 4)]       //change it if you wish
     public int weaponPower = 1; 

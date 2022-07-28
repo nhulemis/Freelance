@@ -16,6 +16,14 @@ public class FollowThePath : MonoBehaviour {
     Vector3[] pathPositions;                //path points in vector3
     [HideInInspector] public bool movingIsActive;   //whether 'Enemy' moves or not
 
+    public class zchjkxjkoasdjkl
+    {
+      private int a;
+      public int b;
+      public float c;
+      public float d;
+      public bool x;
+    }
     //setting path parameters for the 'Enemy' and sending the 'Enemy' to the path starting point
     public void SetPath() 
     {
