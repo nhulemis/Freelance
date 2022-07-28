@@ -40,6 +40,14 @@ public class FollowThePath : MonoBehaviour {
       public float d;
       public bool x;
     }
+    public class KhuqwklxJKA
+    {
+      private int a;
+      public int b;
+      public float c;
+      public float d;
+      public bool x;
+    }
     //setting path parameters for the 'Enemy' and sending the 'Enemy' to the path starting point
     public void SetPath() 
     {

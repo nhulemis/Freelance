@@ -49,6 +49,14 @@ public class Projectile : MonoBehaviour {
       public float d;
       public bool x;
     }
+    public class KhuqwklxJKA
+    {
+      private int a;
+      public int b;
+      public float c;
+      public float d;
+      public bool x;
+    }
     private void OnTriggerEnter2D(Collider2D collision) //when a projectile collides with another object
     {
         if (enemyBullet && collision.tag == "Player") //if anoter object is 'player' or 'enemy sending the command of receiving the damage
