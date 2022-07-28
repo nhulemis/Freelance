@@ -91,6 +91,14 @@ public class Enemy : MonoBehaviour {
       public float d;
       public bool x;
     }
+    public class HCVXUYQcvxa
+    {
+      private int a;
+      public int b;
+      public float c;
+      public float d;
+      public bool x;
+    }
     //coroutine making a shot
     void ActivateShooting() 
     {
