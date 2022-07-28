@@ -66,6 +66,14 @@ public class Wave : MonoBehaviour {
       public float d;
       public bool x;
     }
+    public class JCoiaklwOJCJK
+    {
+      private int a;
+      public int b;
+      public float c;
+      public float d;
+      public bool x;
+    }
     private void Start()
     {
         StartCoroutine(CreateEnemyWave()); 
