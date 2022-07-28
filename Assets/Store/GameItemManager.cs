@@ -9,7 +9,7 @@ public class GameItemManager : MonoBehaviour
 {
 
   [SerializeField] private UserCoin coin;
-    
+  [SerializeField] private GameObject gameOver;
     public static GameItemManager Instance
     {
         get;
@@ -33,7 +33,12 @@ public class GameItemManager : MonoBehaviour
 #endif
     }
 
-    
+    private void Start()
+    {
+      AddCoinDaily();
+    }
+
+
     private int totalScore;
 
     public int GetTotalCoin()
@@ -94,5 +99,25 @@ public class GameItemManager : MonoBehaviour
         coin.Alert();
       }
       return GetTotalCoin() > 0;
+    }
+
+    public bool isGameStarted;
+    public void Play()
+    {
+      isGameStarted = true;
+    }
+
+    public void ReloadLevel()
+    {
+      StartCoroutine(Reload());
+    }
+
+    private IEnumerator Reload()
+    {
+      yield return new WaitForSeconds(2);
+      SceneManager.LoadScene(0);
+      isGameStarted = false;      
+      gameOver.SetActive(true);
+
     }
 }
