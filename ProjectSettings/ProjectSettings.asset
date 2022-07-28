@@ -785,9 +785,9 @@ PlayerSettings:
   webGLThreadsSupport: 0
   webGLDecompressionFallback: 0
   scriptingDefineSymbols:
-    Android: DebugLog
-    Standalone: DebugLog
-    iPhone: DebugLog
+    Android: 
+    Standalone: 
+    iPhone: 
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend:
@@ -863,7 +863,9 @@ PlayerSettings:
   XboxOneOverrideIdentityName: 
   XboxOneOverrideIdentityPublisher: 
   vrEditorSettings: {}
-  cloudServicesEnabled: {}
+  cloudServicesEnabled:
+    Legacy Analytics: 1
+    Purchasing: 1
   luminIcon:
     m_Name: 
     m_ModelFolderPath: 
@@ -880,7 +882,7 @@ PlayerSettings:
   cloudProjectId: 6fb37882-f070-4f1e-9c84-e4c5ce80e255
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: 
+  projectName: StepJump
   organizationId: nhulemis
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 1
