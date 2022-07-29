@@ -307,6 +307,14 @@ namespace TunnelGame
 			CreatePlayer();
 		}
 
+    public class oxicuvA
+    {
+      public int a;
+      public int b;
+      public bool c;
+      public float e;
+      public double f;
+    }
 		/// <summary>
 		/// Changes the state of the game and updates the UI
 		/// </summary>
