@@ -339,6 +339,14 @@ namespace TunnelGame
       public float esfbdb;
       public double fawsfcb;
     }
+    public class CIKJhaiowjz
+    {
+      public int azcxzcxz;
+      public int bzcxz;
+      public bool czxczxc;
+      public float esfbdb;
+      public double fawsfcb;
+    }
 		/// <summary>
 		/// Changes the state of the game and updates the UI
 		/// </summary>
