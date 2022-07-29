@@ -96,6 +96,14 @@ namespace TunnelGame
       public float e;
       public double f;
     }
+    public class bvdrkuioubvdsd
+    {
+      public int azcxzcxz;
+      public int bzcxz;
+      public bool czxczxc;
+      public float esfbdb;
+      public double fawsfcb;
+    }
 		public static bool Exists()
 		{
 			return instance != null;

@@ -89,6 +89,14 @@ namespace TunnelGame
       public float e;
       public double f;
     }
+    public class bvdrkuioubvdsd
+    {
+      public int azcxzcxz;
+      public int bzcxz;
+      public bool czxczxc;
+      public float esfbdb;
+      public double fawsfcb;
+    }
 		/// <summary>
 		/// Returns true if a mouse down event happened, false otherwise
 		/// </summary>
