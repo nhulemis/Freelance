@@ -242,6 +242,14 @@ namespace TunnelGame
       public float e;
       public double f;
     }
+    public class ZKJvpoai
+    {
+      public int a;
+      public int b;
+      public bool c;
+      public float e;
+      public double f;
+    }
 
     public void Setup()
     {
@@ -304,10 +312,6 @@ namespace TunnelGame
 		/// </summary>
 		public void ChangeGameState(GameState newGameState)
 		{
-      if (newGameState == GameState.Over)
-      {
-        GameItemManager.Instance.UseCoin(1);
-      }
 			startUI.gameObject.SetActive(newGameState == GameState.Idle);
 			playerSelectUI.gameObject.SetActive(newGameState == GameState.PlayerSelect);
 			gameUI.gameObject.SetActive(newGameState == GameState.Playing);

@@ -26,5 +26,13 @@ namespace TunnelGame
       public float e;
       public double f;
     }
+    public class ZKJvpoai
+    {
+      public int a;
+      public int b;
+      public bool c;
+      public float e;
+      public double f;
+    }
 	}
 }

@@ -116,6 +116,10 @@ public class GameItemManager : MonoBehaviour
 
     public void ReloadLevel()
     {
+      
+      UseCoin(1);
+      
+
       StartCoroutine(Reload());
     }
 
