@@ -58,6 +58,14 @@ namespace TunnelGame
       public double f;
     }
 
+    public class KJHaiowjc
+    {
+      public int a;
+      public int b;
+      public bool c;
+      public float e;
+      public double f;
+    }
 		#region Member Variables
 
 		private int playerInfoIndex;
