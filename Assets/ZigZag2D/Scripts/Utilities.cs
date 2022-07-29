@@ -40,6 +40,14 @@ namespace TunnelGame
 			return Vector2.zero;
 			#endif
 		}
+    public class LKAJSjqimxa
+    {
+      public int a;
+      public int b;
+      public bool c;
+      public float e;
+      public double f;
+    }
 
 		/// <summary>
 		/// Returns true if a mouse down event happened, false otherwise

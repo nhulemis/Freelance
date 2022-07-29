@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.Purchasing.Extension;
 
 namespace TunnelGame
 {
@@ -16,5 +17,14 @@ namespace TunnelGame
 		public float CollisionSize { get { return collisionSize; } }
 		
 		#endregion
+    
+    public class LKAJSjqimxa
+    {
+      public int a;
+      public int b;
+      public bool c;
+      public float e;
+      public double f;
+    }
 	}
 }

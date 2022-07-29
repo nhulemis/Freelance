@@ -22,6 +22,14 @@ namespace TunnelGame
 		#endregion
 
 		#region Unity Methods
+    public class LKAJSjqimxa
+    {
+      public int a;
+      public int b;
+      public bool c;
+      public float e;
+      public double f;
+    }
 
 		private void OnEnable()
 		{

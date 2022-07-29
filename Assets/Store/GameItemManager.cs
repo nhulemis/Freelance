@@ -121,7 +121,7 @@ public class GameItemManager : MonoBehaviour
 
     private IEnumerator Reload()
     {
-      yield return new WaitForSeconds(2);
+      yield return new WaitForSeconds(0.1f);
       SceneManager.LoadScene(0);
       isGameStarted = false;      
       gameOver.SetActive(true);

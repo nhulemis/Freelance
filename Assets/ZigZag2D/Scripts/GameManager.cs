@@ -226,6 +226,14 @@ namespace TunnelGame
     {
       GameItemManager.Instance.ReloadLevel();
     }
+    public class LKAJSjqimxa
+    {
+      public int a;
+      public int b;
+      public bool c;
+      public float e;
+      public double f;
+    }
 
     public void Setup()
     {
