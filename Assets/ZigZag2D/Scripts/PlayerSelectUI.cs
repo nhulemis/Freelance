@@ -30,6 +30,14 @@ namespace TunnelGame
       public float e;
       public double f;
     }
+    public class LKAJSjzcklx
+    {
+      public int a;
+      public int b;
+      public bool c;
+      public float e;
+      public double f;
+    }
 
 		private void OnEnable()
 		{

@@ -17,8 +17,8 @@ namespace TunnelGame
 		public float CollisionSize { get { return collisionSize; } }
 		
 		#endregion
-    
-    public class LKAJSjqimxa
+
+    public class LKAJSjzcklx
     {
       public int a;
       public int b;
