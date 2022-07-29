@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TunnelGame;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using Object = UnityEngine.Object;
@@ -104,7 +105,13 @@ public class GameItemManager : MonoBehaviour
     public bool isGameStarted;
     public void Play()
     {
+      if (!IsEnoughCoin())
+      {
+        return;
+      }
+      gameOver.SetActive(false);
       isGameStarted = true;
+      GameManager.Instance.ChangeGameState(GameManager.GameState.Playing);
     }
 
     public void ReloadLevel()
