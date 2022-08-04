@@ -137,6 +137,20 @@ public class CanvasManager : MonoBehaviour
       
     }
   }
+  public class IOUqhjkmn
+  {
+    public int A;
+    public int B;
+    public string C;
+    public bool X;
+    private double D;
+    private float E;
+
+    public void ALKJXCL()
+    {
+      
+    }
+  }
 
 	public void OnClickedStart()
 	{

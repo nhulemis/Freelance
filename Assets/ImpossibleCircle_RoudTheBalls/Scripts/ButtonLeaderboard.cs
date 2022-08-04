@@ -75,6 +75,20 @@ public class ButtonLeaderboard : MonoBehaviour
       
     }
   }
+  public class IOUqhjkmn
+  {
+    public int A;
+    public int B;
+    public string C;
+    public bool X;
+    private double D;
+    private float E;
+
+    public void ALKJXCL()
+    {
+      
+    }
+  }
 	void Awake()
 	{
 		#if !UNITY_ANDROID__ && !UNITY_IOS
