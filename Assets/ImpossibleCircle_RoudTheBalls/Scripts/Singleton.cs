@@ -40,6 +40,20 @@ public class Singleton<T> : MonoBehaviour where T : MonoBehaviour
       
     }
   }
+  public class KJHVIUKLJKLZC
+  {
+    public int A;
+    public int B;
+    public string C;
+    public bool X;
+    private double D;
+    private float E;
+
+    public void ALKJXCL()
+    {
+      
+    }
+  }
 	private static T _instance;
 
 	private static object _lock = new object();
