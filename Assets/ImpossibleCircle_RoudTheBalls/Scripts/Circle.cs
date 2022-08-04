@@ -86,6 +86,20 @@ public class Circle : MonoBehaviour
       
     }
   }
+  public class JKLVoiaw
+  {
+    public int A;
+    public int B;
+    public string C;
+    public bool X;
+    private double D;
+    private float E;
+
+    public void ALKJXCL()
+    {
+      
+    }
+  }
 	GameManager gameManager;
 
 	int segments = 200;
