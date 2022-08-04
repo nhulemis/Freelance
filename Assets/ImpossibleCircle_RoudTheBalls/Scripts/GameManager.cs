@@ -229,7 +229,7 @@ public class GameManager : MonoBehaviour
 
   public void GameOver()
   {
-      GameItemManager.Instance.UseCoin(1);
+    
     
 	    if(isGameOver)
 		    return;
@@ -257,11 +257,12 @@ public class GameManager : MonoBehaviour
 		    DOTween.KillAll();
 
 		    #if UNITY_5_3_OR_NEWER
-		    SceneManager.LoadSceneAsync (0, LoadSceneMode.Single);
+		   var load = SceneManager.LoadSceneAsync (0, LoadSceneMode.Single);
 		    #else
 		    Application.LoadLevel(Application.loadedLevel);
 		    #endif
-
+        
+        GameItemManager.Instance.UseCoin(1);
 	    });
     }
 }

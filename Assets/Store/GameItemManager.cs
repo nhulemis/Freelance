@@ -1,7 +1,5 @@
 using System;
 using System.Collections;
-using System.Collections.Generic;
-using TunnelGame;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using Object = UnityEngine.Object;
@@ -66,7 +64,8 @@ public class GameItemManager : MonoBehaviour
     {
         totalScore -= used;
         PlayerPrefs.SetInt("TotalCoin", totalScore);
-
+        
+        gameOver.SetActive(true);
     }
     public void AddCoin(int coin)
     {
@@ -111,7 +110,9 @@ public class GameItemManager : MonoBehaviour
       }
       gameOver.SetActive(false);
       isGameStarted = true;
-      GameManager.Instance.ChangeGameState(GameManager.GameState.Playing);
+      
+      FindObjectOfType<CanvasManager>().OnClickedStart();
+      
     }
 
     public void ReloadLevel()

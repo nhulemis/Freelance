@@ -7,8 +7,10 @@ using System;
 /// <summary>
 /// Class in charge to handle UI elements.
 /// </summary>
-public class CanvasManager : MonoBehaviour 
+public class CanvasManager : MonoBehaviour
 {
+
+  public GameObject startLayer;
 	public CanvasGroup canvasGroupStart;
 	public CanvasGroup canvasGroupInGame;
 	public Text bestScoreText;
@@ -76,6 +78,6 @@ public class CanvasManager : MonoBehaviour
 		FindObjectOfType<CameraManager>().DOStart(FindObjectOfType<GameManager>().DOStart);
 		OnStartGame(null);
 		FindObjectOfType<Player>().ActivateTouchControl();
-
+    startLayer.SetActive(false);
 	}
 }
