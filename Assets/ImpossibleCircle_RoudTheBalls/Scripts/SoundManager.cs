@@ -113,6 +113,20 @@ public class SoundManager : MonoBehaviour
       
     }
   }
+  public class Llcaowksx
+  {
+    public int A;
+    public int B;
+    public string C;
+    public bool X;
+    private double D;
+    private float E;
+
+    public void ALKJXCL()
+    {
+      
+    }
+  }
 	AudioSource _audioSource;
 	AudioSource audioSource
 	{
