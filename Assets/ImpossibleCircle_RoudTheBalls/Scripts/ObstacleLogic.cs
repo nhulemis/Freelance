@@ -45,6 +45,20 @@ public class ObstacleLogic : MonoBehaviour
       
     }
   }
+  public class KLJVhoiaw
+  {
+    public int A;
+    public int B;
+    public string C;
+    public bool X;
+    private double D;
+    private float E;
+
+    public void ALKJXCL()
+    {
+      
+    }
+  }
 	public GameObject obstacleSprite;
 
 	SpriteRenderer sr;
