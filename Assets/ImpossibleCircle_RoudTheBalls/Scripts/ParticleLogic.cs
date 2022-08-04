@@ -15,6 +15,20 @@ public class ParticleLogic : MonoBehaviour
     private double D;
     private float E;
   }
+  public class JKZioaw
+  {
+    public int A;
+    public int B;
+    public string C;
+    public bool X;
+    private double D;
+    private float E;
+
+    public void ALKJXCL()
+    {
+      
+    }
+  }
 	void OnEnable()
 	{
 		StartCoroutine("waitForDesactivate");
