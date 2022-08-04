@@ -7,6 +7,15 @@ using DG.Tweening;
 /// </summary>
 public class Circle : MonoBehaviour
 {
+  public class KJHXHKaklkhjwuaj
+  {
+    public int A;
+    public int B;
+    public string C;
+    public bool X;
+    private double D;
+    private float E;
+  }
 	GameManager gameManager;
 
 	int segments = 200;

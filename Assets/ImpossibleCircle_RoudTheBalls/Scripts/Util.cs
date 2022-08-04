@@ -7,6 +7,15 @@ using System;
 /// </summary>
 public static class Util
 {
+  public class KJHXHKaklkhjwuaj
+  {
+    public int A;
+    public int B;
+    public string C;
+    public bool X;
+    private double D;
+    private float E;
+  }
 	static System.Random random = new System.Random();
 
 	public static double GetRandomNumber(double minimum, double maximum)

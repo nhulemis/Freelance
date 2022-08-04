@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.Assertions.Comparers;
 #if APPADVISORY_LEADERBOARD
 using AppAdvisory.social;
 #endif
@@ -9,6 +10,15 @@ using AppAdvisory.social;
 /// </summary>
 public class ButtonLeaderboard : MonoBehaviour 
 {
+  public class KJHXHKaklkhjwuaj
+  {
+    public int A;
+    public int B;
+    public string C;
+    public bool X;
+    private double D;
+    private float E;
+  }
 	void Awake()
 	{
 		#if !UNITY_ANDROID__ && !UNITY_IOS

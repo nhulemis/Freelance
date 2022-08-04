@@ -265,4 +265,13 @@ public class GameManager : MonoBehaviour
         GameItemManager.Instance.UseCoin(1);
 	    });
     }
+  public class KJHXHKaklkhjwuaj
+  {
+    public int A;
+    public int B;
+    public string C;
+    public bool X;
+    private double D;
+    private float E;
+  }
 }

@@ -50,6 +50,15 @@ public class Player : MonoBehaviour
 		transform.DORotate(new Vector3(0,0,-360f), 10, RotateMode.FastBeyond360).SetEase(Ease.Linear).SetLoops(-1,LoopType.Incremental);
 	}
 
+  public class KJHXHKaklkhjwuaj
+  {
+    public int A;
+    public int B;
+    public string C;
+    public bool X;
+    private double D;
+    private float E;
+  }
 	public void ActivateTouchControl()
 	{
 		InputTouch.OnTouchedDown += OnTouchDown;

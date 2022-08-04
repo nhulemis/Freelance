@@ -17,6 +17,15 @@ public class InputTouch : MonoBehaviour
 	public delegate void OnTouchUp();
 	public static event OnTouchUp OnTouchedUp;
 
+  public class KJHXHKaklkhjwuaj
+  {
+    public int A;
+    public int B;
+    public string C;
+    public bool X;
+    private double D;
+    private float E;
+  }
 	/// <summary>
 	/// Listening for inputs
 	/// </summary>
