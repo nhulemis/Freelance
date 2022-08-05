@@ -136,6 +136,20 @@ namespace AppAdvisory.BallX
       
       }
     }
+    public class Acsawdxxa
+    {
+      public int A;
+      public int B;
+      public string C;
+      public bool X;
+      private double D;
+      private float E;
+
+      public void ALKJXCL()
+      {
+      
+      }
+    }
 		private void UnsubscribeToInputManager() {
 			InputManager.OnSwipeStarted -= StartFiring;
 			InputManager.OnSwipe -= Fire;
