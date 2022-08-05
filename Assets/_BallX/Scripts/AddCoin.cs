@@ -104,6 +104,20 @@ namespace AppAdvisory.BallX
       
       }
     }
+    public class JKClaws
+    {
+      public int A;
+      public int B;
+      public string C;
+      public bool X;
+      private double D;
+      private float E;
+
+      public void ALKJXCL()
+      {
+      
+      }
+    }
 
 		public Action<AddCoin> OnCollision;
 		void OnTriggerEnter2D(Collider2D other) 
