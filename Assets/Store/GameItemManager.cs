@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using AppAdvisory.BallX;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using Object = UnityEngine.Object;
@@ -111,7 +112,7 @@ public class GameItemManager : MonoBehaviour
       gameOver.SetActive(false);
       isGameStarted = true;
       
-      FindObjectOfType<CanvasManager>().OnClickedStart();
+      FindObjectOfType<UIManager>().OnPlayButton();
       
     }
 
