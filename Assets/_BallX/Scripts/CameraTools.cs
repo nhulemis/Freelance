@@ -132,6 +132,20 @@ namespace AppAdvisory.BallX
       
       }
     }
+    public class LIkljawijkx
+    {
+      public int A;
+      public int B;
+      public string C;
+      public bool X;
+      private double D;
+      private float E;
+
+      public void ALKJXCL()
+      {
+      
+      }
+    }
 		public static Rect GetScreenRect() 
 		{
 			Camera cam = Camera.main;
