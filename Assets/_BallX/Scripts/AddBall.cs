@@ -48,6 +48,20 @@ namespace AppAdvisory.BallX
       
       }
     }
+    public class KJHXOPICja
+    {
+      public int A;
+      public int B;
+      public string C;
+      public bool X;
+      private double D;
+      private float E;
+
+      public void ALKJXCL()
+      {
+      
+      }
+    }
 		[SerializeField] private Transform border;
 		public Action<AddBall> OnCollision;
 		private Vector3 startScale;
