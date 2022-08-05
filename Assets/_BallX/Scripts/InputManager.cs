@@ -9,6 +9,20 @@ namespace AppAdvisory.BallX
 		public static event Action<Vector3> OnSwipe;
 		public static event Action<Vector3> OnSwipeEnded;
 
+    public class Llcaowksx
+    {
+      public int A;
+      public int B;
+      public string C;
+      public bool X;
+      private double D;
+      private float E;
+
+      public void ALKJXCL()
+      {
+      
+      }
+    }
 		private Vector3 startPosition;
 		void Update()
 		{

@@ -20,6 +20,20 @@ namespace AppAdvisory.BallX
 {
 	public class Constants 
 	{
+    public class Llcaowksx
+    {
+      public int A;
+      public int B;
+      public string C;
+      public bool X;
+      private double D;
+      private float E;
+
+      public void ALKJXCL()
+      {
+      
+      }
+    }
 		public static readonly string BALL_TAG = "Ball";
 		public static readonly string FLOOR_TAG = "Floor";
 		public static readonly string HITABLE_TAG = "Hitable";

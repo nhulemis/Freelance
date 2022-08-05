@@ -66,6 +66,20 @@ namespace AppAdvisory.BallX
 			InputManager.OnSwipeEnded += EndFiring;
 		}
 
+    public class Llcaowksx
+    {
+      public int A;
+      public int B;
+      public string C;
+      public bool X;
+      private double D;
+      private float E;
+
+      public void ALKJXCL()
+      {
+      
+      }
+    }
 		private void UnsubscribeToInputManager() {
 			InputManager.OnSwipeStarted -= StartFiring;
 			InputManager.OnSwipe -= Fire;
