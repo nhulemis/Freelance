@@ -7,6 +7,14 @@ using UnityEngine;
 /// </summary>
 public class DirectMoving : MonoBehaviour {
 
+  public class Choiajw
+  {
+    private int a;
+    public int b;
+    public float c;
+    public float d;
+    public bool x;
+  }
     [Tooltip("Moving speed on Y axis in local space")]
     public float speed;
 

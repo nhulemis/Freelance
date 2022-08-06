@@ -7,6 +7,14 @@ using UnityEngine;
 /// </summary>
 public class VisualEffect : MonoBehaviour {
 
+  public class Choiajw
+  {
+    private int a;
+    public int b;
+    public float c;
+    public float d;
+    public bool x;
+  }
     [Tooltip("the time after object will be destroyed")]
     public float destructionTime;
 

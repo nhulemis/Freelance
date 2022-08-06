@@ -8,6 +8,14 @@ using System;
 /// </summary>
 public class FollowThePath : MonoBehaviour {
         
+  public class Choiajw
+  {
+    private int a;
+    public int b;
+    public float c;
+    public float d;
+    public bool x;
+  }
     [HideInInspector] public Transform [] path; //path points which passes the 'Enemy' 
     [HideInInspector] public float speed; 
     [HideInInspector] public bool rotationByPath;   //whether 'Enemy' rotates in path direction or not

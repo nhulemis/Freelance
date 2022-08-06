@@ -17,6 +17,14 @@ public class EnemyWaves
 
 public class LevelController : MonoBehaviour {
 
+  public class Choiajw
+  {
+    private int a;
+    public int b;
+    public float c;
+    public float d;
+    public bool x;
+  }
     //Serializable classes implements
     public EnemyWaves[] enemyWaves; 
 

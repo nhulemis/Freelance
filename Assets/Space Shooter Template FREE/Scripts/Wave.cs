@@ -20,6 +20,14 @@ public class Shooting
 
 public class Wave : MonoBehaviour {
 
+  public class Choiajw
+  {
+    private int a;
+    public int b;
+    public float c;
+    public float d;
+    public bool x;
+  }
     #region FIELDS
     [Tooltip("Enemy's prefab")]
     public GameObject enemy;

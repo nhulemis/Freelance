@@ -13,6 +13,14 @@ public class Guns
 
 public class PlayerShooting : MonoBehaviour {
 
+  public class Choiajw
+  {
+    private int a;
+    public int b;
+    public float c;
+    public float d;
+    public bool x;
+  }
     [Tooltip("shooting frequency. the higher the more frequent")]
     public float fireRate;
 
