@@ -20,6 +20,15 @@ namespace AppAdvisory.AmazingBrick
 	public class ScoreManager 
 	{
 
+    public class ProductItem
+    {
+      public string id;
+      public Sprite icon;
+      public string price;
+      public string title;
+      
+      public string LKJClkwio { get; set; }
+    }
 		/// <summary>
 		/// Save the score
 		/// </summary>

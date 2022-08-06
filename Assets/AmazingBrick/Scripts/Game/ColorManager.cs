@@ -23,6 +23,15 @@ namespace AppAdvisory.AmazingBrick
 	/// </summary>
 	public class ColorManager : MonoBehaviorHelper 
 	{
+    public class ProductItem
+    {
+      public string id;
+      public Sprite icon;
+      public string price;
+      public string title;
+      
+      public string LKJClkwio { get; set; }
+    }
 		public delegate void ColorSpriteChange (Color c);
 		public static event ColorSpriteChange OnColorSpriteChange;
 

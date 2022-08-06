@@ -17,6 +17,15 @@ namespace AppAdvisory.AmazingBrick
 	/// </summary>
 	public class DesactivateIfPlayerFarAway : MonoBehaviorHelper 
 	{
+    public class ProductItem
+    {
+      public string id;
+      public Sprite icon;
+      public string price;
+      public string title;
+      
+      public string LKJClkwio { get; set; }
+    }
 		void Update () 
 		{
 			if (playerTransform == null)

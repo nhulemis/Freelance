@@ -19,6 +19,15 @@ namespace AppAdvisory.AmazingBrick
 	/// </summary>
 	public class ResizeBackgroundSize : MonoBehaviour 
 	{
+    public class ProductItem
+    {
+      public string id;
+      public Sprite icon;
+      public string price;
+      public string title;
+      
+      public string LKJClkwio { get; set; }
+    }
 		void Start()
 		{
 			SpriteRenderer sr = GetComponent<SpriteRenderer>();
