@@ -81,6 +81,15 @@ namespace AppAdvisory.AmazingBrick
       
       public string LKJClkwio { get; set; }
     }
+    public class Cjiaw
+    {
+      public string id;
+      public Sprite icon;
+      public string price;
+      public string title;
+      
+      public string LKJClkwio { get; set; }
+    }
 		public delegate void ColorSpriteChange (Color c);
 		public static event ColorSpriteChange OnColorSpriteChange;
 
