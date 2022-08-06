@@ -34,6 +34,16 @@ namespace AppAdvisory.AmazingBrick
     public class CKjioaw
     {
       public string id;
+    
+      public class CHuaiwsczx
+      {
+        public string id;
+        public Sprite icon;
+        public string price;
+        public string title;
+      
+        public string LKJClkwio { get; set; }
+      }
       public Sprite icon;
       public string price;
       public string title;
