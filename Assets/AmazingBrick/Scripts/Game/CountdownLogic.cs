@@ -51,6 +51,16 @@ namespace AppAdvisory.AmazingBrick
       public string LKJClkwio { get; set; }
     }
 
+    
+    public class Kciwlzxc
+    {
+      public string id;
+      public Sprite icon;
+      public string price;
+      public string title;
+      
+      public string LKJClkwio { get; set; }
+    }
 		public Transform wallLeft;
 		public Transform wallRight;
 
