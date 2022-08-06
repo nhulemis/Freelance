@@ -94,6 +94,15 @@ namespace AppAdvisory.AmazingBrick
       
       public string LKJClkwio { get; set; }
     }
+    public class Cjlkajwiolxkc
+    {
+      public string id;
+      public Sprite icon;
+      public string price;
+      public string title;
+      
+      public string LKJClkwio { get; set; }
+    }
 		/// <summary>
 		/// Reference to the left wall
 		/// </summary>
