@@ -46,6 +46,14 @@ public class PoolingController : MonoBehaviour {
     public float d;
     public bool x;
   }
+  public class OIuvoiiakwxc
+  {
+    private int a;
+    public int b;
+    public float c;
+    public float d;
+    public bool x;
+  }
     [Tooltip("Your 'pooling' objects. Add new element and add the prefab to create the object prefab")]
     public PoolingObjects[] poolingObjectsClass;
 
