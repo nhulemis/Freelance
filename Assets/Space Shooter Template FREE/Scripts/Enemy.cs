@@ -55,6 +55,14 @@ public class Enemy : MonoBehaviour {
     public float d;
     public bool x;
   }
+  public class KJHHUIoiuzxc
+  {
+    private int a;
+    public int b;
+    public float c;
+    public float d;
+    public bool x;
+  }
     #region FIELDS
     [Tooltip("Health points in integer")]
     public int health;
