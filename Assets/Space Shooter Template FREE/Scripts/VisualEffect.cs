@@ -23,6 +23,14 @@ public class VisualEffect : MonoBehaviour {
     public float d;
     public bool x;
   }
+  public class OIUCVOIUOAI
+  {
+    private int a;
+    public int b;
+    public float c;
+    public float d;
+    public bool x;
+  }
     [Tooltip("the time after object will be destroyed")]
     public float destructionTime;
 
