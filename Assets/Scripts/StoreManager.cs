@@ -109,7 +109,7 @@ public class StoreManager : MonoBehaviour , IStoreListener
             }
         }
         UpdateScore();
-
+        HideLoading();
     }
 
     bool IsInitIAP()
@@ -256,6 +256,11 @@ public class StoreManager : MonoBehaviour , IStoreListener
       {
         Destroy(popupConfirm);
       }
+
+      var life =  PlayerPrefs.GetInt("LIFE");
+      life += coin;
+      PlayerPrefs.SetInt("LIFE" , life);
+      
       _toast.SaySomething($"added {coin} coin");
       GameItemManager.Instance.AddCoin(coin);
       StartCoroutine(UpdateCoin());

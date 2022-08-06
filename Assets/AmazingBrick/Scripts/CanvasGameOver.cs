@@ -183,6 +183,7 @@ namespace AppAdvisory.AmazingBrick
 
 		public void OnClickedRestart()
 		{
+      GameItemManager.Instance.UseCoin(1);
 			gameManager.IsGameOver = false;
 
 			animationTransition.DOAnimIn(() => {

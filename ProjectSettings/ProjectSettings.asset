@@ -276,9 +276,9 @@ PlayerSettings:
   - m_BuildTarget: 
     m_Icons:
     - serializedVersion: 2
-      m_Icon: {fileID: 2800000, guid: 1208a2ed088a74c14856e85006fd83ac, type: 3}
-      m_Width: 0
-      m_Height: 0
+      m_Icon: {fileID: 2800000, guid: fc09aaa514b5947fbbb9c2b6d9cc893c, type: 3}
+      m_Width: 128
+      m_Height: 128
       m_Kind: 0
   m_BuildTargetPlatformIcons:
   - m_BuildTarget: iPhone
@@ -840,8 +840,9 @@ PlayerSettings:
   webGLThreadsSupport: 0
   webGLDecompressionFallback: 0
   scriptingDefineSymbols:
-    Android: AADOTWEEN
-    iPhone: 
+    Android: AADOTWEEN;DebugLog
+    Standalone: DebugLog
+    iPhone: DebugLog
   additionalCompilerArguments: {}
   platformArchitecture:
     iPhone: 1
@@ -952,7 +953,7 @@ PlayerSettings:
   cloudProjectId: 6fb37882-f070-4f1e-9c84-e4c5ce80e255
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: UAS - Amazing Bricks
+  projectName: StepJump
   organizationId: nhulemis
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 1

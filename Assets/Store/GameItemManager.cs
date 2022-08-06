@@ -64,6 +64,10 @@ public class GameItemManager : MonoBehaviour
     public void UseCoin(int used)
     {
         totalScore -= used;
+        if (totalScore < 0)
+        {
+          totalScore = 0;
+        }
         PlayerPrefs.SetInt("TotalCoin", totalScore);
         
         gameOver.SetActive(true);

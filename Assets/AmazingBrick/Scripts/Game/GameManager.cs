@@ -188,7 +188,10 @@ namespace AppAdvisory.AmazingBrick
 		/// </summary>
 		public void OnStart()
 		{
-
+      if (!GameItemManager.Instance.IsEnoughCoin())
+      {
+        return;
+      }
 			EventManager.DOGameStarted();
 
 			point = 0;
@@ -474,53 +477,7 @@ namespace AppAdvisory.AmazingBrick
 		/// </summary>
 		public void ShowAds()
 		{
-			int count = PlayerPrefs.GetInt("GAMEOVER_COUNT",0);
-			count++;
-			PlayerPrefs.SetInt("GAMEOVER_COUNT",count);
-			PlayerPrefs.Save();
-
-			#if APPADVISORY_ADS
-			if(count > numberOfPlayToShowInterstitial)
-			{
-			#if UNITY_EDITOR
-			print("count = " + count + " > numberOfPlayToShowINterstitial = " + numberOfPlayToShowInterstitial);
-			#endif
-			if(AdsManager.instance.IsReadyInterstitial())
-			{
-			#if UNITY_EDITOR
-				print("AdsManager.instance.IsReadyInterstitial() == true ----> SO ====> set count = 0 AND show interstial");
-			#endif
-				PlayerPrefs.SetInt("GAMEOVER_COUNT",0);
-				AdsManager.instance.ShowInterstitial();
-			}
-			else
-			{
-			#if UNITY_EDITOR
-				print("AdsManager.instance.IsReadyInterstitial() == false");
-			#endif
-			}
-
-		}
-		else
-		{
-			PlayerPrefs.SetInt("GAMEOVER_COUNT", count);
-		}
-		PlayerPrefs.Save();
-			#else
-		if(count >= numberOfPlayToShowInterstitial)
-		{
-			Debug.LogWarning("To show ads, please have a look to Very Simple Ad on the Asset Store, or go to this link: " + VerySimpleAdsURL);
-			Debug.LogWarning("Very Simple Ad is already implemented in this asset");
-			Debug.LogWarning("Just import the package and you are ready to use it and monetize your game!");
-			Debug.LogWarning("Very Simple Ad : " + VerySimpleAdsURL);
-			PlayerPrefs.SetInt("GAMEOVER_COUNT",0);
-		}
-		else
-		{
-			PlayerPrefs.SetInt("GAMEOVER_COUNT", count);
-		}
-		PlayerPrefs.Save();
-			#endif
+			
 	}
 }
 }
