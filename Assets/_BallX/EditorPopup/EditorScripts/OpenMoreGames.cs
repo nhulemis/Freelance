@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System;
 
-namespace AppAdvisory.BallX
+namespace AppAdvisory.AmazingBrick
 {
 	public class OpenMoreGames : MonoBehaviour 
 	{

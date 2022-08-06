@@ -28,7 +28,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace AppAdvisory.BallX
+namespace AppAdvisory.AmazingBrick
 {
 	[InitializeOnLoad]
 	public class DGChecker : EditorWindow 
@@ -69,7 +69,7 @@ namespace AppAdvisory.BallX
 		{
 			List<string> fileList = new List<string>();
 
-			string path = Application.dataPath+"/Plugins";
+			string path = Application.dataPath + "/Plugins";
 
 			if (Directory.Exists (path + "/Demigiant/DOTween")) {
 

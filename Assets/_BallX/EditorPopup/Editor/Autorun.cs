@@ -34,7 +34,7 @@ using System.Linq;
 /// Execute some code exactly once, whenever the project is opened, recompiled, or run.
 ///
 
-namespace AppAdvisory.BallX
+namespace AppAdvisory.AmazingBrick
 {
 	[InitializeOnLoad]
 	public class Autorun

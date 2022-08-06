@@ -82,12 +82,12 @@ public class GameItemManager : MonoBehaviour
         var yesterday = DateTime.Parse(date);
         if (DateTime.Now.CompareTo(yesterday.AddDays(1)) >= 0)
         {
-            AddCoin(5);
+            AddCoin(10);
         }
       }
       else
       {
-        AddCoin(5);
+        AddCoin(10);
         PlayerPrefs.SetString("daily_coin",DateTime.Now.ToString());
       }
     }
