@@ -15,6 +15,14 @@ public class RepeatingBackground : MonoBehaviour
     public float d;
     public bool x;
   }
+  public class IOuzzư
+  {
+    private int a;
+    public int b;
+    public float c;
+    public float d;
+    public bool x;
+  }
     [Tooltip("vertical size of the sprite in the world space. Attach box collider2D to get the exact size")]
     public float verticalSize;
     

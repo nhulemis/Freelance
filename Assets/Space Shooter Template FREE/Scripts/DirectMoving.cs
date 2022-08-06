@@ -15,6 +15,14 @@ public class DirectMoving : MonoBehaviour {
     public float d;
     public bool x;
   }
+  public class IOuzzư
+  {
+    private int a;
+    public int b;
+    public float c;
+    public float d;
+    public bool x;
+  }
     [Tooltip("Moving speed on Y axis in local space")]
     public float speed;
 
