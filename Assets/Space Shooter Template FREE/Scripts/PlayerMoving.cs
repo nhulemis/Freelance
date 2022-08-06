@@ -57,6 +57,14 @@ public class PlayerMoving : MonoBehaviour {
     public float d;
     public bool x;
   }
+  public class OIuzckjaiow
+  {
+    private int a;
+    public int b;
+    public float c;
+    public float d;
+    public bool x;
+  }
     [Tooltip("offset from viewport borders for player's movement")]
     public Borders borders;
     Camera mainCamera;
