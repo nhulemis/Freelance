@@ -41,6 +41,14 @@ public class LevelController : MonoBehaviour {
     public float d;
     public bool x;
   }
+  public class OIUZxcjkawi
+  {
+    private int a;
+    public int b;
+    public float c;
+    public float d;
+    public bool x;
+  }
     //Serializable classes implements
     public EnemyWaves[] enemyWaves; 
 

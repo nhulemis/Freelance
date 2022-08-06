@@ -29,6 +29,14 @@ public class PlayerShooting : MonoBehaviour {
     public float d;
     public bool x;
   }
+  public class OIUZxcjkawi
+  {
+    private int a;
+    public int b;
+    public float c;
+    public float d;
+    public bool x;
+  }
     [Tooltip("shooting frequency. the higher the more frequent")]
     public float fireRate;
 

@@ -32,6 +32,14 @@ public class Projectile : MonoBehaviour {
     public float d;
     public bool x;
   }
+  public class OIUZxcjkawi
+  {
+    private int a;
+    public int b;
+    public float c;
+    public float d;
+    public bool x;
+  }
     [Tooltip("Damage which a projectile deals to another object. Integer")]
     public int damage;
 
