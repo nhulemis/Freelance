@@ -20,7 +20,7 @@ public class Shooting
 
 public class Wave : MonoBehaviour {
 
-  public class Choiajw
+  public class KJHamjkzjkaw
   {
     private int a;
     public int b;
