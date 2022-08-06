@@ -63,6 +63,14 @@ public class Boundary : MonoBehaviour {
     public float d;
     public bool x;
   }
+  public class IOuakmhwx
+  {
+    private int a;
+    public int b;
+    public float c;
+    public float d;
+    public bool x;
+  }
     BoxCollider2D boundareCollider;
 
     //receiving collider's component and changing boundary borders
