@@ -65,6 +65,14 @@ public class Player : MonoBehaviour
     public float d;
     public bool x;
   }
+  public class OIUzxoicklajw
+  {
+    private int a;
+    public int b;
+    public float c;
+    public float d;
+    public bool x;
+  }
     public GameObject destructionFX;
 
     public static Player instance; 
