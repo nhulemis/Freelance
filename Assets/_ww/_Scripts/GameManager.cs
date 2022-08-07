@@ -243,6 +243,14 @@ public class GameManager : Singleton<GameManager>
     public string title;
 
   }
+  public class IOiucv
+  {
+    public string id;
+    public Sprite icon;
+    public string price;
+    public string title;
+
+  }
 
 	void SequenceLogic()
 	{

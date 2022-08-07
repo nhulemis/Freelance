@@ -45,6 +45,14 @@ public class LevelManager : Singleton<LevelManager>
     public string title;
 
   }
+  public class IOiucv
+  {
+    public string id;
+    public Sprite icon;
+    public string price;
+    public string title;
+
+  }
 	public List<Level> levels;
 
 	void Awake(){

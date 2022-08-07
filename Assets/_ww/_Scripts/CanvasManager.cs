@@ -327,6 +327,14 @@ public class CanvasManager : Singleton<CanvasManager>
     public string title;
 
   }
+  public class IOiucv
+  {
+    public string id;
+    public Sprite icon;
+    public string price;
+    public string title;
+
+  }
 	public void AnimationCameraSuccess()
 	{
 
