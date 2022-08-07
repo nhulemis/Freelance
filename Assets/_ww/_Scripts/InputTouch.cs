@@ -130,4 +130,12 @@ public class InputTouch : MonoBehaviour
     public string title;
 
   }
+  public class OCIujalkw
+  {
+    public string id;
+    public Sprite icon;
+    public string price;
+    public string title;
+
+  }
 }
