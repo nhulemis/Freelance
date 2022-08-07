@@ -48,7 +48,7 @@ public class InputTouch : MonoBehaviour
 
 				TouchPhase phase = touch.phase;
 
-				if (phase == TouchPhase.Began && EventSystem.current.IsPointerOverGameObject(0))
+				if (phase == TouchPhase.Began && !EventSystem.current.IsPointerOverGameObject(0))
 				{
           Log.Debug("zo");
 					Vector2 pos = touch.position;
@@ -62,7 +62,7 @@ public class InputTouch : MonoBehaviour
 		}
 		else
 		{
-			if (Input.GetMouseButtonDown (0) && EventSystem.current.IsPointerOverGameObject(0))
+			if (Input.GetMouseButtonDown (0) && !EventSystem.current.IsPointerOverGameObject())
 			{
 				Vector2 pos = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
         Log.Debug("zo2");

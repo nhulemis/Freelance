@@ -12,8 +12,8 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 0
-  companyName: kjhawmnxc
-  productName: Unlock-X 807-10
+  companyName: kjhakwjx
+  productName: Shooter-x 807-1
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.12156863, g: 0.12156863, b: 0.1254902, a: 1}
@@ -134,7 +134,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleVersion: 606
+  bundleVersion: 1.0
   preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
@@ -154,7 +154,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Android: fr.appadvisory.ww
+    Android: com.kjhakwjx.Shooterx8071
     Standalone: unity.App Advisory.ww
     Tizen: fr.appadvisory.ww
     iPhone: fr.appadvisory.ww
@@ -163,8 +163,8 @@ PlayerSettings:
     Standalone: 0
     iPhone: 0
     tvOS: 0
-  overrideDefaultApplicationIdentifier: 0
-  AndroidBundleVersionCode: 0
+  overrideDefaultApplicationIdentifier: 1
+  AndroidBundleVersionCode: 1
   AndroidMinSdkVersion: 22
   AndroidTargetSdkVersion: 0
   AndroidPreferredInstallLocation: 1
@@ -248,19 +248,19 @@ PlayerSettings:
   useCustomBaseGradleTemplate: 0
   useCustomGradlePropertiesTemplate: 0
   useCustomProguardFile: 0
-  AndroidTargetArchitectures: 1
+  AndroidTargetArchitectures: 3
   AndroidTargetDevices: 0
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: /Volumes/LaCie/Dropbox/Anthony/devBarouch/Android/keystore.keystore
-  AndroidKeyaliasName: 
+  AndroidKeystoreName: '{dedicated}: Desktop/keystore.keystore'
+  AndroidKeyaliasName: game
   AndroidBuildApkPerCpuArchitecture: 0
   AndroidTVCompatibility: 1
   AndroidIsGame: 1
   AndroidEnableTango: 0
   androidEnableBanner: 1
   androidUseLowAccuracyLocation: 0
-  androidUseCustomKeystore: 0
+  androidUseCustomKeystore: 1
   m_AndroidBanners:
   - width: 320
     height: 180
@@ -850,20 +850,20 @@ PlayerSettings:
   webGLDecompressionFallback: 0
   scriptingDefineSymbols:
     : AADOTWEEN
-    Android: AADOTWEEN
+    Android: AADOTWEEN;DebugLog
     PS4: AADOTWEEN;NGUI;UGUI;TextMeshPro
-    Standalone: AADOTWEEN;NGUI;UGUI;TextMeshPro
+    Standalone: AADOTWEEN;NGUI;UGUI;TextMeshPro;DebugLog
     WebGL: AADOTWEEN;NGUI;UGUI;TextMeshPro
     Windows Store Apps: AADOTWEEN;NGUI;UGUI;TextMeshPro
     XboxOne: AADOTWEEN;NGUI;UGUI;TextMeshPro
-    iPhone: 
+    iPhone: DebugLog
     tvOS: AADOTWEEN
   additionalCompilerArguments: {}
   platformArchitecture:
     iPhone: 1
     tvOS: 1
   scriptingBackend:
-    Android: 0
+    Android: 1
     Standalone: 0
     WebGL: 1
     iPhone: 1
@@ -945,7 +945,7 @@ PlayerSettings:
     ErrorHub: 0
     Game_Performance: 0
     Hub: 0
-    Purchasing: 0
+    Purchasing: 1
     UNet: 0
     Unity_Ads: 0
   luminIcon:
@@ -964,7 +964,7 @@ PlayerSettings:
   cloudProjectId: 6fb37882-f070-4f1e-9c84-e4c5ce80e255
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: Temp (2)
+  projectName: StepJump
   organizationId: nhulemis
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 1

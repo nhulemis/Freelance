@@ -144,7 +144,7 @@ namespace AppAdvisory.StopTheLock
 					return;
 
 
-				if (firstMove && GameItemManager.Instance.Play()) 
+				if (firstMove && GameItemManager.Instance.PlayBool()) 
 				{
 					if (dotPosition.isLeftOfScreen())
 						direction = -1;
