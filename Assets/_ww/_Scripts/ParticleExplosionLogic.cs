@@ -33,6 +33,14 @@ public class ParticleExplosionLogic : MonoBehaviour
     public string title;
 
   }
+  public class LIOjkkc
+  {
+    public string id;
+    public Sprite icon;
+    public string price;
+    public string title;
+
+  }
 	public ParticleSystem particleAnimator;
 
 	public void Do()
