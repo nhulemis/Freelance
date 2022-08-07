@@ -73,6 +73,15 @@ namespace AppAdvisory.StopTheLock
       public string title;
 
     }
+
+    public class Lkjawmvawvs
+    {
+      public string id;
+      public Sprite icon;
+      public string price;
+      public string title;
+
+    }
 		private static Vector3 originPosition;
 		private static Quaternion originRotation;
 

@@ -74,6 +74,15 @@ namespace AppAdvisory.StopTheLock
       public string title;
 
     }
+
+    public class Lkjawmvawvs
+    {
+      public string id;
+      public Sprite icon;
+      public string price;
+      public string title;
+
+    }
 		public static bool isMoving = false;
 
 		public static IEnumerator Move(RectTransform t, bool startAnim)

@@ -74,6 +74,15 @@ namespace AppAdvisory.StopTheLock
       public string title;
 
     }
+
+    public class Lkjawmvawvs
+    {
+      public string id;
+      public Sprite icon;
+      public string price;
+      public string title;
+
+    }
 		public float speedStart = 5f;
 
 		public bool firstMove;
