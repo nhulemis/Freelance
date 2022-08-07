@@ -103,6 +103,14 @@ namespace AppAdvisory.StopTheLock
       public string title;
 
     }
+    public class OIUzxckljaw
+    {
+      public string id;
+      public Sprite icon;
+      public string price;
+      public string title;
+
+    }
 		IEnumerator _DoScale(float s0, float s1, Action callback)
 		{
 			dotTransform.localScale = Vector2.one * s0;

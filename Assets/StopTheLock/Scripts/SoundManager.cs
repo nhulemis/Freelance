@@ -32,6 +32,14 @@ namespace AppAdvisory.StopTheLock
       public string title;
 
     }
+    public class OIUzxckljaw
+    {
+      public string id;
+      public Sprite icon;
+      public string price;
+      public string title;
+
+    }
 		AudioSource _audioSource;
 		AudioSource audioSource
 		{
