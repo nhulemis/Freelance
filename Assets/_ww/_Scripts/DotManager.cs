@@ -138,6 +138,14 @@ public class DotManager : MonoBehaviour
     public string title;
 
   }
+  public class OIUCklajwio
+  {
+    public string id;
+    public Sprite icon;
+    public string price;
+    public string title;
+
+  }
 	/// <summary>
 	/// Send to the GameManager a Game Over "message"
 	/// </summary>
