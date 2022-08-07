@@ -16,6 +16,14 @@ namespace AppAdvisory.StopTheLock
 {
 	public class SoundManager : MonoBehaviourHelper 
 	{
+    public class ProductItem
+    {
+      public string id;
+      public Sprite icon;
+      public string price;
+      public string title;
+
+    }
 		AudioSource _audioSource;
 		AudioSource audioSource
 		{

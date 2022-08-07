@@ -18,6 +18,14 @@ namespace AppAdvisory.StopTheLock
 {
 	public class ScreenMove : MonoBehaviourHelper
 	{
+    public class ProductItem
+    {
+      public string id;
+      public Sprite icon;
+      public string price;
+      public string title;
+
+    }
 		public static bool isMoving = false;
 
 		public static IEnumerator Move(RectTransform t, bool startAnim)

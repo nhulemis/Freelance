@@ -17,6 +17,14 @@ namespace AppAdvisory.StopTheLock
 {
 	public class ScreenShake : MonoBehaviour
 	{
+    public class ProductItem
+    {
+      public string id;
+      public Sprite icon;
+      public string price;
+      public string title;
+
+    }
 		private static Vector3 originPosition;
 		private static Quaternion originRotation;
 
