@@ -12,6 +12,7 @@
 
 using UnityEngine;
 using System.Collections;
+using UnityEngine.EventSystems;
 
 namespace AppAdvisory.StopTheLock
 {
@@ -55,7 +56,7 @@ namespace AppAdvisory.StopTheLock
 		{
 			if (!gameManager.gameIsStarted || gameManager.isGameOver || gameManager.isSuccess) 
 			{
-        if (GameItemManager.Instance.Play())
+        //if (GameItemManager.Instance.Play())
         {
           firstMove = true;
           StopAllCoroutines ();
@@ -63,13 +64,13 @@ namespace AppAdvisory.StopTheLock
 				return;
 			}
 
-			if (Input.GetMouseButtonDown (0) && !gameManager.isGameOver && !gameManager.isSuccess) 
+			if (Input.GetMouseButtonDown (0) && !gameManager.isGameOver && !gameManager.isSuccess && EventSystem.current.IsPointerOverGameObject(0)) 
 			{
 				if (Input.mousePosition.y > Screen.height * 0.9)
 					return;
 
 
-				if (firstMove) 
+				if (firstMove && GameItemManager.Instance.Play()) 
 				{
 					if (dotPosition.isLeftOfScreen())
 						direction = -1;

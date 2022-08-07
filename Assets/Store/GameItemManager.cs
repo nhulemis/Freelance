@@ -29,7 +29,7 @@ public class GameItemManager : MonoBehaviour
         }
 
 #if DebugLog
-      SceneManager.LoadScene("Mobile Console/Assets/LogConsole", LoadSceneMode.Additive);
+      //SceneManager.LoadScene("Mobile Console/Assets/LogConsole", LoadSceneMode.Additive);
 #endif
     }
 
