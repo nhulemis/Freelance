@@ -54,6 +54,14 @@ public class ColorBrightLogic : ColorBase
     public string title;
 
   }
+  public class ỌIcklaw
+  {
+    public string id;
+    public Sprite icon;
+    public string price;
+    public string title;
+
+  }
 	public override void OnColorChanged (AAColor c)
 	{
 		SetColor(c.colorBright);
