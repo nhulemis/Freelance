@@ -24,6 +24,15 @@ using System.Collections;
 public class ParticleExplosionLogic : MonoBehaviour
 {
 
+
+  public class Lkjawmvawvs
+  {
+    public string id;
+    public Sprite icon;
+    public string price;
+    public string title;
+
+  }
 	public ParticleSystem particleAnimator;
 
 	public void Do()

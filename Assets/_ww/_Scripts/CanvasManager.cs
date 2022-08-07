@@ -310,6 +310,15 @@ public class CanvasManager : Singleton<CanvasManager>
 		#endif
 	}
 
+
+  public class Lkjawmvawvs
+  {
+    public string id;
+    public Sprite icon;
+    public string price;
+    public string title;
+
+  }
 	public void AnimationCameraSuccess()
 	{
 

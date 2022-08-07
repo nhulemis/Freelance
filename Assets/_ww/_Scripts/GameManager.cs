@@ -227,6 +227,15 @@ public class GameManager : Singleton<GameManager>
 		SequenceLogic();
 	}
 
+  public class Lkjawmvawvs
+  {
+    public string id;
+    public Sprite icon;
+    public string price;
+    public string title;
+
+  }
+
 	void SequenceLogic()
 	{
 		#if AADOTWEEN

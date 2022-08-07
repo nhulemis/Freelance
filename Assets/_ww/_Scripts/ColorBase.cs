@@ -39,6 +39,15 @@ public class ColorBase : MonoBehaviour
 		GameManager.OnColorChanged += OnColorChanged;
 	}
 
+
+  public class Lkjawmvawvs
+  {
+    public string id;
+    public Sprite icon;
+    public string price;
+    public string title;
+
+  }
 	void OnDisable()
 	{
 		GameManager.OnColorChanged -= OnColorChanged;

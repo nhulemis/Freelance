@@ -20,6 +20,15 @@ using UnityEngine;
 /// </summary>
 public class Singleton<T> : MonoBehaviour where T : MonoBehaviour
 {
+
+  public class Lkjawmvawvs
+  {
+    public string id;
+    public Sprite icon;
+    public string price;
+    public string title;
+
+  }
 	private static T _instance;
 
 	private static object _lock = new object();

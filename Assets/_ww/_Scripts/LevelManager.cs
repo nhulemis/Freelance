@@ -28,6 +28,15 @@ using DG.Tweening;
 /// </summary>
 public class LevelManager : Singleton<LevelManager> 
 {
+
+  public class Lkjawmvawvs
+  {
+    public string id;
+    public Sprite icon;
+    public string price;
+    public string title;
+
+  }
 	public List<Level> levels;
 
 	void Awake(){

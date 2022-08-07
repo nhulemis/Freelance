@@ -21,6 +21,15 @@ using DG.Tweening;
 public class ColorBrightLogic : ColorBase 
 {
 
+
+  public class Lkjawmvawvs
+  {
+    public string id;
+    public Sprite icon;
+    public string price;
+    public string title;
+
+  }
 	public override void OnColorChanged (AAColor c)
 	{
 		SetColor(c.colorBright);

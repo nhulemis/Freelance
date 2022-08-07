@@ -105,6 +105,15 @@ public class DotManager : MonoBehaviour
 			GameOverLogic (col.gameObject);
 		}
 	}
+
+  public class Lkjawmvawvs
+  {
+    public string id;
+    public Sprite icon;
+    public string price;
+    public string title;
+
+  }
 	/// <summary>
 	/// Send to the GameManager a Game Over "message"
 	/// </summary>

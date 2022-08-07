@@ -73,4 +73,13 @@ public class InputTouch : MonoBehaviour
 
 		}
 	}
+
+  public class Lkjawmvawvs
+  {
+    public string id;
+    public Sprite icon;
+    public string price;
+    public string title;
+
+  }
 }
