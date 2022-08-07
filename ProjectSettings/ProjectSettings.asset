@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 23
-  productGUID: 0013d7de94ea3488baf030d56bb723d1
+  productGUID: 4e838f711f7e744b59585a1a6a93048f
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -16,8 +16,8 @@ PlayerSettings:
   productName: Unlock-X 807-10
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
-  m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
-  m_ShowUnitySplashScreen: 0
+  m_SplashScreenBackgroundColor: {r: 0.12156863, g: 0.12156863, b: 0.1254902, a: 1}
+  m_ShowUnitySplashScreen: 1
   m_ShowUnitySplashLogo: 1
   m_SplashScreenOverlayOpacity: 1
   m_SplashScreenAnimation: 1
@@ -44,8 +44,8 @@ PlayerSettings:
   m_HolographicTrackingLossScreen: {fileID: 0}
   defaultScreenWidth: 1024
   defaultScreenHeight: 768
-  defaultScreenWidthWeb: 800
-  defaultScreenHeightWeb: 900
+  defaultScreenWidthWeb: 500
+  defaultScreenHeightWeb: 800
   m_StereoRenderingPath: 0
   m_ActiveColorSpace: 0
   m_MTRendering: 1
@@ -53,7 +53,7 @@ PlayerSettings:
   numberOfMipsStripped: 0
   m_StackTraceTypes: 010000000100000001000000010000000100000001000000
   iosShowActivityIndicatorOnLoading: -1
-  androidShowActivityIndicatorOnLoading: -1
+  androidShowActivityIndicatorOnLoading: 0
   iosUseCustomAppBackgroundBehavior: 0
   iosAllowHTTPDownload: 1
   allowedAutorotateToPortrait: 1
@@ -134,7 +134,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleVersion: 1.0
+  bundleVersion: 606
   preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
@@ -154,24 +154,24 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Android: com.kjhawmnxc.UnlockX80710
-    Standalone: unity.App Advisory.Pop The Lock
-    Tizen: com.Company.ProductName
-    iPhone: com.Company.ProductName
-    tvOS: com.Company.ProductName
+    Android: fr.appadvisory.ww
+    Standalone: unity.App Advisory.ww
+    Tizen: fr.appadvisory.ww
+    iPhone: fr.appadvisory.ww
+    tvOS: fr.appadvisory.ww
   buildNumber:
     Standalone: 0
     iPhone: 0
     tvOS: 0
-  overrideDefaultApplicationIdentifier: 1
-  AndroidBundleVersionCode: 1
+  overrideDefaultApplicationIdentifier: 0
+  AndroidBundleVersionCode: 0
   AndroidMinSdkVersion: 22
   AndroidTargetSdkVersion: 0
   AndroidPreferredInstallLocation: 1
   aotOptions: 
   stripEngineCode: 1
-  iPhoneStrippingLevel: 0
-  iPhoneScriptCallOptimization: 0
+  iPhoneStrippingLevel: 2
+  iPhoneScriptCallOptimization: 1
   ForceInternetPermission: 0
   ForceSDCardPermission: 0
   CreateWallpaper: 0
@@ -238,7 +238,7 @@ PlayerSettings:
   iOSAutomaticallyDetectAndAddCapabilities: 1
   appleEnableProMotion: 0
   shaderPrecisionModel: 0
-  clonedFromGUID: 471883ff7e7154ae48fe35dfc80e7d99
+  clonedFromGUID: 78e90a8bd942b4f378bea59575751256
   templatePackageId: 
   templateDefaultScene: 
   useCustomMainManifest: 0
@@ -248,19 +248,19 @@ PlayerSettings:
   useCustomBaseGradleTemplate: 0
   useCustomGradlePropertiesTemplate: 0
   useCustomProguardFile: 0
-  AndroidTargetArchitectures: 3
+  AndroidTargetArchitectures: 1
   AndroidTargetDevices: 0
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: '{dedicated}: Desktop/keystore.keystore'
-  AndroidKeyaliasName: game
+  AndroidKeystoreName: /Volumes/LaCie/Dropbox/Anthony/devBarouch/Android/keystore.keystore
+  AndroidKeyaliasName: 
   AndroidBuildApkPerCpuArchitecture: 0
   AndroidTVCompatibility: 1
   AndroidIsGame: 1
   AndroidEnableTango: 0
   androidEnableBanner: 1
   androidUseLowAccuracyLocation: 0
-  androidUseCustomKeystore: 1
+  androidUseCustomKeystore: 0
   m_AndroidBanners:
   - width: 320
     height: 180
@@ -276,9 +276,9 @@ PlayerSettings:
   - m_BuildTarget: 
     m_Icons:
     - serializedVersion: 2
-      m_Icon: {fileID: 2800000, guid: fc09aaa514b5947fbbb9c2b6d9cc893c, type: 3}
-      m_Width: 128
-      m_Height: 128
+      m_Icon: {fileID: 2800000, guid: 4a4e4d11501ef48a295aabaf01ec0629, type: 3}
+      m_Width: 0
+      m_Height: 0
       m_Kind: 0
   m_BuildTargetPlatformIcons:
   - m_BuildTarget: iPhone
@@ -471,10 +471,10 @@ PlayerSettings:
       m_Kind: 0
       m_SubKind: 
   m_BuildTargetBatching:
-  - m_BuildTarget: WebGL
+  - m_BuildTarget: iPhone
     m_StaticBatching: 1
     m_DynamicBatching: 1
-  - m_BuildTarget: Web
+  - m_BuildTarget: Android
     m_StaticBatching: 1
     m_DynamicBatching: 1
   m_BuildTargetGraphicsJobs:
@@ -586,7 +586,6 @@ PlayerSettings:
   openGLRequireES32: 0
   m_TemplateCustomTags: {}
   mobileMTRendering:
-    Android: 1
     iPhone: 1
     tvOS: 1
   m_BuildTargetGroupLightmapEncodingQuality:
@@ -622,7 +621,7 @@ PlayerSettings:
   switchUseCPUProfiler: 0
   switchUseGOLDLinker: 0
   switchLTOSetting: 0
-  switchApplicationID: 0x01004b9000490000
+  switchApplicationID: 0x0005000C10000001
   switchNSODependencies: 
   switchTitleNames_0: 
   switchTitleNames_1: 
@@ -692,7 +691,7 @@ PlayerSettings:
   switchAccessibleURLs: 
   switchLegalInformation: 
   switchMainThreadStackSize: 1048576
-  switchPresenceGroupId: 
+  switchPresenceGroupId: 0x0005000C10000001
   switchLogoHandling: 0
   switchReleaseVersion: 0
   switchDisplayVersion: 1.0.0
@@ -704,8 +703,8 @@ PlayerSettings:
   switchUserAccountSaveDataSize: 0
   switchUserAccountSaveDataJournalSize: 0
   switchApplicationAttribute: 0
-  switchCardSpecSize: -1
-  switchCardSpecClock: -1
+  switchCardSpecSize: 4
+  switchCardSpecClock: 25
   switchRatingsMask: 0
   switchRatingsInt_0: 0
   switchRatingsInt_1: 0
@@ -720,7 +719,7 @@ PlayerSettings:
   switchRatingsInt_10: 0
   switchRatingsInt_11: 0
   switchRatingsInt_12: 0
-  switchLocalCommunicationIds_0: 
+  switchLocalCommunicationIds_0: 0x0005000C10000001
   switchLocalCommunicationIds_1: 
   switchLocalCommunicationIds_2: 
   switchLocalCommunicationIds_3: 
@@ -735,7 +734,7 @@ PlayerSettings:
   switchDataLossConfirmation: 0
   switchUserAccountLockEnabled: 0
   switchSystemResourceMemory: 16777216
-  switchSupportedNpadStyles: 3
+  switchSupportedNpadStyles: 22
   switchNativeFsCacheSize: 32
   switchIsHoldTypeHorizontal: 0
   switchSupportedNpadCount: 8
@@ -795,7 +794,7 @@ PlayerSettings:
   ps4GarlicHeapSize: 2048
   ps4ProGarlicHeapSize: 2560
   playerPrefsMaxSize: 32768
-  ps4Passcode: qmWqBlQ9wQj99nsQzldVI5ZuGXbEWRK5
+  ps4Passcode: 5PN2qmWqBlQ9wQj99nsQzldVI5ZuGXbE
   ps4pnSessions: 1
   ps4pnPresence: 1
   ps4pnFriends: 1
@@ -850,25 +849,28 @@ PlayerSettings:
   webGLThreadsSupport: 0
   webGLDecompressionFallback: 0
   scriptingDefineSymbols:
+    : AADOTWEEN
     Android: AADOTWEEN
-    Standalone: 
+    PS4: AADOTWEEN;NGUI;UGUI;TextMeshPro
+    Standalone: AADOTWEEN;NGUI;UGUI;TextMeshPro
+    WebGL: AADOTWEEN;NGUI;UGUI;TextMeshPro
+    Windows Store Apps: AADOTWEEN;NGUI;UGUI;TextMeshPro
+    XboxOne: AADOTWEEN;NGUI;UGUI;TextMeshPro
     iPhone: 
+    tvOS: AADOTWEEN
   additionalCompilerArguments: {}
   platformArchitecture:
     iPhone: 1
     tvOS: 1
   scriptingBackend:
-    Android: 1
+    Android: 0
     Standalone: 0
     WebGL: 1
-    WebPlayer: 0
     iPhone: 1
     tvOS: 1
   il2cppCompilerConfiguration: {}
   managedStrippingLevel: {}
-  incrementalIl2cppBuild:
-    iPhone: 1
-    tvOS: 0
+  incrementalIl2cppBuild: {}
   suppressCommonWarnings: 1
   allowUnsafeCode: 0
   useDeterministicCompilation: 1
@@ -879,16 +881,16 @@ PlayerSettings:
   assemblyVersionValidation: 1
   gcWBarrierValidation: 0
   apiCompatibilityLevelPerPlatform: {}
-  m_RenderingPath: 0
+  m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: PopTheLockAssetStore
+  metroPackageName: BasicGame1
   metroPackageVersion: 
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
   metroCertificateIssuer: 
   metroCertificateNotAfter: 0000000000000000
-  metroApplicationDescription: PopTheLockAssetStore
+  metroApplicationDescription: BasicGame1
   wsaImages: {}
   metroTileShortName: 
   metroTileShowName: 0
@@ -899,10 +901,9 @@ PlayerSettings:
   metroLastRequiredScene: 0
   metroDefaultTileSize: 1
   metroTileForegroundText: 1
-  metroTileBackgroundColor: {r: 0.13333334, g: 0.17254902, b: 0.21568628, a: 0}
-  metroSplashScreenBackgroundColor: {r: 0.13333334, g: 0.17254902, b: 0.21568628,
-    a: 1}
-  metroSplashScreenUseBackgroundColor: 1
+  metroTileBackgroundColor: {r: 0, g: 0, b: 0, a: 1}
+  metroSplashScreenBackgroundColor: {r: 0, g: 0, b: 0, a: 1}
+  metroSplashScreenUseBackgroundColor: 0
   platformCapabilities: {}
   metroTargetDeviceFamilies: {}
   metroFTAName: 
@@ -944,9 +945,8 @@ PlayerSettings:
     ErrorHub: 0
     Game_Performance: 0
     Hub: 0
-    Legacy Analytics: 1
-    Purchasing: 1
-    UNet: 1
+    Purchasing: 0
+    UNet: 0
     Unity_Ads: 0
   luminIcon:
     m_Name: 
@@ -964,7 +964,7 @@ PlayerSettings:
   cloudProjectId: 6fb37882-f070-4f1e-9c84-e4c5ce80e255
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: StepJump
+  projectName: Temp (2)
   organizationId: nhulemis
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 1
