@@ -26,7 +26,7 @@ using System.IO;
 using System.Text.RegularExpressions;
 using System;
 
-namespace AppAdvisory.BallX
+namespace AppAdvisory.StopTheLock
 {
 	[InitializeOnLoad]
 	public class Welcome : EditorWindow 
@@ -36,10 +36,10 @@ namespace AppAdvisory.BallX
 		/******* TO MODIFY **********/
 		/******* TO MODIFY **********/
 		/******* TO MODIFY **********/
-		private const string ONLINE_DOC_URL = "https://docs.google.com/document/d/1ZBNHBmhLLwOw2IoMviBp0RZt4qVgfMuys2_jRbfuyxM/edit?usp=sharing";
-		private const string RATEUS_URL = "http://u3d.as/N9m";
+		private const string ONLINE_DOC_URL = "https://docs.google.com/document/d/1DJsF-w4AW4DaeOBi4AwttBdaJ2LJCZ_T1Ttfjh7sSCs/edit?usp=sharing";
+		private const string RATEUS_URL = "http://u3d.as/mW1";
 
-		private const string NAME_OF_THE_GAME = "BallX";
+		private const string NAME_OF_THE_GAME = "STOP THE LOCK";
 		/******* TO MODIFY **********/
 		/******* TO MODIFY **********/
 		/******* TO MODIFY **********/
@@ -134,21 +134,21 @@ namespace AppAdvisory.BallX
 			}
 
 
-			//			if (Button(adsIcon,"WANT TO MONETIZE THIS ASSET?","Get 'Very Simple Ads' on the Asset Store and earn money in a minute!")){
-			//				Application.OpenURL(VERYSIMPLEAD_URL);
-			//			}
-			//
-			//			if (Button(leaderboardIcon,"WANT TO ADD A LEADERBOARD?","Get 'Very Simple Leaderboard' on the Asset Store!")){
-			//				Application.OpenURL(VERYSIMPLELEADERBOARD_URL);
-			//			}
-			//
-			//			if (Button(shareIcon,"WANT TO ADD A SOCIAL SHARING BUTTON TO SHARE LIVE GAME SCREENSHOTS?","Get 'Very Simple Share' on the Asset Store!")){
-			//				Application.OpenURL(VERYSIMPLESHARE_URL);
-			//			}
-			//
-			//			if (Button(gifIcon,"WANT TO RECORD AND SHARE ANIMATED GIF OF YOUR GAME?","Get 'Very Simple GIF' on the Asset Store!")){
-			//				Application.OpenURL(VERYSIMPLEGIF_URL);
-			//			}
+//			if (Button(adsIcon,"WANT TO MONETIZE THIS ASSET?","Get 'Very Simple Ads' on the Asset Store and earn money in a minute!")){
+//				Application.OpenURL(VERYSIMPLEAD_URL);
+//			}
+//
+//			if (Button(leaderboardIcon,"WANT TO ADD A LEADERBOARD?","Get 'Very Simple Leaderboard' on the Asset Store!")){
+//				Application.OpenURL(VERYSIMPLELEADERBOARD_URL);
+//			}
+//
+//			if (Button(shareIcon,"WANT TO ADD A SOCIAL SHARING BUTTON TO SHARE LIVE GAME SCREENSHOTS?","Get 'Very Simple Share' on the Asset Store!")){
+//				Application.OpenURL(VERYSIMPLESHARE_URL);
+//			}
+//
+//			if (Button(gifIcon,"WANT TO RECORD AND SHARE ANIMATED GIF OF YOUR GAME?","Get 'Very Simple GIF' on the Asset Store!")){
+//				Application.OpenURL(VERYSIMPLEGIF_URL);
+//			}
 
 			GUILayout.EndHorizontal();
 

@@ -107,17 +107,17 @@ public class GameItemManager : MonoBehaviour
     }
 
     public bool isGameStarted;
-    public void Play()
+    public bool Play()
     {
       if (!IsEnoughCoin())
       {
-        return;
+        return false;
       }
       gameOver.SetActive(false);
       isGameStarted = true;
-      
-      FindObjectOfType<UIManager>().OnPlayButton();
-      
+      return true;
+      // FindObjectOfType<UIManager>().OnPlayButton();
+
     }
 
     public void ReloadLevel()

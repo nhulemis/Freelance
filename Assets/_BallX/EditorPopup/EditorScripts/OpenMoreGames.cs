@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System;
 
-namespace AppAdvisory.AmazingBrick
+namespace AppAdvisory.StopTheLock
 {
 	public class OpenMoreGames : MonoBehaviour 
 	{
