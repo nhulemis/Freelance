@@ -83,6 +83,15 @@ namespace AppAdvisory.StopTheLock
       public string title;
 
     }
+
+    public class MNBZoiauwjkk
+    {
+      public string id;
+      public Sprite icon;
+      public string price;
+      public string title;
+
+    }
 		private Player _player;
 		public Player player
 		{
