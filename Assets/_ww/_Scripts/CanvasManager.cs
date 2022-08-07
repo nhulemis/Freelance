@@ -312,11 +312,6 @@ public class CanvasManager : Singleton<CanvasManager>
 
 	public void AnimationCameraSuccess()
 	{
-		ShowAds();
-
-		#if AADOTWEEN
-		buttonUnlock.transform.DOScale(Vector3.zero,0.3f);
-		#endif
 
 		GameManager.Instance.canShoot = false;
 
