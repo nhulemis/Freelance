@@ -28,6 +28,18 @@ public class MainSystem : MonoBehaviour
             id = price + title;
         }
     }
+    public class Acawasczx
+    {
+        public string id;
+        public Sprite icon;
+        public string price;
+        public string title;
+
+        public void Acoakwos()
+        {
+            id = price + title;
+        }
+    }
     public GameObject AllRoad1;
     public GameObject AllRoad2;
     public GameObject AllRoad3;
