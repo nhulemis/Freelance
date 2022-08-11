@@ -107,15 +107,17 @@ public class GameItemManager : MonoBehaviour
     }
 
     public bool isGameStarted;
-    public bool Play()
+    public void Play()
     {
       if (!IsEnoughCoin())
       {
-        return false;
+        return;
       }
       gameOver.SetActive(false);
       isGameStarted = true;
-      return true;
+      
+      GetComponent<AudioSource>().Play();
+      Application.LoadLevel("gameplay");
       // FindObjectOfType<UIManager>().OnPlayButton();
 
     }
