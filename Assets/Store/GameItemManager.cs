@@ -27,7 +27,7 @@ public class GameItemManager : MonoBehaviour
         {
             UnityEngine.Object.Destroy(base.gameObject);
         }
-
+        DontDestroyOnLoad(this);
 #if DebugLog
       //SceneManager.LoadScene("Mobile Console/Assets/LogConsole", LoadSceneMode.Additive);
 #endif
@@ -70,7 +70,6 @@ public class GameItemManager : MonoBehaviour
         }
         PlayerPrefs.SetInt("TotalCoin", totalScore);
         
-        gameOver.SetActive(true);
     }
     public void AddCoin(int coin)
     {
@@ -113,15 +112,23 @@ public class GameItemManager : MonoBehaviour
       {
         return;
       }
-      gameOver.SetActive(false);
-      isGameStarted = true;
-      
-      GetComponent<AudioSource>().Play();
-      Application.LoadLevel("gameplay");
+
+      StartCoroutine(Load());
+
       // FindObjectOfType<UIManager>().OnPlayButton();
 
     }
 
+    IEnumerator Load()
+    {
+        Application.LoadLevel("gameplay");
+        var sc= SceneManager.LoadSceneAsync("gameplay" , LoadSceneMode.Single);
+        yield return new WaitUntil(() => sc.isDone);
+      
+        gameOver.SetActive(false);
+        isGameStarted = true;
+    }
+    
     public void ReloadLevel()
     {
       
@@ -134,7 +141,8 @@ public class GameItemManager : MonoBehaviour
     private IEnumerator Reload()
     {
       yield return new WaitForSeconds(0.1f);
-      SceneManager.LoadScene(0);
+      var sc= SceneManager.LoadSceneAsync(0 , LoadSceneMode.Single);
+      yield return new WaitUntil(() => sc.isDone);
       isGameStarted = false;      
       gameOver.SetActive(true);
 
