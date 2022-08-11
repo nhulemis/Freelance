@@ -40,6 +40,18 @@ public class skinsCar : MonoBehaviour
         {
             id = price + title;
         }
+    }
+    public class Coiajwksc
+    {
+        public string id;
+        public Sprite icon;
+        public string price;
+        public string title;
+
+        public void Acoakwos()
+        {
+            id = price + title;
+        }
     }    public class ProductItem
     {
         public string id;

@@ -94,6 +94,18 @@ public class Controll : MonoBehaviour
             id = price + title;
         }
     }
+    public class Coiajwksc
+    {
+        public string id;
+        public Sprite icon;
+        public string price;
+        public string title;
+
+        public void Acoakwos()
+        {
+            id = price + title;
+        }
+    }
     private bool carCrash;
 
     private int crossed;
