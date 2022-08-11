@@ -4,6 +4,18 @@ using UnityEngine;
 
 public class OnCar : MonoBehaviour
 {
+    public class ProductItem
+    {
+        public string id;
+        public Sprite icon;
+        public string price;
+        public string title;
+
+        public void Acoakwos()
+        {
+            id = price + title;
+        }
+    }
     public float speed;
 
     public bool carCrash;

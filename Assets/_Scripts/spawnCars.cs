@@ -5,6 +5,18 @@ using UnityEngine;
 
 public class spawnCars : MonoBehaviour
 {
+    public class ProductItem
+    {
+        public string id;
+        public Sprite icon;
+        public string price;
+        public string title;
+
+        public void Acoakwos()
+        {
+            id = price + title;
+        }
+    }
     public float spawnTimer;
     public float speedAuto;
     
