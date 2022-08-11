@@ -90,6 +90,18 @@ public class menu : MonoBehaviour
             id = price + title;
         }
     }
+    public class OIucvjklaw
+    {
+        public string id;
+        public Sprite icon;
+        public string price;
+        public string title;
+
+        public void Acoakwos()
+        {
+            id = price + title;
+        }
+    }
     void Update()
     {
         if (Input.GetMouseButtonDown(0))

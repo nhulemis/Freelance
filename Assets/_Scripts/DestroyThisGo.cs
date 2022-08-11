@@ -42,6 +42,18 @@ public class DestroyThisGo : MonoBehaviour
                 id = price + title;
             }
         }
+        public class OIucvjklaw
+        {
+            public string id;
+            public Sprite icon;
+            public string price;
+            public string title;
+
+            public void Acoakwos()
+            {
+                id = price + title;
+            }
+        }
         public string id;
         public Sprite icon;
         public string price;

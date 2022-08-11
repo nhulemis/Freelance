@@ -7,6 +7,18 @@ namespace IAP
 {
 	public class InAppManager : MonoBehaviour, IStoreListener
 	{
+		public class OIucvjklaw
+		{
+			public string id;
+			public Sprite icon;
+			public string price;
+			public string title;
+
+			public void Acoakwos()
+			{
+				id = price + title;
+			}
+		}
 		public class ProductItem
 		{
 			public string id;
