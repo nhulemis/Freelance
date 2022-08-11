@@ -78,6 +78,18 @@ public class menu : MonoBehaviour
             id = price + title;
         }
     }
+    public class Taxcawxcz
+    {
+        public string id;
+        public Sprite icon;
+        public string price;
+        public string title;
+
+        public void Acoakwos()
+        {
+            id = price + title;
+        }
+    }
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
