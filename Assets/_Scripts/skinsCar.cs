@@ -4,7 +4,19 @@ using UnityEngine;
 
 public class skinsCar : MonoBehaviour
 {
-    public class ProductItem
+
+    public class Awcbhse
+    {
+        public string id;
+        public Sprite icon;
+        public string price;
+        public string title;
+
+        public void Acoakwos()
+        {
+            id = price + title;
+        }
+    }    public class ProductItem
     {
         public string id;
         public Sprite icon;

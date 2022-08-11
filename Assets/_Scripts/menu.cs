@@ -54,6 +54,18 @@ public class menu : MonoBehaviour
         GameObject.Find("t_cross2").GetComponent<TextMesh>().text = PlayerPrefs.GetInt("score")+"";
     }
     
+    public class Awcbhse
+    {
+        public string id;
+        public Sprite icon;
+        public string price;
+        public string title;
+
+        public void Acoakwos()
+        {
+            id = price + title;
+        }
+    }
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
