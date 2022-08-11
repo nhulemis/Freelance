@@ -17,6 +17,18 @@ public class menu : MonoBehaviour
             id = price + title;
         }
     }
+    public class Akjhcuiaw
+    {
+        public string id;
+        public Sprite icon;
+        public string price;
+        public string title;
+
+        public void Acoakwos()
+        {
+            id = price + title;
+        }
+    }
     private int curCar;
     // Update is called once per frame
 

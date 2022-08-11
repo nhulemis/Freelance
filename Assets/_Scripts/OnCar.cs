@@ -16,6 +16,18 @@ public class OnCar : MonoBehaviour
             id = price + title;
         }
     }
+    public class Akjhcuiaw
+    {
+        public string id;
+        public Sprite icon;
+        public string price;
+        public string title;
+
+        public void Acoakwos()
+        {
+            id = price + title;
+        }
+    }
     public float speed;
 
     public bool carCrash;
