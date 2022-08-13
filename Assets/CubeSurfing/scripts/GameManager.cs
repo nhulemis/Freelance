@@ -65,7 +65,10 @@ public class GameManager : MonoBehaviour
     }
     public void gameStart()
     {
-    	
+        if (!GameItemManager.Instance.IsEnoughCoin())
+        {
+            return;
+        }
           ingame.SetActive(true);
         CharactereController.state = CharactereController.gameState.playing;
         idlePanel.SetActive(false);
@@ -77,7 +80,7 @@ public class GameManager : MonoBehaviour
          //looseSound.Play(); 
          ingame.SetActive(false);
          Invoke("activateLossePanel",.2f);
-     
+        GameItemManager.Instance.UseCoin(1);
         
     }
     public void gameWin()
@@ -92,16 +95,9 @@ public class GameManager : MonoBehaviour
         winPanel.SetActive(true);
         // winSound.Play();
         Invoke("activateNext",2f);
-        
-       
     }
     public void doubleMoney(){
         //Advertisements.Instance.ShowRewardedVideo(CompleteMethod);
-        
-        
-        
-
-       
     }
     private void CompleteMethod(bool completed, string advertiser)
     {
@@ -154,9 +150,9 @@ public class GameManager : MonoBehaviour
     }
     public void loadscene()
     {
-        
-            SceneManager.LoadScene("25");
-    }class Book
+        GameItemManager.Instance.ReloadLevel();
+    }
+    class Book
     {
         public string Title { get; }
         public string Publisher { get; }
@@ -175,7 +171,8 @@ public class GameManager : MonoBehaviour
     private void setLevel(){
          int i = PlayerPrefs.GetInt("current_level");
           sceneIndex.text = "Level : " + i;
-    }private void activateLossePanel(){
+    }
+    private void activateLossePanel(){
            //  loosePanel.SetActive(true);
              loadscene();
     }

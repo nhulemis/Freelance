@@ -1,8 +1,10 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using AppAdvisory.BallX;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 using Object = UnityEngine.Object;
 
 public class GameItemManager : MonoBehaviour
@@ -10,6 +12,10 @@ public class GameItemManager : MonoBehaviour
 
   [SerializeField] private UserCoin coin;
   [SerializeField] private GameObject gameOver;
+  [SerializeField] private List<Material> materials;
+  [SerializeField] private TrailRenderer trailRenderer;
+  [SerializeField] private Color color;
+  [SerializeField] private Camera sky;
     public static GameItemManager Instance
     {
         get;
@@ -28,8 +34,21 @@ public class GameItemManager : MonoBehaviour
             UnityEngine.Object.Destroy(base.gameObject);
         }
         DontDestroyOnLoad(this);
+
+        foreach (var mat in materials)
+        {
+            mat.color = color;
+            
+        }
+        Color.RGBToHSV(color, out float H, out float S, out float V);
+        float negativeH = (H + 0.5f) % 1f;
+        Color negativeColor = Color.HSVToRGB(negativeH, S, V);
+        sky.backgroundColor = negativeColor;
+        trailRenderer.startColor = color;
+        trailRenderer.endColor = negativeColor;
+        gameOver.GetComponent<Image>().color = color;
 #if DebugLog
-      //SceneManager.LoadScene("Mobile Console/Assets/LogConsole", LoadSceneMode.Additive);
+        //SceneManager.LoadScene("Mobile Console/Assets/LogConsole", LoadSceneMode.Additive);
 #endif
     }
 
@@ -121,30 +140,32 @@ public class GameItemManager : MonoBehaviour
 
     IEnumerator Load()
     {
-        Application.LoadLevel("gameplay");
-        var sc= SceneManager.LoadSceneAsync("gameplay" , LoadSceneMode.Single);
-        yield return new WaitUntil(() => sc.isDone);
-      
         gameOver.SetActive(false);
         isGameStarted = true;
+        yield return null;
     }
     
     public void ReloadLevel()
     {
-      
-      UseCoin(1);
-      
-
+        if (isloading)
+        {
+            return;
+        }
+        Log.Debug("zo ba");
+     // UseCoin(1);
       StartCoroutine(Reload());
     }
 
+    private bool isloading = false; 
     private IEnumerator Reload()
     {
+        isloading = true;
       yield return new WaitForSeconds(0.1f);
       var sc= SceneManager.LoadSceneAsync(0 , LoadSceneMode.Single);
       yield return new WaitUntil(() => sc.isDone);
       isGameStarted = false;      
       gameOver.SetActive(true);
-
+      yield return new WaitForSeconds(2);
+      isloading = false;
     }
 }
