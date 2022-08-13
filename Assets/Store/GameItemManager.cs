@@ -45,7 +45,7 @@ public class GameItemManager : MonoBehaviour
         Color negativeColor = Color.HSVToRGB(negativeH, S, V);
         sky.backgroundColor = negativeColor;
         trailRenderer.startColor = color;
-        trailRenderer.endColor = negativeColor;
+        //trailRenderer.endColor = negativeColor;
         gameOver.GetComponent<Image>().color = color;
 #if DebugLog
         //SceneManager.LoadScene("Mobile Console/Assets/LogConsole", LoadSceneMode.Additive);
@@ -152,7 +152,7 @@ public class GameItemManager : MonoBehaviour
             return;
         }
         Log.Debug("zo ba");
-     // UseCoin(1);
+     UseCoin(1);
       StartCoroutine(Reload());
     }
 

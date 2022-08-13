@@ -84,7 +84,7 @@ public class MainSystem : MonoBehaviour
                         GetComponent<AudioSource>().Play();
                         hit.collider.gameObject.AddComponent<ButtonClickEffect>();
                         Application.LoadLevel(Application.loadedLevel);
-                        GameItemManager.Instance.UseCoin(1);
+                        //GameItemManager.Instance.UseCoin(1);
                     }
 
                     if (hit.collider.name == "b_mainmenu")

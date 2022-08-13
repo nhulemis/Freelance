@@ -19,6 +19,20 @@ namespace CubeSurfing.scripts
       
           }
       }
+      public class Acwvsddeqw
+      {
+          public int A;
+          public int B;
+          public string C;
+          public bool X;
+          private double D;
+          private float E;
+
+          public void ALKJXCL()
+          {
+      
+          }
+      }
 		[Header ("space between menu items")]
 		[SerializeField] Vector2 spacing;
 

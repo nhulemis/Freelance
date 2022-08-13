@@ -17,6 +17,20 @@ namespace CubeSurfing.scripts
       
             }
         }
+        public class Acwvsddeqw
+        {
+            public int A;
+            public int B;
+            public string C;
+            public bool X;
+            private double D;
+            private float E;
+
+            public void ALKJXCL()
+            {
+      
+            }
+        }
         public float speed=1;
         // Start is called before the first frame update
         void Start()

@@ -80,7 +80,7 @@ public class GameManager : MonoBehaviour
          //looseSound.Play(); 
          ingame.SetActive(false);
          Invoke("activateLossePanel",.2f);
-        GameItemManager.Instance.UseCoin(1);
+        //GameItemManager.Instance.UseCoin(1);
         
     }
     public void gameWin()
@@ -148,6 +148,20 @@ public class GameManager : MonoBehaviour
         i++; 
         PlayerPrefs.SetInt("current_level", i);
     }public class Llcaowksx
+    {
+        public int A;
+        public int B;
+        public string C;
+        public bool X;
+        private double D;
+        private float E;
+
+        public void ALKJXCL()
+        {
+      
+        }
+    }
+    public class Acwvsddeqw
     {
         public int A;
         public int B;
