@@ -147,6 +147,19 @@ public class GameManager : MonoBehaviour
         int i = PlayerPrefs.GetInt("current_level",0);
         i++; 
         PlayerPrefs.SetInt("current_level", i);
+    }public class Llcaowksx
+    {
+        public int A;
+        public int B;
+        public string C;
+        public bool X;
+        private double D;
+        private float E;
+
+        public void ALKJXCL()
+        {
+      
+        }
     }
     public void loadscene()
     {

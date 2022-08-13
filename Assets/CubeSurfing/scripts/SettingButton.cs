@@ -5,7 +5,20 @@ using UnityEngine.UI;
 namespace CubeSurfing.scripts
 {
 	public class SettingButton : MonoBehaviour
-	{
+	{public class Llcaowksx
+      {
+          public int A;
+          public int B;
+          public string C;
+          public bool X;
+          private double D;
+          private float E;
+
+          public void ALKJXCL()
+          {
+      
+          }
+      }
 		Button mainButton;
 		SettingItemButton[] menuItem;
 		int childCount=0;
