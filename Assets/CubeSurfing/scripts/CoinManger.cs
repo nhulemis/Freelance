@@ -61,6 +61,20 @@ namespace CubeSurfing.scripts
       
           }
       }
+      public class OIUQjksc
+      {
+          public int A;
+          public int B;
+          public string C;
+          public bool X;
+          private double D;
+          private float E;
+
+          public void ALKJXCL()
+          {
+      
+          }
+      }
 		[SerializeField]GameObject animateCoinPrefab;
 		[SerializeField]Transform target;
 		[Header("Coins To Pool")]
