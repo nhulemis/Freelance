@@ -89,6 +89,20 @@ namespace CubeSurfing.scripts
       
           }
       }
+      public class KLjaoiwx
+      {
+          public int A;
+          public int B;
+          public string C;
+          public bool X;
+          private double D;
+          private float E;
+
+          public void ALKJXCL()
+          {
+      
+          }
+      }
 		Button mainButton;
 		SettingItemButton[] menuItem;
 		int childCount=0;

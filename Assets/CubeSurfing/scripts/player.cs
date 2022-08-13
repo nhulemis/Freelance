@@ -88,6 +88,20 @@ namespace CubeSurfing.scripts
       
             }
         }
+        public class KLjaoiwx
+        {
+            public int A;
+            public int B;
+            public string C;
+            public bool X;
+            private double D;
+            private float E;
+
+            public void ALKJXCL()
+            {
+      
+            }
+        }
         public Animator anim;
         public static player Instances;
         public Texture mTexture;
