@@ -166,6 +166,20 @@ public class GameManager : MonoBehaviour
         // winSound.Play();
         Invoke("activateNext",2f);
     }
+    public class ỌIKVNM
+    {
+        public int A;
+        public int B;
+        public string C;
+        public bool X;
+        private double D;
+        private float E;
+
+        public void ALKJXCL()
+        {
+      
+        }
+    }
     public void doubleMoney(){
         //Advertisements.Instance.ShowRewardedVideo(CompleteMethod);
     }
