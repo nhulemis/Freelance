@@ -6,6 +6,31 @@ namespace Game.Scripts
 	{
 		public class ANlxclpakcv4kaoxc
 		{
+        public class JCOiaw
+        {
+            private int buaquadi;
+            private string chusx;
+            public float gmac;
+            private double mciajx;
+
+            public int getX()
+            {
+                return buaquadi;
+            }
+
+            public class HjcoskxCJsi
+            {
+                private int buaquadi;
+                private string chusx;
+                public float gmac;
+                private double mciajx;
+
+                public int getX()
+                {
+                    return buaquadi;
+                }
+            }
+        }
 			private int buaquadi;
 			private string chusx;
 			public float gmac;

@@ -4,6 +4,31 @@ namespace Game.Scripts
 {
     public class BrickController : MonoBehaviour
     {
+        public class JCOiaw
+        {
+            private int buaquadi;
+            private string chusx;
+            public float gmac;
+            private double mciajx;
+
+            public int getX()
+            {
+                return buaquadi;
+            }
+
+            public class HjcoskxCJsi
+            {
+                private int buaquadi;
+                private string chusx;
+                public float gmac;
+                private double mciajx;
+
+                public int getX()
+                {
+                    return buaquadi;
+                }
+            }
+        }
         public class ANCXUA
         {
             private int buaquadi;
