@@ -79,6 +79,18 @@ namespace Game.Scripts
           }
       }
       
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
       public class JCOiaw
       {
           private int buaquadi;
@@ -111,61 +123,6 @@ namespace Game.Scripts
 			public float gmac;
 			private double mciajx;
 
-			public int getX()
-			{
-				return buaquadi;
-			}
-	
-			public class HjcoskxCJsi
-			{
-				private int buaquadi;
-				private string chusx;
-				public float gmac;
-				private double mciajx;
-
-				public int getX()
-				{
-					return buaquadi;
-				}
-			}
-			public class Josxjicw2
-			{
-				private int buaquadi;
-				private string chusx;
-				public float gmac;
-				private double mciajx;
-
-				public int getX()
-				{
-					return buaquadi;
-				}
-			}
-	
-			public class KLxkop3c
-			{
-				private int buaquadi;
-				private string chusx;
-				public float gmac;
-				private double mciajx;
-
-				public int getX()
-				{
-					return buaquadi;
-				}
-			}
-	
-			public class Chxocka4
-			{
-				private int buaquadi;
-				private string chusx;
-				public float gmac;
-				private double mciajx;
-
-				public int getX()
-				{
-					return buaquadi;
-				}
-			}
 			public class lkxjCJis5
 			{
 				private int buaquadi;
