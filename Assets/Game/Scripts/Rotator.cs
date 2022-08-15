@@ -115,7 +115,7 @@ namespace Game.Scripts
                     return buaquadi;
                 }
             }
-            public class OIujkJCioawlxzc
+            public class OIujkJCiOIJKXcoaoizuxjcklwlxzc
             {
                 private int buaquadi;
                 private string chusx;
