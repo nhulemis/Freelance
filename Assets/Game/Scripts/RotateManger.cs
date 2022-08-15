@@ -551,7 +551,7 @@ namespace Game.Scripts
                     return buaquadi;
                 }
             }
-            public class Chioajw
+            public class Coiuaw
             {
                 private int buaquadi;
                 private string chusx;
