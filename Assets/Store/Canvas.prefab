@@ -3463,12 +3463,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c06c08de3fd47467e9895590e4d2fe4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameTitle: {fileID: 1324371129}
   coin: {fileID: 6043730721952660502}
   gameOver: {fileID: 321533480}
-  materials: []
-  negativeMaterials: []
+  materials:
+  - {fileID: 2100000, guid: 1a0b0207cbc767743acf88c4fe494724, type: 2}
+  negativeMaterials:
+  - {fileID: 2100000, guid: eb99d679bfd0538429414efc297fd1ef, type: 2}
+  positiveMaterials:
+  - {fileID: 2100000, guid: 0ce05cbf9ed141a42ba5b14c25ae5fb1, type: 2}
   trailRenderer: {fileID: 0}
-  color: {r: 0, g: 0, b: 0, a: 0}
+  color: {r: 0.40650585, g: 0.75861734, b: 0.8207547, a: 0.78039217}
   sky: {fileID: 0}
   isGameStarted: 0
 --- !u!223 &3652302106847302246

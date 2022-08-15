@@ -16,6 +16,7 @@ public class GameItemManager : MonoBehaviour
   [SerializeField] private GameObject gameOver;
   [SerializeField] private List<Material> materials;
   [SerializeField] private List<Material> negativeMaterials;
+  [SerializeField] private List<Material> positiveMaterials;
   [SerializeField] private TrailRenderer trailRenderer;
   [SerializeField] private Color color;
   [SerializeField] private Camera sky;
@@ -64,6 +65,16 @@ public class GameItemManager : MonoBehaviour
         foreach (var mat in negativeMaterials)
         {
             mat.color = harfColor;
+            
+        }
+        
+        float Plus = (H - 0.25f) % 1f;
+
+        Color plusColor = Color.HSVToRGB(Plus, S, V);
+        
+        foreach (var mat in positiveMaterials)
+        {
+            mat.color = plusColor;
             
         }
         
@@ -168,14 +179,17 @@ public class GameItemManager : MonoBehaviour
         yield return null;
     }
     
-    public void ReloadLevel()
+    public void ReloadLevel(bool isLose = false)
     {
         if (isloading)
         {
             return;
         }
-        Log.Debug("zo ba");
-     UseCoin(1);
+
+        if (isLose)
+        {
+            UseCoin(1);
+        }
       StartCoroutine(Reload());
     }
 
