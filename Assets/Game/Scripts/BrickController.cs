@@ -126,6 +126,18 @@ namespace Game.Scripts
                 return buaquadi;
             }
         }
+        public class Oiujklwx
+        {
+            private int buaquadi;
+            private string chusx;
+            public float gmac;
+            private double mciajx;
+
+            public int getX()
+            {
+                return buaquadi;
+            }
+        }
         public class ANCXUA
         {
             private int buaquadi;
