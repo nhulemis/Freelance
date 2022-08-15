@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 124
     y: 65
     width: 340
@@ -22,6 +23,16 @@ MonoBehaviour:
   m_Title: Store Selector
   m_RootView: {fileID: 6}
   m_MinSize: {x: 340, y: 201}
+=======
+    x: 736
+    y: 79
+    width: 640
+    height: 601
+  m_ShowMode: 0
+  m_Title: Build Settings
+  m_RootView: {fileID: 4}
+  m_MinSize: {x: 640, y: 601}
+>>>>>>> Sufing-812-10
   m_MaxSize: {x: 4000, y: 4021}
   m_Maximized: 0
 --- !u!114 &2
@@ -91,6 +102,7 @@ MonoBehaviour:
     width: 1440
     height: 793
   m_ShowMode: 4
+<<<<<<< HEAD
   m_Title: Project
   m_RootView: {fileID: 16}
   m_MinSize: {x: 875, y: 300}
@@ -247,6 +259,77 @@ MonoBehaviour:
   vertical: 0
   controlID: 16278
 --- !u!114 &11
+=======
+  m_Title: Inspector
+  m_RootView: {fileID: 10}
+  m_MinSize: {x: 875, y: 300}
+  m_MaxSize: {x: 10000, y: 10000}
+  m_Maximized: 1
+--- !u!114 &3
+>>>>>>> Sufing-812-10
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: BuildPlayerWindow
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 621
+    y: 0
+<<<<<<< HEAD
+    width: 401.5
+    height: 743
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 25}
+  m_Panes:
+  - {fileID: 25}
+  m_Selected: 0
+  m_LastSelected: 0
+--- !u!114 &12
+=======
+    width: 640
+    height: 601
+  m_MinSize: {x: 640, y: 601}
+  m_MaxSize: {x: 4000, y: 4021}
+  m_ActualView: {fileID: 16}
+  m_Panes:
+  - {fileID: 16}
+  m_Selected: 0
+  m_LastSelected: 0
+--- !u!114 &4
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 3}
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 640
+    height: 601
+  m_MinSize: {x: 640, y: 601}
+  m_MaxSize: {x: 4000, y: 4021}
+  vertical: 0
+  controlID: 6569
+--- !u!114 &5
+>>>>>>> Sufing-812-10
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -261,18 +344,18 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 621
+    x: 789.5
     y: 0
-    width: 401.5
+    width: 365
     height: 743
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 25}
+  m_MinSize: {x: 102, y: 121}
+  m_MaxSize: {x: 4002, y: 4021}
+  m_ActualView: {fileID: 17}
   m_Panes:
-  - {fileID: 25}
+  - {fileID: 17}
   m_Selected: 0
   m_LastSelected: 0
---- !u!114 &12
+--- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -285,9 +368,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
+<<<<<<< HEAD
   - {fileID: 19}
   - {fileID: 11}
   - {fileID: 13}
+=======
+  - {fileID: 13}
+  - {fileID: 5}
+  - {fileID: 7}
+>>>>>>> Sufing-812-10
   m_Position:
     serializedVersion: 2
     x: 0
@@ -297,8 +386,13 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
+<<<<<<< HEAD
   controlID: 205
 --- !u!114 &13
+=======
+  controlID: 70
+--- !u!114 &7
+>>>>>>> Sufing-812-10
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -313,6 +407,7 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 1022.5
     y: 0
     width: 417.5
@@ -326,6 +421,21 @@ MonoBehaviour:
   m_Selected: 0
   m_LastSelected: 1
 --- !u!114 &14
+=======
+    x: 1154.5
+    y: 0
+    width: 285.5
+    height: 743
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 21}
+  m_Panes:
+  - {fileID: 21}
+  - {fileID: 18}
+  m_Selected: 0
+  m_LastSelected: 1
+--- !u!114 &8
+>>>>>>> Sufing-812-10
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -342,6 +452,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 229.5
     height: 394
   m_MinSize: {x: 200, y: 200}
@@ -352,6 +463,18 @@ MonoBehaviour:
   m_Selected: 0
   m_LastSelected: 0
 --- !u!114 &15
+=======
+    width: 195.5
+    height: 394.5
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 22}
+  m_Panes:
+  - {fileID: 22}
+  m_Selected: 0
+  m_LastSelected: 0
+--- !u!114 &9
+>>>>>>> Sufing-812-10
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -367,6 +490,7 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
     y: 394
     width: 621
     height: 349
@@ -379,6 +503,20 @@ MonoBehaviour:
   m_Selected: 0
   m_LastSelected: 1
 --- !u!114 &16
+=======
+    y: 394.5
+    width: 789.5
+    height: 348.5
+  m_MinSize: {x: 231, y: 271}
+  m_MaxSize: {x: 10001, y: 10021}
+  m_ActualView: {fileID: 20}
+  m_Panes:
+  - {fileID: 20}
+  - {fileID: 24}
+  m_Selected: 0
+  m_LastSelected: 1
+--- !u!114 &10
+>>>>>>> Sufing-812-10
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -391,9 +529,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
+<<<<<<< HEAD
   - {fileID: 17}
   - {fileID: 12}
   - {fileID: 18}
+=======
+  - {fileID: 11}
+  - {fileID: 6}
+  - {fileID: 12}
+>>>>>>> Sufing-812-10
   m_Position:
     serializedVersion: 2
     x: 0
@@ -406,7 +550,11 @@ MonoBehaviour:
   m_TopViewHeight: 30
   m_UseBottomView: 1
   m_BottomViewHeight: 20
+<<<<<<< HEAD
 --- !u!114 &17
+=======
+--- !u!114 &11
+>>>>>>> Sufing-812-10
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -428,7 +576,11 @@ MonoBehaviour:
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
   m_LastLoadedLayoutName: 
+<<<<<<< HEAD
 --- !u!114 &18
+=======
+--- !u!114 &12
+>>>>>>> Sufing-812-10
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -449,6 +601,7 @@ MonoBehaviour:
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
+<<<<<<< HEAD
 --- !u!114 &19
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -475,6 +628,9 @@ MonoBehaviour:
   vertical: 1
   controlID: 206
 --- !u!114 &20
+=======
+--- !u!114 &13
+>>>>>>> Sufing-812-10
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -488,11 +644,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Children:
   - {fileID: 14}
+<<<<<<< HEAD
   - {fileID: 21}
+=======
+  - {fileID: 9}
+>>>>>>> Sufing-812-10
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 621
     height: 394
   m_MinSize: {x: 200, y: 100}
@@ -500,6 +661,40 @@ MonoBehaviour:
   vertical: 0
   controlID: 207
 --- !u!114 &21
+=======
+    width: 789.5
+    height: 743
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 16192, y: 16192}
+  vertical: 1
+  controlID: 71
+--- !u!114 &14
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 8}
+  - {fileID: 15}
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 789.5
+    height: 394.5
+  m_MinSize: {x: 200, y: 100}
+  m_MaxSize: {x: 16192, y: 8096}
+  vertical: 0
+  controlID: 72
+--- !u!114 &15
+>>>>>>> Sufing-812-10
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -514,6 +709,7 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 229.5
     y: 0
     width: 391.5
@@ -583,6 +779,21 @@ MonoBehaviour:
     m_LastAppliedPresetName: Default
     m_SaveData: []
 --- !u!114 &24
+=======
+    x: 195.5
+    y: 0
+    width: 594
+    height: 394.5
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
+  m_ActualView: {fileID: 23}
+  m_Panes:
+  - {fileID: 23}
+  - {fileID: 19}
+  m_Selected: 0
+  m_LastSelected: 0
+--- !u!114 &16
+>>>>>>> Sufing-812-10
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -602,8 +813,13 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 694
     y: 155
+=======
+    x: 736
+    y: 79
+>>>>>>> Sufing-812-10
     width: 640
     height: 580
   m_ViewDataDictionary: {fileID: 0}
@@ -612,8 +828,13 @@ MonoBehaviour:
     m_SaveData: []
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
     m_SelectedIDs: eacec13d
     m_LastClickedID: 1036111594
+=======
+    m_SelectedIDs: 
+    m_LastClickedID: 0
+>>>>>>> Sufing-812-10
     m_ExpandedIDs: 
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -632,7 +853,11 @@ MonoBehaviour:
       m_IsRenamingFilename: 0
       m_ClientGUIView: {fileID: 0}
     m_SearchString: 
+<<<<<<< HEAD
 --- !u!114 &25
+=======
+--- !u!114 &17
+>>>>>>> Sufing-812-10
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -653,9 +878,15 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 621
     y: 83
     width: 399.5
+=======
+    x: 789.5
+    y: 83
+    width: 363
+>>>>>>> Sufing-812-10
     height: 722
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -703,16 +934,24 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
+<<<<<<< HEAD
       width: 399.5
       height: 701
     m_Scale: {x: 0.73020834, y: 0.73020834}
     m_Translation: {x: 199.75, y: 350.5}
+=======
+      width: 363
+      height: 701
+    m_Scale: {x: 0.6722222, y: 0.6722222}
+    m_Translation: {x: 181.5, y: 350.5}
+>>>>>>> Sufing-812-10
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
+<<<<<<< HEAD
       x: -273.55206
       y: -480
       width: 547.1041
@@ -720,12 +959,25 @@ MonoBehaviour:
     m_MinimalGUI: 1
   m_defaultScale: 0.73020834
   m_LastWindowPixelSize: {x: 799, y: 1444}
+=======
+      x: -270
+      y: -521.40497
+      width: 540
+      height: 1042.8099
+    m_MinimalGUI: 1
+  m_defaultScale: 0.6722222
+  m_LastWindowPixelSize: {x: 726, y: 1444}
+>>>>>>> Sufing-812-10
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 00000001000000000000
   m_XRRenderMode: 0
   m_RenderTexture: {fileID: 0}
+<<<<<<< HEAD
 --- !u!114 &26
+=======
+--- !u!114 &18
+>>>>>>> Sufing-812-10
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -745,15 +997,25 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 987.5
     y: 83
     width: 451.5
+=======
+    x: 1154.5
+    y: 83
+    width: 284.5
+>>>>>>> Sufing-812-10
     height: 722
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
     m_SaveData: []
+<<<<<<< HEAD
 --- !u!114 &27
+=======
+--- !u!114 &19
+>>>>>>> Sufing-812-10
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -782,7 +1044,11 @@ MonoBehaviour:
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
     m_SaveData: []
+<<<<<<< HEAD
 --- !u!114 &28
+=======
+--- !u!114 &20
+>>>>>>> Sufing-812-10
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -804,9 +1070,15 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
     y: 477
     width: 620
     height: 328
+=======
+    y: 477.5
+    width: 788.5
+    height: 327.5
+>>>>>>> Sufing-812-10
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -824,22 +1096,37 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
+<<<<<<< HEAD
     - Assets/Game/Scene/Scenes/GameLevels
+=======
+    - Assets/CubeSurfing/Texture2D
+>>>>>>> Sufing-812-10
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
+<<<<<<< HEAD
   - Assets/Game/Scene/Scenes/GameLevels
+=======
+  - Assets/CubeSurfing/Texture2D
+>>>>>>> Sufing-812-10
   m_LastFoldersGridSize: -1
   m_LastProjectPath: /Users/mac/Documents/nl
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
+<<<<<<< HEAD
     scrollPos: {x: 0, y: 180.48187}
     m_SelectedIDs: 36790000
     m_LastClickedID: 31030
     m_ExpandedIDs: 00000000e6780000e8780000ea780000ec780000ee780000f0780000f2780000f4780000f6780000f8780000fa780000fc780000fe78000000790000027900000479000006790000087900000a7900000c7900000e790000107900001279000000ca9a3b
+=======
+    scrollPos: {x: 0, y: 239}
+    m_SelectedIDs: 00800000
+    m_LastClickedID: 32768
+    m_ExpandedIDs: 0000000020530000ae7f0000
+>>>>>>> Sufing-812-10
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -855,7 +1142,11 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
+<<<<<<< HEAD
       m_ClientGUIView: {fileID: 15}
+=======
+      m_ClientGUIView: {fileID: 9}
+>>>>>>> Sufing-812-10
     m_SearchString: 
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
@@ -867,7 +1158,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000e6780000e8780000ea780000ec780000ee780000f0780000f2780000f4780000f6780000f8780000fa780000fc780000fe78000000790000027900000479000006790000087900000a7900000c7900000e7900001079000012790000
+=======
+    m_ExpandedIDs: 0000000020530000
+>>>>>>> Sufing-812-10
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -923,7 +1218,11 @@ MonoBehaviour:
     m_GridSize: 64
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 255
+<<<<<<< HEAD
 --- !u!114 &29
+=======
+--- !u!114 &21
+>>>>>>> Sufing-812-10
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -944,9 +1243,15 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 1022.5
     y: 83
     width: 416.5
+=======
+    x: 1154.5
+    y: 83
+    width: 284.5
+>>>>>>> Sufing-812-10
     height: 722
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -955,7 +1260,7 @@ MonoBehaviour:
   m_ObjectsLockedBeforeSerialization: []
   m_InstanceIDsLockedBeforeSerialization: 
   m_PreviewResizer:
-    m_CachedPref: 160
+    m_CachedPref: 265
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
@@ -965,7 +1270,11 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_PreviewWindow: {fileID: 0}
+<<<<<<< HEAD
 --- !u!114 &30
+=======
+--- !u!114 &22
+>>>>>>> Sufing-812-10
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -988,8 +1297,13 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 83
+<<<<<<< HEAD
     width: 228.5
     height: 373
+=======
+    width: 194.5
+    height: 373.5
+>>>>>>> Sufing-812-10
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -997,6 +1311,7 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
       m_SelectedIDs: 
       m_LastClickedID: 0
       m_ExpandedIDs: 605bfdffbe5bfdff125cfdff7669fdff2e6bfdff826bfdff4a7efdff4280fdff9680fdff5e93fdff0e95fdff6295fdff2aa8fdffeca9fdff40aafdff56b2fdff0eb4fdff62b4fdff78bcfdff20befdff74befdff8cc6fdff50c8fdffa4c8fdffbcd0fdff20d3fdff74d3fdff8adbfdff32ddfdff86ddfdffe4e3fdff20e6fdff72e6fdff88eefdff3ef0fdff90f0fdffa6f8fdff64fafdffb6fafdffce02feffe804feff3a05feff520dfefff80efeff4a0ffeff6017feff0419feff5619feff6c21feff4823feff9a23feff6236feff1838feff6a38feff324bfeff344dfeff864dfeff4e60feff2662feff8262feffd462feff846efeff927cfeffb07efeff067ffeff6c8cfeff149dfeffdc9ffeff40a0feff48a6feff6aadfeffbaadfeff82c0feff7ac6feffd0c6feff9cd9feff98e0feffece0feffb8f3feffc409ffffcc0effff300fffff320fffff4015ffff9015ffffa81dffff2825ffffa42dfffff62dffff0e36fffff044ffff5445ffff6846ffff6a46ffff8a47ffffda47fffff44fffff8255ffffd455ffff345cffff5c5dffffb05dffffcc65ffff8870ffff5875ffffbe75fffff076ffff4477ffff607fffffd899ffff2a9affff88a0ffffa4a1fffff4a1ffff52a8ffff5ea9ffffaea9ffffc6b1ffffd4b9ffff26baffff3ec2fffffec3ffff50c4ffff68ccffff42ceffff94ceffffacd6ffff6ed8ffffc0d8ffffd8e0ffffa8e2fffffae2ffff7ce9ffffc2f3ffff04fbffffcca40200caa802006caa0200f21e0400a6410400a4450400464704007c470400a8f60500eaf80500a6420700b6450700a44607009e32080064dd08000eea0800e4eb0800f65e0900a06b0900766d0900
@@ -1004,18 +1319,35 @@ MonoBehaviour:
         m_UserAcceptedRename: 0
         m_Name: Store
         m_OriginalName: Store
+=======
+      m_SelectedIDs: 707f0300
+      m_LastClickedID: 229232
+      m_ExpandedIDs: 8c31ffffec31ffffa433ffff8a48fffffaa6ffffb6d5ffff72dbffffc6e2ffffeae4ffffece4ffff30fbffff
+      m_RenameOverlay:
+        m_UserAcceptedRename: 0
+        m_Name: Canvas
+        m_OriginalName: Canvas
+>>>>>>> Sufing-812-10
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
+<<<<<<< HEAD
         m_UserData: -29252
+=======
+        m_UserData: -22778
+>>>>>>> Sufing-812-10
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
         m_OriginalEventType: 0
         m_IsRenamingFilename: 0
+<<<<<<< HEAD
         m_ClientGUIView: {fileID: 14}
+=======
+        m_ClientGUIView: {fileID: 8}
+>>>>>>> Sufing-812-10
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -1023,7 +1355,11 @@ MonoBehaviour:
       m_IsLocked: 0
     m_CurrentSortingName: TransformSorting
   m_WindowGUID: fb042339fc3e2450ca607d29967fed07
+<<<<<<< HEAD
 --- !u!114 &31
+=======
+--- !u!114 &23
+>>>>>>> Sufing-812-10
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1044,10 +1380,17 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 229.5
     y: 83
     width: 389.5
     height: 373
+=======
+    x: 195.5
+    y: 83
+    width: 592
+    height: 373.5
+>>>>>>> Sufing-812-10
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -1096,28 +1439,6 @@ MonoBehaviour:
       id: unity-search-toolbar
       index: 1
       layout: 1
-    - dockPosition: 1
-      containerId: overlay-toolbar__top
-      floating: 0
-      collapsed: 0
-      displayed: 0
-      snapOffset: {x: 0, y: 0}
-      snapOffsetDelta: {x: 0, y: 0}
-      snapCorner: 0
-      id: Scene View/Open Tile Palette
-      index: 2
-      layout: 4
-    - dockPosition: 1
-      containerId: overlay-toolbar__top
-      floating: 0
-      collapsed: 0
-      displayed: 0
-      snapOffset: {x: 0, y: 0}
-      snapOffsetDelta: {x: 0, y: 0}
-      snapCorner: 0
-      id: Scene View/Tilemap Focus
-      index: 3
-      layout: 4
     - dockPosition: 0
       containerId: overlay-container--left
       floating: 0
@@ -1266,14 +1587,20 @@ MonoBehaviour:
   m_OverrideSceneCullingMask: 6917529027641081856
   m_SceneIsLit: 1
   m_SceneLighting: 1
-  m_2DMode: 1
+  m_2DMode: 0
   m_isRotationLocked: 0
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
     m_Target: {x: 4.831438, y: 3.026162, z: 0.22990051}
     speed: 2
     m_Value: {x: 4.831438, y: 3.026162, z: 0.22990051}
+=======
+    m_Target: {x: -231.99733, y: -33.267223, z: 6.3460383}
+    speed: 2
+    m_Value: {x: -231.99733, y: -33.267223, z: 6.3460383}
+>>>>>>> Sufing-812-10
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1302,6 +1629,7 @@ MonoBehaviour:
       m_Size: {x: 0, y: 0}
     yGrid:
       m_Fade:
+<<<<<<< HEAD
         m_Target: 0
         speed: 2
         m_Value: 0
@@ -1310,9 +1638,19 @@ MonoBehaviour:
       m_Size: {x: 1, y: 1}
     zGrid:
       m_Fade:
+=======
+>>>>>>> Sufing-812-10
         m_Target: 1
         speed: 2
         m_Value: 1
+      m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
+      m_Pivot: {x: 0, y: 0, z: 0}
+      m_Size: {x: 1, y: 1}
+    zGrid:
+      m_Fade:
+        m_Target: 0
+        speed: 2
+        m_Value: 0
       m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
       m_Pivot: {x: 0, y: 0, z: 0}
       m_Size: {x: 1, y: 1}
@@ -1320,17 +1658,23 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0, y: 0, z: 0, w: 1}
+    m_Target: {x: -0.08402543, y: 0.6818542, z: -0.07932075, w: -0.7223094}
     speed: 2
-    m_Value: {x: 0, y: 0, z: 0, w: 1}
+    m_Value: {x: -0.084025085, y: 0.68185145, z: -0.07932043, w: -0.7223065}
   m_Size:
+<<<<<<< HEAD
     m_Target: 8.454252
     speed: 2
     m_Value: 8.454252
-  m_Ortho:
-    m_Target: 1
+=======
+    m_Target: 286.86862
     speed: 2
-    m_Value: 1
+    m_Value: 286.86862
+>>>>>>> Sufing-812-10
+  m_Ortho:
+    m_Target: 0
+    speed: 2
+    m_Value: 0
   m_CameraSettings:
     m_Speed: 1
     m_SpeedNormalized: 0.5
@@ -1351,7 +1695,11 @@ MonoBehaviour:
   m_SceneVisActive: 1
   m_LastLockedObject: {fileID: 0}
   m_ViewIsLockedToObject: 0
+<<<<<<< HEAD
 --- !u!114 &32
+=======
+--- !u!114 &24
+>>>>>>> Sufing-812-10
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1373,9 +1721,15 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
     y: 477
     width: 620
     height: 328
+=======
+    y: 477.5
+    width: 788.5
+    height: 327.5
+>>>>>>> Sufing-812-10
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
