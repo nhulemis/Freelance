@@ -48,7 +48,7 @@ public class GameItemManager : MonoBehaviour
         gameTitle.text =$"{Application.companyName}" + "\n"+Application.productName.Replace("-","\n") ;
         
         Color.RGBToHSV(color, out float H, out float S, out float V);
-        float negativeH = (H + 0.7f) % 1f;
+        float negativeH = (H + 0.25f) % 1f;
         Color negativeColor = Color.HSVToRGB(negativeH, S, V);
 
         if (sky == null)
@@ -68,7 +68,7 @@ public class GameItemManager : MonoBehaviour
             
         }
         
-        float Plus = (H + 0.25f) % 1f;
+        float Plus = (H + 0.5f) % 1f;
 
         Color plusColor = Color.HSVToRGB(Plus, S, V);
         
