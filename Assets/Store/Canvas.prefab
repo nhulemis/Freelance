@@ -3087,7 +3087,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3652302106641296934}
   - component: {fileID: 3652302106641296929}
-  - component: {fileID: 3652302106641296928}
   m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
@@ -3126,41 +3125,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3652302106641296935}
   m_CullTransparentMesh: 1
---- !u!114 &3652302106641296928
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3652302106641296935}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 78b94a5c666d747b6a52567cfc5e44ee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  background: {r: 0.19575472, g: 0.7830189, b: 0.6095796, a: 1}
-  itemArea: {r: 0.09892311, g: 0.5377358, b: 0.501401, a: 1}
-  highlight: {r: 0.12771447, g: 0.7264921, b: 0.7735849, a: 1}
-  sprBackgrounds:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  sprItemAreas:
-  - {fileID: 0}
-  - {fileID: 0}
-  sprHighLights:
-  - {fileID: 3652302106987327653}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!1 &3652302106646465698
 GameObject:
   m_ObjectHideFlags: 0
@@ -3452,10 +3416,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3652302106847302241}
+  - component: {fileID: 4330583815028853434}
   - component: {fileID: 3652302106847302246}
   - component: {fileID: 3652302106847302247}
   - component: {fileID: 3652302106847302244}
-  - component: {fileID: 4330583815028853434}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -3487,6 +3451,26 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &4330583815028853434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3652302106847302245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c06c08de3fd47467e9895590e4d2fe4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coin: {fileID: 6043730721952660502}
+  gameOver: {fileID: 321533480}
+  materials: []
+  negativeMaterials: []
+  trailRenderer: {fileID: 0}
+  color: {r: 0, g: 0, b: 0, a: 0}
+  sky: {fileID: 0}
+  isGameStarted: 0
 --- !u!223 &3652302106847302246
 Canvas:
   m_ObjectHideFlags: 0
@@ -3548,21 +3532,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &4330583815028853434
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3652302106847302245}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c06c08de3fd47467e9895590e4d2fe4e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  coin: {fileID: 6043730721952660502}
-  gameOver: {fileID: 321533480}
-  isGameStarted: 0
 --- !u!1 &3652302106987327675
 GameObject:
   m_ObjectHideFlags: 0

@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using AppAdvisory.BallX;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -10,9 +11,11 @@ using Object = UnityEngine.Object;
 public class GameItemManager : MonoBehaviour
 {
 
+    [SerializeField] private TextMeshProUGUI gameTitle;
   [SerializeField] private UserCoin coin;
   [SerializeField] private GameObject gameOver;
   [SerializeField] private List<Material> materials;
+  [SerializeField] private List<Material> negativeMaterials;
   [SerializeField] private TrailRenderer trailRenderer;
   [SerializeField] private Color color;
   [SerializeField] private Camera sky;
@@ -40,12 +43,32 @@ public class GameItemManager : MonoBehaviour
             mat.color = color;
             
         }
+
+        gameTitle.text = Application.productName.Replace("-","\n");
+        
         Color.RGBToHSV(color, out float H, out float S, out float V);
         float negativeH = (H + 0.5f) % 1f;
         Color negativeColor = Color.HSVToRGB(negativeH, S, V);
+
+        if (sky == null)
+        {
+            sky = Camera.main;
+        }
+        
         sky.backgroundColor = negativeColor;
-        trailRenderer.startColor = color;
-        //trailRenderer.endColor = negativeColor;
+        
+        float hafColorH = (H + 0.25f) % 1f;
+
+        Color harfColor = Color.HSVToRGB(hafColorH, S, V);
+        
+        foreach (var mat in negativeMaterials)
+        {
+            mat.color = harfColor;
+            
+        }
+        
+        
+        
         gameOver.GetComponent<Image>().color = color;
 #if DebugLog
         //SceneManager.LoadScene("Mobile Console/Assets/LogConsole", LoadSceneMode.Additive);
