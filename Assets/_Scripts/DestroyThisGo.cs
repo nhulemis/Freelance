@@ -6,18 +6,8 @@ public class DestroyThisGo : MonoBehaviour
 {
     public class ProductItem
     {
-        public class Awcbhse
-        {
-            public string id;
-            public Sprite icon;
-            public string price;
-            public string title;
-
-            public void Acoakwos()
-            {
-                id = price + title;
-            }
-        }
+      
+        
         public string id;
         public Sprite icon;
         public string price;

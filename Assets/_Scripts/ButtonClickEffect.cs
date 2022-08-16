@@ -34,18 +34,7 @@ public class ButtonClickEffect : MonoBehaviour {
 		}
 	}
 	
-	public class Awcbhse
-	{
-		public string id;
-		public Sprite icon;
-		public string price;
-		public string title;
-
-		public void Acoakwos()
-		{
-			id = price + title;
-		}
-	}
+	
 
 	// Use this for initialization
 	void Start () {
