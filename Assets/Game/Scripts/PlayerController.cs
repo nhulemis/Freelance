@@ -123,31 +123,8 @@ namespace Game.Scripts
 			public float gmac;
 			private double mciajx;
 
-			public class lkxjCJis5
-			{
-				private int buaquadi;
-				private string chusx;
-				public float gmac;
-				private double mciajx;
 
-				public int getX()
-				{
-					return buaquadi;
-				}
-			}
-	
-			public class Pôciks6
-			{
-				private int buaquadi;
-				private string chusx;
-				public float gmac;
-				private double mciajx;
-
-				public int getX()
-				{
-					return buaquadi;
-				}
-			}
+      
 			public class oivpxcoiv7
 			{
 				private int buaquadi;
