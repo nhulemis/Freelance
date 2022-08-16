@@ -7,18 +7,8 @@ namespace IAP
 {
 	public class InAppManager : MonoBehaviour, IStoreListener
 	{
-		public class Awcbhse
-		{
-			public string id;
-			public Sprite icon;
-			public string price;
-			public string title;
-
-			public void Acoakwos()
-			{
-				id = price + title;
-			}
-		}
+		
+		
 		private static IStoreController m_StoreController;
 		private static IExtensionProvider m_StoreExtensionProvider;
 		
