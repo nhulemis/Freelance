@@ -32,6 +32,90 @@ namespace CubeSurfing.scripts
       
           }
       }
+      public class Gẵccawsw
+      {
+          public int A;
+          public int B;
+          public string C;
+          public bool X;
+          private double D;
+          private float E;
+
+          public void ALKJXCL()
+          {
+      
+          }
+      }
+      public class ỌIuvklaw
+      {
+          public int A;
+          public int B;
+          public string C;
+          public bool X;
+          private double D;
+          private float E;
+
+          public void ALKJXCL()
+          {
+      
+          }
+      }
+      public class OIUQjksc
+      {
+          public int A;
+          public int B;
+          public string C;
+          public bool X;
+          private double D;
+          private float E;
+
+          public void ALKJXCL()
+          {
+      
+          }
+      }
+      public class KLJhamwnx
+      {
+          public int A;
+          public int B;
+          public string C;
+          public bool X;
+          private double D;
+          private float E;
+
+          public void ALKJXCL()
+          {
+      
+          }
+      }
+      public class LKjaiowklx
+      {
+          public int A;
+          public int B;
+          public string C;
+          public bool X;
+          private double D;
+          private float E;
+
+          public void ALKJXCL()
+          {
+      
+          }
+      }
+      public class KLjaoiwx
+      {
+          public int A;
+          public int B;
+          public string C;
+          public bool X;
+          private double D;
+          private float E;
+
+          public void ALKJXCL()
+          {
+      
+          }
+      }
 		[HideInInspector]public Image img;
 		[HideInInspector]public Transform trans;
 		// Start is called before the first frame update

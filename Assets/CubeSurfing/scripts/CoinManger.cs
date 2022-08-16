@@ -33,6 +33,90 @@ namespace CubeSurfing.scripts
       
           }
       }
+      public class Gẵccawsw
+      {
+          public int A;
+          public int B;
+          public string C;
+          public bool X;
+          private double D;
+          private float E;
+
+          public void ALKJXCL()
+          {
+      
+          }
+      }
+      public class ỌIuvklaw
+      {
+          public int A;
+          public int B;
+          public string C;
+          public bool X;
+          private double D;
+          private float E;
+
+          public void ALKJXCL()
+          {
+      
+          }
+      }
+      public class OIUQjksc
+      {
+          public int A;
+          public int B;
+          public string C;
+          public bool X;
+          private double D;
+          private float E;
+
+          public void ALKJXCL()
+          {
+      
+          }
+      }
+      public class KLJhamwnx
+      {
+          public int A;
+          public int B;
+          public string C;
+          public bool X;
+          private double D;
+          private float E;
+
+          public void ALKJXCL()
+          {
+      
+          }
+      }
+      public class OIuajwklx
+      {
+          public int A;
+          public int B;
+          public string C;
+          public bool X;
+          private double D;
+          private float E;
+
+          public void ALKJXCL()
+          {
+      
+          }
+      }
+      public class KLjaoiwx
+      {
+          public int A;
+          public int B;
+          public string C;
+          public bool X;
+          private double D;
+          private float E;
+
+          public void ALKJXCL()
+          {
+      
+          }
+      }
 		[SerializeField]GameObject animateCoinPrefab;
 		[SerializeField]Transform target;
 		[Header("Coins To Pool")]
