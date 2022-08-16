@@ -11,30 +11,7 @@ public class ButtonZfix : MonoBehaviour
 	public float scale;
 	public float speed;
 	
-	public class ProductItem
-	{
-		public string id;
-		public Sprite icon;
-		public string price;
-		public string title;
-
-		public void Acoakwos()
-		{
-			id = price + title;
-		}
-	}
-	public class Akjhcuiaw
-	{
-		public string id;
-		public Sprite icon;
-		public string price;
-		public string title;
-
-		public void Acoakwos()
-		{
-			id = price + title;
-		}
-	}
+	
 	public class Acawasczx
 	{
 		public string id;

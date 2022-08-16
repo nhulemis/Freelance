@@ -16,42 +16,7 @@ public class parentNullTime : MonoBehaviour
             id = price + title;
         }
     }
-    public class Akjhcuiaw
-    {
-        public string id;
-        public Sprite icon;
-        public string price;
-        public string title;
-
-        public void Acoakwos()
-        {
-            id = price + title;
-        }
-    }
-    public class Acawasczx
-    {
-        public string id;
-        public Sprite icon;
-        public string price;
-        public string title;
-
-        public void Acoakwos()
-        {
-            id = price + title;
-        }
-    }
-    public class Awcbhse
-    {
-        public string id;
-        public Sprite icon;
-        public string price;
-        public string title;
-
-        public void Acoakwos()
-        {
-            id = price + title;
-        }
-    }
+    
     private float timer;
     // Start is called before the first frame update
     void Start()
