@@ -9,18 +9,7 @@ public class CameraMovement : MonoBehaviour
 
     //public float minZ;
     
-    public class ProductItem
-    {
-        public string id;
-        public Sprite icon;
-        public string price;
-        public string title;
 
-        public void Acoakwos()
-        {
-            id = price + title;
-        }
-    }
     
     
     private GameObject hero;
