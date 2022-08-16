@@ -44,18 +44,7 @@ public class spawnCars : MonoBehaviour
     public float spawnTimer;
     public float speedAuto;
     
-    public class Awcbhse
-    {
-        public string id;
-        public Sprite icon;
-        public string price;
-        public string title;
-
-        public void Acoakwos()
-        {
-            id = price + title;
-        }
-    }
+    
     private float timer;
 
     private GameObject[] Cars;

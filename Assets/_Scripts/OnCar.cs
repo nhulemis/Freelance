@@ -32,18 +32,8 @@ public class OnCar : MonoBehaviour
     
     public float speed;
 
-    public class Awcbhse
-    {
-        public string id;
-        public Sprite icon;
-        public string price;
-        public string title;
-
-        public void Acoakwos()
-        {
-            id = price + title;
-        }
-    }
+ 
+    
     public bool carCrash;
 
     private float tempSpeed;
