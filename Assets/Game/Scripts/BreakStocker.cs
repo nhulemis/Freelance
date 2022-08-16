@@ -68,18 +68,7 @@ namespace Game.Scripts
       
       
       
-		public class hcizxjjHUAw
-		{
-			private int buaquadi;
-			private string chusx;
-			public float gmac;
-			private double mciajx;
-
-			public int getX()
-			{
-				return buaquadi;
-			}
-		}
+      
 		public class Kxijaicuas
 		{
 			private int buaquadi;
