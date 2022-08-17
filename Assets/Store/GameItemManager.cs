@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using AppAdvisory.AmazingBrick;
 using AppAdvisory.BallX;
 using TMPro;
@@ -11,6 +12,7 @@ using Object = UnityEngine.Object;
 
 public class GameItemManager : MonoBehaviour
 {
+    [SerializeField] private ColorManager colorManager;
 
     [SerializeField] private TextMeshProUGUI gameTitle;
   [SerializeField] private UserCoin coin;
@@ -29,14 +31,14 @@ public class GameItemManager : MonoBehaviour
 
     private void Awake()
     {
-        Object.DontDestroyOnLoad(this);
         if (Instance == null)
         {
             Instance = this;
         }
         else
         {
-            UnityEngine.Object.Destroy(base.gameObject);
+            Destroy(gameObject);
+            return;
         }
         DontDestroyOnLoad(this);
 
@@ -82,13 +84,39 @@ public class GameItemManager : MonoBehaviour
         }
 
         var gameColor = new Colored(this.color, negativeColor);
-        
-        ColorManager.instance.colored.Add(gameColor);
+
+        if (colorManager != null)
+        {
+            colorManager.colored.Add(gameColor);
+            colorManager.colored.Add(gameColor);
+            colorManager.colored.Add(gameColor);
+        }
+       
         
         
         gameOver.GetComponent<Image>().color = color;
 #if DebugLog
         //SceneManager.LoadScene("Mobile Console/Assets/LogConsole", LoadSceneMode.Additive);
+#endif
+    }
+
+    public void ScreenShot()
+    {
+       
+#if UNITY_EDITOR
+        DateTime t = DateTime.Now;
+       // 2022/08/17 15:02:02.112 2972 3348 Error Unity Failed to store screen shot (/storage/emulated/0/Android/data/com.bvawvc.y1817SquareMaster/files/storage/emulated/0/Android/data/com.bvawvc.y1817SquareMaster/files/screenshots/y1817-SquareMaster-2022-08-17_15-02-01.jpg)
+       string folder = "/storage/emulated/0/DCIM/Screenshots";
+       if (!Directory.Exists(folder))
+       {
+           Directory.CreateDirectory(folder);
+       }
+       
+        string path =
+            $"{Application.productName}-{t.ToString("yyyy-MM-dd_HH-mm-ss")}.jpg";
+        path = path.Replace(" ", "");
+        ScreenCapture.CaptureScreenshot(path);
+        Handheld.Vibrate();
 #endif
     }
 

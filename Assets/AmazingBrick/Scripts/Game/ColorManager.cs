@@ -21,9 +21,9 @@ namespace AppAdvisory.AmazingBrick
 	/// <summary>
 	/// Class in charge to change the background color 
 	/// </summary>
-	public class ColorManager : Singleton<ColorManager>
+	public class ColorManager : MonoBehaviour
 	{
-		public delegate void ColorSpriteChange (Color c);
+      public delegate void ColorSpriteChange (Color c);
 		public static event ColorSpriteChange OnColorSpriteChange;
 
 		public delegate void ColorBackgroundChange (Color c);
@@ -38,8 +38,21 @@ namespace AppAdvisory.AmazingBrick
 		/// </summary>
 		public List<Colored> colored = new List<Colored>();
 
+    public static ColorManager instance;
+    
 		void Awake()
 		{
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+            return;
+        }
+        
 			colorBackground = Color.white;
 
 			colorWall = Color.white;
@@ -69,7 +82,7 @@ namespace AppAdvisory.AmazingBrick
 
 			//		Colored c = GetRandomColor();
 
-			Colored c = colored[PlayerPrefs.GetInt("LASTSCOLOR",0)];
+			Colored c = colored[0];
 			Color cBack = c.colorBackground;
 			Color cWall = c.colorWall;
 
@@ -142,10 +155,9 @@ namespace AppAdvisory.AmazingBrick
 
 		Colored GetRandomColor()
 		{
-			int i = UnityEngine.Random.Range (0, colored.Count);
-			var c = colored[i];
+			var c = colored[0];
 
-			PlayerPrefs.SetInt("LASTSCOLOR",i);
+		//	PlayerPrefs.SetInt("LASTSCOLOR",i);
 
 			return c;
 		}
