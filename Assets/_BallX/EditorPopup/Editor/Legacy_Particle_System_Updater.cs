@@ -73,6 +73,19 @@ public class LegacyParticleSystemUpdater : ScriptableWizard
 					return buaquadi;
 				}
 			}
+
+        public class RSCTHGDSCSIRXELEKJUZLXXCZIGXMVK
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
    private ParticleSystem[] components;
     private ParticleSystem[] prefabs;
 

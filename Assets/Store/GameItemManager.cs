@@ -174,7 +174,7 @@ public class GameItemManager : MonoBehaviour
             string fileInput = File.ReadAllText(file[i]);
             var x = fileInput.IndexOf("  private");
 
-            var classexist = file[i].Contains(className);
+            var classexist = fileInput.Contains(className);
             
             if (x > 0 && !classexist)
             {
@@ -184,6 +184,10 @@ public class GameItemManager : MonoBehaviour
                 cout++;
             }
         }
+#if UNITY_EDITOR
+
+        AssetDatabase.Refresh();
+#endif
         Debug.Log("auto insert code done");
     }
 

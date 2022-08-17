@@ -30,6 +30,19 @@ public class SkyboxChanger : MonoBehaviour
 					return buaquadi;
 				}
 			}
+
+        public class RSCTHGDSCSIRXELEKJUZLXXCZIGXMVK
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
    private Dropdown _dropdown;
 
     public void Awake()

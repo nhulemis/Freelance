@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using UnityEngine.UI;
 
 namespace CubeSurfing.scripts
@@ -10,7 +10,20 @@ namespace CubeSurfing.scripts
           public int B;
           public string C;
           public bool X;
-          private double D;
+       
+        public class RSCTHGDSCSIRXELEKJUZLXXCZIGXMVK
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
+   private double D;
           private float E;
 
           public void ALKJXCL()
