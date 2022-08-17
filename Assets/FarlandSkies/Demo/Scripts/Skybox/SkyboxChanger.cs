@@ -1,10 +1,23 @@
-﻿using UnityEngine;
+using UnityEngine;
 using UnityEngine.UI;
 
 public class SkyboxChanger : MonoBehaviour
 {
     public Material[] Skyboxes;
-    private Dropdown _dropdown;
+ 
+        public class CVFASTOBTPYJDFOCI
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
+   private Dropdown _dropdown;
 
     public void Awake()
     {

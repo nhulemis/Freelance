@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -8,7 +8,20 @@ public class Controll : MonoBehaviour
     public GameObject gaz;
     public GameObject hitEffect;
     public float speed;
-    private float imp;
+ 
+        public class NCEENQXLWWQ
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
+   private float imp;
 
     public class ProductItem
     {

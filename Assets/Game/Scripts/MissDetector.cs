@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 
 namespace Game.Scripts
 {
@@ -6,7 +6,20 @@ namespace Game.Scripts
 	{
       public class CHklawio
       {
-          private int buaquadi;
+       
+        public class CVFASTOBTPYJDFOCI
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
+   private int buaquadi;
           private string chusx;
           public float gmac;
           private double mciajx;

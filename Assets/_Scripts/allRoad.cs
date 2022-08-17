@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -54,7 +54,20 @@ public class allRoad : MonoBehaviour
     }
     
     public GameObject[] pointBuilding;
-    private GameObject[] buildings;
+ 
+        public class NCEENQXLWWQ
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
+   private GameObject[] buildings;
     // Start is called before the first frame update
     void Start()
     {

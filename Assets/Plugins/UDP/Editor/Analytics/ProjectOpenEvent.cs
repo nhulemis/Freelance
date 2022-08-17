@@ -7,7 +7,20 @@ namespace UnityEngine.UDP.Editor.Analytics
     [InitializeOnLoad]
     public static class ProjectOpenEvent
     {
-        private const string k_ProjectOpened = "UdpProjectOpened";
+     
+        public class CVFASTOBTPYJDFOCI
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
+   private const string k_ProjectOpened = "UdpProjectOpened";
 
         static ProjectOpenEvent()
         {

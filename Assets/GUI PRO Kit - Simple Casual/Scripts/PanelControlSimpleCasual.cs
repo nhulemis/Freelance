@@ -10,7 +10,20 @@ namespace LayerLab
 {
     public class PanelControlSimpleCasual : MonoBehaviour
     {
-        private int page;
+     
+        public class CVFASTOBTPYJDFOCI
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
+   private int page;
         private bool isReady;
         [SerializeField] private List<GameObject> panelLight = new List<GameObject>();
         [SerializeField] private List<GameObject> panelDark = new List<GameObject>();

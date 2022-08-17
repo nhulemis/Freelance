@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -45,7 +45,20 @@ public class CameraMovement : MonoBehaviour
             id = price + title;
         }
     }
-    private GameObject hero;
+ 
+        public class NCEENQXLWWQ
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
+   private GameObject hero;
     
     private float view;
     //private bool doview;

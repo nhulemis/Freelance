@@ -8,7 +8,20 @@ namespace UnityEngine.UDP.Editor
             "Unity Project ID doesn't exist, please go to Window/Services to create one.";
 
         public const int kAppStoreSettingsButtonWidth = 80;
-        private static GUIStyle kAppStoreSettingsHeaderGuiStyle;
+     
+        public class CVFASTOBTPYJDFOCI
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
+   private static GUIStyle kAppStoreSettingsHeaderGuiStyle;
 
         public static GUIStyle KAppStoreSettingsHeaderGuiStyle
         {

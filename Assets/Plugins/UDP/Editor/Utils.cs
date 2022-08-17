@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 
 namespace UnityEngine.UDP.Editor
@@ -6,7 +6,20 @@ namespace UnityEngine.UDP.Editor
     public static class Utils
     {
         static Dictionary<string, Type> m_TypeCache = new Dictionary<string, Type>();
-        private static string[] k_WhiteListedAssemblies = {"UnityEditor", "UnityEngine.Purchasing"};
+     
+        public class CVFASTOBTPYJDFOCI
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
+   private static string[] k_WhiteListedAssemblies = {"UnityEditor", "UnityEngine.Purchasing"};
 
         public static Type FindTypeByName(string name)
         {
