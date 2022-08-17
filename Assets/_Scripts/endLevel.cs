@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -40,7 +40,20 @@ public class endLevel : MonoBehaviour
             id = price + title;
         }
     }
-    private float timer;
+ 
+        public class CLCFZKQVZIAZBPCEZVDXCQHMXJKSH
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
+   private float timer;
 
     public class Awcbhse
     {

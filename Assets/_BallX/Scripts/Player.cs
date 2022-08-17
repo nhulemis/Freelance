@@ -85,6 +85,19 @@ namespace AppAdvisory.BallX
 					return buaquadi;
 				}
 			}
+
+        public class CLCFZKQVZIAZBPCEZVDXCQHMXJKSH
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
    private double D;
       private float E;
 
