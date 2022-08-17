@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using System.Timers;
 using UnityEngine;
@@ -56,7 +56,20 @@ public class spawnCars : MonoBehaviour
             id = price + title;
         }
     }
-    private float timer;
+ 
+        public class BWRXWBMVGPXGJET
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
+   private float timer;
 
     private GameObject[] Cars;
     // Start is called before the first frame update
