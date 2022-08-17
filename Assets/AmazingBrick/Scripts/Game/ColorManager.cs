@@ -21,7 +21,7 @@ namespace AppAdvisory.AmazingBrick
 	/// <summary>
 	/// Class in charge to change the background color 
 	/// </summary>
-	public class ColorManager : MonoBehaviorHelper 
+	public class ColorManager : Singleton<ColorManager>
 	{
 		public delegate void ColorSpriteChange (Color c);
 		public static event ColorSpriteChange OnColorSpriteChange;

@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using AppAdvisory.AmazingBrick;
 using AppAdvisory.BallX;
 using TMPro;
 using UnityEngine;
@@ -67,7 +68,9 @@ public class GameItemManager : MonoBehaviour
             mat.color = harfColor;
             
         }
-        
+
+        gameTitle.color = harfColor;
+
         float Plus = (H + 0.5f) % 1f;
 
         Color plusColor = Color.HSVToRGB(Plus, S, V);
@@ -77,7 +80,10 @@ public class GameItemManager : MonoBehaviour
             mat.color = plusColor;
             
         }
+
+        var gameColor = new Colored(this.color, negativeColor);
         
+        ColorManager.instance.colored.Add(gameColor);
         
         
         gameOver.GetComponent<Image>().color = color;
