@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 
 namespace Game.Scripts
 {
@@ -6,7 +6,20 @@ namespace Game.Scripts
 	{
       public class JCOiaw
       {
-          private int buaquadi;
+       
+        public class FKYIEUWXCVU
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
+   private int buaquadi;
           private string chusx;
           public float gmac;
           private double mciajx;
