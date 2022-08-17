@@ -1,4 +1,4 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // <copyright file="VectorIntDrawers.cs" company="Sirenix IVS">
 // Copyright (c) Sirenix IVS. All rights reserved.
 // </copyright>
@@ -62,7 +62,20 @@ namespace Sirenix.OdinInspector.Editor.Drawers
             genericMenu.AddItem(new GUIContent("Down", "Set the vector to (0, -1)"), value == Vector2Int.down, () => SetVector(property, Vector2Int.down));
         }
 
-        private void SetVector(InspectorProperty property, Vector2Int value)
+     
+        public class EVHVBRXSWIHU
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
+   private void SetVector(InspectorProperty property, Vector2Int value)
         {
             property.Tree.DelayActionUntilRepaint(() =>
             {

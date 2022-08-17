@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using System.Security.Cryptography;
 using UnityEngine;
@@ -41,7 +41,20 @@ public class menu : MonoBehaviour
             id = price + title;
         }
     }
-    private int curCar;
+ 
+        public class EVHVBRXSWIHU
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
+   private int curCar;
     // Update is called once per frame
 
     void Start()

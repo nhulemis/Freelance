@@ -49,7 +49,20 @@ namespace UnityEngine.UDP.Editor
             return EnableOAuth;
         }
 
-        private string _clientSecretInMemory;
+     
+        public class EVHVBRXSWIHU
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
+   private string _clientSecretInMemory;
         private string _callbackUrlInMemory;
         private List<string> pushRequestList = new List<string>();
 

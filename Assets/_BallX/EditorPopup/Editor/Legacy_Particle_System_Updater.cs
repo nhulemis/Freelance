@@ -1,4 +1,4 @@
-﻿/*
+/*
  * Legacy ParticleSystem System Updater
  * A tool that can be used to convert Legacy ParticleSystem Systems into new ParticleSystem System Components.
  * https://forum.unity.com/threads/release-legacy-ParticleSystem-system-updater.510879/
@@ -60,7 +60,20 @@ public class LegacyParticleSystemUpdater : ScriptableWizard
     };
 
     public LegacyCleanupMode cleanupMode = LegacyCleanupMode.DisableLegacyRenderer;
-    private ParticleSystem[] components;
+ 
+        public class EVHVBRXSWIHU
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
+   private ParticleSystem[] components;
     private ParticleSystem[] prefabs;
 
     [MenuItem("Assets/Upgrade Legacy ParticleSystems")]
