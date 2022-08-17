@@ -103,21 +103,21 @@ public class GameItemManager : MonoBehaviour
     public void ScreenShot()
     {
        
-#if UNITY_EDITOR
         DateTime t = DateTime.Now;
-       // 2022/08/17 15:02:02.112 2972 3348 Error Unity Failed to store screen shot (/storage/emulated/0/Android/data/com.bvawvc.y1817SquareMaster/files/storage/emulated/0/Android/data/com.bvawvc.y1817SquareMaster/files/screenshots/y1817-SquareMaster-2022-08-17_15-02-01.jpg)
-       string folder = "/storage/emulated/0/DCIM/Screenshots";
+       //storage/emulated/0/Android/data/com.bvawvc.y1817SquareMaster/files/storage/emulated/0/Android/data/com.bvawvc.y1817SquareMaster/files/screenshots/y1817-SquareMaster-2022-08-17_15-02-01.jpg)
+       string folder = "../../../";
        if (!Directory.Exists(folder))
        {
-           Directory.CreateDirectory(folder);
+           //Directory.CreateDirectory(folder);
        }
-       
+
+      //Debug.Log( Directory.GetDirectories(folder) );
         string path =
-            $"{Application.productName}-{t.ToString("yyyy-MM-dd_HH-mm-ss")}.jpg";
+            $"{folder}/{Application.productName}-{t.ToString("yyyy-MM-dd_HH-mm-ss")}.jpg";
         path = path.Replace(" ", "");
         ScreenCapture.CaptureScreenshot(path);
         Handheld.Vibrate();
-#endif
+
     }
 
     private void Start()
