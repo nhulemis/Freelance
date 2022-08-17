@@ -149,6 +149,56 @@ public class GameItemManager : MonoBehaviour
     }
 
     [Button]
+    public void AutoInsertCode()
+    {
+        string classTemplate = @"
+        public class CLASSTEMPLATE
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
+";
+        int claL = Random.Range(5, 25);
+
+        string className = RandomString(claL);
+
+        classTemplate = classTemplate.Replace("CLASSTEMPLATE", className);
+
+        var file =   Directory.GetFiles(Application.dataPath, "*.cs", SearchOption.AllDirectories);
+
+        
+        
+        for (int i = 0; i < claL; i++)
+        {
+            string fileInput = File.ReadAllText(file[i]);
+            var x = fileInput.IndexOf("private");
+
+            if (x > 0)
+            {
+                var output= fileInput.Insert(x - 1, classTemplate);
+                File.WriteAllText(file[i],output);
+                Debug.Log(file[i]);
+            }
+            
+        }
+    }
+
+    private  System.Random random = new System.Random();
+    public  string RandomString(int length)
+    {
+        const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        return new string(Enumerable.Repeat(chars, length)
+            .Select(s => s[random.Next(s.Length)]).ToArray());
+    }
+
+    [Button]
     public void TakeAppIcon()
     {
         string screenshotFolder = Path.Combine(Application.dataPath , "../ScreenShots");
