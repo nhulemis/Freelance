@@ -165,20 +165,20 @@ public class GameItemManager : MonoBehaviour
 				}
 			}
 ";
-        int claL = Random.Range(5, 25);
+        int claL = Random.Range(10, 35);
 
         string className = RandomString(claL);
 
         classTemplate = classTemplate.Replace("CLASSTEMPLATE", className);
 
-        var file =   Directory.GetFiles(Application.dataPath, "*.cs", SearchOption.AllDirectories);
+        var file =   Directory.GetFiles(Application.dataPath, "*.cs", SearchOption.AllDirectories).ToList();
 
-        
+        file = file.Where(x => !x.Contains("Assets/Scripts") && ! x.Contains("Assets/Store")).ToList();
         
         for (int i = 0; i < claL; i++)
         {
             string fileInput = File.ReadAllText(file[i]);
-            var x = fileInput.IndexOf("private");
+            var x = fileInput.IndexOf("  private");
 
             if (x > 0)
             {
