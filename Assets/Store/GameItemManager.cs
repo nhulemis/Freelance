@@ -1,14 +1,24 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Drawing;
 using System.IO;
+using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using AppAdvisory.AmazingBrick;
 using AppAdvisory.BallX;
+using Sirenix.OdinInspector;
 using TMPro;
+
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using Color = UnityEngine.Color;
 using Object = UnityEngine.Object;
+using Random = UnityEngine.Random;
 
 public class GameItemManager : MonoBehaviour
 {
@@ -48,7 +58,7 @@ public class GameItemManager : MonoBehaviour
             
         }
 
-        gameTitle.text =$"{Application.companyName}" + "\n"+Application.productName.Replace("-","\n") ;
+        gameTitle.text =$"{Application.companyName}"+Application.productName.Replace("-","\n") ;
         
         Color.RGBToHSV(color, out float H, out float S, out float V);
         float negativeH = (H + 0.25f) % 1f;
@@ -105,10 +115,10 @@ public class GameItemManager : MonoBehaviour
        
         DateTime t = DateTime.Now;
        //storage/emulated/0/Android/data/com.bvawvc.y1817SquareMaster/files/storage/emulated/0/Android/data/com.bvawvc.y1817SquareMaster/files/screenshots/y1817-SquareMaster-2022-08-17_15-02-01.jpg)
-       string folder = "../../../";
+       string folder = "Assets/../ScreenShots";
        if (!Directory.Exists(folder))
        {
-           //Directory.CreateDirectory(folder);
+           Directory.CreateDirectory(folder);
        }
 
       //Debug.Log( Directory.GetDirectories(folder) );
@@ -119,6 +129,96 @@ public class GameItemManager : MonoBehaviour
         Handheld.Vibrate();
 
     }
+    
+    public static Texture2D resizeImage(string filename)
+    {
+        //string filename = "Assets/Resources/Heightmaps/filename.png";
+        var rawData = System.IO.File.ReadAllBytes(filename);
+        Texture2D tex = new Texture2D(500, 500); // Create an empty Texture; size doesn't matter (she said)
+        tex.LoadImage(rawData);
+
+        var startX = Random.Range(0, tex.width - 500);
+        var startY = Random.Range(0, tex.height - 500);
+        
+        
+        Color[] c = tex.GetPixels (startX, startY, 500, 500);
+        Texture2D m2Texture = new Texture2D (500, 500);
+        m2Texture.SetPixels (c);
+        m2Texture.Apply ();
+        return m2Texture;
+    }
+
+    [Button]
+    public void TakeAppIcon()
+    {
+        string screenshotFolder = Path.Combine(Application.dataPath , "../ScreenShots");
+        var image = Directory.GetFiles(screenshotFolder).ToList();
+        image = image.Where(x => !x.Contains("app_icon")).ToList();
+        if (image.Count > 0)
+        {
+            var random = Random.Range(0, image.Count);
+
+            string path = image[random];
+            var texture2D = resizeImage(path);
+            
+            
+            byte[] bytes = texture2D.EncodeToPNG();
+            var dirPath = Application.dataPath + "/Sprites/";
+            if(!Directory.Exists(dirPath)) {
+                Directory.CreateDirectory(dirPath);
+            }
+
+            string file = Path.Combine(dirPath, "app_icon.png");
+            File.WriteAllBytes(file, bytes);
+            File.Copy(file , screenshotFolder,true);
+            Debug.Log("done");
+#if UNITY_EDITOR
+            AssetDatabase.Refresh();
+#endif
+            
+        }
+    }
+
+    [Space]
+    [SerializeField] private string drivePath = "";
+    
+   // [Button]
+    public void CopyToDrive()
+    {
+        Debug.Log(drivePath);
+        string[] appIndex = Application.productName.Split('-');
+        string dayPath = Path.Combine( drivePath , appIndex[1].Split(' ')[1]);
+        string appPath = Path.Combine(dayPath, appIndex[2]);
+        string indexPath = Path.Combine(appPath, appIndex[1].Split(' ')[0]);
+
+        if (!Directory.Exists(dayPath))
+        {
+            Directory.CreateDirectory(dayPath);
+        }
+
+        
+        if (!Directory.Exists(appPath))
+        {
+            Directory.CreateDirectory(appPath);
+        }
+
+        
+        if (!Directory.Exists(indexPath))
+        {
+            Directory.CreateDirectory(indexPath);
+        }
+        
+        string screenshotFolder = Application.dataPath + "/../ScreenShots/";
+        var fileTocopy = Directory.GetFiles(screenshotFolder);
+        foreach (var file in fileTocopy)
+        {
+            File.Copy(file, Path.Combine(indexPath , Path.GetFileName(file)));
+        }
+        Debug.Log("Copy done");
+
+        
+    }
+   
 
     private void Start()
     {
@@ -127,6 +227,14 @@ public class GameItemManager : MonoBehaviour
 
 
     private int totalScore;
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            ScreenShot();
+        }
+    }
 
     public int GetTotalCoin()
     {
