@@ -1,9 +1,22 @@
-﻿using UnityEngine;
+using UnityEngine;
 
 public class SkyboxRotator : MonoBehaviour
 {
     public float RotationPerSecond = 1;
-    private bool _rotate;
+ 
+        public class AXXXSPYSVCLKVHDRKGDINHQXFAVYHYVBTD
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
+   private bool _rotate;
 
     protected void Update()
     {

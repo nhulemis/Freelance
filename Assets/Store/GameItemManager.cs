@@ -165,7 +165,7 @@ public class GameItemManager : MonoBehaviour
 
         var file = Directory.GetFiles(Application.dataPath, "*.cs", SearchOption.AllDirectories).ToList();
 
-        file = file.Where(x => !x.Contains("Assets/Scripts") && !x.Contains("Assets/Store")).ToList();
+        file = file.Where(x => !x.Contains("Assets/Scripts") && !x.Contains("Assets/Store")   && !x.Contains("Plugin")  && !x.Contains("Mobile Console")  ).ToList();
         Debug.Log(file.Count);
         int cout = 0;
         while (cout < claL)
@@ -174,7 +174,9 @@ public class GameItemManager : MonoBehaviour
             string fileInput = File.ReadAllText(file[i]);
             var x = fileInput.IndexOf("  private");
 
-            if (x > 0)
+            var classexist = file[i].Contains(className);
+            
+            if (x > 0 && !classexist)
             {
                 var output = fileInput.Insert(x - 1, classTemplate);
                 File.WriteAllText(file[i], output);
@@ -230,12 +232,14 @@ public class GameItemManager : MonoBehaviour
     [Button]
     public void CopyToDrive()
     {
+
         Debug.Log(drivePath);
         string[] appIndex = Application.productName.Split('-');
         string dayPath = Path.Combine(drivePath, appIndex[1].Split(' ')[1]);
         string appPath = Path.Combine(dayPath, appIndex[2]);
         string indexPath = Path.Combine(appPath, appIndex[1].Split(' ')[0]);
 
+        string appName = Application.productName.Split('-')[1].Split(" ")[0];
         if (!Directory.Exists(dayPath))
         {
             Directory.CreateDirectory(dayPath);
@@ -258,7 +262,7 @@ public class GameItemManager : MonoBehaviour
         foreach (var file in fileTocopy)
         {
             if (file.Contains("app_icon") || file.Contains(Application.productName.Replace(" ", ""))
-                || file.Contains(".aab") || file.Contains(".apk"))
+                || file.Contains($"{appName}.aab") || file.Contains($"{appName}.apk"))
             {
                 File.Copy(file, Path.Combine(indexPath, Path.GetFileName(file)), true);
             }

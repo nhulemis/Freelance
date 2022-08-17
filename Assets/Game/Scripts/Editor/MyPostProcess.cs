@@ -11,11 +11,7 @@ namespace Game.Scripts.Editor
         public static void OnPostprocessBuild(BuildTarget target, string pathToBuiltProject) {
             Debug.Log( pathToBuiltProject );
 
-            var aabapks = Directory.GetFiles(Application.dataPath + "/../ScreenShots", "*.aab | *.apk");
-            foreach (var s in aabapks)
-            {
-                File.Delete(s);
-            }
+            
 
             string appName = Application.productName.Split('-')[1].Split(" ")[0];
             
