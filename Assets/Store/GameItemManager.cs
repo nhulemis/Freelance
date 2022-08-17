@@ -61,7 +61,7 @@ public class GameItemManager : MonoBehaviour
         gameTitle.text =$"{Application.companyName}"+Application.productName.Replace("-","\n") ;
         
         Color.RGBToHSV(color, out float H, out float S, out float V);
-        float negativeH = (H + 0.25f) % 1f;
+        float negativeH = (H + 0.7f) % 1f;
         Color negativeColor = Color.HSVToRGB(negativeH, S, V);
 
         if (sky == null)
@@ -71,7 +71,7 @@ public class GameItemManager : MonoBehaviour
         
         sky.backgroundColor = negativeColor;
         
-        float hafColorH = (H - 0.25f) % 1f;
+        float hafColorH = (H - 0.6f) % 1f;
 
         Color harfColor = Color.HSVToRGB(hafColorH, S, V);
         
@@ -83,7 +83,7 @@ public class GameItemManager : MonoBehaviour
 
         gameTitle.color = harfColor;
 
-        float Plus = (H + 0.5f) % 1f;
+        float Plus = (H + 0.3f) % 1f;
 
         Color plusColor = Color.HSVToRGB(Plus, S, V);
         
@@ -203,7 +203,7 @@ public class GameItemManager : MonoBehaviour
     {
         string screenshotFolder = Path.Combine(Application.dataPath , "../ScreenShots");
         var image = Directory.GetFiles(screenshotFolder).ToList();
-        image = image.Where(x => !x.Contains("app_icon")).ToList();
+        image = image.Where(x => x.Contains(Application.productName.Replace(" ", ""))).ToList();
         if (image.Count > 0)
         {
             var random = Random.Range(0, image.Count);
@@ -262,11 +262,10 @@ public class GameItemManager : MonoBehaviour
         var fileTocopy = Directory.GetFiles(screenshotFolder);
         foreach (var file in fileTocopy)
         {
-            if (file.Contains("DS_Store"))
+            if (file.Contains("app_icon")  || file.Contains(Application.productName.Replace(" ","")))
             {
-                continue;
+                File.Copy(file, Path.Combine(indexPath , Path.GetFileName(file)),true);
             }
-            File.Copy(file, Path.Combine(indexPath , Path.GetFileName(file)),true);
         }
         Debug.Log("Copy done: " + indexPath);
 
