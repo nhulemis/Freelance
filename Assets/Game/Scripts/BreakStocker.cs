@@ -119,18 +119,7 @@ namespace Game.Scripts
 			}
 		
       
-			public class HCuskx
-			{
-				private int buaquadi;
-				private string chusx;
-				public float gmac;
-				private double mciajx;
-
-				public int getX()
-				{
-					return buaquadi;
-				}
-			}
+      
 			public class hcusix
 			{
 				private int buaquadi;
