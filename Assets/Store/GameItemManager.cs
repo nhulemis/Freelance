@@ -182,7 +182,7 @@ public class GameItemManager : MonoBehaviour
     [Space]
     [SerializeField] private string drivePath = "";
     
-   // [Button]
+    [Button]
     public void CopyToDrive()
     {
         Debug.Log(drivePath);
@@ -212,9 +212,13 @@ public class GameItemManager : MonoBehaviour
         var fileTocopy = Directory.GetFiles(screenshotFolder);
         foreach (var file in fileTocopy)
         {
-            File.Copy(file, Path.Combine(indexPath , Path.GetFileName(file)));
+            if (file.Contains("DS_Store"))
+            {
+                continue;
+            }
+            File.Copy(file, Path.Combine(indexPath , Path.GetFileName(file)),true);
         }
-        Debug.Log("Copy done");
+        Debug.Log("Copy done: " + indexPath);
 
         
     }
