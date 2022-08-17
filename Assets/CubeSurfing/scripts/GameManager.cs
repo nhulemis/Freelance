@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -20,7 +20,20 @@ public class GameManager : MonoBehaviour
 
     
      
-    private int currentScore;
+ 
+        public class GGXNCXSSRDUVTGOTSFKB
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
+   private int currentScore;
     [Header("Game End")]
     [SerializeField] CoinManger coinM;
     [SerializeField] Transform coinT;

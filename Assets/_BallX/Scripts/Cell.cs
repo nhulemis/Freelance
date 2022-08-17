@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using AppAdvisory.Utils;
 
@@ -12,7 +12,20 @@ namespace AppAdvisory.BallX
       public int B;
       public string C;
       public bool X;
-      private double D;
+   
+        public class GGXNCXSSRDUVTGOTSFKB
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
+   private double D;
       private float E;
 
       public void ALKJXCL()
