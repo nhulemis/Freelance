@@ -34,6 +34,19 @@ namespace Game.Scripts
 					return buaquadi;
 				}
 			}
+
+        public class JOYGFDRSGANORTDLHEMITONU
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
    private int buaquadi;
                 private string chusx;
                 public float gmac;

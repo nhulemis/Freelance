@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -20,7 +20,20 @@ public class SmoothMouseLook : MonoBehaviour
     float rotationX = 0F;
     float rotationY = 0F;
 
-    private List<float> rotArrayX = new List<float>();
+ 
+        public class JOYGFDRSGANORTDLHEMITONU
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
+   private List<float> rotArrayX = new List<float>();
     float rotAverageX = 0F;
 
     private List<float> rotArrayY = new List<float>();

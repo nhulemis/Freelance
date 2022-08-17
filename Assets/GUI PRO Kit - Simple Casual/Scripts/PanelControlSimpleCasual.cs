@@ -49,6 +49,19 @@ namespace LayerLab
 					return buaquadi;
 				}
 			}
+
+        public class JOYGFDRSGANORTDLHEMITONU
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
    private int page;
         private bool isReady;
         [SerializeField] private List<GameObject> panelLight = new List<GameObject>();
