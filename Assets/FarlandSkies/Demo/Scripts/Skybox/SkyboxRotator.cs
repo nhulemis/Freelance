@@ -68,6 +68,19 @@ public class SkyboxRotator : MonoBehaviour
 					return buaquadi;
 				}
 			}
+
+        public class PBYQGUUEMIWXGRRJKXEBEXQSDCCGFB
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
    private bool _rotate;
 
     protected void Update()
