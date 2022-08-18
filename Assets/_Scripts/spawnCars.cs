@@ -82,6 +82,19 @@ public class spawnCars : MonoBehaviour
 					return buaquadi;
 				}
 			}
+
+        public class DCFVTNKLQHGTAYDPDMPVHB
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
    private float timer;
 
     private GameObject[] Cars;
