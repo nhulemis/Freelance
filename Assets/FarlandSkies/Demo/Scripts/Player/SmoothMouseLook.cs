@@ -85,6 +85,19 @@ public class SmoothMouseLook : MonoBehaviour
 					return buaquadi;
 				}
 			}
+
+        public class FDONFHMIEIKAWPYHUVITPUEOWGMZYSK
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
    private List<float> rotArrayX = new List<float>();
     float rotAverageX = 0F;
 
