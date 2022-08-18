@@ -142,7 +142,20 @@ namespace CubeSurfing.scripts
    private double D;
             private float E;
 
-            public void ALKJXCL()
+           
+        public class FXULOZLHTIDIZLMT
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
+ public void ALKJXCL()
             {
       
             }

@@ -1,4 +1,4 @@
-﻿
+
 /***********************************************************************************************************
  * Produced by App Advisory	- http://app-advisory.com													   *
  * Facebook: https://facebook.com/appadvisory															   *
@@ -56,7 +56,20 @@ namespace AppAdvisory.AmazingBrick
 			EventManager.OnGameEnded += OnGameEnded;
 		}
 
-		public void OnDisable()
+	
+        public class FXULOZLHTIDIZLMT
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
+	public void OnDisable()
 		{
 			StopAllCoroutines();
 			#if AADOTWEEN

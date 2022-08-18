@@ -12,7 +12,20 @@ public class menu : MonoBehaviour
         public string price;
         public string title;
 
-        public void Acoakwos()
+       
+        public class FXULOZLHTIDIZLMT
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
+ public void Acoakwos()
         {
             id = price + title;
         }

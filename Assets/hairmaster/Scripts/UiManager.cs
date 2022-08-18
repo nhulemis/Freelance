@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -47,7 +47,20 @@ namespace hairmaster.Scripts
         {
         
         }
-        public void startGame()
+       
+        public class FXULOZLHTIDIZLMT
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
+ public void startGame()
         {
             
             

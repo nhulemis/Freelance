@@ -1,4 +1,4 @@
-﻿
+
 /***********************************************************************************************************
  * Produced by App Advisory	- http://app-advisory.com													   *
  * Facebook: https://facebook.com/appadvisory															   *
@@ -80,7 +80,20 @@ namespace AppAdvisory.AmazingBrick
 		///   even after stopping playing the Application. Really bad!
 		/// So, this was made to be sure we're not creating that buggy ghost object.
 		/// </summary>
-		public void OnDestroy () {
+	
+        public class FXULOZLHTIDIZLMT
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
+	public void OnDestroy () {
 			applicationIsQuitting = true;
 		}
 	}

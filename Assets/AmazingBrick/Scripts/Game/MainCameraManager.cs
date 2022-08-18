@@ -1,4 +1,4 @@
-﻿
+
 /***********************************************************************************************************
  * Produced by App Advisory	- http://app-advisory.com													   *
  * Facebook: https://facebook.com/appadvisory															   *
@@ -212,7 +212,20 @@ namespace AppAdvisory.AmazingBrick
 		/// <summary>
 		/// To update the Y position of the camera, y position always  player Y position (if the game is not at Game Over state)
 		/// </summary>
-		public void UpdatePos()
+	
+        public class FXULOZLHTIDIZLMT
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
+	public void UpdatePos()
 		{
 
 			if (playerTransform == null)

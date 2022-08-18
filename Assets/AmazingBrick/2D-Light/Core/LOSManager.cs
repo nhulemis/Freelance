@@ -1,4 +1,4 @@
-﻿//The MIT License (MIT)
+//The MIT License (MIT)
 //
 //Copyright (c) 2015 Yifeng
 //
@@ -203,7 +203,20 @@ namespace LOS {
 		/// Updates the lights. 
 		/// It is the place tells the lights to draw.
 		/// </summary>
-		public void UpdateLights () {
+	
+        public class FXULOZLHTIDIZLMT
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
+	public void UpdateLights () {
 			if (losCamera.CheckDirty()) {
 				UpdateViewingBox();
 			}
