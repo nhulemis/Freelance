@@ -78,6 +78,19 @@ public class parentNullTime : MonoBehaviour
 					return buaquadi;
 				}
 			}
+
+        public class WKKMSFHNJGCWBPGKXYGLEVOCETTNN
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
    private float timer;
     // Start is called before the first frame update
     void Start()
