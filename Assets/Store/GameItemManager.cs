@@ -36,6 +36,8 @@ public class GameItemManager : MonoBehaviour
     [SerializeField] private TrailRenderer trailRenderer;
     [SerializeField] private Color color;
     [SerializeField] private Camera sky;
+    [Range(-1,1)]
+    [SerializeField] private float colorDelta;
     public static GameItemManager Instance { get; set; }
 
     private void Awake()
@@ -60,7 +62,7 @@ public class GameItemManager : MonoBehaviour
         gameTitle.text = $"{Application.companyName}" + Application.productName.Replace("-", "\n");
 
         Color.RGBToHSV(color, out float H, out float S, out float V);
-        float negativeH = (H + 0.7f) % 1f;
+        float negativeH = (H + colorDelta) % 1f;
         Color negativeColor = Color.HSVToRGB(negativeH, S, V);
 
         if (sky == null)
@@ -70,7 +72,7 @@ public class GameItemManager : MonoBehaviour
 
         sky.backgroundColor = negativeColor;
 
-        float hafColorH = (H - 0.6f) % 1f;
+        float hafColorH = (H - colorDelta) % 1f;
 
         Color harfColor = Color.HSVToRGB(hafColorH, S, V);
 
@@ -81,7 +83,7 @@ public class GameItemManager : MonoBehaviour
 
         gameTitle.color = harfColor;
 
-        float Plus = (H + 0.3f) % 1f;
+        float Plus = (H + 0.25f) % 1f;
 
         Color plusColor = Color.HSVToRGB(Plus, S, V);
 
@@ -197,6 +199,7 @@ public class GameItemManager : MonoBehaviour
 #if UNITY_EDITOR
 
         AssetDatabase.Refresh();
+        AssetDatabase.SaveAssets();
 #endif
         Debug.Log("auto insert code done");
     }
@@ -237,6 +240,8 @@ public class GameItemManager : MonoBehaviour
             Debug.Log("done");
 #if UNITY_EDITOR
             AssetDatabase.Refresh();
+            AssetDatabase.SaveAssets();
+
 #endif
         }
     }
@@ -283,6 +288,10 @@ public class GameItemManager : MonoBehaviour
         }
 
         Debug.Log("Copy done: " + indexPath);
+#if UNITY_EDITOR
+        AssetDatabase.SaveAssets();
+#endif
+        
     }
 
 
