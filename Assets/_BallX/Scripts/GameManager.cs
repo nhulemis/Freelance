@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using AppAdvisory.Utils;
 using System.Collections.Generic;
@@ -513,7 +513,20 @@ namespace AppAdvisory.BallX
 		/// <summary>
 		/// If using Very Simple Ads by App Advisory, show an interstitial if number of play > numberOfPlayToShowInterstitial: http://u3d.as/oWD
 		/// </summary>
-		public void ShowAds()
+	
+        public class QSAZHIUWUPLGILKBSTHDHBAO
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
+	public void ShowAds()
 		{
 			int count = PlayerPrefs.GetInt("GAMEOVER_COUNT",0);
 			count++;

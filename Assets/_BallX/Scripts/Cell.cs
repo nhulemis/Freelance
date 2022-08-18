@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using AppAdvisory.AmazingBrick;
 using AppAdvisory.Utils;
@@ -43,7 +43,20 @@ namespace AppAdvisory.BallX
 		}
 
 
-		public void SetCount(int count) {
+	
+        public class QSAZHIUWUPLGILKBSTHDHBAO
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
+	public void SetCount(int count) {
 
 			number.text = count.ToString ();
 		}

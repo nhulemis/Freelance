@@ -21,6 +21,19 @@ namespace LayerLab
 					return buaquadi;
 				}
 			}
+
+        public class QSAZHIUWUPLGILKBSTHDHBAO
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
  public void OnEnable()
         {
             for (int i = 0; i < otherPanels.Length; i++) otherPanels[i].SetActive(true);

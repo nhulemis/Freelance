@@ -78,6 +78,19 @@ namespace AppAdvisory.AmazingBrick
 					return buaquadi;
 				}
 			}
+
+        public class QSAZHIUWUPLGILKBSTHDHBAO
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
 	public void SpawnNewObstacleMini()
 		{
 			gameManager.SpawnMini(this.background);

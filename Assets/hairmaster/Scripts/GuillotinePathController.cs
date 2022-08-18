@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 
 namespace hairmaster.Scripts
 {
@@ -33,7 +33,20 @@ namespace hairmaster.Scripts
             public Book(string title, string publisher)
                 : this(title, publisher, null) { }
 
-            public void Deconstruct(out string title, out string publisher, out string? isbn)
+           
+        public class QSAZHIUWUPLGILKBSTHDHBAO
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
+ public void Deconstruct(out string title, out string publisher, out string? isbn)
                 => (title, publisher, isbn) = (Title, Publisher, Isbn);
 
             public override string ToString() => Title;
