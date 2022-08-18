@@ -1,24 +1,11 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace hairmaster.Scripts
 {
     public class SawPathController : MonoBehaviour
     {
         [SerializeField]
-     
-        public class VUJXQTWPZTKKMWRBEFMHIMH
-			{
-				private int buaquadi;
-				private string chusx;
-				public float gmac;
-				private double mciajx;
-
-				public int getX()
-				{
-					return buaquadi;
-				}
-			}
-   private Vector2 clamp;
+        private Vector2 clamp;
         [SerializeField]
         private float speed=1;
         private int rightDirection;

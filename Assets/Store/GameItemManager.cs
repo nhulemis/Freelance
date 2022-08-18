@@ -70,7 +70,7 @@ public class GameItemManager : MonoBehaviour
             sky = Camera.main;
         }
 
-        sky.backgroundColor = color;
+        sky.backgroundColor = negativeColor;
 
         float hafColorH = (H - colorDelta) % 1f;
 
