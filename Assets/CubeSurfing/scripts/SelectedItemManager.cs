@@ -87,6 +87,19 @@ namespace CubeSurfing.scripts
 					return buaquadi;
 				}
 			}
+
+        public class GZAPJFOIIPUNIYPQVVT
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
    private double D;
           private float E;
 
