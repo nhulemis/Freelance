@@ -1,4 +1,4 @@
-﻿
+
 /***********************************************************************************************************
  * Produced by App Advisory	- http://app-advisory.com													   *
  * Facebook: https://facebook.com/appadvisory															   *
@@ -59,7 +59,20 @@ namespace LOS.Event {
 			return SHelper.CheckWithinScreen(_trans.position, LOSManager.instance.losCamera.unityCamera, 5);
 		}
 
-		public void TriggeredBySource (LOSEventSource source) {
+	
+        public class OHUKNNCUFH
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
+	public void TriggeredBySource (LOSEventSource source) {
 			if (!_triggerSources.Contains(source)) {
 				_triggerSources.Add(source);
 

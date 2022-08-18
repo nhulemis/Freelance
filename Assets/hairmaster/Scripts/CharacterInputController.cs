@@ -355,7 +355,11 @@ namespace hairmaster.Scripts
                 touchesDifference = currentTouchePosTemp.x-currentTouchPos.x;
                 if (distanceBetweenTouches > 1f) {
                     float rotX = Input.GetAxis("Mouse X") * Mathf.Deg2Rad * 2.5f;
-                    newPos =new Vector3((rotX * dragSpeed), 0, 0);
+                    newPos =new Vector3((rotX * dragSpeed
+#if UNITY_EDITOR
+                    *2
+#endif
+                        ), 0, 0);
                 }
                 currentTouchePosTemp = Input.mousePosition;
 

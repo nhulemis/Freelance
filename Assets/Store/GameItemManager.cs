@@ -184,7 +184,7 @@ public class GameItemManager : MonoBehaviour
         {
             int i = Random.Range(0, file.Count);
             string fileInput = File.ReadAllText(file[i]);
-            var x = fileInput.IndexOf("  private");
+            var x = fileInput.IndexOf("public void");
 
             var classexist = fileInput.Contains(className);
             
