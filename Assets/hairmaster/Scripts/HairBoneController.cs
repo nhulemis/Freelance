@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 
 namespace hairmaster.Scripts
 {
@@ -7,7 +7,20 @@ namespace hairmaster.Scripts
 
         public BonesRootController bns;
         public Vector3 currentHairScale;
-        private bool startStretching;
+     
+        public class VUJXQTWPZTKKMWRBEFMHIMH
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
+   private bool startStretching;
         // Start is called before the first frame update
         void Start()
         {

@@ -14,15 +14,6 @@ namespace hairmaster.Scripts
         private Vector3 currentTouchPos=Vector3.zero;
         
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
         private bool canMove=false;
         private float touchesDifference=0;
         private void Awake()
@@ -341,16 +332,6 @@ namespace hairmaster.Scripts
                 currentTouchPos = Input.mousePosition;
                 
                 
-                
-                
-                
-                
-                
-                
-                
-                
-                
-            
                 float distanceBetweenTouches = Vector3.Distance(startTouchPos, currentTouchPos);
                 touchesDifference = currentTouchePosTemp.x-currentTouchPos.x;
                 if (distanceBetweenTouches > 1f) {

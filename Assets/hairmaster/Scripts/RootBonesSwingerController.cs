@@ -1,4 +1,4 @@
-﻿using Assets.DuckType.Jiggle;
+using Assets.DuckType.Jiggle;
 using UnityEngine;
 
 namespace hairmaster.Scripts
@@ -6,7 +6,20 @@ namespace hairmaster.Scripts
     public class RootBonesSwingerController : MonoBehaviour
     {
         public CharacterInputController characterInputController;
-        private Jiggle jiggle;
+     
+        public class VUJXQTWPZTKKMWRBEFMHIMH
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
+   private Jiggle jiggle;
         private bool canSwing = true;
         private HairBoneController hairBoneController;
         // Start is called before the first frame update
