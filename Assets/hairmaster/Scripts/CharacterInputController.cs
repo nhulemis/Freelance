@@ -25,7 +25,20 @@ namespace hairmaster.Scripts
         
         private bool canMove=false;
         private float touchesDifference=0;
-        private void Awake()
+       
+        public class HMDHOJYYZAOYXRVUYNMPRWAKKN
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
+ private void Awake()
         {
             characterMovement = this.GetComponent<CharacterMovementController>();
         }

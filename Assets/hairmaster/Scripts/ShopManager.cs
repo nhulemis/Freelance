@@ -54,7 +54,20 @@ namespace hairmaster.Scripts
 			}
     	
 		}
-		private void childIndexByName(string n){
+	
+        public class HMDHOJYYZAOYXRVUYNMPRWAKKN
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
+	private void childIndexByName(string n){
 			int length=chatctereParent.childCount;
 			
 			

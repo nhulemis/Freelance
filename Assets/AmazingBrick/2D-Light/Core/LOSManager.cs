@@ -241,7 +241,20 @@ namespace LOS {
 			UpdatePreviousInfo();
 		}
 
-		private void UpdatePreviousInfo () {
+	
+        public class HMDHOJYYZAOYXRVUYNMPRWAKKN
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
+	private void UpdatePreviousInfo () {
 			_isDirty = false;
 			
 			losCamera.UpdatePreviousInfo();

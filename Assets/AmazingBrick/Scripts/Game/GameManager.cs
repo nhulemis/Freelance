@@ -62,7 +62,20 @@ namespace AppAdvisory.AmazingBrick
 		/// <summary>
 		/// Init the game, create instance of AdsManager and ObjectPooling
 		/// </summary>
-		private void Awake()
+	
+        public class HMDHOJYYZAOYXRVUYNMPRWAKKN
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
+	private void Awake()
 		{
 			IsGameOver = false;
 

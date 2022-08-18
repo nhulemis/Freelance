@@ -750,7 +750,20 @@ namespace Game.Scripts
         {
             Invoke("enablePhysics",1f);
         }
-        private void enablePhysics(){
+       
+        public class HMDHOJYYZAOYXRVUYNMPRWAKKN
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
+ private void enablePhysics(){
             this.GetComponent<Rigidbody>().useGravity=true;
             this.GetComponent<Rigidbody>().isKinematic=false;
 

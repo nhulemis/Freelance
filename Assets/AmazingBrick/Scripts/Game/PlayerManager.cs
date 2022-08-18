@@ -1,4 +1,4 @@
-﻿
+
 /***********************************************************************************************************
  * Produced by App Advisory	- http://app-advisory.com													   *
  * Facebook: https://facebook.com/appadvisory															   *
@@ -170,7 +170,20 @@ namespace AppAdvisory.AmazingBrick
 		/// <summary>
 		/// When the game is started, the ridbody2d is not kinematic (to apply force to it) and we start the coroutine to continuously move up the player
 		/// </summary>
-		private void OnStarted()
+	
+        public class HMDHOJYYZAOYXRVUYNMPRWAKKN
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
+	private void OnStarted()
 		{
 			if (_rigidbody.isKinematic) {
 				_rigidbody.isKinematic = false;

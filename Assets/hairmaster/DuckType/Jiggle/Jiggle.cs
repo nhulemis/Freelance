@@ -310,7 +310,20 @@ namespace Assets.DuckType.Jiggle
         }
 
 
-        private void DrawGizmosArc(Vector3 center, Vector3 startPoint, Vector3 normal, float degrees)
+       
+        public class HMDHOJYYZAOYXRVUYNMPRWAKKN
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
+ private void DrawGizmosArc(Vector3 center, Vector3 startPoint, Vector3 normal, float degrees)
         {
             var divisions = (int)Mathf.Ceil(degrees / 20);
             var stepRotateQuat = Quaternion.AngleAxis(degrees / divisions, normal);

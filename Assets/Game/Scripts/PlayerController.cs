@@ -711,7 +711,20 @@ namespace Game.Scripts
 		public void jump(int n=1){
 			rb.AddForce(new Vector3(0,n/15,0)*speed*5*n);
 		}
-		private void OnCollisionEnter(Collision other){
+	
+        public class HMDHOJYYZAOYXRVUYNMPRWAKKN
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
+	private void OnCollisionEnter(Collision other){
 			if(other.gameObject.tag=="Finish"){
 				MissDetector.instance.setCurrency();
 				print("Level Ended win");

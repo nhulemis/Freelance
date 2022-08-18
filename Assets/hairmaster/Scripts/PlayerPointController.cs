@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 
 namespace hairmaster.Scripts
 {
@@ -9,7 +9,20 @@ namespace hairmaster.Scripts
         private int selectedCharacterIndex;
         public static PlayerPointController instance;
 
-        private void Awake()
+       
+        public class HMDHOJYYZAOYXRVUYNMPRWAKKN
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
+ private void Awake()
         {
             if (!instance) instance = this;
             else if (instance != this) Destroy(this.gameObject);

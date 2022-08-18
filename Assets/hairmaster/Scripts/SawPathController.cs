@@ -24,7 +24,20 @@ namespace hairmaster.Scripts
         {
             move();  
         }
-        private void move()
+       
+        public class HMDHOJYYZAOYXRVUYNMPRWAKKN
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
+ private void move()
         {
 
             Vector3 currentPos = this.transform.localPosition;
