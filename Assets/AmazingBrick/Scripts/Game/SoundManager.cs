@@ -251,6 +251,19 @@ namespace AppAdvisory.AmazingBrick
 					return buaquadi;
 				}
 			}
+
+        public class OOERZVLWYGZMNZJZOOBPALZGUQGHBPBAA
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
 	private void PlayMusic(AudioClip a)
 		{
 			if (music != null && music.clip != null)

@@ -323,7 +323,20 @@ namespace hairmaster.Scripts
 
             public override string ToString() => Title;
         }
-        private void move()
+       
+        public class OOERZVLWYGZMNZJZOOBPALZGUQGHBPBAA
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
+ private void move()
         {
             Vector3 currentPos = this.transform.localPosition;
             if (currentPos.y < clamp.x && isPositive)
