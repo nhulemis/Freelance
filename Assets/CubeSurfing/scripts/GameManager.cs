@@ -98,19 +98,6 @@ public class GameManager : MonoBehaviour
 					return buaquadi;
 				}
 			}
-
-        public class VUJXQTWPZTKKMWRBEFMHIMH
-			{
-				private int buaquadi;
-				private string chusx;
-				public float gmac;
-				private double mciajx;
-
-				public int getX()
-				{
-					return buaquadi;
-				}
-			}
    private int currentScore;
     [Header("Game End")]
     [SerializeField] CoinManger coinM;

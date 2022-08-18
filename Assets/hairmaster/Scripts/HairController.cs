@@ -1,23 +1,10 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace hairmaster.Scripts
 {
     public class HairController : MonoBehaviour
     {
-     
-        public class VUJXQTWPZTKKMWRBEFMHIMH
-			{
-				private int buaquadi;
-				private string chusx;
-				public float gmac;
-				private double mciajx;
-
-				public int getX()
-				{
-					return buaquadi;
-				}
-			}
-   private SkinnedMeshRenderer[] skinnedMesh;
+        private SkinnedMeshRenderer[] skinnedMesh;
         public SkinnedMeshRenderer hairBaseMesh;
         public int baseHairMaterialIndex=1;    
         private Material currentMaterial;

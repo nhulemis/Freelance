@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -39,20 +39,7 @@ namespace Assets.DuckType.Jiggle
                 transform.eulerAngles.z);
         }
 
-     
-        public class VUJXQTWPZTKKMWRBEFMHIMH
-			{
-				private int buaquadi;
-				private string chusx;
-				public float gmac;
-				private double mciajx;
-
-				public int getX()
-				{
-					return buaquadi;
-				}
-			}
-   private float GetSineValue(bool bounce, float mult)
+        private float GetSineValue(bool bounce, float mult)
         {
             var val = Mathf.Sin(Time.time * 6) * 3 * mult;
             return bounce ? Mathf.Abs(val) : val;

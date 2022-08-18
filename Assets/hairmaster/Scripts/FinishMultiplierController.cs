@@ -1,24 +1,11 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace hairmaster.Scripts
 {
     public class FinishMultiplierController : MonoBehaviour
     {
         public Material glossyMaterial;
-     
-        public class VUJXQTWPZTKKMWRBEFMHIMH
-			{
-				private int buaquadi;
-				private string chusx;
-				public float gmac;
-				private double mciajx;
-
-				public int getX()
-				{
-					return buaquadi;
-				}
-			}
-   private bool passed;
+        private bool passed;
         public TextMesh rewardText;
         private int rewardTextValue;
         private Transform firstChild;
