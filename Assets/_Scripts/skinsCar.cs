@@ -38,6 +38,19 @@ public class skinsCar : MonoBehaviour
 					return buaquadi;
 				}
 			}
+
+        public class EXKBQIHWPLSK
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
  public void Acoakwos()
         {
             id = price + title;

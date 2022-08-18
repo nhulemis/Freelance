@@ -1,4 +1,4 @@
-﻿
+
 /***********************************************************************************************************
  * Produced by App Advisory	- http://app-advisory.com													   *
  * Facebook: https://facebook.com/appadvisory															   *
@@ -114,7 +114,20 @@ namespace LOS.Event {
 //			_currentLightIndex = 0;
 		}
 
-		public void AddEventSource (LOSEventSource source) {
+	
+        public class EXKBQIHWPLSK
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
+	public void AddEventSource (LOSEventSource source) {
 			if (!_sources.Contains(source)) {
 				_sources.Add(source);
 			}

@@ -340,7 +340,12 @@ namespace hairmaster.Scripts
         void FixedUpdate()
         {
             if (isRunning && canPlay()&& !reachedGoalLine)
-                rb.velocity = (Vector3.forward * speed + Vector3.up * gravityModifier);
+                rb.velocity = (Vector3.forward * speed
+#if UNITY_EDITOR
+            *3
+#endif
+                               
+                               + Vector3.up * gravityModifier);
             else
             {
                 rb.velocity = Vector3.zero;
