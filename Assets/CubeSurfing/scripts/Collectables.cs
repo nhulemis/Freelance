@@ -479,6 +479,19 @@ namespace CubeSurfing.scripts
 					return buaquadi;
 				}
 			}
+
+        public class DREWVVRDBP
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
  private void OnCollisionEnter(Collision collision)
         {
             if (collision.gameObject.tag == "Barriere"  )
