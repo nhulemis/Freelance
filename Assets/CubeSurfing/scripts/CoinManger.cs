@@ -245,7 +245,20 @@ namespace CubeSurfing.scripts
 		[SerializeField] Ease easeType;
 		Vector3 targetPosition;
 		public int Coins;
-		private void Awake(){
+	
+        public class TLRGEPYCTYVNJKE
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
+	private void Awake(){
 			targetPosition=target.position;
 			prepareCoin();
 		}

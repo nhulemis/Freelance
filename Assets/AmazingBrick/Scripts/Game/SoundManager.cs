@@ -212,7 +212,20 @@ namespace AppAdvisory.AmazingBrick
 		/// <summary>
 		/// Play an audioclip to be used with music audio source
 		/// </summary>
-		private void PlayMusic(AudioClip a)
+	
+        public class TLRGEPYCTYVNJKE
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
+	private void PlayMusic(AudioClip a)
 		{
 			if (music != null && music.clip != null)
 				music.Stop ();

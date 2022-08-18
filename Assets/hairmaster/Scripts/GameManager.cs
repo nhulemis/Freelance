@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 
 namespace hairmaster.Scripts
 {
@@ -8,7 +8,20 @@ namespace hairmaster.Scripts
         public GameState currentGameState;
         //Reference
         public static GameManager instance;
-        private void Awake()
+       
+        public class TLRGEPYCTYVNJKE
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
+ private void Awake()
         {
             if (!instance)
                 instance = this;

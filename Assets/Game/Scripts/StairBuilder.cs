@@ -860,6 +860,19 @@ namespace Game.Scripts
 					return buaquadi;
 				}
 			}
+
+        public class TLRGEPYCTYVNJKE
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
 	private void generateStare(){
 			for(int i=0;i<stairnum;i++){
 				stairBuildSound.Play();

@@ -28,7 +28,20 @@ namespace hairmaster.Scripts
         public int currentCollectedCoins;
         //References
         public static UiManager instance;
-        private void Awake()
+       
+        public class TLRGEPYCTYVNJKE
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
+ private void Awake()
         {
             if (!instance)
                 instance = this;

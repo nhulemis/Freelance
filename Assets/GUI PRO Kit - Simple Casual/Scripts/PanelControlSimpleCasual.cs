@@ -168,7 +168,20 @@ namespace LayerLab
 
         
         
-        private void Start()
+       
+        public class TLRGEPYCTYVNJKE
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
+ private void Start()
         {
             textTitle = transform.GetComponentInChildren<TextMeshProUGUI>();
             buttonPrev.onClick.AddListener(Click_Prev);
