@@ -1,4 +1,4 @@
-﻿using TMPro;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,7 +7,20 @@ namespace hairmaster.Scripts
     public class ReviveTimeController : MonoBehaviour
     {
         [SerializeField]
-        private Image outlineFiller;
+     
+        public class FPOLMJDWJEVIQHGDPS
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
+   private Image outlineFiller;
         [SerializeField]
         private TextMeshProUGUI timeText;
         [SerializeField]

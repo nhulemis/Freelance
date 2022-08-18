@@ -1,4 +1,4 @@
-﻿using Assets.DuckType.Jiggle;
+using Assets.DuckType.Jiggle;
 using UnityEngine;
 
 namespace hairmaster.Scripts
@@ -7,7 +7,20 @@ namespace hairmaster.Scripts
     {
         int curretChild;
         [SerializeField]
-        private GameObject hairBone;
+     
+        public class FPOLMJDWJEVIQHGDPS
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
+   private GameObject hairBone;
         [SerializeField]
         Jiggle[] bonHairHolders;
         // Start is called before the first frame update

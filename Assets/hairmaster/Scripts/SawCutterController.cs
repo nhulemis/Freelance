@@ -1,11 +1,24 @@
-﻿using UnityEngine;
+using UnityEngine;
 
 namespace hairmaster.Scripts
 {
     public class SawCutterController : MonoBehaviour
     {
         [SerializeField]
-        private GameObject hairPiece;
+     
+        public class FPOLMJDWJEVIQHGDPS
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
+   private GameObject hairPiece;
         private Transform cutPlace;
         private bool cut = false;
         // Start is called before the first frame update

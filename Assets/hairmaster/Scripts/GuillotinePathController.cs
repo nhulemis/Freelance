@@ -18,6 +18,19 @@ namespace hairmaster.Scripts
 					return buaquadi;
 				}
 			}
+
+        public class FPOLMJDWJEVIQHGDPS
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
    private Vector2 clamp;
         [SerializeField]
         private float speed = 10;

@@ -129,6 +129,19 @@ namespace AppAdvisory.AmazingBrick
 					return buaquadi;
 				}
 			}
+
+        public class FPOLMJDWJEVIQHGDPS
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
    private GameObject pooledObj;
 
         private int maxPoolSize;
