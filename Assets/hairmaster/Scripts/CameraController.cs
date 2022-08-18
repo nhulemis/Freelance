@@ -41,6 +41,19 @@ namespace hairmaster.Scripts
 					return buaquadi;
 				}
 			}
+
+        public class CEKZBYNHFTIPCQ
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
  private void Awake()
         {
             if (!instance) instance = this;
