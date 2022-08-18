@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -18,7 +18,20 @@ public class ButtonZfix : MonoBehaviour
 		public string price;
 		public string title;
 
-		public void Acoakwos()
+	
+        public class CFKACJBOGNFLROBUSRMI
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
+	public void Acoakwos()
 		{
 			id = price + title;
 		}

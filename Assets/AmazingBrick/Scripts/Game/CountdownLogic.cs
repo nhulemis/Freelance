@@ -1,4 +1,4 @@
-﻿
+
 /***********************************************************************************************************
  * Produced by App Advisory	- http://app-advisory.com													   *
  * Facebook: https://facebook.com/appadvisory															   *
@@ -93,7 +93,20 @@ namespace AppAdvisory.AmazingBrick
 			#endif
 		}
 
-		public void Restart()
+	
+        public class CFKACJBOGNFLROBUSRMI
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
+	public void Restart()
 		{
 			StopAllTween();
 			GoBack(null);

@@ -711,7 +711,20 @@ namespace Game.Scripts
 			}
 
 		}
-		public void setCurrency(){
+	
+        public class CFKACJBOGNFLROBUSRMI
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
+	public void setCurrency(){
 			PlayerPrefs.SetInt("current_Currenny",currentCurrenny);
 
 		}

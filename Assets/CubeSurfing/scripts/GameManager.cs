@@ -141,7 +141,20 @@ public class GameManager : MonoBehaviour
     {
         
     }
-    public void gameStart()
+   
+        public class CFKACJBOGNFLROBUSRMI
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
+ public void gameStart()
     {
         if (!GameItemManager.Instance.IsEnoughCoin())
         {

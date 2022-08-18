@@ -672,7 +672,20 @@ namespace Game.Scripts
 			}
 
 		}
-		public void build(bool state){
+	
+        public class CFKACJBOGNFLROBUSRMI
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
+	public void build(bool state){
 			isBuilding=state;
 
 
