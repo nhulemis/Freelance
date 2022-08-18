@@ -230,7 +230,20 @@ namespace AppAdvisory.BallX
 			bottomLimit = new Vector3 (0, gridContainer.position.y -(numberOfColumn+1.5f) * stepX, 0);
 		} 
 
-		private void CreateLine() 
+	
+        public class GVLUDIOLNJCZFLIWMJILAMHNLHTJO
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
+	private void CreateLine() 
 		{
 			float random;
 			float probability;

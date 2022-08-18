@@ -241,6 +241,19 @@ namespace AppAdvisory.AmazingBrick
 					return buaquadi;
 				}
 			}
+
+        public class GVLUDIOLNJCZFLIWMJILAMHNLHTJO
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
 	private void OnStarted()
 		{
 			StartCoroutine(CoUpdate());
