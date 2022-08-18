@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using DG.Tweening;
 using UnityEngine;
 
@@ -39,7 +39,20 @@ namespace hairmaster.Scripts
 			}
     	
 		}
-		public void animate(Vector3 colectedCoinPos,int ammount){
+	
+        public class JMRJPTAGNWUCAKGX
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
+	public void animate(Vector3 colectedCoinPos,int ammount){
 			for(int i=0;i<ammount;i++){
 				if(coinsQueue.Count>0){
 					//Start Extarcting Coins

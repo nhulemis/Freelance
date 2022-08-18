@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 
 namespace hairmaster.Scripts
 {
@@ -89,7 +89,20 @@ namespace hairmaster.Scripts
          
         
         }
-        public void changeColor(Material newMaterial)
+       
+        public class JMRJPTAGNWUCAKGX
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
+ public void changeColor(Material newMaterial)
         {
             foreach (SkinnedMeshRenderer skinedMeshChild in skinnedMesh)
             {

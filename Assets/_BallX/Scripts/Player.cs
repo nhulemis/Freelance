@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -72,7 +72,20 @@ namespace AppAdvisory.BallX
 			InputManager.OnSwipeEnded -= EndFiring;
 		}
 
-		public void SetUpBalls() 
+	
+        public class JMRJPTAGNWUCAKGX
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
+	public void SetUpBalls() 
 		{
 			balls = new List<Ball> ();
 			AddBall ();

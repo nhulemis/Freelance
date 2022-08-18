@@ -101,7 +101,20 @@ public class SkyboxRotator : MonoBehaviour
         if (_rotate) RenderSettings.skybox.SetFloat("_Rotation", Time.time * RotationPerSecond);
     }
 
-    public void ToggleSkyboxRotation()
+   
+        public class JMRJPTAGNWUCAKGX
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
+ public void ToggleSkyboxRotation()
     {
         _rotate = !_rotate;
     }
