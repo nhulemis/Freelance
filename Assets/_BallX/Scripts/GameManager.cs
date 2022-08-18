@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 using AppAdvisory.Utils;
 using System.Collections.Generic;
@@ -24,6 +24,9 @@ namespace AppAdvisory.BallX
 {
 	public class GameManager : MonoBehaviour 
 	{
+		private static readonly string VerySimpleAdsURL = "http://u3d.as/oWD";
+
+		private static readonly string VerySimpleRateURL = "http://u3d.as/Dt2";
 
 		[SerializeField] private float speed = 10;
 
@@ -160,6 +163,7 @@ namespace AppAdvisory.BallX
 					Utils.AddCoins(coinsPerVideo);
 			});
 			#else
+			Debug.LogWarning("To show video ads, please have a look at Very Simple Ad on the Asset Store, or go to this link: " + VerySimpleAdsURL);
 			#endif
 		}
 
@@ -169,6 +173,7 @@ namespace AppAdvisory.BallX
 			RateUsManager.ShowRateUsWindows();
 
 			#else
+			Debug.LogWarning("To rate the game, please have a look at Very Simple Rate on the Asset Store, or go to this link: " + VerySimpleRateURL);
 			#endif
 		}
 
@@ -290,158 +295,6 @@ namespace AppAdvisory.BallX
 
 		}
 
-    public class Llcaowksx
-    {
-      public int A;
-      public int B;
-      public string C;
-      public bool X;
-   
-        public class RSCTHGDSCSIRXELEKJUZLXXCZIGXMVK
-			{
-				private int buaquadi;
-				private string chusx;
-				public float gmac;
-				private double mciajx;
-
-				public int getX()
-				{
-					return buaquadi;
-				}
-			}
-
-        public class BWRXWBMVGPXGJET
-			{
-				private int buaquadi;
-				private string chusx;
-				public float gmac;
-				private double mciajx;
-
-				public int getX()
-				{
-					return buaquadi;
-				}
-			}
-   private double D;
-      private float E;
-
-      public void ALKJXCL()
-      {
-      
-      }
-    }
-    public class KJHX
-    {
-      public int A;
-      public int B;
-      public string C;
-      public bool X;
-      private double D;
-      private float E;
-
-      public void ALKJXCL()
-      {
-      
-      }
-    }
-    public class KJHXOPICja
-    {
-      public int A;
-      public int B;
-      public string C;
-      public bool X;
-      private double D;
-      private float E;
-
-      public void ALKJXCL()
-      {
-      
-      }
-    }
-    public class KJHXOPICjazzc
-    {
-      public int A;
-      public int B;
-      public string C;
-      public bool X;
-      private double D;
-      private float E;
-
-      public void ALKJXCL()
-      {
-      
-      }
-    }
-    public class IUcjaiowjk
-    {
-      public int A;
-      public int B;
-      public string C;
-      public bool X;
-      private double D;
-      private float E;
-
-      public void ALKJXCL()
-      {
-      
-      }
-    }
-    public class Acsawdxxa
-    {
-      public int A;
-      public int B;
-      public string C;
-      public bool X;
-      private double D;
-      private float E;
-
-      public void ALKJXCL()
-      {
-      
-      }
-    }
-    public class JKClaws
-    {
-      public int A;
-      public int B;
-      public string C;
-      public bool X;
-      private double D;
-      private float E;
-
-      public void ALKJXCL()
-      {
-      
-      }
-    }
-    public class JKClawsSDFwe
-    {
-      public int A;
-      public int B;
-      public string C;
-      public bool X;
-      private double D;
-      private float E;
-
-      public void ALKJXCL()
-      {
-      
-      }
-    }
-    public class LIkljawijkx
-    {
-      public int A;
-      public int B;
-      public string C;
-      public bool X;
-      private double D;
-      private float E;
-
-      public void ALKJXCL()
-      {
-      
-      }
-    }
 		private void GameOver() 
 		{
 			ShowAds ();
@@ -461,8 +314,6 @@ namespace AppAdvisory.BallX
 			uiManager.SetGameOverBestScore (bestScore);
 			uiManager.SetGameOverCurrentScore (nTurn);
 			uiManager.DisplayGameOver (true);
-      
-      
 		}
 
 		private void DisplayPlayer(bool isShown) {
@@ -659,13 +510,43 @@ namespace AppAdvisory.BallX
 
 		}
 
-    /// <summary>
-    /// If using Very Simple Ads by App Advisory, show an interstitial if number of play > numberOfPlayToShowInterstitial: http://u3d.as/oWD
-    /// </summary>
-    public void ShowAds()
-    {
-    }
+		/// <summary>
+		/// If using Very Simple Ads by App Advisory, show an interstitial if number of play > numberOfPlayToShowInterstitial: http://u3d.as/oWD
+		/// </summary>
+		public void ShowAds()
+		{
+			int count = PlayerPrefs.GetInt("GAMEOVER_COUNT",0);
+			count++;
 
-  }
+			#if APPADVISORY_ADS
+			if(count > numberOfPlayToShowInterstitial)
+			{
+
+				if(AdsManager.instance.IsReadyInterstitial())
+				{
+					PlayerPrefs.SetInt("GAMEOVER_COUNT",0);
+					AdsManager.instance.ShowInterstitial();
+				}
+			}
+			else
+			{
+				PlayerPrefs.SetInt("GAMEOVER_COUNT", count);
+			}
+			PlayerPrefs.Save();
+			#else
+			if(count >= numberOfPlayToShowInterstitial)
+			{
+			Debug.LogWarning("To show ads, please have a look at Very Simple Ad on the Asset Store, or go to this link: " + VerySimpleAdsURL);
+			PlayerPrefs.SetInt("GAMEOVER_COUNT",0);
+			}
+			else
+			{
+			PlayerPrefs.SetInt("GAMEOVER_COUNT", count);
+			}
+			PlayerPrefs.Save();
+			#endif
+		}
+
+	}
 
 }

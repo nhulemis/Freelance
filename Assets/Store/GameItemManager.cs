@@ -31,6 +31,7 @@ public class GameItemManager : MonoBehaviour
     [SerializeField] private List<Material> materials;
     [SerializeField] private List<Material> negativeMaterials;
     [SerializeField] private List<Material> positiveMaterials;
+    [SerializeField] private List<SpriteRenderer> sprites;
     [SerializeField] private TrailRenderer trailRenderer;
     [SerializeField] private Color color;
     [SerializeField] private Camera sky;
@@ -86,6 +87,10 @@ public class GameItemManager : MonoBehaviour
         foreach (var mat in positiveMaterials)
         {
             mat.color = plusColor;
+        }
+        foreach (var mat in sprites)
+        {
+            mat.color = color;
         }
 
         var gameColor = new Colored(this.color, negativeColor);

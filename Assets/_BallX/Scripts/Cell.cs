@@ -1,150 +1,12 @@
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
+using AppAdvisory.AmazingBrick;
 using AppAdvisory.Utils;
 
 namespace AppAdvisory.BallX 
 {
 	public class Cell : MonoBehaviour, IHitableByBall {
 
-    public class Llcaowksx
-    {
-      public int A;
-      public int B;
-      public string C;
-      public bool X;
-   
-        public class GGXNCXSSRDUVTGOTSFKB
-			{
-				private int buaquadi;
-				private string chusx;
-				public float gmac;
-				private double mciajx;
-
-				public int getX()
-				{
-					return buaquadi;
-				}
-			}
-   private double D;
-      private float E;
-
-      public void ALKJXCL()
-      {
-      
-      }
-    }
-    public class KJHX
-    {
-      public int A;
-      public int B;
-      public string C;
-      public bool X;
-      private double D;
-      private float E;
-
-      public void ALKJXCL()
-      {
-      
-      }
-    }
-    public class KJHXOPICja
-    {
-      public int A;
-      public int B;
-      public string C;
-      public bool X;
-      private double D;
-      private float E;
-
-      public void ALKJXCL()
-      {
-      
-      }
-    }
-    public class KJHXOPICjazzc
-    {
-      public int A;
-      public int B;
-      public string C;
-      public bool X;
-      private double D;
-      private float E;
-
-      public void ALKJXCL()
-      {
-      
-      }
-    }
-    public class IUcjaiowjk
-    {
-      public int A;
-      public int B;
-      public string C;
-      public bool X;
-      private double D;
-      private float E;
-
-      public void ALKJXCL()
-      {
-      
-      }
-    }
-    public class Acsawdxxa
-    {
-      public int A;
-      public int B;
-      public string C;
-      public bool X;
-      private double D;
-      private float E;
-
-      public void ALKJXCL()
-      {
-      
-      }
-    }
-    public class JKClaws
-    {
-      public int A;
-      public int B;
-      public string C;
-      public bool X;
-      private double D;
-      private float E;
-
-      public void ALKJXCL()
-      {
-      
-      }
-    }
-    public class JKClawsSDFwe
-    {
-      public int A;
-      public int B;
-      public string C;
-      public bool X;
-      private double D;
-      private float E;
-
-      public void ALKJXCL()
-      {
-      
-      }
-    }
-    public class LIkljawijkx
-    {
-      public int A;
-      public int B;
-      public string C;
-      public bool X;
-      private double D;
-      private float E;
-
-      public void ALKJXCL()
-      {
-      
-      }
-    }
 		[SerializeField] private SpriteRenderer spriteRenderer;
 		[SerializeField] private TextMesh number;
 
@@ -195,21 +57,10 @@ namespace AppAdvisory.BallX
 			Color = GetColorFromCount (_count);
 		}
 
-		private Color GetColorFromCount(int count) {
-			Color color;
-			int max;
-			for (int i = 0; i < colors.Length-1; i++) 
-			{
-				max = (i + 1) * colorStep;
-				if (count < max) 
-				{
-					color = Color.Lerp (colors [i], colors [i + 1], (float) count/colorStep);
-					return color;
-				} 
-			}
-			color = colors [colors.Length - 1];
-			return color;
-		}
+		private Color GetColorFromCount(int count)
+    {
+       return ColorManager.instance.colored[0].colorWall;
+    }
 
 		private void Awake() {
 			startScale = spriteRenderer.transform.localScale;

@@ -4,19 +4,13 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Obstacle
-  - Goad
-  - Goal
-  - coin
-  - peaceful
-  - FinishParent
-  - dead
-  - vibrator
-  - pickupBrick
-  - Coin
-  - Brick
-  - rightBrick
-  - LeftBrick
+  - Floor
+  - Cell
+  - PowerUp
+  - Ball
+  - Hitable
+  - Destroyable
+  - Pickable
   layers:
   - Default
   - TransparentFX
@@ -26,31 +20,34 @@ TagManager:
   - UI
   - 
   - 
+  - Ball
+  - Hitable
+  - Pickable
   - ShadowLayer
   - Background1Layer
   - Background2Layer
   - ForegroundLayer
-  - ShadowLayer
-  - Background1Layer
-  - Background2Layer
-  - ForegroundLayer
-  - ShadowLayer
-  - Background1Layer
-  - Background2Layer
-  - ForegroundLayer
-  - ShadowLayer
-  - Background1Layer
-  - Background2Layer
-  - ForegroundLayer
-  - ShadowLayer
-  - Background1Layer
-  - Background2Layer
-  - ForegroundLayer
-  - ShadowLayer
-  - Background1Layer
-  - Background2Layer
-  - ForegroundLayer
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: New Layer
+    uniqueID: 416048363
     locked: 0

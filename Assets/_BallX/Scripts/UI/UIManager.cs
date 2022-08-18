@@ -56,7 +56,7 @@ namespace AppAdvisory.BallX
 
 		public void DisplayTitlecard(bool isShown) 
 		{
-			//titlecard.gameObject.SetActive (isShown);
+			titlecard.gameObject.SetActive (isShown);
 		}
 
 		public void DisplayGameOver(bool isShown) 
@@ -119,7 +119,8 @@ namespace AppAdvisory.BallX
 
 		public void OnReplayButton() 
 		{
-			GameItemManager.Instance.ReloadLevel();
+			if (ReplayButtonClicked != null)
+				ReplayButtonClicked ();
 		}
 
 		public void OnMainMenuButton()

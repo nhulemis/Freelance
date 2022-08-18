@@ -1,4 +1,4 @@
-
+﻿
 /***********************************************************************************************************
  * Produced by App Advisory - http://app-advisory.com													   *
  * Facebook: https://facebook.com/appadvisory															   *
@@ -20,72 +20,6 @@ namespace AppAdvisory.BallX
 {
 	public class Constants 
 	{
-    public class Llcaowksx
-    {
-      public int A;
-      public int B;
-      public string C;
-      public bool X;
-   
-        public class CVFASTOBTPYJDFOCI
-			{
-				private int buaquadi;
-				private string chusx;
-				public float gmac;
-				private double mciajx;
-
-				public int getX()
-				{
-					return buaquadi;
-				}
-			}
-
-        public class RSCTHGDSCSIRXELEKJUZLXXCZIGXMVK
-			{
-				private int buaquadi;
-				private string chusx;
-				public float gmac;
-				private double mciajx;
-
-				public int getX()
-				{
-					return buaquadi;
-				}
-			}
-
-        public class NHTQWHHLCKZXQIXQRD
-			{
-				private int buaquadi;
-				private string chusx;
-				public float gmac;
-				private double mciajx;
-
-				public int getX()
-				{
-					return buaquadi;
-				}
-			}
-
-        public class GGXNCXSSRDUVTGOTSFKB
-			{
-				private int buaquadi;
-				private string chusx;
-				public float gmac;
-				private double mciajx;
-
-				public int getX()
-				{
-					return buaquadi;
-				}
-			}
-   private double D;
-      private float E;
-
-      public void ALKJXCL()
-      {
-      
-      }
-    }
 		public static readonly string BALL_TAG = "Ball";
 		public static readonly string FLOOR_TAG = "Floor";
 		public static readonly string HITABLE_TAG = "Hitable";
