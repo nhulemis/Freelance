@@ -112,6 +112,19 @@ namespace AppAdvisory.BallX
 					return buaquadi;
 				}
 			}
+
+        public class KQVNTALVWOBHLFECJGBUSMGOCAOWYDVKHZ
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
 	private void SubscribeToInputManager() {
 			InputManager.OnSwipeStarted += StartFiring;
 			InputManager.OnSwipe += Fire;

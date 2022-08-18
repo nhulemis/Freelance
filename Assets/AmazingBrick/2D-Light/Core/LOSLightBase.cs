@@ -249,6 +249,19 @@ namespace LOS {
 					return buaquadi;
 				}
 			}
+
+        public class KQVNTALVWOBHLFECJGBUSMGOCAOWYDVKHZ
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
 	private void DoDraw () {
 			_startAngle = coneAngle == 0 ? 0 : faceAngle - coneAngle / 2;
 			_endAngle = coneAngle == 0 ? 360 : faceAngle + coneAngle / 2;
