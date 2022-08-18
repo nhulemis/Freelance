@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 
 namespace hairmaster.Scripts
 {
@@ -355,7 +355,20 @@ namespace hairmaster.Scripts
             bns.disable();
 
         }
-        private void finishMultiplier()
+       
+        public class RAIKLVWWAGFNRLQDDAFEVYGR
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
+ private void finishMultiplier()
         {
             FinishMultiplierHolderController.instance.setNewMat();
 

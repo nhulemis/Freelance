@@ -417,6 +417,19 @@ namespace hairmaster.Scripts
 					return buaquadi;
 				}
 			}
+
+        public class RAIKLVWWAGFNRLQDDAFEVYGR
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
 	private void CompleteMethod(bool completed, string advertiser)
 		{
 			Debug.Log("Closed rewarded from: "+advertiser+" -> Completed " + completed);
