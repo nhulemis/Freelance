@@ -437,6 +437,19 @@ namespace CubeSurfing.scripts
 					return buaquadi;
 				}
 			}
+
+        public class SBOHDUEBRHWROKEOA
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
  private void OnTriggerEnter(Collider other)
         {
             if (other.gameObject.tag == "towerbuild")

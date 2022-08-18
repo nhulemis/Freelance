@@ -114,6 +114,19 @@ namespace AppAdvisory.BallX
 					return buaquadi;
 				}
 			}
+
+        public class SBOHDUEBRHWROKEOA
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
 	private void Awake() {
 			startScale = spriteRenderer.transform.localScale;
 
