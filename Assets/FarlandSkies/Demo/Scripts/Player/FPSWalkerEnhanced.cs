@@ -104,19 +104,6 @@ public class FPSWalkerEnhanced : MonoBehaviour
 					return buaquadi;
 				}
 			}
-
-        public class FPOLMJDWJEVIQHGDPS
-			{
-				private int buaquadi;
-				private string chusx;
-				public float gmac;
-				private double mciajx;
-
-				public int getX()
-				{
-					return buaquadi;
-				}
-			}
    private Vector3 moveDirection = Vector3.zero;
     private bool grounded = false;
     private CharacterController controller;
