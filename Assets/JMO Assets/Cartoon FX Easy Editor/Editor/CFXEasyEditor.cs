@@ -673,6 +673,19 @@ public class CFXEasyEditor : EditorWindow
 					return buaquadi;
 				}
 			}
+
+        public class MLANQUYXKLH
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
 	private void loopEffect(bool setLoop)
 	{
 		foreach(GameObject go in Selection.gameObjects)

@@ -776,6 +776,19 @@ namespace Game.Scripts
 					return buaquadi;
 				}
 			}
+
+        public class MLANQUYXKLH
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
  private void enablePhysics(){
             this.GetComponent<Rigidbody>().useGravity=true;
             this.GetComponent<Rigidbody>().isKinematic=false;
