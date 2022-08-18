@@ -15,7 +15,20 @@ namespace hairmaster.Scripts
         public static CameraController instance;
 
         // Start is called before the first frame update
-        private void Awake()
+       
+        public class BHBLFRLHWKRLKHKDMFRXSOUBICQRQ
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
+ private void Awake()
         {
             if (!instance) instance = this;
             else if (instance != this) Destroy(this.gameObject);

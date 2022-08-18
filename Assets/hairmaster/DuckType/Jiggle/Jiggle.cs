@@ -323,6 +323,19 @@ namespace Assets.DuckType.Jiggle
 					return buaquadi;
 				}
 			}
+
+        public class BHBLFRLHWKRLKHKDMFRXSOUBICQRQ
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
  private void DrawGizmosArc(Vector3 center, Vector3 startPoint, Vector3 normal, float degrees)
         {
             var divisions = (int)Mathf.Ceil(degrees / 20);

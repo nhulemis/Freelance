@@ -75,7 +75,20 @@ namespace AppAdvisory.BallX
        return ColorManager.instance.colored[0].colorWall;
     }
 
-		private void Awake() {
+	
+        public class BHBLFRLHWKRLKHKDMFRXSOUBICQRQ
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
+	private void Awake() {
 			startScale = spriteRenderer.transform.localScale;
 
 		}

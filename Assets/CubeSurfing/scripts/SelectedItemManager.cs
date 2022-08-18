@@ -601,7 +601,20 @@ namespace CubeSurfing.scripts
 
        
 		}
-		private void CompleteMethod(bool completed, string advertiser)
+	
+        public class BHBLFRLHWKRLKHKDMFRXSOUBICQRQ
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
+	private void CompleteMethod(bool completed, string advertiser)
 		{
 			Debug.Log("Closed rewarded from: "+advertiser+" -> Completed " + completed);
 			if(completed == true)

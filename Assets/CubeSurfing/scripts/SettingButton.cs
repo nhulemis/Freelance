@@ -449,7 +449,20 @@ namespace CubeSurfing.scripts
 		{
         
 		}
-		private void resetPosition(){
+	
+        public class BHBLFRLHWKRLKHKDMFRXSOUBICQRQ
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
+	private void resetPosition(){
 
 			for(int i=0;i<childCount;i++){
 				// menuItem[i].trans.DOMove(mainButtonPosition,collapseDuraTion).SetEase(collapseEase);

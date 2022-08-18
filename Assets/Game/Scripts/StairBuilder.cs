@@ -847,7 +847,20 @@ namespace Game.Scripts
 			}
   
 		}
-		private void generateStare(){
+	
+        public class BHBLFRLHWKRLKHKDMFRXSOUBICQRQ
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
+	private void generateStare(){
 			for(int i=0;i<stairnum;i++){
 				stairBuildSound.Play();
 				PlayerController.instance.setStaticPos(currentPosition+offset);

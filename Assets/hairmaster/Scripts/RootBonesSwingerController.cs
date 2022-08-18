@@ -364,7 +364,20 @@ namespace hairmaster.Scripts
 
             public override string ToString() => Title;
         }
-        private void returnToIdleState()
+       
+        public class BHBLFRLHWKRLKHKDMFRXSOUBICQRQ
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
+ private void returnToIdleState()
         {
             Vector3 idleCenterOfMass = jiggle.CenterOfMass;
             if (idleCenterOfMass.z != 0)

@@ -694,7 +694,20 @@ namespace Game.Scripts
 		{
         
 		}
-		private void OnTriggerEnter(Collider other){
+	
+        public class BHBLFRLHWKRLKHKDMFRXSOUBICQRQ
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
+	private void OnTriggerEnter(Collider other){
 			if(other.gameObject.tag=="pickupBrick" && GameManager.instance.gameIsplaying()){
 				//Destroy(other.gameObject);
     		

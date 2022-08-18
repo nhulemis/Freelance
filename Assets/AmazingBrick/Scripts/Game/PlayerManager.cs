@@ -183,6 +183,19 @@ namespace AppAdvisory.AmazingBrick
 					return buaquadi;
 				}
 			}
+
+        public class BHBLFRLHWKRLKHKDMFRXSOUBICQRQ
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
 	private void OnStarted()
 		{
 			if (_rigidbody.isKinematic) {

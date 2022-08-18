@@ -11,7 +11,20 @@ namespace hairmaster.Scripts
         //References
         public static FinishMultiplierHolderController instance;
 
-        private void Awake()
+       
+        public class BHBLFRLHWKRLKHKDMFRXSOUBICQRQ
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
+ private void Awake()
         {
             if (!instance) instance = this;
             
