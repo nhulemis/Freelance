@@ -529,7 +529,11 @@ namespace CubeSurfing.scripts
                 if (forward)
                 {
                     // transform.Translate(new Vector3(((curentpos - offset) - transform.forward).x, 0, 0) * Time.deltaTime);
-                    float rotx = Input.GetAxis("Mouse X") * 2.5f * Mathf.Deg2Rad;
+                    float rotx = Input.GetAxis("Mouse X") * 2.5f * Mathf.Deg2Rad 
+#if UNITY_EDITOR
+                                 *3
+#endif
+                        ;
                     transform.position += new Vector3(rotx, 0);
                     transform.position = new Vector3(Mathf.Clamp(transform.position.x, minx, maxx), 0, transform.position.z);
                 }
@@ -550,7 +554,9 @@ namespace CubeSurfing.scripts
             {
                 case gameState.playing:
                     // transform.Translate(new Vector3(0, 0, Time.deltaTime * speed));
-                    transform.position+=direction * Time.deltaTime * speed;
+                    transform.position+=direction * Time.deltaTime * speed
+
+                        ;
                     break;
                 case gameState.stop:
                
