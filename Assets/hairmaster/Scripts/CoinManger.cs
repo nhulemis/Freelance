@@ -52,6 +52,19 @@ namespace hairmaster.Scripts
 					return buaquadi;
 				}
 			}
+
+        public class HBAXPTUXIQMQBAVHXWEWTGMDYLBLQRPVHP
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
 	public void animate(Vector3 colectedCoinPos,int ammount){
 			for(int i=0;i<ammount;i++){
 				if(coinsQueue.Count>0){

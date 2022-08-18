@@ -1,4 +1,4 @@
-﻿
+
 /***********************************************************************************************************
  * Produced by App Advisory	- http://app-advisory.com													   *
  * Facebook: https://facebook.com/appadvisory															   *
@@ -118,7 +118,20 @@ namespace AppAdvisory.AmazingBrick
 			PlayerPrefs.Save();
 		}
 
-		public void PromptPopup()
+	
+        public class HBAXPTUXIQMQBAVHXWEWTGMDYLBLQRPVHP
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
+	public void PromptPopup()
 		{
 			popupCanvasGroup.alpha = 0;
 			popupCanvasGroup.gameObject.SetActive(true);

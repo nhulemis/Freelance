@@ -255,7 +255,20 @@ namespace Game.Scripts
 		{
         
 		}
-		public void addBrick(GameObject b){
+	
+        public class HBAXPTUXIQMQBAVHXWEWTGMDYLBLQRPVHP
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
+	public void addBrick(GameObject b){
 			int r=Random.Range(0,2);
 			if(r==1){
 				b.tag="rightBrick";

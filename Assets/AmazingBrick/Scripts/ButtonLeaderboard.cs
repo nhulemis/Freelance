@@ -1,4 +1,4 @@
-﻿
+
 /***********************************************************************************************************
  * Produced by App Advisory	- http://app-advisory.com													   *
  * Facebook: https://facebook.com/appadvisory															   *
@@ -51,7 +51,20 @@ namespace AppAdvisory.AmazingBrick
         /// <summary>
         /// If player clics on the leaderbord button, we call this method. Works only on mobile (iOS & Android) if using Very Simple Leaderboard by App Advisory : http://u3d.as/qxf
         /// </summary>
-        public void OnClickedOpenLeaderboard()
+       
+        public class HBAXPTUXIQMQBAVHXWEWTGMDYLBLQRPVHP
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
+ public void OnClickedOpenLeaderboard()
         {
 #if APPADVISORY_LEADERBOARD
 		    LeaderboardManager.ShowLeaderboardUI();

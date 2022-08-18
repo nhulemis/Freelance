@@ -72,6 +72,19 @@ namespace LOS.Event {
 					return buaquadi;
 				}
 			}
+
+        public class HBAXPTUXIQMQBAVHXWEWTGMDYLBLQRPVHP
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
 	public void TriggeredBySource (LOSEventSource source) {
 			if (!_triggerSources.Contains(source)) {
 				_triggerSources.Add(source);

@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -31,7 +31,20 @@ namespace hairmaster.Scripts
 			unhideUnloacked();
 
 		}
-		public void  unhideUnloacked(){
+	
+        public class HBAXPTUXIQMQBAVHXWEWTGMDYLBLQRPVHP
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
+	public void  unhideUnloacked(){
 			
 			
 			updateUnloackedCharctere();

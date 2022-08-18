@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -159,7 +159,20 @@ namespace Assets.DuckType.Jiggle
 
         // LateUpdate is called once per frame after all Update() functions have been called
         // we're using this because this script depends on all other objects having moved first
-        public void ScheduledUpdate(float deltaTime)
+       
+        public class HBAXPTUXIQMQBAVHXWEWTGMDYLBLQRPVHP
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
+ public void ScheduledUpdate(float deltaTime)
         {
 
             Quaternion rotationWorld;
