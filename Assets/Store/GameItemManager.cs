@@ -350,7 +350,14 @@ public class GameItemManager : MonoBehaviour
             Directory.CreateDirectory(indexPath);
         }
 
+        string app_icon = Application.dataPath + "/Sprites/app_icon.png";
         string screenshotFolder = Application.dataPath + "/../ScreenShots/";
+
+        if (File.Exists(app_icon))
+        {
+            File.Copy(app_icon,screenshotFolder+"app_icon.png", true);
+        }
+        
         var fileTocopy = Directory.GetFiles(screenshotFolder);
         foreach (var file in fileTocopy)
         {
