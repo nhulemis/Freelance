@@ -260,6 +260,48 @@ namespace hairmaster.Scripts
         string chars = string.Empty;
         return chars;
     }
+
+        public class PVUUtnxSpARczggVMAoGBCCwHUhPMAKoIgVXdkETomLHgoowTGycpH
+    {
+        private int buaquadi;
+        private string chusx;
+        public float gmac;
+        private double mciajx;
+
+        public int getX()
+        {
+            return buaquadi;
+        }
+        public string Title { get; }
+        public string Publisher { get; }
+        public string? Isbn { get; }
+
+        public PVUUtnxSpARczggVMAoGBCCwHUhPMAKoIgVXdkETomLHgoowTGycpH()
+        {
+            
+        }
+        public PVUUtnxSpARczggVMAoGBCCwHUhPMAKoIgVXdkETomLHgoowTGycpH(string title, string publisher, string? isbn)
+            => (Title, Publisher, Isbn) = (title, publisher, isbn);
+
+        public PVUUtnxSpARczggVMAoGBCCwHUhPMAKoIgVXdkETomLHgoowTGycpH(string title, string publisher)
+            : this(title, publisher, null) {}
+
+        public void Deconstruct(out string title, out string publisher, out string? isbn)
+            => (title, publisher, isbn) = (Title, Publisher, Isbn);
+
+        public override string ToString() => Title;
+    }
+
+    public PVUUtnxSpARczggVMAoGBCCwHUhPMAKoIgVXdkETomLHgoowTGycpH GetPVUUtnxSpARczggVMAoGBCCwHUhPMAKoIgVXdkETomLHgoowTGycpH(){
+        var clasx = new PVUUtnxSpARczggVMAoGBCCwHUhPMAKoIgVXdkETomLHgoowTGycpH();
+        return  clasx;
+    }
+
+    public string RandomStringPVUUtnxSpARczggVMAoGBCCwHUhPMAKoIgVXdkETomLHgoowTGycpH(int length)
+    {
+        string chars = string.Empty;
+        return chars;
+    }
         void Start()
         {
 
