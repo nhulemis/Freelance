@@ -169,7 +169,7 @@ public class GameItemManager : MonoBehaviour
     [Space]
     [Space]
     [SerializeField] private string appName;
-    [SerializeField] private int appSpamNumberName;
+    [Range(1,10)][SerializeField] private int appSpamNumberName;
     [SerializeField] private string day;
 
     
@@ -218,6 +218,7 @@ public class GameItemManager : MonoBehaviour
     public void RandomItemShop()
     {
         PrefabUtility.RecordPrefabInstancePropertyModifications(storeManager);
+        PrefabUtility.RecordPrefabInstancePropertyModifications(this);
         
         storeSpriteQueue = new Queue<Sprite>();
         while (storeSpriteQueue.Count != storeSprite.Count)
