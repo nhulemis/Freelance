@@ -218,7 +218,6 @@ public class GameItemManager : MonoBehaviour
     public void RandomItemShop()
     {
         PrefabUtility.RecordPrefabInstancePropertyModifications(storeManager);
-        PrefabUtility.RecordPrefabInstancePropertyModifications(this);
         
         storeSpriteQueue = new Queue<Sprite>();
         while (storeSpriteQueue.Count != storeSprite.Count)
