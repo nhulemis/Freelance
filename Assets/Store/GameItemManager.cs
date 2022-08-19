@@ -44,6 +44,28 @@ public class GameItemManager : MonoBehaviour
 
     private void Awake()
     {
+        SetUpColor();
+        
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+            return;
+        }
+
+        DontDestroyOnLoad(this);
+        
+#if DebugLog
+        //SceneManager.LoadScene("Mobile Console/Assets/LogConsole", LoadSceneMode.Additive);
+#endif
+    }
+
+    [Button]
+    public void SetUpColor()
+    {
         
 
         foreach (var mat in materials)
@@ -107,22 +129,6 @@ public class GameItemManager : MonoBehaviour
 
 
         gameOver.GetComponent<Image>().color = color;
-        
-        if (Instance == null)
-        {
-            Instance = this;
-        }
-        else
-        {
-            Destroy(gameObject);
-            return;
-        }
-
-        DontDestroyOnLoad(this);
-        
-#if DebugLog
-        //SceneManager.LoadScene("Mobile Console/Assets/LogConsole", LoadSceneMode.Additive);
-#endif
     }
 
     public void ScreenShot()
