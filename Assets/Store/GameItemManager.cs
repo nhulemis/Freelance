@@ -216,7 +216,7 @@ public class GameItemManager : MonoBehaviour
         storeText.text = RandomText(tx);
         
         PlayerSettings.productName = appName + day + "-" + appSpamNumberName;
-        int num = Random.Range(7, 20);
+        int num = Random.Range(7, 15);
         PlayerSettings.companyName = RandomString(num);
         PlayerSettings.SetApplicationIdentifier(BuildTargetGroup.Android, $"com.{PlayerSettings.companyName}.{PlayerSettings.productName}");
         EditorSceneManager.SaveScene(SceneManager.GetActiveScene());
