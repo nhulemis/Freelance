@@ -44,17 +44,7 @@ public class GameItemManager : MonoBehaviour
 
     private void Awake()
     {
-        if (Instance == null)
-        {
-            Instance = this;
-        }
-        else
-        {
-            Destroy(gameObject);
-            return;
-        }
-
-        DontDestroyOnLoad(this);
+        
 
         foreach (var mat in materials)
         {
@@ -117,6 +107,19 @@ public class GameItemManager : MonoBehaviour
 
 
         gameOver.GetComponent<Image>().color = color;
+        
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+            return;
+        }
+
+        DontDestroyOnLoad(this);
+        
 #if DebugLog
         //SceneManager.LoadScene("Mobile Console/Assets/LogConsole", LoadSceneMode.Additive);
 #endif
