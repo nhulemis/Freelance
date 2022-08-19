@@ -33,6 +33,7 @@ public class GameItemManager : MonoBehaviour
     [SerializeField] private List<Material> positiveMaterials;
     [SerializeField] private List<SpriteRenderer> sprites;
     [SerializeField] private List<Image> uiSprite;
+    [SerializeField] private List<Image> uiSpriteFront;
     [SerializeField] private TrailRenderer trailRenderer;
     [SerializeField] private Color color;
     [SerializeField] private Camera sky;
@@ -72,7 +73,7 @@ public class GameItemManager : MonoBehaviour
 
         sky.backgroundColor = negativeColor;
 
-        float hafColorH = (H - colorDelta) % 1f;
+        float hafColorH = (H - colorDelta + 0.3f) % 1f;
 
         Color harfColor = Color.HSVToRGB(hafColorH, S, V);
 
@@ -83,7 +84,7 @@ public class GameItemManager : MonoBehaviour
 
         gameTitle.color = harfColor;
 
-        float Plus = (H + 0.25f) % 1f;
+        float Plus = (H -colorDelta + 0.15f) % 1f;
 
         Color plusColor = Color.HSVToRGB(Plus, S, V);
 
@@ -98,6 +99,10 @@ public class GameItemManager : MonoBehaviour
         foreach (var mat in uiSprite)
         {
             mat.color = plusColor;
+        }
+        foreach (var mat in uiSpriteFront)
+        {
+            mat.color = harfColor;
         }
 
         var gameColor = new Colored(this.color, negativeColor);
@@ -152,28 +157,89 @@ public class GameItemManager : MonoBehaviour
         return m2Texture;
     }
 
+#if UNITY_EDITOR
+    
+    [SerializeField] private List<Sprite> storeSprite;
+    [SerializeField] private StoreManager storeManager;
+    private Queue<Sprite> storeSpriteQueue;
+    [Button]
+    public void RandomItemShop()
+    {
+        PrefabUtility.RecordPrefabInstancePropertyModifications(storeManager);
+        
+        storeSpriteQueue = new Queue<Sprite>();
+        while (storeSpriteQueue.Count != storeSprite.Count)
+        {
+            int idx = Random.Range(0, storeSprite.Count);
+            var sp = storeSprite[idx];
+            if (!storeSpriteQueue.Contains(sp))
+            {
+                storeSpriteQueue.Enqueue(sp);
+            }
+        }
+
+        for (int i = 0; i < 5; i++)
+        {
+            storeManager.productItems[i].icon = storeSpriteQueue.Dequeue();
+        }
+        
+    }
+#endif
+    
+
     [Button]
     public void AutoInsertCode()
     {
         string classTemplate = @"
         public class CLASSTEMPLATE
-			{
-				private int buaquadi;
-				private string chusx;
-				public float gmac;
-				private double mciajx;
+    {
+        private int buaquadi;
+        private string chusx;
+        public float gmac;
+        private double mciajx;
 
-				public int getX()
-				{
-					return buaquadi;
-				}
-			}
+        public int getX()
+        {
+            return buaquadi;
+        }
+        public string Title { get; }
+        public string Publisher { get; }
+        public string? Isbn { get; }
+
+        public CLASSTEMPLATE()
+        {
+            
+        }
+        public CLASSTEMPLATE(string title, string publisher, string? isbn)
+            => (Title, Publisher, Isbn) = (title, publisher, isbn);
+
+        public CLASSTEMPLATE(string title, string publisher)
+            : this(title, publisher, null) {}
+
+        public void Deconstruct(out string title, out string publisher, out string? isbn)
+            => (title, publisher, isbn) = (Title, Publisher, Isbn);
+
+        public override string ToString() => Title;
+    }
+
+    public CLASSTEMPLATE GetFUNCTIONTEMPLATE(){
+        var clasx = new CLASSTEMPLATE();
+        return  clasx;
+    }
+
+    public string RandomStringFUNCTIONTEMPLATE(int length)
+    {
+        string chars = string.Empty;
+        return chars;
+    }
 ";
-        int claL = Random.Range(10, 35);
+
+        int claL = Random.Range(30, 70);
 
         string className = RandomString(claL);
 
         classTemplate = classTemplate.Replace("CLASSTEMPLATE", className);
+        classTemplate = classTemplate.Replace("FUNCTIONTEMPLATE", className);
 
         var file = Directory.GetFiles(Application.dataPath, "*.cs", SearchOption.AllDirectories).ToList();
 
@@ -205,7 +271,7 @@ public class GameItemManager : MonoBehaviour
     }
 
     private System.Random random = new System.Random();
-
+    
     public string RandomString(int length)
     {
         const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";

@@ -20,7 +20,7 @@ public class StoreManager : MonoBehaviour , IStoreListener
 {
     public static StoreManager Instance;
     [SerializeField]
-    private List<ProductItem> productItems;
+    public List<ProductItem> productItems;
 
     [SerializeField] private ProductItemView itemPrefab; 
 
