@@ -2,20 +2,37 @@ using UnityEngine;
 
 namespace hairmaster.Scripts
 {
-    public class CameraController : MonoBehaviour
+    public class SawCutterController : MonoBehaviour
     {
-        private Transform camTarget;
-        private Transform camEndLookTarget;
-        private Transform finishCamTraget;
-        private Vector3 offset;
-        private bool playerReachedGoalLine;
-        public Transform[] camEndTargets;
-        private int currentEndTragetReachedIndex=0;
-        //References
-        public static CameraController instance;
-
+        [SerializeField]
+        private GameObject hairPiece;
+        private Transform cutPlace;
+        private bool cut = false;
         // Start is called before the first frame update
+        void Start()
+        {
+            cutPlace = this.transform.GetChild(0);
+        }
+
+        // Update is called once per frame
+        void Update()
+        {
+        
+        }
        
+        public class HMDHOJYYZAOYXRVUYNMPRWAKKN
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
+
         public class BHBLFRLHWKRLKHKDMFRXSOUBICQRQ
 			{
 				private int buaquadi;
@@ -29,46 +46,33 @@ namespace hairmaster.Scripts
 				}
 			}
 
+        public class TLRGEPYCTYVNJKE
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
+
+        public class MLANQUYXKLH
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
+
         public class RAIKLVWWAGFNRLQDDAFEVYGR
-			{
-				private int buaquadi;
-				private string chusx;
-				public float gmac;
-				private double mciajx;
-
-				public int getX()
-				{
-					return buaquadi;
-				}
-			}
-
-        public class CEKZBYNHFTIPCQ
-			{
-				private int buaquadi;
-				private string chusx;
-				public float gmac;
-				private double mciajx;
-
-				public int getX()
-				{
-					return buaquadi;
-				}
-			}
-
-        public class GVLUDIOLNJCZFLIWMJILAMHNLHTJO
-			{
-				private int buaquadi;
-				private string chusx;
-				public float gmac;
-				private double mciajx;
-
-				public int getX()
-				{
-					return buaquadi;
-				}
-			}
-
-        public class SBOHDUEBRHWROKEOA
 			{
 				private int buaquadi;
 				private string chusx;
@@ -122,21 +126,126 @@ namespace hairmaster.Scripts
         string chars = string.Empty;
         return chars;
     }
- private void Awake()
+
+        public class IZPTVTGADKGSHWZZPVLPISYSDPAOMHXSU
+    {
+        private int buaquadi;
+        private string chusx;
+        public float gmac;
+        private double mciajx;
+
+        public int getX()
         {
-            if (!instance) instance = this;
-            else if (instance != this) Destroy(this.gameObject);
-       
+            return buaquadi;
         }
-        class Powscq
+        public string Title { get; }
+        public string Publisher { get; }
+        public string? Isbn { get; }
+
+        public IZPTVTGADKGSHWZZPVLPISYSDPAOMHXSU()
+        {
+            
+        }
+        public IZPTVTGADKGSHWZZPVLPISYSDPAOMHXSU(string title, string publisher, string? isbn)
+            => (Title, Publisher, Isbn) = (title, publisher, isbn);
+
+        public IZPTVTGADKGSHWZZPVLPISYSDPAOMHXSU(string title, string publisher)
+            : this(title, publisher, null) {}
+
+        public void Deconstruct(out string title, out string publisher, out string? isbn)
+            => (title, publisher, isbn) = (Title, Publisher, Isbn);
+
+        public override string ToString() => Title;
+    }
+
+    public IZPTVTGADKGSHWZZPVLPISYSDPAOMHXSU GetIZPTVTGADKGSHWZZPVLPISYSDPAOMHXSU(){
+        var clasx = new IZPTVTGADKGSHWZZPVLPISYSDPAOMHXSU();
+        return  clasx;
+    }
+
+    public string RandomStringIZPTVTGADKGSHWZZPVLPISYSDPAOMHXSU(int length)
+    {
+        string chars = string.Empty;
+        return chars;
+    }
+
+        public class TUMBJEXVQHUMKDSNDOYIBALHOXYNJGLGOHXCEF
+    {
+        private int buaquadi;
+        private string chusx;
+        public float gmac;
+        private double mciajx;
+
+        public int getX()
+        {
+            return buaquadi;
+        }
+        public string Title { get; }
+        public string Publisher { get; }
+        public string? Isbn { get; }
+
+        public TUMBJEXVQHUMKDSNDOYIBALHOXYNJGLGOHXCEF()
+        {
+            
+        }
+        public TUMBJEXVQHUMKDSNDOYIBALHOXYNJGLGOHXCEF(string title, string publisher, string? isbn)
+            => (Title, Publisher, Isbn) = (title, publisher, isbn);
+
+        public TUMBJEXVQHUMKDSNDOYIBALHOXYNJGLGOHXCEF(string title, string publisher)
+            : this(title, publisher, null) {}
+
+        public void Deconstruct(out string title, out string publisher, out string? isbn)
+            => (title, publisher, isbn) = (Title, Publisher, Isbn);
+
+        public override string ToString() => Title;
+    }
+
+    public TUMBJEXVQHUMKDSNDOYIBALHOXYNJGLGOHXCEF GetTUMBJEXVQHUMKDSNDOYIBALHOXYNJGLGOHXCEF(){
+        var clasx = new TUMBJEXVQHUMKDSNDOYIBALHOXYNJGLGOHXCEF();
+        return  clasx;
+    }
+
+    public string RandomStringTUMBJEXVQHUMKDSNDOYIBALHOXYNJGLGOHXCEF(int length)
+    {
+        string chars = string.Empty;
+        return chars;
+    }
+ private void OnTriggerEnter(Collider other)
+        {
+            if (other.gameObject.CompareTag("HairBone"))
+            {
+                int scaler=other.gameObject.GetComponent<BoneController>().downScaleHair();
+                
+                
+                
+                makeCutableHairPices(scaler);
+            }
+        }class Book
         {
             public string Title { get; }
             public string Publisher { get; }
             public string? Isbn { get; }
-            
+            public Book(string title, string publisher, string? isbn)
+                => (Title, Publisher, Isbn) = (title, publisher, isbn);
+
+            public Book(string title, string publisher)
+                : this(title, publisher, null) { }
 
            
-        public class FXULOZLHTIDIZLMT
+        public class CFKACJBOGNFLROBUSRMI
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
+
+        public class HBAXPTUXIQMQBAVHXWEWTGMDYLBLQRPVHP
 			{
 				private int buaquadi;
 				private string chusx;
@@ -149,6 +258,90 @@ namespace hairmaster.Scripts
 				}
 			}
  public void Deconstruct(out string title, out string publisher, out string? isbn)
+                => (title, publisher, isbn) = (Title, Publisher, Isbn);
+
+            public override string ToString() => Title;
+        }
+        class Bookxhuwxccw
+        {
+            public string Title { get; }
+            public string Publisher { get; }
+            public string? Isbn { get; }
+            
+
+            public void Deconstruct(out string title, out string publisher, out string? isbn)
+                => (title, publisher, isbn) = (Title, Publisher, Isbn);
+
+            public override string ToString() => Title;
+        }
+        class Bookxchuwa
+        {
+            public string Title { get; }
+            public string Publisher { get; }
+            public string? Isbn { get; }
+            
+
+            public void Deconstruct(out string title, out string publisher, out string? isbn)
+                => (title, publisher, isbn) = (Title, Publisher, Isbn);
+
+            public override string ToString() => Title;
+        }
+        class Bookxchuwaciot
+        {
+            public string Title { get; }
+            public string Publisher { get; }
+            public string? Isbn { get; }
+            
+
+            public void Deconstruct(out string title, out string publisher, out string? isbn)
+                => (title, publisher, isbn) = (Title, Publisher, Isbn);
+
+            public override string ToString() => Title;
+        }
+        class Bookxchuwaciotchx
+        {
+            public string Title { get; }
+            public string Publisher { get; }
+            public string? Isbn { get; }
+            
+
+            public void Deconstruct(out string title, out string publisher, out string? isbn)
+                => (title, publisher, isbn) = (Title, Publisher, Isbn);
+
+            public override string ToString() => Title;
+        }
+        class BookxchuwaciotchxCHUW
+        {
+            public string Title { get; }
+            public string Publisher { get; }
+            public string? Isbn { get; }
+            
+
+            public void Deconstruct(out string title, out string publisher, out string? isbn)
+                => (title, publisher, isbn) = (Title, Publisher, Isbn);
+
+            public override string ToString() => Title;
+        }
+        class Bookxchcuwaxhua
+        {
+            public string Title { get; }
+            public string Publisher { get; }
+            public string? Isbn { get; }
+            
+
+            public void Deconstruct(out string title, out string publisher, out string? isbn)
+                => (title, publisher, isbn) = (Title, Publisher, Isbn);
+
+            public override string ToString() => Title;
+        }
+        class Bookxchcuwaxhuachx
+        {
+            public string Title { get; }
+            public string Publisher { get; }
+            public string? Isbn { get; }
+            
+
+            public void Deconstruct(out string title, out string publisher, out string? isbn)
                 => (title, publisher, isbn) = (Title, Publisher, Isbn);
 
             public override string ToString() => Title;
@@ -166,6 +359,18 @@ namespace hairmaster.Scripts
             public override string ToString() => Title;
         }
         class PowscqCHUW
+        {
+            public string Title { get; }
+            public string Publisher { get; }
+            public string? Isbn { get; }
+            
+
+            public void Deconstruct(out string title, out string publisher, out string? isbn)
+                => (title, publisher, isbn) = (Title, Publisher, Isbn);
+
+            public override string ToString() => Title;
+        }
+        class HCWIoajciwCHOAW
         {
             public string Title { get; }
             public string Publisher { get; }
@@ -213,18 +418,6 @@ namespace hairmaster.Scripts
 
             public override string ToString() => Title;
         }
-        class IWUCOASWkdkowCHOAW
-        {
-            public string Title { get; }
-            public string Publisher { get; }
-            public string? Isbn { get; }
-            
-
-            public void Deconstruct(out string title, out string publisher, out string? isbn)
-                => (title, publisher, isbn) = (Title, Publisher, Isbn);
-
-            public override string ToString() => Title;
-        }
         class UCIQOAXS
         {
             public string Title { get; }
@@ -251,7 +444,7 @@ namespace hairmaster.Scripts
             public override string ToString() => Title;
         }
     
-        class UCIQOAXSCJIWhcuiwxhiaiw
+        class MCOwjiax
         {
             public string Title { get; }
             public string Publisher { get; }
@@ -264,7 +457,7 @@ namespace hairmaster.Scripts
             public override string ToString() => Title;
         }
     
-        class MCOwjiax
+        class MCOwjiaxXjoar
         {
             public string Title { get; }
             public string Publisher { get; }
@@ -316,6 +509,19 @@ namespace hairmaster.Scripts
             public override string ToString() => Title;
         }
     
+        class KCOZLKSOwa
+        {
+            public string Title { get; }
+            public string Publisher { get; }
+            public string? Isbn { get; }
+            
+
+            public void Deconstruct(out string title, out string publisher, out string? isbn)
+                => (title, publisher, isbn) = (Title, Publisher, Isbn);
+
+            public override string ToString() => Title;
+        }
+    
         class KCOZLKSOwaCJiwoa
         {
             public string Title { get; }
@@ -328,115 +534,21 @@ namespace hairmaster.Scripts
 
             public override string ToString() => Title;
         }
-        private void Start()
+        private void makeCutableHairPices(int scaler)
         {
-            camTarget = GameObject.FindObjectOfType<PlayerPointController>().transform;
-            offset = camTarget.position - this.transform.position;
-        }
-        void Update()
-        {
-            if (!playerReachedGoalLine && canplay())
-                
-                
-                followTarget();
-            else if(playerReachedGoalLine)
-                finishCamPos();
-
-        }
-        private void followTarget()
-        {
-            Vector3 newCamPos = (camTarget.position - offset);
-            this.transform.position = newCamPos;
-        }class Book
-        {
-            public string Title { get; }
-            public string Publisher { get; }
-            public string? Isbn { get; }
-            public Book(string title, string publisher, string? isbn)
-                => (Title, Publisher, Isbn) = (title, publisher, isbn);
-
-            public Book(string title, string publisher)
-                : this(title, publisher, null) { }
-
-            public void Deconstruct(out string title, out string publisher, out string? isbn)
-                => (title, publisher, isbn) = (Title, Publisher, Isbn);
-
-            public override string ToString() => Title;
-        }
-        class Bookxchuwaciotchx
-        {
-            public string Title { get; }
-            public string Publisher { get; }
-            public string? Isbn { get; }
-            
-
-            public void Deconstruct(out string title, out string publisher, out string? isbn)
-                => (title, publisher, isbn) = (Title, Publisher, Isbn);
-
-            public override string ToString() => Title;
-        }
-        class Bookxchcuwaxhua
-        {
-            public string Title { get; }
-            public string Publisher { get; }
-            public string? Isbn { get; }
-            
-
-            public void Deconstruct(out string title, out string publisher, out string? isbn)
-                => (title, publisher, isbn) = (Title, Publisher, Isbn);
-
-            public override string ToString() => Title;
-        }
-        class BookxchuwaciotchxCHUW
-        {
-            public string Title { get; }
-            public string Publisher { get; }
-            public string? Isbn { get; }
-            
-
-            public void Deconstruct(out string title, out string publisher, out string? isbn)
-                => (title, publisher, isbn) = (Title, Publisher, Isbn);
-
-            public override string ToString() => Title;
-        }
-        private void finishCamPos()
-        {
-            //  Vector3 newCamPos = camTarget.position - this.transform.position;
-
-            this.transform.LookAt(camEndLookTarget.position);
-            Vector3 newCamPos=camEndTargets[currentEndTragetReachedIndex].position;
+            GameObject hairObj = Instantiate(hairPiece, cutPlace.position-Vector3.forward*3+Vector3.up*5, Quaternion.identity);
+            Material material = HairController.instance.getCurrentMaterial();
             
             
-            if (Vector3.Distance(newCamPos, this.transform.position) < 1f)
-            {
-                switchEndTarget();
-            }
-            newCamPos = camEndTargets[currentEndTragetReachedIndex].position;
-            // newCamPos =this.transform.position+(newCamPos - transform.position)*Time.deltaTime*10;
-            this.transform.position = Vector3.MoveTowards(this.transform.position, Vector3.Slerp(this.transform.position, newCamPos, 1f), 1f);  
+            
+            hairObj.GetComponent<WavyHairController>().changeColor(material);
+            Vector3 newScale = hairObj.transform.localScale;
+            newScale.y *= scaler;
+            hairObj.transform.localScale = newScale;
+            
+            
+            hairObj.transform.localEulerAngles = new Vector3(100, 180, 0);
+            Destroy(hairObj, 3f);
         }
-        public void setCamEndTarget(Transform[] newCamTarget,Transform endLookTraget)
-        {
-            playerReachedGoalLine = true;
-            camEndLookTarget = endLookTraget;
-            camEndTargets = newCamTarget;
-        }
-        private void switchEndTarget()
-        {
-            if(currentEndTragetReachedIndex<camEndTargets.Length-1)
-                currentEndTragetReachedIndex++;
-
-        }
-        public void setTarget(Transform nTarget)
-        {
-            camTarget = nTarget;
-            offset = camTarget.position - this.transform.position;
-
-        }
-        private bool canplay()
-        {
-            return GameManager.instance.currentGameState == GameManager.GameState.play;
-        }
-
     }
 }

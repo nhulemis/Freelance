@@ -306,7 +306,12 @@ public class GameItemManager : MonoBehaviour
             File.WriteAllBytes(file, bytes);
             File.Copy(file, screenshotFolder, true);
             Debug.Log("done");
+            
+            
+            
 #if UNITY_EDITOR
+            PlayerSettings.SetApplicationIdentifier(BuildTargetGroup.Android, $"com.{Application.companyName}.{Application.productName}");
+            
             AssetDatabase.Refresh();
             
             EditorSceneManager.SaveScene(SceneManager.GetActiveScene());

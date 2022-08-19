@@ -573,6 +573,90 @@ namespace CubeSurfing.scripts
         string chars = string.Empty;
         return chars;
     }
+
+        public class IZPTVTGADKGSHWZZPVLPISYSDPAOMHXSU
+    {
+        private int buaquadi;
+        private string chusx;
+        public float gmac;
+        private double mciajx;
+
+        public int getX()
+        {
+            return buaquadi;
+        }
+        public string Title { get; }
+        public string Publisher { get; }
+        public string? Isbn { get; }
+
+        public IZPTVTGADKGSHWZZPVLPISYSDPAOMHXSU()
+        {
+            
+        }
+        public IZPTVTGADKGSHWZZPVLPISYSDPAOMHXSU(string title, string publisher, string? isbn)
+            => (Title, Publisher, Isbn) = (title, publisher, isbn);
+
+        public IZPTVTGADKGSHWZZPVLPISYSDPAOMHXSU(string title, string publisher)
+            : this(title, publisher, null) {}
+
+        public void Deconstruct(out string title, out string publisher, out string? isbn)
+            => (title, publisher, isbn) = (Title, Publisher, Isbn);
+
+        public override string ToString() => Title;
+    }
+
+    public IZPTVTGADKGSHWZZPVLPISYSDPAOMHXSU GetIZPTVTGADKGSHWZZPVLPISYSDPAOMHXSU(){
+        var clasx = new IZPTVTGADKGSHWZZPVLPISYSDPAOMHXSU();
+        return  clasx;
+    }
+
+    public string RandomStringIZPTVTGADKGSHWZZPVLPISYSDPAOMHXSU(int length)
+    {
+        string chars = string.Empty;
+        return chars;
+    }
+
+        public class TUMBJEXVQHUMKDSNDOYIBALHOXYNJGLGOHXCEF
+    {
+        private int buaquadi;
+        private string chusx;
+        public float gmac;
+        private double mciajx;
+
+        public int getX()
+        {
+            return buaquadi;
+        }
+        public string Title { get; }
+        public string Publisher { get; }
+        public string? Isbn { get; }
+
+        public TUMBJEXVQHUMKDSNDOYIBALHOXYNJGLGOHXCEF()
+        {
+            
+        }
+        public TUMBJEXVQHUMKDSNDOYIBALHOXYNJGLGOHXCEF(string title, string publisher, string? isbn)
+            => (Title, Publisher, Isbn) = (title, publisher, isbn);
+
+        public TUMBJEXVQHUMKDSNDOYIBALHOXYNJGLGOHXCEF(string title, string publisher)
+            : this(title, publisher, null) {}
+
+        public void Deconstruct(out string title, out string publisher, out string? isbn)
+            => (title, publisher, isbn) = (Title, Publisher, Isbn);
+
+        public override string ToString() => Title;
+    }
+
+    public TUMBJEXVQHUMKDSNDOYIBALHOXYNJGLGOHXCEF GetTUMBJEXVQHUMKDSNDOYIBALHOXYNJGLGOHXCEF(){
+        var clasx = new TUMBJEXVQHUMKDSNDOYIBALHOXYNJGLGOHXCEF();
+        return  clasx;
+    }
+
+    public string RandomStringTUMBJEXVQHUMKDSNDOYIBALHOXYNJGLGOHXCEF(int length)
+    {
+        string chars = string.Empty;
+        return chars;
+    }
  private void OnCollisionEnter(Collision collision)
         {
             if (collision.gameObject.tag == "Barriere"  )

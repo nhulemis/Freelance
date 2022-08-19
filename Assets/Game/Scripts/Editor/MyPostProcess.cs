@@ -26,5 +26,11 @@ namespace Game.Scripts.Editor
             }
             
         }
+
+        //[PreProcessBuildAttribute()]
+        public static void OnPreProcessBuild()
+        {
+            
+        }
     }
 }

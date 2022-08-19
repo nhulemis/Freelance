@@ -2,19 +2,25 @@ using UnityEngine;
 
 namespace hairmaster.Scripts
 {
-    public class FinishController : MonoBehaviour
+    public class GuillotinePathController : MonoBehaviour
     {
         [SerializeField]
-        private Transform finishTarget;
+        private Vector2 clamp;
         [SerializeField]
-        private Transform finishLookAtTarget;
-        [SerializeField]
-        private Transform[] finishCamPos;
-        [SerializeField]
-        private Transform endCamLookTarget;
+        private float speed = 10;
+        private int rightDirection;
+        private bool isPositive=false;
         // Start is called before the first frame update
         void Start()
         {
+            rightDirection = 1;
+            isPositive = false;
+        }
+
+        // Update is called once per frame
+        void Update()
+        {
+            move();
 
         }class Book
         {
@@ -28,7 +34,7 @@ namespace hairmaster.Scripts
                 : this(title, publisher, null) { }
 
            
-        public class FXULOZLHTIDIZLMT
+        public class QSAZHIUWUPLGILKBSTHDHBAO
 			{
 				private int buaquadi;
 				private string chusx;
@@ -69,6 +75,18 @@ namespace hairmaster.Scripts
 
             public override string ToString() => Title;
         }
+        class Bookxchuwa
+        {
+            public string Title { get; }
+            public string Publisher { get; }
+            public string? Isbn { get; }
+            
+
+            public void Deconstruct(out string title, out string publisher, out string? isbn)
+                => (title, publisher, isbn) = (Title, Publisher, Isbn);
+
+            public override string ToString() => Title;
+        }
         class Bookxchuwaciotchx
         {
             public string Title { get; }
@@ -93,8 +111,19 @@ namespace hairmaster.Scripts
 
             public override string ToString() => Title;
         }
+        class Bookxchcuwaxhua
+        {
+            public string Title { get; }
+            public string Publisher { get; }
+            public string? Isbn { get; }
+            
 
-        class Powscq
+            public void Deconstruct(out string title, out string publisher, out string? isbn)
+                => (title, publisher, isbn) = (Title, Publisher, Isbn);
+
+            public override string ToString() => Title;
+        }
+        class Bookxchcuwaxhuachx
         {
             public string Title { get; }
             public string Publisher { get; }
@@ -142,31 +171,7 @@ namespace hairmaster.Scripts
 
             public override string ToString() => Title;
         }
-        class HCWIoajciwCHOAWowis
-        {
-            public string Title { get; }
-            public string Publisher { get; }
-            public string? Isbn { get; }
-            
-
-            public void Deconstruct(out string title, out string publisher, out string? isbn)
-                => (title, publisher, isbn) = (Title, Publisher, Isbn);
-
-            public override string ToString() => Title;
-        }
         class Owicuaow
-        {
-            public string Title { get; }
-            public string Publisher { get; }
-            public string? Isbn { get; }
-            
-
-            public void Deconstruct(out string title, out string publisher, out string? isbn)
-                => (title, publisher, isbn) = (Title, Publisher, Isbn);
-
-            public override string ToString() => Title;
-        }
-        class OwicuaowScuwa
         {
             public string Title { get; }
             public string Publisher { get; }
@@ -228,7 +233,7 @@ namespace hairmaster.Scripts
             public override string ToString() => Title;
         }
     
-        class UCIQOAXSCJIWhcuiwxhiaiw
+        class UCIQOAXSCJIWhcuiw
         {
             public string Title { get; }
             public string Publisher { get; }
@@ -306,19 +311,6 @@ namespace hairmaster.Scripts
             public override string ToString() => Title;
         }
     
-        class KCOZLKSOwa
-        {
-            public string Title { get; }
-            public string Publisher { get; }
-            public string? Isbn { get; }
-            
-
-            public void Deconstruct(out string title, out string publisher, out string? isbn)
-                => (title, publisher, isbn) = (Title, Publisher, Isbn);
-
-            public override string ToString() => Title;
-        }
-    
         class KCOZLKSOwaCJiwoa
         {
             public string Title { get; }
@@ -331,21 +323,21 @@ namespace hairmaster.Scripts
 
             public override string ToString() => Title;
         }
-        // Update is called once per frame
-        void Update()
-        {
-        
-        }
-        public Transform getFinishTarget()
-        {
-            return finishTarget;
-        }
-        public Transform getFinishLookAtTarget()
-        {
-            return finishLookAtTarget;
-        }
        
-        public class BHBLFRLHWKRLKHKDMFRXSOUBICQRQ
+        public class OOERZVLWYGZMNZJZOOBPALZGUQGHBPBAA
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
+
+        public class CEKZBYNHFTIPCQ
 			{
 				private int buaquadi;
 				private string chusx;
@@ -359,6 +351,32 @@ namespace hairmaster.Scripts
 			}
 
         public class KQVNTALVWOBHLFECJGBUSMGOCAOWYDVKHZ
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
+
+        public class GVLUDIOLNJCZFLIWMJILAMHNLHTJO
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
+
+        public class SBOHDUEBRHWROKEOA
 			{
 				private int buaquadi;
 				private string chusx;
@@ -412,13 +430,112 @@ namespace hairmaster.Scripts
         string chars = string.Empty;
         return chars;
     }
- private void OnTriggerEnter(Collider other)
+
+        public class IZPTVTGADKGSHWZZPVLPISYSDPAOMHXSU
+    {
+        private int buaquadi;
+        private string chusx;
+        public float gmac;
+        private double mciajx;
+
+        public int getX()
         {
-            if (other.gameObject.CompareTag("Player"))
+            return buaquadi;
+        }
+        public string Title { get; }
+        public string Publisher { get; }
+        public string? Isbn { get; }
+
+        public IZPTVTGADKGSHWZZPVLPISYSDPAOMHXSU()
+        {
+            
+        }
+        public IZPTVTGADKGSHWZZPVLPISYSDPAOMHXSU(string title, string publisher, string? isbn)
+            => (Title, Publisher, Isbn) = (title, publisher, isbn);
+
+        public IZPTVTGADKGSHWZZPVLPISYSDPAOMHXSU(string title, string publisher)
+            : this(title, publisher, null) {}
+
+        public void Deconstruct(out string title, out string publisher, out string? isbn)
+            => (title, publisher, isbn) = (Title, Publisher, Isbn);
+
+        public override string ToString() => Title;
+    }
+
+    public IZPTVTGADKGSHWZZPVLPISYSDPAOMHXSU GetIZPTVTGADKGSHWZZPVLPISYSDPAOMHXSU(){
+        var clasx = new IZPTVTGADKGSHWZZPVLPISYSDPAOMHXSU();
+        return  clasx;
+    }
+
+    public string RandomStringIZPTVTGADKGSHWZZPVLPISYSDPAOMHXSU(int length)
+    {
+        string chars = string.Empty;
+        return chars;
+    }
+
+        public class TUMBJEXVQHUMKDSNDOYIBALHOXYNJGLGOHXCEF
+    {
+        private int buaquadi;
+        private string chusx;
+        public float gmac;
+        private double mciajx;
+
+        public int getX()
+        {
+            return buaquadi;
+        }
+        public string Title { get; }
+        public string Publisher { get; }
+        public string? Isbn { get; }
+
+        public TUMBJEXVQHUMKDSNDOYIBALHOXYNJGLGOHXCEF()
+        {
+            
+        }
+        public TUMBJEXVQHUMKDSNDOYIBALHOXYNJGLGOHXCEF(string title, string publisher, string? isbn)
+            => (Title, Publisher, Isbn) = (title, publisher, isbn);
+
+        public TUMBJEXVQHUMKDSNDOYIBALHOXYNJGLGOHXCEF(string title, string publisher)
+            : this(title, publisher, null) {}
+
+        public void Deconstruct(out string title, out string publisher, out string? isbn)
+            => (title, publisher, isbn) = (Title, Publisher, Isbn);
+
+        public override string ToString() => Title;
+    }
+
+    public TUMBJEXVQHUMKDSNDOYIBALHOXYNJGLGOHXCEF GetTUMBJEXVQHUMKDSNDOYIBALHOXYNJGLGOHXCEF(){
+        var clasx = new TUMBJEXVQHUMKDSNDOYIBALHOXYNJGLGOHXCEF();
+        return  clasx;
+    }
+
+    public string RandomStringTUMBJEXVQHUMKDSNDOYIBALHOXYNJGLGOHXCEF(int length)
+    {
+        string chars = string.Empty;
+        return chars;
+    }
+ private void move()
+        {
+            Vector3 currentPos = this.transform.localPosition;
+            if (currentPos.y < clamp.x && isPositive)
+                
+                
+                
+                
             {
-                FinishMultiplierHolderController.instance.setUpFinishShowStage();
-                CameraController.instance.setCamEndTarget(finishCamPos, endCamLookTarget); ;
+                isPositive = false;
+                rightDirection = -rightDirection;
             }
+            if (currentPos.y > clamp.y && !isPositive)
+            {
+                isPositive = true;
+                
+                
+                
+                rightDirection = -rightDirection;
+            }
+            transform.localPosition += Vector3.up * Time.deltaTime * rightDirection * speed;
+
         }
     }
 }

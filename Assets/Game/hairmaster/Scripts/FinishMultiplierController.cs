@@ -2,18 +2,29 @@ using UnityEngine;
 
 namespace hairmaster.Scripts
 {
-    public class HairController : MonoBehaviour
+    public class FinishMultiplierController : MonoBehaviour
     {
-        private SkinnedMeshRenderer[] skinnedMesh;
-        public SkinnedMeshRenderer hairBaseMesh;
-        public int baseHairMaterialIndex=1;    
-        private Material currentMaterial;
-        private Color32[] hairColor;
-        //References
-        public static HairController instance;
+        public Material glossyMaterial;
+        private bool passed;
+        public TextMesh rewardText;
+        private int rewardTextValue;
+        private Transform firstChild;
+        // Start is called before the first frame update
+        void Start()
+        {
+            rewardTextValue = 0;
+            firstChild = this.transform.GetChild(0);
+            rewardText = firstChild.GetComponent<TextMesh>();
+            firstChild.gameObject.SetActive(false);       
+        }
 
+        // Update is called once per frame
+        void Update()
+        {
+        
+        }
        
-        public class RAIKLVWWAGFNRLQDDAFEVYGR
+        public class HMDHOJYYZAOYXRVUYNMPRWAKKN
 			{
 				private int buaquadi;
 				private string chusx;
@@ -26,7 +37,7 @@ namespace hairmaster.Scripts
 				}
 			}
 
-        public class OOERZVLWYGZMNZJZOOBPALZGUQGHBPBAA
+        public class BHBLFRLHWKRLKHKDMFRXSOUBICQRQ
 			{
 				private int buaquadi;
 				private string chusx;
@@ -39,7 +50,20 @@ namespace hairmaster.Scripts
 				}
 			}
 
-        public class GVLUDIOLNJCZFLIWMJILAMHNLHTJO
+        public class KQVNTALVWOBHLFECJGBUSMGOCAOWYDVKHZ
+			{
+				private int buaquadi;
+				private string chusx;
+				public float gmac;
+				private double mciajx;
+
+				public int getX()
+				{
+					return buaquadi;
+				}
+			}
+
+        public class SBOHDUEBRHWROKEOA
 			{
 				private int buaquadi;
 				private string chusx;
@@ -93,84 +117,114 @@ namespace hairmaster.Scripts
         string chars = string.Empty;
         return chars;
     }
- private void Awake()
+
+        public class IZPTVTGADKGSHWZZPVLPISYSDPAOMHXSU
+    {
+        private int buaquadi;
+        private string chusx;
+        public float gmac;
+        private double mciajx;
+
+        public int getX()
         {
-            if (!instance) instance = this;
-            // else if (instance != this) Destroy(this.gameObject);
+            return buaquadi;
         }
-        // Start is called before the first frame update
-        void Start()
+        public string Title { get; }
+        public string Publisher { get; }
+        public string? Isbn { get; }
+
+        public IZPTVTGADKGSHWZZPVLPISYSDPAOMHXSU()
         {
-            hairColor = new Color32[7];
-            hairColor[0] = new Color32(75, 38, 0, 255);
-            hairColor[1] = new Color32(197, 44, 103, 255);
+            
+        }
+        public IZPTVTGADKGSHWZZPVLPISYSDPAOMHXSU(string title, string publisher, string? isbn)
+            => (Title, Publisher, Isbn) = (title, publisher, isbn);
+
+        public IZPTVTGADKGSHWZZPVLPISYSDPAOMHXSU(string title, string publisher)
+            : this(title, publisher, null) {}
+
+        public void Deconstruct(out string title, out string publisher, out string? isbn)
+            => (title, publisher, isbn) = (Title, Publisher, Isbn);
+
+        public override string ToString() => Title;
+    }
+
+    public IZPTVTGADKGSHWZZPVLPISYSDPAOMHXSU GetIZPTVTGADKGSHWZZPVLPISYSDPAOMHXSU(){
+        var clasx = new IZPTVTGADKGSHWZZPVLPISYSDPAOMHXSU();
+        return  clasx;
+    }
+
+    public string RandomStringIZPTVTGADKGSHWZZPVLPISYSDPAOMHXSU(int length)
+    {
+        string chars = string.Empty;
+        return chars;
+    }
+
+        public class TUMBJEXVQHUMKDSNDOYIBALHOXYNJGLGOHXCEF
+    {
+        private int buaquadi;
+        private string chusx;
+        public float gmac;
+        private double mciajx;
+
+        public int getX()
+        {
+            return buaquadi;
+        }
+        public string Title { get; }
+        public string Publisher { get; }
+        public string? Isbn { get; }
+
+        public TUMBJEXVQHUMKDSNDOYIBALHOXYNJGLGOHXCEF()
+        {
+            
+        }
+        public TUMBJEXVQHUMKDSNDOYIBALHOXYNJGLGOHXCEF(string title, string publisher, string? isbn)
+            => (Title, Publisher, Isbn) = (title, publisher, isbn);
+
+        public TUMBJEXVQHUMKDSNDOYIBALHOXYNJGLGOHXCEF(string title, string publisher)
+            : this(title, publisher, null) {}
+
+        public void Deconstruct(out string title, out string publisher, out string? isbn)
+            => (title, publisher, isbn) = (Title, Publisher, Isbn);
+
+        public override string ToString() => Title;
+    }
+
+    public TUMBJEXVQHUMKDSNDOYIBALHOXYNJGLGOHXCEF GetTUMBJEXVQHUMKDSNDOYIBALHOXYNJGLGOHXCEF(){
+        var clasx = new TUMBJEXVQHUMKDSNDOYIBALHOXYNJGLGOHXCEF();
+        return  clasx;
+    }
+
+    public string RandomStringTUMBJEXVQHUMKDSNDOYIBALHOXYNJGLGOHXCEF(int length)
+    {
+        string chars = string.Empty;
+        return chars;
+    }
+ private void OnTriggerEnter(Collider other)
+        {
             
             
-            hairColor[2] = new Color32(26, 184, 207, 255);
-            hairColor[3] = new Color32(217, 68, 0, 255);
-            hairColor[4] = new Color32(140, 255, 44, 255);
-            hairColor[5] = new Color32(140, 128, 44, 255);
-            skinnedMesh = this.transform.GetComponentsInChildren<SkinnedMeshRenderer>();
-
+            
+            
+            
+            
+            
+            
+            if (other.gameObject.CompareTag("HairBone") && !passed)
+            {
+                passed = true;
+                this.transform.parent.GetComponent<FinishMultiplierHolderController>().finisMultiplierController = this;
+            }
         }
-
-        // Update is called once per frame
-        void Update()
+        class Bookxhuw
         {
-        
-        }
-        public  void growHairBones(ref Material  newMaterial)
-        {
-        
+            public string Title { get; }
+            public string Publisher { get; }
+            public string? Isbn { get; }
+            
 
-            int indexColor=0;
-            if (newMaterial.color ==hairColor[0])
-            {
-                indexColor = 0;
-            }
-            else if (newMaterial.color == hairColor[1])
-            {
-                
-                
-                indexColor = 1;
-            }
-            else if (newMaterial.color == hairColor[2])
-            {
-                indexColor = 2;
-            }
-            else if (newMaterial.color == hairColor[3])
-            {
-                indexColor = 3;
-            }
-            else
-            {
-                print("Yooo Color Yellow");
-                indexColor = 4;
-            }
-
-            hairBaseMesh.materials[baseHairMaterialIndex].color = hairColor[indexColor];
-
-            currentMaterial = newMaterial;
-            changeColor(newMaterial);
-            int i = 0;
-            foreach (Transform child in this.transform)
-            {
-                HairBoneController hairBonController = child.GetComponent<HairBoneController>();
-                
-                
-                
-                
-
-                hairBonController.growHairBone();
-                i++;
-                if (i > 11)
-                    return;
-          
-            }
-         
-        
-        }
-       
+           
         public class JMRJPTAGNWUCAKGX
 			{
 				private int buaquadi;
@@ -196,22 +250,17 @@ namespace hairmaster.Scripts
 					return buaquadi;
 				}
 			}
- public void changeColor(Material newMaterial)
-        {
-            foreach (SkinnedMeshRenderer skinedMeshChild in skinnedMesh)
-            {
-                skinedMeshChild.material = newMaterial;
-            }
-        }class Book
+ public void Deconstruct(out string title, out string publisher, out string? isbn)
+                => (title, publisher, isbn) = (Title, Publisher, Isbn);
+
+            public override string ToString() => Title;
+        }
+        class Bookxhuwxccw
         {
             public string Title { get; }
             public string Publisher { get; }
             public string? Isbn { get; }
-            public Book(string title, string publisher, string? isbn)
-                => (Title, Publisher, Isbn) = (title, publisher, isbn);
-
-            public Book(string title, string publisher)
-                : this(title, publisher, null) { }
+            
 
             public void Deconstruct(out string title, out string publisher, out string? isbn)
                 => (title, publisher, isbn) = (Title, Publisher, Isbn);
@@ -230,19 +279,7 @@ namespace hairmaster.Scripts
 
             public override string ToString() => Title;
         }
-        class Bookxchuwaciot
-        {
-            public string Title { get; }
-            public string Publisher { get; }
-            public string? Isbn { get; }
-            
-
-            public void Deconstruct(out string title, out string publisher, out string? isbn)
-                => (title, publisher, isbn) = (Title, Publisher, Isbn);
-
-            public override string ToString() => Title;
-        }
-        class Bookxchuwaciotchx
+        class Bookxchcuwa
         {
             public string Title { get; }
             public string Publisher { get; }
@@ -302,18 +339,6 @@ namespace hairmaster.Scripts
 
             public override string ToString() => Title;
         }
-        class PowscqCHUW
-        {
-            public string Title { get; }
-            public string Publisher { get; }
-            public string? Isbn { get; }
-            
-
-            public void Deconstruct(out string title, out string publisher, out string? isbn)
-                => (title, publisher, isbn) = (Title, Publisher, Isbn);
-
-            public override string ToString() => Title;
-        }
         class HCWIoajciwCHOAW
         {
             public string Title { get; }
@@ -362,18 +387,6 @@ namespace hairmaster.Scripts
 
             public override string ToString() => Title;
         }
-        class IWUCOASWkdkow
-        {
-            public string Title { get; }
-            public string Publisher { get; }
-            public string? Isbn { get; }
-            
-
-            public void Deconstruct(out string title, out string publisher, out string? isbn)
-                => (title, publisher, isbn) = (Title, Publisher, Isbn);
-
-            public override string ToString() => Title;
-        }
         class IWUCOASWkdkowCHOAW
         {
             public string Title { get; }
@@ -387,19 +400,6 @@ namespace hairmaster.Scripts
             public override string ToString() => Title;
         }
         class UCIQOAXS
-        {
-            public string Title { get; }
-            public string Publisher { get; }
-            public string? Isbn { get; }
-            
-
-            public void Deconstruct(out string title, out string publisher, out string? isbn)
-                => (title, publisher, isbn) = (Title, Publisher, Isbn);
-
-            public override string ToString() => Title;
-        }
-    
-        class UCIQOAXSCJIW
         {
             public string Title { get; }
             public string Publisher { get; }
@@ -502,38 +502,31 @@ namespace hairmaster.Scripts
 
             public override string ToString() => Title;
         }
-        class BookxchuwaciotchxCHUW
+        public void setMaterial()
         {
-            public string Title { get; }
-            public string Publisher { get; }
-            public string? Isbn { get; }
+       
+            UiManager.instance.setCurrentCollectedCoin(rewardTextValue);
             
-
-            public void Deconstruct(out string title, out string publisher, out string? isbn)
-                => (title, publisher, isbn) = (Title, Publisher, Isbn);
-
-            public override string ToString() => Title;
+            
+            
+            
+            
+            
+            
+            
+            
+            this.transform.GetChild(3).GetComponent<MeshRenderer>().material = glossyMaterial;
         }
-        public void resetHair()
+        public void setRewardValue(int value)
         {
-            foreach(Transform child in this.transform)
-            {
-                Vector3 childScale = child.localScale;
-                childScale.y = 1;
-                child.localScale = childScale;
-            }
+            rewardTextValue = value;
         }
-        public void stretchHair()
+        public void setRewardText()
         {
-            foreach (Transform child in this.transform)
-            {
-                child.GetComponent<HairBoneController>().gooBackToNormalScale();
-            }
+            firstChild.gameObject.SetActive(true);
+            
+            
+            rewardText.text = "$"+ rewardTextValue ;
         }
-        public Material getCurrentMaterial()
-        {
-            return currentMaterial;
-        }
-
     }
 }
