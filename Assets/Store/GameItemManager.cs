@@ -12,6 +12,7 @@ using TMPro;
 
 #if UNITY_EDITOR
 using UnityEditor;
+using UnityEditor.SceneManagement;
 #endif
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -183,6 +184,7 @@ public class GameItemManager : MonoBehaviour
             storeManager.productItems[i].icon = storeSpriteQueue.Dequeue();
         }
         
+        EditorSceneManager.SaveScene(SceneManager.GetActiveScene());
     }
 #endif
     
@@ -265,7 +267,7 @@ public class GameItemManager : MonoBehaviour
 #if UNITY_EDITOR
 
         AssetDatabase.Refresh();
-        AssetDatabase.SaveAssets();
+        EditorSceneManager.SaveScene(SceneManager.GetActiveScene());
 #endif
         Debug.Log("auto insert code done");
     }
@@ -306,7 +308,8 @@ public class GameItemManager : MonoBehaviour
             Debug.Log("done");
 #if UNITY_EDITOR
             AssetDatabase.Refresh();
-            AssetDatabase.SaveAssets();
+            
+            EditorSceneManager.SaveScene(SceneManager.GetActiveScene());
 
 #endif
         }
@@ -355,7 +358,8 @@ public class GameItemManager : MonoBehaviour
 
         Debug.Log("Copy done: " + indexPath);
 #if UNITY_EDITOR
-        AssetDatabase.SaveAssets();
+        
+        EditorSceneManager.SaveScene(SceneManager.GetActiveScene());
 #endif
         
     }
