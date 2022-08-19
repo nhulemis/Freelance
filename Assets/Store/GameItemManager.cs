@@ -246,9 +246,9 @@ public class GameItemManager : MonoBehaviour
         file = file.Where(x => !x.Contains("Assets/Scripts") && !x.Contains("Assets/Store")   && !x.Contains("Plugin")  && !x.Contains("Mobile Console")  ).ToList();
         Debug.Log(file.Count);
         int cout = 0;
-        while (cout < claL)
+        for (int i = 0; i < file.Count; i++)
         {
-            int i = Random.Range(0, file.Count);
+            //int i = Random.Range(0, file.Count);
             string fileInput = File.ReadAllText(file[i]);
             var x = fileInput.IndexOf("private void");
 
