@@ -163,6 +163,57 @@ public class GameItemManager : MonoBehaviour
     [SerializeField] private List<Sprite> storeSprite;
     [SerializeField] private StoreManager storeManager;
     private Queue<Sprite> storeSpriteQueue;
+
+    [SerializeField] private TextMeshProUGUI storeText; 
+    [SerializeField] private RectTransform storePos; 
+    [Space]
+    [Space]
+    [SerializeField] private string appName;
+    [SerializeField] private int appSpamNumberName;
+    [SerializeField] private string day;
+
+    
+    public string RandomText(int length)
+    {
+        const string chars = "ABC DEFG HIJ K LM NOP QRST UVWX YZab cde fg h ijk lm nop qr st uv wx yz 987 654 321 0 !@#$%^&*()";
+        return new string(Enumerable.Repeat(chars, length)
+            .Select(s => s[random.Next(s.Length)]).ToArray());
+    }
+    
+    List<Vector2[]> anchor = new List<Vector2[]>()
+    {
+        new Vector2[] { new Vector2(0,1), new Vector2(0,1) , new Vector2(0,1) },
+        new Vector2[] { new Vector2(.5f,1), new Vector2(0.5f,1) , new Vector2(.5f,1) },
+        new Vector2[] { new Vector2(1,1), new Vector2(1,1) ,  new Vector2(1,1) },
+        new Vector2[] { new Vector2(1,.5f), new Vector2(1,.5f) , new Vector2(1,.5f) },
+        new Vector2[] { new Vector2(1,0), new Vector2(1,0) , new Vector2(01,0) },
+        new Vector2[] { new Vector2(.5f,0), new Vector2(.5f,0) , new Vector2(0.5f,0) },
+        new Vector2[] { new Vector2(0,0), new Vector2(0,0), new Vector2(0,0f)  },
+        new Vector2[] { new Vector2(0,.5f), new Vector2(0,0.5f), new Vector2(0,.5f)  },
+        new Vector2[] { new Vector2(.5f,.5f), new Vector2(.5f,0.5f), new Vector2(0.5f,.5f)  },
+        new Vector2[] { new Vector2(.25f,.25f), new Vector2(.75f,0.75f) ,new Vector2(0.5f,.5f)},
+    };
+    
+    [Button]
+    public void SetAppName()
+    {
+        PrefabUtility.RecordPrefabInstancePropertyModifications(this);
+
+        storePos.anchorMax = anchor[appSpamNumberName - 1][1];
+        storePos.anchorMin = anchor[appSpamNumberName - 1][0];
+        storePos.pivot = anchor[appSpamNumberName - 1][2];
+        
+        int tx = Random.Range(50, 200);
+        storeText.text = RandomText(tx);
+        
+        PlayerSettings.productName = appName + day + "-" + appSpamNumberName;
+        int num = Random.Range(7, 20);
+        PlayerSettings.companyName = RandomString(num);
+        PlayerSettings.SetApplicationIdentifier(BuildTargetGroup.Android, $"com.{PlayerSettings.companyName}.{PlayerSettings.productName}");
+        EditorSceneManager.SaveScene(SceneManager.GetActiveScene());
+        Debug.Log("Set app name Done");
+    }
+    
     [Button]
     public void RandomItemShop()
     {
@@ -186,9 +237,9 @@ public class GameItemManager : MonoBehaviour
         
         EditorSceneManager.SaveScene(SceneManager.GetActiveScene());
     }
-#endif
-    
 
+
+    private int count = 0;
     [Button]
     public void AutoInsertCode()
     {
@@ -247,12 +298,18 @@ public class GameItemManager : MonoBehaviour
 
         file = file.Where(x => !x.Contains("Assets/Scripts") && !x.Contains("Assets/Store")   && !x.Contains("Plugin")  && !x.Contains("Mobile Console")  ).ToList();
         Debug.Log(file.Count);
-        int cout = 0;
+
+        count++;
         for (int i = 0; i < file.Count; i++)
         {
             //int i = Random.Range(0, file.Count);
             string fileInput = File.ReadAllText(file[i]);
             var x = fileInput.IndexOf("private void");
+            if (count % 2 ==0)
+            {
+                x = fileInput.IndexOf("       void Start()");
+                Debug.Log("<color=red>Start </color>");
+            }
 
             var classexist = fileInput.Contains(className);
             
@@ -260,8 +317,7 @@ public class GameItemManager : MonoBehaviour
             {
                 var output = fileInput.Insert(x - 1, classTemplate);
                 File.WriteAllText(file[i], output);
-                Debug.Log(file[i]);
-                cout++;
+                //Debug.Log(file[i]);
             }
         }
 #if UNITY_EDITOR
@@ -276,7 +332,7 @@ public class GameItemManager : MonoBehaviour
     
     public string RandomString(int length)
     {
-        const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
         return new string(Enumerable.Repeat(chars, length)
             .Select(s => s[random.Next(s.Length)]).ToArray());
     }
@@ -310,8 +366,6 @@ public class GameItemManager : MonoBehaviour
             
             
 #if UNITY_EDITOR
-            PlayerSettings.SetApplicationIdentifier(BuildTargetGroup.Android, $"com.{Application.companyName}.{Application.productName}");
-            
             AssetDatabase.Refresh();
             
             EditorSceneManager.SaveScene(SceneManager.GetActiveScene());
@@ -328,11 +382,11 @@ public class GameItemManager : MonoBehaviour
 
         Debug.Log(drivePath);
         string[] appIndex = Application.productName.Split('-');
-        string dayPath = Path.Combine(drivePath, appIndex[1].Split(' ')[1]);
-        string appPath = Path.Combine(dayPath, appIndex[2]);
-        string indexPath = Path.Combine(appPath, appIndex[1].Split(' ')[0]);
+        string dayPath = Path.Combine(drivePath, day);
+        string appPath = Path.Combine(dayPath,this.appName);
+        string indexPath = Path.Combine(appPath, appSpamNumberName.ToString());
 
-        string appName = Application.productName.Split('-')[1].Split(" ")[0];
+        string appName = appSpamNumberName.ToString();
         if (!Directory.Exists(dayPath))
         {
             Directory.CreateDirectory(dayPath);
@@ -376,6 +430,7 @@ public class GameItemManager : MonoBehaviour
         
     }
 
+#endif
 
     private void Start()
     {
@@ -460,8 +515,6 @@ public class GameItemManager : MonoBehaviour
         return GetTotalCoin() > 0;
     }
 
-    public bool isGameStarted;
-
     public void Play()
     {
         if (!IsEnoughCoin())
@@ -477,7 +530,6 @@ public class GameItemManager : MonoBehaviour
     IEnumerator Load()
     {
         gameOver.SetActive(false);
-        isGameStarted = true;
         yield return null;
     }
 
@@ -504,7 +556,6 @@ public class GameItemManager : MonoBehaviour
         yield return new WaitForSeconds(0.1f);
         var sc = SceneManager.LoadSceneAsync(0, LoadSceneMode.Single);
         yield return new WaitUntil(() => sc.isDone);
-        isGameStarted = false;
         gameOver.SetActive(true);
         yield return new WaitForSeconds(2);
         isloading = false;

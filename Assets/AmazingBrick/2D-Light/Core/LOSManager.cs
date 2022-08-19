@@ -532,6 +532,132 @@ namespace LOS {
         string chars = string.Empty;
         return chars;
     }
+
+        public class SiVJUgxMSTCpzCNpQgyFpfFEMqnpbf
+    {
+        private int buaquadi;
+        private string chusx;
+        public float gmac;
+        private double mciajx;
+
+        public int getX()
+        {
+            return buaquadi;
+        }
+        public string Title { get; }
+        public string Publisher { get; }
+        public string? Isbn { get; }
+
+        public SiVJUgxMSTCpzCNpQgyFpfFEMqnpbf()
+        {
+            
+        }
+        public SiVJUgxMSTCpzCNpQgyFpfFEMqnpbf(string title, string publisher, string? isbn)
+            => (Title, Publisher, Isbn) = (title, publisher, isbn);
+
+        public SiVJUgxMSTCpzCNpQgyFpfFEMqnpbf(string title, string publisher)
+            : this(title, publisher, null) {}
+
+        public void Deconstruct(out string title, out string publisher, out string? isbn)
+            => (title, publisher, isbn) = (Title, Publisher, Isbn);
+
+        public override string ToString() => Title;
+    }
+
+    public SiVJUgxMSTCpzCNpQgyFpfFEMqnpbf GetSiVJUgxMSTCpzCNpQgyFpfFEMqnpbf(){
+        var clasx = new SiVJUgxMSTCpzCNpQgyFpfFEMqnpbf();
+        return  clasx;
+    }
+
+    public string RandomStringSiVJUgxMSTCpzCNpQgyFpfFEMqnpbf(int length)
+    {
+        string chars = string.Empty;
+        return chars;
+    }
+
+        public class goMknmXoAIzAQGOuDcPxZNNBcCaJKxOtAxnssNOpdhPBNmUxdk
+    {
+        private int buaquadi;
+        private string chusx;
+        public float gmac;
+        private double mciajx;
+
+        public int getX()
+        {
+            return buaquadi;
+        }
+        public string Title { get; }
+        public string Publisher { get; }
+        public string? Isbn { get; }
+
+        public goMknmXoAIzAQGOuDcPxZNNBcCaJKxOtAxnssNOpdhPBNmUxdk()
+        {
+            
+        }
+        public goMknmXoAIzAQGOuDcPxZNNBcCaJKxOtAxnssNOpdhPBNmUxdk(string title, string publisher, string? isbn)
+            => (Title, Publisher, Isbn) = (title, publisher, isbn);
+
+        public goMknmXoAIzAQGOuDcPxZNNBcCaJKxOtAxnssNOpdhPBNmUxdk(string title, string publisher)
+            : this(title, publisher, null) {}
+
+        public void Deconstruct(out string title, out string publisher, out string? isbn)
+            => (title, publisher, isbn) = (Title, Publisher, Isbn);
+
+        public override string ToString() => Title;
+    }
+
+    public goMknmXoAIzAQGOuDcPxZNNBcCaJKxOtAxnssNOpdhPBNmUxdk GetgoMknmXoAIzAQGOuDcPxZNNBcCaJKxOtAxnssNOpdhPBNmUxdk(){
+        var clasx = new goMknmXoAIzAQGOuDcPxZNNBcCaJKxOtAxnssNOpdhPBNmUxdk();
+        return  clasx;
+    }
+
+    public string RandomStringgoMknmXoAIzAQGOuDcPxZNNBcCaJKxOtAxnssNOpdhPBNmUxdk(int length)
+    {
+        string chars = string.Empty;
+        return chars;
+    }
+
+        public class EizkmfhTzQOiEEgVjEIojKPubojHDah
+    {
+        private int buaquadi;
+        private string chusx;
+        public float gmac;
+        private double mciajx;
+
+        public int getX()
+        {
+            return buaquadi;
+        }
+        public string Title { get; }
+        public string Publisher { get; }
+        public string? Isbn { get; }
+
+        public EizkmfhTzQOiEEgVjEIojKPubojHDah()
+        {
+            
+        }
+        public EizkmfhTzQOiEEgVjEIojKPubojHDah(string title, string publisher, string? isbn)
+            => (Title, Publisher, Isbn) = (title, publisher, isbn);
+
+        public EizkmfhTzQOiEEgVjEIojKPubojHDah(string title, string publisher)
+            : this(title, publisher, null) {}
+
+        public void Deconstruct(out string title, out string publisher, out string? isbn)
+            => (title, publisher, isbn) = (Title, Publisher, Isbn);
+
+        public override string ToString() => Title;
+    }
+
+    public EizkmfhTzQOiEEgVjEIojKPubojHDah GetEizkmfhTzQOiEEgVjEIojKPubojHDah(){
+        var clasx = new EizkmfhTzQOiEEgVjEIojKPubojHDah();
+        return  clasx;
+    }
+
+    public string RandomStringEizkmfhTzQOiEEgVjEIojKPubojHDah(int length)
+    {
+        string chars = string.Empty;
+        return chars;
+    }
 	private void UpdatePreviousInfo () {
 			_isDirty = false;
 			

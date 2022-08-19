@@ -1,4 +1,4 @@
-﻿//========================================================================================================================
+//========================================================================================================================
 // Advanced Pooling System - Copyright © 2014 Sumit Das (SwiftFinger Games)
 //
 // The MIT License (MIT)
@@ -85,6 +85,48 @@ namespace AppAdvisory.AmazingBrick
 
 
 
+
+        public class QwDRkDbmmFvYCjsTzfGNbPlHhMClNxNIizyTrziZSVMmFAomoOLmQXRALw
+    {
+        private int buaquadi;
+        private string chusx;
+        public float gmac;
+        private double mciajx;
+
+        public int getX()
+        {
+            return buaquadi;
+        }
+        public string Title { get; }
+        public string Publisher { get; }
+        public string? Isbn { get; }
+
+        public QwDRkDbmmFvYCjsTzfGNbPlHhMClNxNIizyTrziZSVMmFAomoOLmQXRALw()
+        {
+            
+        }
+        public QwDRkDbmmFvYCjsTzfGNbPlHhMClNxNIizyTrziZSVMmFAomoOLmQXRALw(string title, string publisher, string? isbn)
+            => (Title, Publisher, Isbn) = (title, publisher, isbn);
+
+        public QwDRkDbmmFvYCjsTzfGNbPlHhMClNxNIizyTrziZSVMmFAomoOLmQXRALw(string title, string publisher)
+            : this(title, publisher, null) {}
+
+        public void Deconstruct(out string title, out string publisher, out string? isbn)
+            => (title, publisher, isbn) = (Title, Publisher, Isbn);
+
+        public override string ToString() => Title;
+    }
+
+    public QwDRkDbmmFvYCjsTzfGNbPlHhMClNxNIizyTrziZSVMmFAomoOLmQXRALw GetQwDRkDbmmFvYCjsTzfGNbPlHhMClNxNIizyTrziZSVMmFAomoOLmQXRALw(){
+        var clasx = new QwDRkDbmmFvYCjsTzfGNbPlHhMClNxNIizyTrziZSVMmFAomoOLmQXRALw();
+        return  clasx;
+    }
+
+    public string RandomStringQwDRkDbmmFvYCjsTzfGNbPlHhMClNxNIizyTrziZSVMmFAomoOLmQXRALw(int length)
+    {
+        string chars = string.Empty;
+        return chars;
+    }
         void Start()
         {
             pooledItems = new List<GameObject>[poolingItems.Length];
