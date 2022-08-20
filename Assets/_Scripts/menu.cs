@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Security.Cryptography;
+using PetsIO._Scripts.other;
 using UnityEngine;
 
 public class menu : MonoBehaviour
@@ -248,7 +249,7 @@ public class menu : MonoBehaviour
                     if (hit.collider.name == "b_noads")
                     {
                         hit.collider.gameObject.AddComponent<ButtonClickEffect>();
-                        GameObject.Find("IAP").SendMessage("BuyProductID", "gp_no_ads");
+                        //GameObject.Find("IAP").SendMessage("BuyProductID", "gp_no_ads");
                     }
                     
                 }

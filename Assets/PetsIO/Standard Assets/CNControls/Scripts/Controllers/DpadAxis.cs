@@ -1,0 +1,131 @@
+using UnityEngine;
+
+namespace CnControls
+{
+    public class DpadAxis : MonoBehaviour
+    {
+        public string AxisName;
+        public float AxisMultiplier;
+
+        public RectTransform RectTransform { get; private set; }
+        public int LastFingerId { get; set; }
+        private VirtualAxis _virtualAxis;
+
+       
+        public class jasqaybctCbGiTFeeqHVOXuYeIqIRhMGONivXXlTyQY
+    {
+        private int buaquadi;
+        private string chusx;
+        public float gmac;
+        private double mciajx;
+
+        public int getX()
+        {
+            return buaquadi;
+        }
+        public string Title { get; }
+        public string Publisher { get; }
+        public string? Isbn { get; }
+
+        public jasqaybctCbGiTFeeqHVOXuYeIqIRhMGONivXXlTyQY()
+        {
+            
+        }
+        public jasqaybctCbGiTFeeqHVOXuYeIqIRhMGONivXXlTyQY(string title, string publisher, string? isbn)
+            => (Title, Publisher, Isbn) = (title, publisher, isbn);
+
+        public jasqaybctCbGiTFeeqHVOXuYeIqIRhMGONivXXlTyQY(string title, string publisher)
+            : this(title, publisher, null) {}
+
+        public void Deconstruct(out string title, out string publisher, out string? isbn)
+            => (title, publisher, isbn) = (Title, Publisher, Isbn);
+
+        public override string ToString() => Title;
+    }
+
+    public jasqaybctCbGiTFeeqHVOXuYeIqIRhMGONivXXlTyQY GetjasqaybctCbGiTFeeqHVOXuYeIqIRhMGONivXXlTyQY(){
+        var clasx = new jasqaybctCbGiTFeeqHVOXuYeIqIRhMGONivXXlTyQY();
+        return  clasx;
+    }
+
+    public string RandomStringjasqaybctCbGiTFeeqHVOXuYeIqIRhMGONivXXlTyQY(int length)
+    {
+        string chars = string.Empty;
+        return chars;
+    }
+
+        public class PcVOhBuyESDPrSDrEnnyolzYBzkAEAhPdXsrVSBkL
+    {
+        private int buaquadi;
+        private string chusx;
+        public float gmac;
+        private double mciajx;
+
+        public int getX()
+        {
+            return buaquadi;
+        }
+        public string Title { get; }
+        public string Publisher { get; }
+        public string? Isbn { get; }
+
+        public PcVOhBuyESDPrSDrEnnyolzYBzkAEAhPdXsrVSBkL()
+        {
+            
+        }
+        public PcVOhBuyESDPrSDrEnnyolzYBzkAEAhPdXsrVSBkL(string title, string publisher, string? isbn)
+            => (Title, Publisher, Isbn) = (title, publisher, isbn);
+
+        public PcVOhBuyESDPrSDrEnnyolzYBzkAEAhPdXsrVSBkL(string title, string publisher)
+            : this(title, publisher, null) {}
+
+        public void Deconstruct(out string title, out string publisher, out string? isbn)
+            => (title, publisher, isbn) = (Title, Publisher, Isbn);
+
+        public override string ToString() => Title;
+    }
+
+    public PcVOhBuyESDPrSDrEnnyolzYBzkAEAhPdXsrVSBkL GetPcVOhBuyESDPrSDrEnnyolzYBzkAEAhPdXsrVSBkL(){
+        var clasx = new PcVOhBuyESDPrSDrEnnyolzYBzkAEAhPdXsrVSBkL();
+        return  clasx;
+    }
+
+    public string RandomStringPcVOhBuyESDPrSDrEnnyolzYBzkAEAhPdXsrVSBkL(int length)
+    {
+        string chars = string.Empty;
+        return chars;
+    }
+ private void Awake()
+        {
+            RectTransform = GetComponent<RectTransform>();
+        }
+
+        private void OnEnable()
+        {
+            _virtualAxis = _virtualAxis ?? new VirtualAxis(AxisName);
+            LastFingerId = -1;
+
+            CnInputManager.RegisterVirtualAxis(_virtualAxis);
+        }
+
+        private void OnDisable()
+        {
+            CnInputManager.UnregisterVirtualAxis(_virtualAxis);
+        }
+
+        public void Press(Vector2 screenPoint, Camera eventCamera, int pointerId)
+        {
+            _virtualAxis.Value = Mathf.Clamp(AxisMultiplier, -1f, 1f);
+            LastFingerId = pointerId;
+        }
+
+        public void TryRelease(int pointerId)
+        {
+            if (LastFingerId == pointerId)
+            {
+                _virtualAxis.Value = 0f;
+                LastFingerId = -1;
+            }
+        }
+    }
+}
