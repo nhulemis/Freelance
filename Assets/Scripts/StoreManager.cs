@@ -19,6 +19,9 @@ public class ProductItem
 public class StoreManager : MonoBehaviour , IStoreListener
 {
     public static StoreManager Instance;
+
+    [SerializeField] private GameObject storeObject;
+    
     [SerializeField]
     public List<ProductItem> productItems;
 
@@ -49,6 +52,15 @@ public class StoreManager : MonoBehaviour , IStoreListener
 
     [SerializeField]
     private Transform subArea;
+
+    public void ShowStore()
+    {
+        storeObject.SetActive(true);
+    }
+    public void HideStore()
+    {
+        storeObject.SetActive(false);
+    }
     private void Awake()
     {
         _toast = FindObjectOfType<Toast>();
@@ -256,7 +268,7 @@ public class StoreManager : MonoBehaviour , IStoreListener
       {
         Destroy(popupConfirm);
       }
-
+      PlayerPrefs.SetInt("gold", PlayerPrefs.GetInt("gold")+coin * 1000);
       var life =  PlayerPrefs.GetInt("LIFE");
       life += coin;
       PlayerPrefs.SetInt("LIFE" , life);
