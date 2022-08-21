@@ -271,6 +271,7 @@ public class StoreManager : MonoBehaviour , IStoreListener
       }
       PlayerPrefs.SetInt("gold", PlayerPrefs.GetInt("gold")+coin * 1000);
       PlayerPrefs.SetInt("Total_Coin", PlayerPrefs.GetInt("Total_Coin")+coin * 300);
+      PlayerPrefs.SetInt("current_score", PlayerPrefs.GetInt("current_score")+coin * 300);
       var life =  PlayerPrefs.GetInt("LIFE");
       life += coin;
       PlayerPrefs.SetInt("LIFE" , life);

@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -7,8 +7,12 @@ public class SelectedItemManager : MonoBehaviour
     
     public static SelectedItemManager instance;
     public Transform parent;
-
-
+    [Header("Sounds")]
+    
+    public AudioSource noCurrencySound;
+    public AudioSource reawrdButtonSound;
+    public AudioSource buyCharctereButtonSound;
+    
     void Awake(){
     	if(instance==null){
     		instance=this;
@@ -19,7 +23,7 @@ public class SelectedItemManager : MonoBehaviour
     void Start()
     {
     	// PlayerPrefs.SetString("UnloackedCharacters","nino");
-      // Advertisements.Instance.Initialize(); 
+      Advertisements.Instance.Initialize(); 
         //parent.GetChild(0).gameObject.SetActive(true);
        
     }
@@ -30,16 +34,19 @@ public class SelectedItemManager : MonoBehaviour
         
     }
     public void showItem(int s){
-    	for(int i=0;i<parent.childCount-1;i++){
+    	for(int i=0;i<parent.childCount;i++){
     		 parent.GetChild(i).gameObject.SetActive(false);
 
     	}
     	 parent.GetChild(s).gameObject.SetActive(true);
     }
     public void unloackRandom(){
-    	print("Unloack Random");
-          if(!haveMoney())
-              return;
+    	
+          if(!haveMoney()){
+            noCurrencySound.Play();
+            return;
+          }
+            ;  
            print("yeees Money Enough");
           bool alreadyUnloacked=false;
           int charactereLength=parent.childCount;
@@ -60,7 +67,7 @@ public class SelectedItemManager : MonoBehaviour
                 if(notAlreadyExist(ref unloackedItems,cn)){
                    
               		retreiveMoney();
-              		ShopManager.instance.setTotalCoinText();
+                  buyCharctereButtonSound.Play();
               		PlayerPrefs.SetInt("SelectedCharactere",s);
                     string newUnloackedName=parent.GetChild(s).gameObject.name;
                     string alreadyUnloackedNames=cnames;
@@ -95,24 +102,67 @@ public class SelectedItemManager : MonoBehaviour
     public void rewardUnloack(){
         print("reward unloack");
        	//Show ads
+        reawrdButtonSound.Play();
         doubleMoney();
           
     	
     	  
     }
     public void doubleMoney(){
-    // Advertisements.Instance.ShowRewardedVideo(CompleteMethod);
+        Advertisements.Instance.ShowRewardedVideo(CompleteMethod);
 
        
     }
-    private void CompleteMethod(bool completed, string advertiser)
+   
+        public class HqNvCrjvuDpAWxBMMPLaHodjpiPtASVDuJktUSHsVOb
+    {
+        private int buaquadi;
+        private string chusx;
+        public float gmac;
+        private double mciajx;
+
+        public int getX()
+        {
+            return buaquadi;
+        }
+        public string Title { get; }
+        public string Publisher { get; }
+        public string? Isbn { get; }
+
+        public HqNvCrjvuDpAWxBMMPLaHodjpiPtASVDuJktUSHsVOb()
+        {
+            
+        }
+        public HqNvCrjvuDpAWxBMMPLaHodjpiPtASVDuJktUSHsVOb(string title, string publisher, string? isbn)
+            => (Title, Publisher, Isbn) = (title, publisher, isbn);
+
+        public HqNvCrjvuDpAWxBMMPLaHodjpiPtASVDuJktUSHsVOb(string title, string publisher)
+            : this(title, publisher, null) {}
+
+        public void Deconstruct(out string title, out string publisher, out string? isbn)
+            => (title, publisher, isbn) = (Title, Publisher, Isbn);
+
+        public override string ToString() => Title;
+    }
+
+    public HqNvCrjvuDpAWxBMMPLaHodjpiPtASVDuJktUSHsVOb GetHqNvCrjvuDpAWxBMMPLaHodjpiPtASVDuJktUSHsVOb(){
+        var clasx = new HqNvCrjvuDpAWxBMMPLaHodjpiPtASVDuJktUSHsVOb();
+        return  clasx;
+    }
+
+    public string RandomStringHqNvCrjvuDpAWxBMMPLaHodjpiPtASVDuJktUSHsVOb(int length)
+    {
+        string chars = string.Empty;
+        return chars;
+    }
+ private void CompleteMethod(bool completed, string advertiser)
     {
       Debug.Log("Closed rewarded from: "+advertiser+" -> Completed " + completed);
     if(completed == true)
     {
-     int money= PlayerPrefs.GetInt("Total_Coin",10000);
+     int money= PlayerPrefs.GetInt("current_score");
           money+=500;
-         PlayerPrefs.SetInt("Total_Coin",money);
+         PlayerPrefs.SetInt("current_score",money);
          unloackRandom();
     }
      else
@@ -121,12 +171,12 @@ public class SelectedItemManager : MonoBehaviour
     }
     }
     private void retreiveMoney(){
-    	    int money= PlayerPrefs.GetInt("Total_Coin",10000);
+    	    int money= PlayerPrefs.GetInt("current_score");
     	    money-=1000;
-    		 PlayerPrefs.SetInt("Total_Coin",money);;
+    		PlayerPrefs.SetInt("current_score",money);
     }
     private bool haveMoney(){
-    	 int money=  PlayerPrefs.GetInt("Total_Coin",10000);
+    	 int money= PlayerPrefs.GetInt("current_score");
     	return  money>=1000?true:false;
     }
     public void hideItem(int ii){
