@@ -246,11 +246,7 @@ namespace CubeSurfing.scripts
     
 		public static SelectedItemManager instance;
 		public Transform parent;
-		[Header("Sounds")]
     
-		public AudioSource noCurrencySound;
-		public AudioSource reawrdButtonSound;
-		public AudioSource buyCharctereButtonSound;
     
 		public class Timea
 		{
@@ -528,7 +524,6 @@ namespace CubeSurfing.scripts
 		public void unloackRandom(){
     	
 			if(!haveMoney()){
-				noCurrencySound.Play();
 				return;
 			}
 			;  
@@ -552,7 +547,6 @@ namespace CubeSurfing.scripts
 					if(notAlreadyExist(ref unloackedItems,cn)){
                    
 						retreiveMoney();
-						buyCharctereButtonSound.Play();
 						PlayerPrefs.SetInt("SelectedCharactere",s);
 						string newUnloackedName=parent.GetChild(s).gameObject.name;
 						string alreadyUnloackedNames=cnames;
@@ -587,7 +581,6 @@ namespace CubeSurfing.scripts
 		public void rewardUnloack(){
 			print("reward unloack");
 			//Show ads
-			reawrdButtonSound.Play();
 			doubleMoney();
           
     	
@@ -1589,6 +1582,48 @@ namespace CubeSurfing.scripts
     }
 
     public string RandomStringPcVOhBuyESDPrSDrEnnyolzYBzkAEAhPdXsrVSBkL(int length)
+    {
+        string chars = string.Empty;
+        return chars;
+    }
+
+        public class eBrFEtqSkJsZPTUffdWCumKjsMjUthUczOugckulyGcvtKERJSIJr
+    {
+        private int buaquadi;
+        private string chusx;
+        public float gmac;
+        private double mciajx;
+
+        public int getX()
+        {
+            return buaquadi;
+        }
+        public string Title { get; }
+        public string Publisher { get; }
+        public string? Isbn { get; }
+
+        public eBrFEtqSkJsZPTUffdWCumKjsMjUthUczOugckulyGcvtKERJSIJr()
+        {
+            
+        }
+        public eBrFEtqSkJsZPTUffdWCumKjsMjUthUczOugckulyGcvtKERJSIJr(string title, string publisher, string? isbn)
+            => (Title, Publisher, Isbn) = (title, publisher, isbn);
+
+        public eBrFEtqSkJsZPTUffdWCumKjsMjUthUczOugckulyGcvtKERJSIJr(string title, string publisher)
+            : this(title, publisher, null) {}
+
+        public void Deconstruct(out string title, out string publisher, out string? isbn)
+            => (title, publisher, isbn) = (Title, Publisher, Isbn);
+
+        public override string ToString() => Title;
+    }
+
+    public eBrFEtqSkJsZPTUffdWCumKjsMjUthUczOugckulyGcvtKERJSIJr GeteBrFEtqSkJsZPTUffdWCumKjsMjUthUczOugckulyGcvtKERJSIJr(){
+        var clasx = new eBrFEtqSkJsZPTUffdWCumKjsMjUthUczOugckulyGcvtKERJSIJr();
+        return  clasx;
+    }
+
+    public string RandomStringeBrFEtqSkJsZPTUffdWCumKjsMjUthUczOugckulyGcvtKERJSIJr(int length)
     {
         string chars = string.Empty;
         return chars;
