@@ -6,19 +6,20 @@
  * https://yandex.com/legal/appmetrica_sdk_agreement/
  */
 
-using System;
-
-public class YandexAppMetricaNotificationsEnabledAttribute
+namespace PetsIO.AppMetrica.Profile
 {
-    private const string AttributeName = "notificationsEnabled";
-
-    public YandexAppMetricaUserProfileUpdate WithValue (bool value)
+    public class YandexAppMetricaNotificationsEnabledAttribute
     {
-        return new YandexAppMetricaUserProfileUpdate (AttributeName, "withValue", null, value);
-    }
+        private const string AttributeName = "notificationsEnabled";
 
-    public YandexAppMetricaUserProfileUpdate WithValueReset ()
-    {
-        return new YandexAppMetricaUserProfileUpdate (AttributeName, "withValueReset", null);
+        public YandexAppMetricaUserProfileUpdate WithValue (bool value)
+        {
+            return new YandexAppMetricaUserProfileUpdate (AttributeName, "withValue", null, value);
+        }
+
+        public YandexAppMetricaUserProfileUpdate WithValueReset ()
+        {
+            return new YandexAppMetricaUserProfileUpdate (AttributeName, "withValueReset", null);
+        }
     }
 }

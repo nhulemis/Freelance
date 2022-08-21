@@ -17,7 +17,7 @@ namespace PetsIO._Scripts.Menu
         // Start is called before the first frame update
         void Awake()
         {
-            AppMetrica.Instance.ReportEvent("MenuScene");
+            AppMetrica.AppMetrica.Instance.ReportEvent("MenuScene");
             //GameObject.Find("ADS").SendMessage("HideBanner");
             //PlayerPrefs.SetInt("showSkin", 2);
             showSkin = PlayerPrefs.GetInt("showSkin");
@@ -161,7 +161,7 @@ namespace PetsIO._Scripts.Menu
 
             if (nam != "b_left" || nam != "b_right")
             {
-                AppMetrica.Instance.ReportEvent("mn_" + nam);
+                AppMetrica.AppMetrica.Instance.ReportEvent("mn_" + nam);
             }
 
             if (nam == "b_info")

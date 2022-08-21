@@ -1,10 +1,9 @@
-using System;
 using UnityEngine;
 #if UNITY_EDITOR
 
 #endif
 
-namespace UnityStandardAssets.Cameras
+namespace PetsIO.Standard_Assets.CNControls.Examples.Scenes.Third_Person
 {
     [ExecuteInEditMode]
     public class AutoCam : PivotBasedCameraRig

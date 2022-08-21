@@ -1,6 +1,6 @@
 ﻿using UnityEngine.UI;
 
-namespace CnControls
+namespace PetsIO.Standard_Assets.CNControls.Scripts
 {
 	public class EmptyGraphic : Graphic
 	{

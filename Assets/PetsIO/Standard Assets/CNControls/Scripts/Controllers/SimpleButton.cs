@@ -1,7 +1,8 @@
+using PetsIO.Standard_Assets.CNControls.Scripts.CnInputSystem;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-namespace CnControls
+namespace PetsIO.Standard_Assets.CNControls.Scripts.Controllers
 {
     /// <summary>
     /// Simple button class

@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace PetsIO._Scripts.Menu
 {
@@ -50,7 +50,7 @@ namespace PetsIO._Scripts.Menu
     }
         void Start()
         {
-            AppMetrica.Instance.ReportEvent("firstScene");
+            AppMetrica.AppMetrica.Instance.ReportEvent("firstScene");
             if (PlayerPrefs.GetInt("firstStart") == 0)
             {
                 timer = 2.5f;

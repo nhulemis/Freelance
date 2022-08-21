@@ -1,5 +1,5 @@
-using CnControls;
 using PetsIO._Scripts.other;
+using PetsIO.Standard_Assets.CNControls.Scripts.CnInputSystem;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -708,11 +708,11 @@ namespace PetsIO._Scripts
                         GameObject.Find("DefeatSound").GetComponent<AudioSource>().Play();
                         GameObject.Find("Music").GetComponent<AudioSource>().Stop();
                         GameObject.Find("EndLevel").GetComponent<AudioSource>().Stop();
-                        AppMetrica.Instance.ReportEvent("gp_botKill");
+                        AppMetrica.AppMetrica.Instance.ReportEvent("gp_botKill");
                     }
                     else
                     {
-                        AppMetrica.Instance.ReportEvent("gp_youKill");
+                        AppMetrica.AppMetrica.Instance.ReportEvent("gp_youKill");
                     }
                 }
             }

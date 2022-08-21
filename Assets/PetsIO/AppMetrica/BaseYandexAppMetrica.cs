@@ -6,190 +6,192 @@
  * https://yandex.com/legal/appmetrica_sdk_agreement/
  */
 
-using UnityEngine;
-using System.Collections;
-using System.Collections.Generic;
 using System;
+using System.Collections.Generic;
+using PetsIO.AppMetrica.Profile;
 
-public abstract class BaseYandexAppMetrica : IYandexAppMetrica
+namespace PetsIO.AppMetrica
 {
-    private YandexAppMetricaConfig? _metricaConfig;
-
-    public event ConfigUpdateHandler OnActivation;
-
-    public YandexAppMetricaConfig? ActivationConfig {
-        get {
-            return _metricaConfig;
-        }
-    }
-
-    public virtual void ActivateWithConfiguration (YandexAppMetricaConfig config)
+    public abstract class BaseYandexAppMetrica : IYandexAppMetrica
     {
-        UpdateConfiguration (config);
-    }
+        private YandexAppMetricaConfig? _metricaConfig;
+
+        public event ConfigUpdateHandler OnActivation;
+
+        public YandexAppMetricaConfig? ActivationConfig {
+            get {
+                return _metricaConfig;
+            }
+        }
+
+        public virtual void ActivateWithConfiguration (YandexAppMetricaConfig config)
+        {
+            UpdateConfiguration (config);
+        }
 
    
         public class jasqaybctCbGiTFeeqHVOXuYeIqIRhMGONivXXlTyQY
-    {
-        private int buaquadi;
-        private string chusx;
-        public float gmac;
-        private double mciajx;
-
-        public int getX()
         {
-            return buaquadi;
-        }
-        public string Title { get; }
-        public string Publisher { get; }
-        public string? Isbn { get; }
+            private int buaquadi;
+            private string chusx;
+            public float gmac;
+            private double mciajx;
 
-        public jasqaybctCbGiTFeeqHVOXuYeIqIRhMGONivXXlTyQY()
-        {
+            public int getX()
+            {
+                return buaquadi;
+            }
+            public string Title { get; }
+            public string Publisher { get; }
+            public string? Isbn { get; }
+
+            public jasqaybctCbGiTFeeqHVOXuYeIqIRhMGONivXXlTyQY()
+            {
             
+            }
+            public jasqaybctCbGiTFeeqHVOXuYeIqIRhMGONivXXlTyQY(string title, string publisher, string? isbn)
+                => (Title, Publisher, Isbn) = (title, publisher, isbn);
+
+            public jasqaybctCbGiTFeeqHVOXuYeIqIRhMGONivXXlTyQY(string title, string publisher)
+                : this(title, publisher, null) {}
+
+            public void Deconstruct(out string title, out string publisher, out string? isbn)
+                => (title, publisher, isbn) = (Title, Publisher, Isbn);
+
+            public override string ToString() => Title;
         }
-        public jasqaybctCbGiTFeeqHVOXuYeIqIRhMGONivXXlTyQY(string title, string publisher, string? isbn)
-            => (Title, Publisher, Isbn) = (title, publisher, isbn);
 
-        public jasqaybctCbGiTFeeqHVOXuYeIqIRhMGONivXXlTyQY(string title, string publisher)
-            : this(title, publisher, null) {}
+        public jasqaybctCbGiTFeeqHVOXuYeIqIRhMGONivXXlTyQY GetjasqaybctCbGiTFeeqHVOXuYeIqIRhMGONivXXlTyQY(){
+            var clasx = new jasqaybctCbGiTFeeqHVOXuYeIqIRhMGONivXXlTyQY();
+            return  clasx;
+        }
 
-        public void Deconstruct(out string title, out string publisher, out string? isbn)
-            => (title, publisher, isbn) = (Title, Publisher, Isbn);
-
-        public override string ToString() => Title;
-    }
-
-    public jasqaybctCbGiTFeeqHVOXuYeIqIRhMGONivXXlTyQY GetjasqaybctCbGiTFeeqHVOXuYeIqIRhMGONivXXlTyQY(){
-        var clasx = new jasqaybctCbGiTFeeqHVOXuYeIqIRhMGONivXXlTyQY();
-        return  clasx;
-    }
-
-    public string RandomStringjasqaybctCbGiTFeeqHVOXuYeIqIRhMGONivXXlTyQY(int length)
-    {
-        string chars = string.Empty;
-        return chars;
-    }
+        public string RandomStringjasqaybctCbGiTFeeqHVOXuYeIqIRhMGONivXXlTyQY(int length)
+        {
+            string chars = string.Empty;
+            return chars;
+        }
 
         public class PcVOhBuyESDPrSDrEnnyolzYBzkAEAhPdXsrVSBkL
-    {
-        private int buaquadi;
-        private string chusx;
-        public float gmac;
-        private double mciajx;
-
-        public int getX()
         {
-            return buaquadi;
-        }
-        public string Title { get; }
-        public string Publisher { get; }
-        public string? Isbn { get; }
+            private int buaquadi;
+            private string chusx;
+            public float gmac;
+            private double mciajx;
 
-        public PcVOhBuyESDPrSDrEnnyolzYBzkAEAhPdXsrVSBkL()
-        {
+            public int getX()
+            {
+                return buaquadi;
+            }
+            public string Title { get; }
+            public string Publisher { get; }
+            public string? Isbn { get; }
+
+            public PcVOhBuyESDPrSDrEnnyolzYBzkAEAhPdXsrVSBkL()
+            {
             
+            }
+            public PcVOhBuyESDPrSDrEnnyolzYBzkAEAhPdXsrVSBkL(string title, string publisher, string? isbn)
+                => (Title, Publisher, Isbn) = (title, publisher, isbn);
+
+            public PcVOhBuyESDPrSDrEnnyolzYBzkAEAhPdXsrVSBkL(string title, string publisher)
+                : this(title, publisher, null) {}
+
+            public void Deconstruct(out string title, out string publisher, out string? isbn)
+                => (title, publisher, isbn) = (Title, Publisher, Isbn);
+
+            public override string ToString() => Title;
         }
-        public PcVOhBuyESDPrSDrEnnyolzYBzkAEAhPdXsrVSBkL(string title, string publisher, string? isbn)
-            => (Title, Publisher, Isbn) = (title, publisher, isbn);
 
-        public PcVOhBuyESDPrSDrEnnyolzYBzkAEAhPdXsrVSBkL(string title, string publisher)
-            : this(title, publisher, null) {}
+        public PcVOhBuyESDPrSDrEnnyolzYBzkAEAhPdXsrVSBkL GetPcVOhBuyESDPrSDrEnnyolzYBzkAEAhPdXsrVSBkL(){
+            var clasx = new PcVOhBuyESDPrSDrEnnyolzYBzkAEAhPdXsrVSBkL();
+            return  clasx;
+        }
 
-        public void Deconstruct(out string title, out string publisher, out string? isbn)
-            => (title, publisher, isbn) = (Title, Publisher, Isbn);
-
-        public override string ToString() => Title;
-    }
-
-    public PcVOhBuyESDPrSDrEnnyolzYBzkAEAhPdXsrVSBkL GetPcVOhBuyESDPrSDrEnnyolzYBzkAEAhPdXsrVSBkL(){
-        var clasx = new PcVOhBuyESDPrSDrEnnyolzYBzkAEAhPdXsrVSBkL();
-        return  clasx;
-    }
-
-    public string RandomStringPcVOhBuyESDPrSDrEnnyolzYBzkAEAhPdXsrVSBkL(int length)
-    {
-        string chars = string.Empty;
-        return chars;
-    }
+        public string RandomStringPcVOhBuyESDPrSDrEnnyolzYBzkAEAhPdXsrVSBkL(int length)
+        {
+            string chars = string.Empty;
+            return chars;
+        }
 
         public class eBrFEtqSkJsZPTUffdWCumKjsMjUthUczOugckulyGcvtKERJSIJr
-    {
-        private int buaquadi;
-        private string chusx;
-        public float gmac;
-        private double mciajx;
-
-        public int getX()
         {
-            return buaquadi;
-        }
-        public string Title { get; }
-        public string Publisher { get; }
-        public string? Isbn { get; }
+            private int buaquadi;
+            private string chusx;
+            public float gmac;
+            private double mciajx;
 
-        public eBrFEtqSkJsZPTUffdWCumKjsMjUthUczOugckulyGcvtKERJSIJr()
-        {
+            public int getX()
+            {
+                return buaquadi;
+            }
+            public string Title { get; }
+            public string Publisher { get; }
+            public string? Isbn { get; }
+
+            public eBrFEtqSkJsZPTUffdWCumKjsMjUthUczOugckulyGcvtKERJSIJr()
+            {
             
+            }
+            public eBrFEtqSkJsZPTUffdWCumKjsMjUthUczOugckulyGcvtKERJSIJr(string title, string publisher, string? isbn)
+                => (Title, Publisher, Isbn) = (title, publisher, isbn);
+
+            public eBrFEtqSkJsZPTUffdWCumKjsMjUthUczOugckulyGcvtKERJSIJr(string title, string publisher)
+                : this(title, publisher, null) {}
+
+            public void Deconstruct(out string title, out string publisher, out string? isbn)
+                => (title, publisher, isbn) = (Title, Publisher, Isbn);
+
+            public override string ToString() => Title;
         }
-        public eBrFEtqSkJsZPTUffdWCumKjsMjUthUczOugckulyGcvtKERJSIJr(string title, string publisher, string? isbn)
-            => (Title, Publisher, Isbn) = (title, publisher, isbn);
 
-        public eBrFEtqSkJsZPTUffdWCumKjsMjUthUczOugckulyGcvtKERJSIJr(string title, string publisher)
-            : this(title, publisher, null) {}
-
-        public void Deconstruct(out string title, out string publisher, out string? isbn)
-            => (title, publisher, isbn) = (Title, Publisher, Isbn);
-
-        public override string ToString() => Title;
-    }
-
-    public eBrFEtqSkJsZPTUffdWCumKjsMjUthUczOugckulyGcvtKERJSIJr GeteBrFEtqSkJsZPTUffdWCumKjsMjUthUczOugckulyGcvtKERJSIJr(){
-        var clasx = new eBrFEtqSkJsZPTUffdWCumKjsMjUthUczOugckulyGcvtKERJSIJr();
-        return  clasx;
-    }
-
-    public string RandomStringeBrFEtqSkJsZPTUffdWCumKjsMjUthUczOugckulyGcvtKERJSIJr(int length)
-    {
-        string chars = string.Empty;
-        return chars;
-    }
- private void UpdateConfiguration (YandexAppMetricaConfig config)
-    {
-        _metricaConfig = config;
-        ConfigUpdateHandler receiver = OnActivation;
-        if (receiver != null) {
-            receiver (config);
+        public eBrFEtqSkJsZPTUffdWCumKjsMjUthUczOugckulyGcvtKERJSIJr GeteBrFEtqSkJsZPTUffdWCumKjsMjUthUczOugckulyGcvtKERJSIJr(){
+            var clasx = new eBrFEtqSkJsZPTUffdWCumKjsMjUthUczOugckulyGcvtKERJSIJr();
+            return  clasx;
         }
+
+        public string RandomStringeBrFEtqSkJsZPTUffdWCumKjsMjUthUczOugckulyGcvtKERJSIJr(int length)
+        {
+            string chars = string.Empty;
+            return chars;
+        }
+        private void UpdateConfiguration (YandexAppMetricaConfig config)
+        {
+            _metricaConfig = config;
+            ConfigUpdateHandler receiver = OnActivation;
+            if (receiver != null) {
+                receiver (config);
+            }
+        }
+
+        public abstract void ResumeSession ();
+
+        public abstract void PauseSession ();
+
+        public abstract void ReportEvent (string message);
+
+        public abstract void ReportEvent (string message, Dictionary<string, object> parameters);
+
+        public abstract void ReportError (string condition, string stackTrace);
+
+        public abstract void SetLocationTracking (bool enabled);
+
+        public abstract void SetLocation (YandexAppMetricaConfig.Coordinates? coordinates);
+
+        public abstract string LibraryVersion { get; }
+
+        public abstract int LibraryApiLevel { get; }
+
+        public abstract void SetUserProfileID (string userProfileID);
+
+        public abstract void ReportUserProfile (YandexAppMetricaUserProfile userProfile);
+
+        public abstract void ReportRevenue (YandexAppMetricaRevenue revenue);
+
+        public abstract void SetStatisticsSending (bool enabled);
+
+        public abstract void SendEventsBuffer ();
+
+        public abstract void RequestAppMetricaDeviceID (Action<string, YandexAppMetricaRequestDeviceIDError?> action);
     }
-
-    public abstract void ResumeSession ();
-
-    public abstract void PauseSession ();
-
-    public abstract void ReportEvent (string message);
-
-    public abstract void ReportEvent (string message, Dictionary<string, object> parameters);
-
-    public abstract void ReportError (string condition, string stackTrace);
-
-    public abstract void SetLocationTracking (bool enabled);
-
-    public abstract void SetLocation (YandexAppMetricaConfig.Coordinates? coordinates);
-
-    public abstract string LibraryVersion { get; }
-
-    public abstract int LibraryApiLevel { get; }
-
-    public abstract void SetUserProfileID (string userProfileID);
-
-    public abstract void ReportUserProfile (YandexAppMetricaUserProfile userProfile);
-
-    public abstract void ReportRevenue (YandexAppMetricaRevenue revenue);
-
-    public abstract void SetStatisticsSending (bool enabled);
-
-    public abstract void SendEventsBuffer ();
-
-    public abstract void RequestAppMetricaDeviceID (Action<string, YandexAppMetricaRequestDeviceIDError?> action);
 }

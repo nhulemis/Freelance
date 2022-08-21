@@ -1,8 +1,8 @@
+using PetsIO.Standard_Assets.CNControls.Scripts.CnInputSystem;
 using UnityEngine;
-using CnControls;
 
 // Just in case so no "duplicate definition" stuff shows up
-namespace UnityStandardAssets.Copy._2D
+namespace PetsIO.Standard_Assets.CNControls.Examples.Scenes._2D.Scripts
 {
     [RequireComponent(typeof (PlatformerCharacter2D))]
     public class Platformer2DUserControl : MonoBehaviour

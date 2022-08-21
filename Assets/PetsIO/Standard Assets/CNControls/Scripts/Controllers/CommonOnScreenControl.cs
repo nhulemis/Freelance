@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 
-public class CommonOnScreenControl : MonoBehaviour
+namespace PetsIO.Standard_Assets.CNControls.Scripts.Controllers
 {
+    public class CommonOnScreenControl : MonoBehaviour
+    {
 
+    }
 }

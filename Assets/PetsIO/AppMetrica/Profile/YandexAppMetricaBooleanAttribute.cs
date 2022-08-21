@@ -6,30 +6,31 @@
  * https://yandex.com/legal/appmetrica_sdk_agreement/
  */
 
-using System;
-
-public class YandexAppMetricaBooleanAttribute
+namespace PetsIO.AppMetrica.Profile
 {
-    private const string AttributeName = "customBoolean";
-
-    private readonly string Key;
-
-    public YandexAppMetricaBooleanAttribute (string key) {
-        Key = key;
-    }
-
-    public YandexAppMetricaUserProfileUpdate WithValue (bool value)
+    public class YandexAppMetricaBooleanAttribute
     {
-        return new YandexAppMetricaUserProfileUpdate (AttributeName, "withValue", Key, value);
-    }
+        private const string AttributeName = "customBoolean";
 
-    public YandexAppMetricaUserProfileUpdate WithValueIfUndefined (bool value)
-    {
-        return new YandexAppMetricaUserProfileUpdate (AttributeName, "withValueIfUndefined", Key, value);
-    }
+        private readonly string Key;
 
-    public YandexAppMetricaUserProfileUpdate WithValueReset ()
-    {
-        return new YandexAppMetricaUserProfileUpdate (AttributeName, "withValueReset", Key);
+        public YandexAppMetricaBooleanAttribute (string key) {
+            Key = key;
+        }
+
+        public YandexAppMetricaUserProfileUpdate WithValue (bool value)
+        {
+            return new YandexAppMetricaUserProfileUpdate (AttributeName, "withValue", Key, value);
+        }
+
+        public YandexAppMetricaUserProfileUpdate WithValueIfUndefined (bool value)
+        {
+            return new YandexAppMetricaUserProfileUpdate (AttributeName, "withValueIfUndefined", Key, value);
+        }
+
+        public YandexAppMetricaUserProfileUpdate WithValueReset ()
+        {
+            return new YandexAppMetricaUserProfileUpdate (AttributeName, "withValueReset", Key);
+        }
     }
 }

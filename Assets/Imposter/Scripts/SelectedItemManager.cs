@@ -61,7 +61,6 @@ namespace Imposter.Scripts
         void Start()
         {
             // PlayerPrefs.SetString("UnloackedCharacters","nino");
-            Advertisements.Instance.Initialize(); 
             //parent.GetChild(0).gameObject.SetActive(true);
        
         }

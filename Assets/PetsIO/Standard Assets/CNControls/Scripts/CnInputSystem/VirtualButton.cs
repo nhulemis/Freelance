@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace CnControls
+namespace PetsIO.Standard_Assets.CNControls.Scripts.CnInputSystem
 {
 	/// <summary>
 	/// Virtual button class

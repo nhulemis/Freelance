@@ -1,7 +1,7 @@
-﻿using CnControls;
+﻿using PetsIO.Standard_Assets.CNControls.Scripts.CnInputSystem;
 using UnityEngine;
 
-namespace Examples.Scenes.TouchpadCamera
+namespace PetsIO.Standard_Assets.CNControls.Examples.Scenes.Touchpad_Camera
 {
     public class RotateCamera : MonoBehaviour
     {

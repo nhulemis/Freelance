@@ -6,26 +6,27 @@
  * https://yandex.com/legal/appmetrica_sdk_agreement/
  */
 
-using System;
-
-public class YandexAppMetricaGenderAttribute
+namespace PetsIO.AppMetrica.Profile
 {
-    private const string AttributeName = "gender";
-
-    public enum Gender
+    public class YandexAppMetricaGenderAttribute
     {
-        MALE,
-        FEMALE,
-        OTHER
-    }
+        private const string AttributeName = "gender";
 
-    public YandexAppMetricaUserProfileUpdate WithValue (Gender value)
-    {
-        return new YandexAppMetricaUserProfileUpdate (AttributeName, "withValue", null, value.ToString ());
-    }
+        public enum Gender
+        {
+            MALE,
+            FEMALE,
+            OTHER
+        }
 
-    public YandexAppMetricaUserProfileUpdate WithValueReset ()
-    {
-        return new YandexAppMetricaUserProfileUpdate (AttributeName, "withValueReset", null);
+        public YandexAppMetricaUserProfileUpdate WithValue (Gender value)
+        {
+            return new YandexAppMetricaUserProfileUpdate (AttributeName, "withValue", null, value.ToString ());
+        }
+
+        public YandexAppMetricaUserProfileUpdate WithValueReset ()
+        {
+            return new YandexAppMetricaUserProfileUpdate (AttributeName, "withValueReset", null);
+        }
     }
 }

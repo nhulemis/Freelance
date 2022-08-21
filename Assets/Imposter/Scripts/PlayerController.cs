@@ -1,4 +1,5 @@
 using System.Collections;
+using Imposter.Joystick_Pack.Scripts.Joysticks;
 using UnityEngine;
 
 namespace Imposter.Scripts

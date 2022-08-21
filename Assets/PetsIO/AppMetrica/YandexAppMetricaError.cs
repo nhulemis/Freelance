@@ -6,11 +6,12 @@
  * https://yandex.com/legal/appmetrica_sdk_agreement/
  */
 
-using System;
-
-public enum YandexAppMetricaRequestDeviceIDError
+namespace PetsIO.AppMetrica
 {
-    UNKNOWN,
-    NETWORK,
-    INVALID_RESPONSE
+    public enum YandexAppMetricaRequestDeviceIDError
+    {
+        UNKNOWN,
+        NETWORK,
+        INVALID_RESPONSE
+    }
 }

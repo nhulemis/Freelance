@@ -76,7 +76,6 @@ namespace Imposter.Scripts
                 //SceneManager.LoadScene(currentLevelIndex);
             }
             currentLevelText.text = "level : " + (currentLevelIndex+1);
-            Advertisements.Instance.Initialize();
         }
 
         // Update is called once per frame
@@ -92,12 +91,10 @@ namespace Imposter.Scripts
             winPanel.SetActive(true);
             GameManager.instance.endGame();
             coinM.animate(target.position,10);
-            Advertisements.Instance.ShowInterstitial();
 
 
         }
         public void loose(){
-            Advertisements.Instance.ShowInterstitial();
 
             //loosePanel.SetActive(true);
             GameManager.instance.endGame();
@@ -165,7 +162,6 @@ namespace Imposter.Scripts
 
         }
         public void nextWithReward(){
-            Advertisements.Instance.ShowRewardedVideo(CompleteMethod);
         }
         private void CompleteMethod(bool completed, string advertiser) {
             Debug.Log("Closed rewarded from: "+advertiser+" -> Completed " + completed);

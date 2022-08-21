@@ -19,7 +19,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Text;
 
-namespace YMMJSONUtils
+namespace PetsIO.AppMetrica
 {
     public enum JObjectKind
     {

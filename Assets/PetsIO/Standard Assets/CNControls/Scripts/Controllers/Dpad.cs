@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.EventSystems;
 
-namespace CnControls
+namespace PetsIO.Standard_Assets.CNControls.Scripts.Controllers
 {
     public class Dpad : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     {

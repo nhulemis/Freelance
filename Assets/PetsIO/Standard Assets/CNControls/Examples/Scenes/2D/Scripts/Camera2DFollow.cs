@@ -1,7 +1,6 @@
-using System;
 using UnityEngine;
 
-namespace UnityStandardAssets._2D
+namespace PetsIO.Standard_Assets.CNControls.Examples.Scenes._2D.Scripts
 {
     public class Camera2DFollow : MonoBehaviour
     {

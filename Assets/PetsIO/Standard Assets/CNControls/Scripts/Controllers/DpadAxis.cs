@@ -1,6 +1,7 @@
+using PetsIO.Standard_Assets.CNControls.Scripts.CnInputSystem;
 using UnityEngine;
 
-namespace CnControls
+namespace PetsIO.Standard_Assets.CNControls.Scripts.Controllers
 {
     public class DpadAxis : MonoBehaviour
     {

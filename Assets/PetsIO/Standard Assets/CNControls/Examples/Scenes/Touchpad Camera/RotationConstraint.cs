@@ -1,7 +1,6 @@
 using UnityEngine;
-using System.Collections;
 
-namespace Examples.Scenes.TouchpadCamera
+namespace PetsIO.Standard_Assets.CNControls.Examples.Scenes.Touchpad_Camera
 {
     public class RotationConstraint : MonoBehaviour
     {

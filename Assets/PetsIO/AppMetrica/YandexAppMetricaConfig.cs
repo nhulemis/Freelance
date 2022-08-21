@@ -6,69 +6,72 @@
  * https://yandex.com/legal/appmetrica_sdk_agreement/
  */
 
-using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine;
 
-[System.Serializable]
-public struct YandexAppMetricaConfig
+namespace PetsIO.AppMetrica
 {
     [System.Serializable]
-    public struct Coordinates
+    public struct YandexAppMetricaConfig
     {
-        public double Latitude { get; set; }
+        [System.Serializable]
+        public struct Coordinates
+        {
+            public double Latitude { get; set; }
 
-        public double Longitude { get; set; }
+            public double Longitude { get; set; }
+        }
+
+        public string ApiKey { get; private set; }
+
+        public string AppVersion { get; set; }
+
+        public Coordinates? Location { get; set; }
+
+        public int? SessionTimeout { get; set; }
+
+        public bool? CrashReporting { get; set; }
+
+        public bool? LocationTracking { get; set; }
+
+        public bool? Logs { get; set; }
+
+        public bool? InstalledAppCollecting { get; set; }
+
+        public bool? HandleFirstActivationAsUpdate { get; set; }
+
+        public YandexAppMetricaPreloadInfo? PreloadInfo { get; set; }
+
+        public bool? StatisticsSending { get; set; }
+
+        public YandexAppMetricaConfig (string apiKey)
+        {
+            ApiKey = apiKey;
+            AppVersion = null;
+            Location = null;
+            SessionTimeout = null;
+            CrashReporting = null;
+            LocationTracking = null;
+            Logs = null;
+            InstalledAppCollecting = null;
+            HandleFirstActivationAsUpdate = null;
+            PreloadInfo = null;
+            StatisticsSending = null;
+        }
     }
 
-    public string ApiKey { get; private set; }
-
-    public string AppVersion { get; set; }
-
-    public Coordinates? Location { get; set; }
-
-    public int? SessionTimeout { get; set; }
-
-    public bool? CrashReporting { get; set; }
-
-    public bool? LocationTracking { get; set; }
-
-    public bool? Logs { get; set; }
-
-    public bool? InstalledAppCollecting { get; set; }
-
-    public bool? HandleFirstActivationAsUpdate { get; set; }
-
-    public YandexAppMetricaPreloadInfo? PreloadInfo { get; set; }
-
-    public bool? StatisticsSending { get; set; }
-
-    public YandexAppMetricaConfig (string apiKey)
+    [System.Serializable]
+    public struct YandexAppMetricaPreloadInfo
     {
-        ApiKey = apiKey;
-        AppVersion = null;
-        Location = null;
-        SessionTimeout = null;
-        CrashReporting = null;
-        LocationTracking = null;
-        Logs = null;
-        InstalledAppCollecting = null;
-        HandleFirstActivationAsUpdate = null;
-        PreloadInfo = null;
-        StatisticsSending = null;
-    }
-}
+        public string TrackingId { get; private set; }
 
-[System.Serializable]
-public struct YandexAppMetricaPreloadInfo
-{
-    public string TrackingId { get; private set; }
+        public Dictionary<string, string> AdditionalInfo { get; private set; }
 
-    public Dictionary<string, string> AdditionalInfo { get; private set; }
-
-    public YandexAppMetricaPreloadInfo (string trackingId)
-    {
-        TrackingId = trackingId;
-        AdditionalInfo = new Dictionary<string, string> ();
+        public YandexAppMetricaPreloadInfo (string trackingId)
+        {
+            TrackingId = trackingId;
+            AdditionalInfo = new Dictionary<string, string> ();
+        }
     }
 }

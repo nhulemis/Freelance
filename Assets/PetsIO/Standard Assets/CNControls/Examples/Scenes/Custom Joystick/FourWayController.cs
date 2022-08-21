@@ -1,7 +1,7 @@
-using CnControls;
+using PetsIO.Standard_Assets.CNControls.Scripts.CnInputSystem;
 using UnityEngine;
 
-namespace CustomJoystick
+namespace PetsIO.Standard_Assets.CNControls.Examples.Scenes.Custom_Joystick
 {
     public class FourWayController : MonoBehaviour
     {

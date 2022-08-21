@@ -1,7 +1,6 @@
-using System;
 using UnityEngine;
 
-namespace UnityStandardAssets.Cameras
+namespace PetsIO.Standard_Assets.CNControls.Examples.Scenes.Third_Person
 {
     public abstract class AbstractTargetFollower : MonoBehaviour
     {

@@ -1,9 +1,10 @@
 using System;
+using PetsIO.Standard_Assets.CNControls.Scripts.CnInputSystem;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-namespace CnControls
+namespace PetsIO.Standard_Assets.CNControls.Scripts.Controllers
 {
     [Flags]
     public enum ControlMovementDirection

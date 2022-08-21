@@ -96,7 +96,7 @@ namespace PetsIO._Scripts
                     GameObject.Find("DefeatSound").GetComponent<AudioSource>().Play();
                     GameObject.Find("Music").GetComponent<AudioSource>().Stop();
                     GameObject.Find("EndLevel").GetComponent<AudioSource>().Stop();
-                    AppMetrica.Instance.ReportEvent("gp_farmerKill");
+                    AppMetrica.AppMetrica.Instance.ReportEvent("gp_farmerKill");
                 }
                 Destroy(collision.gameObject);
             }

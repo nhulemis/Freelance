@@ -69,7 +69,7 @@ namespace PetsIO._Scripts
     }
         void Start()
         {
-            AppMetrica.Instance.ReportEvent("gameScene");
+            AppMetrica.AppMetrica.Instance.ReportEvent("gameScene");
             Hero = GameObject.Find("Hero");
             halfTime = gameTimer * 0.5f;
             timer = 1;
@@ -143,7 +143,7 @@ namespace PetsIO._Scripts
                     s.transform.localEulerAngles = new Vector3(0,0,0);
                     s.name = "tapToContinue";
                 
-                    AppMetrica.Instance.ReportEvent("halftimeStart");
+                    AppMetrica.AppMetrica.Instance.ReportEvent("halftimeStart");
                     Destroy(GameObject.Find("halfTimerGobj"));
                     ht = 2;
                 }
@@ -155,7 +155,7 @@ namespace PetsIO._Scripts
                         Time.timeScale = 1;
                     stepGame = 1;
                     timer = 5.113f;
-                    AppMetrica.Instance.ReportEvent("halftimeEnd");
+                    AppMetrica.AppMetrica.Instance.ReportEvent("halftimeEnd");
                     Destroy(GameObject.Find("tapToContinue"));
                 }
             }
@@ -183,7 +183,7 @@ namespace PetsIO._Scripts
                 if (timer < 0 || stepGame == 2)
                 {
                 
-                    AppMetrica.Instance.ReportEvent("finishedTime");
+                    AppMetrica.AppMetrica.Instance.ReportEvent("finishedTime");
                     GameFinished();
                 }
             
@@ -224,21 +224,21 @@ namespace PetsIO._Scripts
                         }
                         if (gname == "b_getit")
                         {
-                            AppMetrica.Instance.ReportEvent("gp_b_getIt");
+                            AppMetrica.AppMetrica.Instance.ReportEvent("gp_b_getIt");
                             timer = 9999f;
                             //GameObject.Find("ADS").SendMessage("ShowRewarded", 1);
                             //transform.position = Vector3.up;
                         }
                         if (gname == "b_toMainMenu")
                         {
-                            AppMetrica.Instance.ReportEvent("gp_b_mainmenu");
+                            AppMetrica.AppMetrica.Instance.ReportEvent("gp_b_mainmenu");
                             //GameObject.Find("ADS").SendMessage("ShowInterstitial");
                             Time.timeScale = 1;
                             Application.LoadLevel("menu");
                         }
                         if (gname == "b_receivex2")
                         {
-                            AppMetrica.Instance.ReportEvent("gp_b_receivex2");
+                            AppMetrica.AppMetrica.Instance.ReportEvent("gp_b_receivex2");
                             timer = 9999f;
                             //GameObject.Find("ADS").SendMessage("ShowRewarded", 2);
                             //Time.timeScale = 1;

@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-namespace CnControls
+namespace PetsIO.Standard_Assets.CNControls.Scripts.CnInputSystem
 {
     /// <summary>
     /// Common input manager class

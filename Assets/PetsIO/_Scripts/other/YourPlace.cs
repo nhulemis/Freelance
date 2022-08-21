@@ -59,7 +59,7 @@ namespace PetsIO._Scripts.other
                 }
             }
         
-            AppMetrica.Instance.ReportEvent("gp_ss"+"-place");
+            AppMetrica.AppMetrica.Instance.ReportEvent("gp_ss"+"-place");
             GetComponent<TextMesh>().text = ss;
             Destroy((this));
         }

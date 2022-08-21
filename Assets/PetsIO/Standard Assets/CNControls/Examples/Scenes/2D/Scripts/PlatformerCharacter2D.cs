@@ -1,8 +1,7 @@
-using System;
 using UnityEngine;
 
 // Just in case so no "duplicate definition" stuff shows up
-namespace UnityStandardAssets.Copy._2D
+namespace PetsIO.Standard_Assets.CNControls.Examples.Scenes._2D.Scripts
 {
     public class PlatformerCharacter2D : MonoBehaviour
     {

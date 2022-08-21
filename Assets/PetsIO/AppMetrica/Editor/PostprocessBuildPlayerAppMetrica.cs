@@ -6,50 +6,49 @@
  * https://yandex.com/legal/appmetrica_sdk_agreement/
  */
 
-using UnityEngine;
 using UnityEditor;
 using UnityEditor.Callbacks;
-using System.IO;
-using System.Collections;
 #if UNITY_IOS
 using UnityEditor.iOS.Xcode;
 #endif
 
-/// <summary>
-/// Postprocess build player for Metrica.
-/// See https://bitbucket.org/Unity-Technologies/iosnativecodesamples/src/ae6a0a2c02363d35f954d244a6eec91c0e0bf194/NativeIntegration/Misc/UpdateXcodeProject/
-/// </summary>
-
-public class PostprocessBuildPlayerAppMetrica
+namespace PetsIO.AppMetrica.Editor
 {
-    private static readonly string[] StrongFrameworks = {
-        "SystemConfiguration",
-        "UIKit",
-        "Foundation",
-        "CoreTelephony",
-        "CoreLocation",
-        "CoreGraphics",
-        "AdSupport",
-        "Security"
-    };
+    /// <summary>
+    /// Postprocess build player for Metrica.
+    /// See https://bitbucket.org/Unity-Technologies/iosnativecodesamples/src/ae6a0a2c02363d35f954d244a6eec91c0e0bf194/NativeIntegration/Misc/UpdateXcodeProject/
+    /// </summary>
 
-    private static readonly string[] WeakFrameworks = {
-        "SafariServices"
-    };
-
-    private static readonly string[] Libraries = {
-        "z",
-        "sqlite3",
-        "c++"
-    };
-
-    private static readonly string[] LDFlags = {
-        "-ObjC"
-    };
-
-    [PostProcessBuild]
-    public static void OnPostprocessBuild (BuildTarget buildTarget, string path)
+    public class PostprocessBuildPlayerAppMetrica
     {
+        private static readonly string[] StrongFrameworks = {
+            "SystemConfiguration",
+            "UIKit",
+            "Foundation",
+            "CoreTelephony",
+            "CoreLocation",
+            "CoreGraphics",
+            "AdSupport",
+            "Security"
+        };
+
+        private static readonly string[] WeakFrameworks = {
+            "SafariServices"
+        };
+
+        private static readonly string[] Libraries = {
+            "z",
+            "sqlite3",
+            "c++"
+        };
+
+        private static readonly string[] LDFlags = {
+            "-ObjC"
+        };
+
+        [PostProcessBuild]
+        public static void OnPostprocessBuild (BuildTarget buildTarget, string path)
+        {
 #if UNITY_IPHONE || UNITY_IOS
 #if UNITY_5 || UNITY_2017_1_OR_NEWER
         var expectedTarget = BuildTarget.iOS;
@@ -84,5 +83,6 @@ public class PostprocessBuildPlayerAppMetrica
             File.WriteAllText (projectPath, project.WriteToString ());
         }
 #endif
+        }
     }
 }

@@ -6,31 +6,32 @@
  * https://yandex.com/legal/appmetrica_sdk_agreement/
  */
 
-using System;
-
-public class YandexAppMetricaNumberAttribute
+namespace PetsIO.AppMetrica.Profile
 {
-    private const string AttributeName = "customNumber";
-
-    private readonly string Key;
-
-    public YandexAppMetricaNumberAttribute (string key)
+    public class YandexAppMetricaNumberAttribute
     {
-        Key = key;
-    }
+        private const string AttributeName = "customNumber";
 
-    public YandexAppMetricaUserProfileUpdate WithValue (double value)
-    {
-        return new YandexAppMetricaUserProfileUpdate (AttributeName, "withValue", Key, value);
-    }
+        private readonly string Key;
 
-    public YandexAppMetricaUserProfileUpdate WithValueIfUndefined (double value)
-    {
-        return new YandexAppMetricaUserProfileUpdate (AttributeName, "withValueIfUndefined", Key, value);
-    }
+        public YandexAppMetricaNumberAttribute (string key)
+        {
+            Key = key;
+        }
 
-    public YandexAppMetricaUserProfileUpdate WithValueReset ()
-    {
-        return new YandexAppMetricaUserProfileUpdate (AttributeName, "withValueReset", Key);
+        public YandexAppMetricaUserProfileUpdate WithValue (double value)
+        {
+            return new YandexAppMetricaUserProfileUpdate (AttributeName, "withValue", Key, value);
+        }
+
+        public YandexAppMetricaUserProfileUpdate WithValueIfUndefined (double value)
+        {
+            return new YandexAppMetricaUserProfileUpdate (AttributeName, "withValueIfUndefined", Key, value);
+        }
+
+        public YandexAppMetricaUserProfileUpdate WithValueReset ()
+        {
+            return new YandexAppMetricaUserProfileUpdate (AttributeName, "withValueReset", Key);
+        }
     }
 }

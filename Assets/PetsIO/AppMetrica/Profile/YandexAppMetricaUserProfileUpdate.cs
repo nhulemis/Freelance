@@ -6,23 +6,24 @@
  * https://yandex.com/legal/appmetrica_sdk_agreement/
  */
 
-using System;
-
-public struct YandexAppMetricaUserProfileUpdate
+namespace PetsIO.AppMetrica.Profile
 {
-    public string AttributeName { get; private set; }
-
-    public string MethodName { get; private set; }
-
-    public string Key { get; private set; }
-
-    public object[] Values { get; private set; }
-
-    public YandexAppMetricaUserProfileUpdate (string attributeName, string methodName, string key, params object[] values)
+    public struct YandexAppMetricaUserProfileUpdate
     {
-        AttributeName = attributeName;
-        MethodName = methodName;
-        Key = key;
-        Values = values;
+        public string AttributeName { get; private set; }
+
+        public string MethodName { get; private set; }
+
+        public string Key { get; private set; }
+
+        public object[] Values { get; private set; }
+
+        public YandexAppMetricaUserProfileUpdate (string attributeName, string methodName, string key, params object[] values)
+        {
+            AttributeName = attributeName;
+            MethodName = methodName;
+            Key = key;
+            Values = values;
+        }
     }
 }
