@@ -288,7 +288,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &321533481
 RectTransform:
   m_ObjectHideFlags: 0
@@ -894,9 +894,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: New Text
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c9f0ab9a170fa4c3596972aa1db04a9a, type: 2}
-  m_sharedMaterial: {fileID: 2081446301306759604, guid: c9f0ab9a170fa4c3596972aa1db04a9a,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1011,10 +1010,10 @@ RectTransform:
   m_Father: {fileID: 2301484139470335903}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0.001953125, y: 169.50098}
-  m_SizeDelta: {x: 690, y: 216.9174}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -8.5, y: 484.21313}
+  m_SizeDelta: {x: 0, y: 345.3438}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5722795233453526444
 CanvasRenderer:
@@ -1279,11 +1278,11 @@ RectTransform:
   m_Father: {fileID: 2301484139640769871}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -400.70557, y: -619.4829}
-  m_SizeDelta: {x: 801.41113, y: 1238.9658}
-  m_Pivot: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2301484139470335896
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1299,7 +1298,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2301484139470335900}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -1329,7 +1328,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2301484139470335900}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
   m_Name: 
@@ -1442,9 +1441,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: You can buy somthing here
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: e0962d31f1f084fa3ba7147d76f5b6e8, type: 2}
-  m_sharedMaterial: {fileID: 1653631458307283989, guid: e0962d31f1f084fa3ba7147d76f5b6e8,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1578,9 +1576,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Store
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: dc2cc93475f76427c86a8262bee36b88, type: 2}
-  m_sharedMaterial: {fileID: 2269793554123077917, guid: dc2cc93475f76427c86a8262bee36b88,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2037,8 +2034,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 400.71, y: -622.7546}
-  m_SizeDelta: {x: 0, y: 676.509}
+  m_AnchoredPosition: {x: 637.75, y: -1948}
+  m_SizeDelta: {x: 1275.5, y: 676.509}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2301484141204538334
 MonoBehaviour:
@@ -2078,7 +2075,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_HorizontalFit: 2
+  m_HorizontalFit: 0
   m_VerticalFit: 0
 --- !u!1 &2301484141329337526
 GameObject:
@@ -2279,7 +2276,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 690, y: 679.9534}
+  m_SizeDelta: {x: 1265.9408, y: 679.9534}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2301484141368937046
 MonoBehaviour:
@@ -2479,10 +2476,10 @@ RectTransform:
   m_Father: {fileID: 6065080338429513920}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000011444092, y: 0.00024414062}
-  m_SizeDelta: {x: 0, y: 199.92}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -641.9997, y: 164}
+  m_SizeDelta: {x: 0, y: 328}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &8613051065776649707
 MonoBehaviour:
@@ -2725,9 +2722,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Store
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c9f0ab9a170fa4c3596972aa1db04a9a, type: 2}
-  m_sharedMaterial: {fileID: 2081446301306759604, guid: c9f0ab9a170fa4c3596972aa1db04a9a,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2939,9 +2935,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Coin : 5'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: e0962d31f1f084fa3ba7147d76f5b6e8, type: 2}
-  m_sharedMaterial: {fileID: 1653631458307283989, guid: e0962d31f1f084fa3ba7147d76f5b6e8,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3072,27 +3067,27 @@ MonoBehaviour:
   storeObject: {fileID: 3652302107200588024}
   productItems:
   - id: inapp1
-    icon: {fileID: 21300000, guid: 2e455bc39665f844a8f430715f3df5ab, type: 3}
+    icon: {fileID: 21300000, guid: 29394df75cf103b40a93dbe6a38d95b7, type: 3}
     price: $0.99
-    title: buy 5 coins
+    title: buy 5 coinss
     productType: 0
   - id: inapp2
-    icon: {fileID: 21300000, guid: d0565d6ae6ab703468c60500c653e3fa, type: 3}
+    icon: {fileID: 21300000, guid: bcf4f92fe1e9e400da47dc9e0cfb0bd3, type: 3}
     price: $1.99
     title: buy 12 coins
     productType: 0
   - id: inapp3
-    icon: {fileID: 21300000, guid: 3cad02fc4c2167a4a8bcbec3d13f383e, type: 3}
+    icon: {fileID: 21300000, guid: 90ac1638eb0666e479bda2201bba63fa, type: 3}
     price: $2.99
     title: buy 19 coins
     productType: 0
   - id: inapp4
-    icon: {fileID: 21300000, guid: 6ebca470ee93947c3b5e56e9abf33e5f, type: 3}
+    icon: {fileID: -7080210960834253404, guid: 40a5bf0d802d84615846fa8cacfb3fe4, type: 3}
     price: $3.99
     title: buy 29 coins
     productType: 0
   - id: inapp5
-    icon: {fileID: 21300000, guid: 000490f2e15da45798af356d25025356, type: 3}
+    icon: {fileID: 21300000, guid: e17a386dc9e454cd2a1e46f836230527, type: 3}
     price: $4.99
     title: buy 39 coins
     productType: 0
@@ -3200,9 +3195,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: New
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c9f0ab9a170fa4c3596972aa1db04a9a, type: 2}
-  m_sharedMaterial: {fileID: 2081446301306759604, guid: c9f0ab9a170fa4c3596972aa1db04a9a,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3360,7 +3354,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3652302106641296934
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3731,66 +3725,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c06c08de3fd47467e9895590e4d2fe4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  colorManager: {fileID: 0}
   gameTitle: {fileID: 1324371129}
   coin: {fileID: 6043730721952660502}
   gameOver: {fileID: 321533480}
-  materials:
-  - {fileID: 2100000, guid: 2e2617faf9f363540b08b139ffe1c316, type: 2}
-  - {fileID: 2100000, guid: 6ae9b606db6ead244b599e9ef6bb300e, type: 2}
-  - {fileID: 2100000, guid: c35fd9979ff8d5a43adfda6027909964, type: 2}
-  - {fileID: 2100000, guid: 1a0b0207cbc767743acf88c4fe494724, type: 2}
-  - {fileID: 2100000, guid: 1881dcc2b2e53244f86e1589ace55fd2, type: 2}
-  - {fileID: 2100000, guid: a2fc21f36e7a78d41bcbc203d3abec08, type: 2}
-  - {fileID: 2100000, guid: 1def060a61daff94897e29b421ab6e49, type: 2}
-  - {fileID: 2100000, guid: 83df962484e785f438feef86157b6e99, type: 2}
-  - {fileID: 2100000, guid: 368fc3419e8bed246ae940f068c776bf, type: 2}
-  - {fileID: 2100000, guid: b1b815268ecf4b142b55c74c55d25872, type: 2}
-  - {fileID: 2100000, guid: 3682cb2c05500784a91ea861b80894d9, type: 2}
-  - {fileID: 2100000, guid: d594dd5f97c95af43b577c3ace270413, type: 2}
-  - {fileID: 2100000, guid: 69c95aa252bd9cd4e928b727e8fa1132, type: 2}
-  - {fileID: 2100000, guid: bc83640b22846c44f8393a85a5c7b45a, type: 2}
-  - {fileID: 2100000, guid: c61d667ab31c5a84db824d59d0fa86d7, type: 2}
-  - {fileID: 2100000, guid: 414196fa64b211b4a904f16f96e4761e, type: 2}
-  - {fileID: 2100000, guid: 32406e634f5569f40b722d8bea56a67f, type: 2}
-  negativeMaterials:
-  - {fileID: 2100000, guid: 3c7f284645206ed428a870faa7b6e265, type: 2}
-  - {fileID: 2100000, guid: f503b10fb63c80349b8d025bd26a29ca, type: 2}
-  - {fileID: 2100000, guid: 338fa54f812470e43b6cf95f4c52ccd6, type: 2}
-  - {fileID: 2100000, guid: eb99d679bfd0538429414efc297fd1ef, type: 2}
-  - {fileID: 2100000, guid: 35e8a620b81fb9f41a6cc3f57c3cab38, type: 2}
-  - {fileID: 2100000, guid: dbb60b2bb65b31644bc927811d8150f0, type: 2}
-  - {fileID: 2100000, guid: 3033bc4da4cf4c64a902984a8b70aeec, type: 2}
-  - {fileID: 2100000, guid: c379c3484d8d95f41b7383a01a99c656, type: 2}
-  - {fileID: 2100000, guid: 1fd6e614640236b45bb310cd7610a657, type: 2}
-  - {fileID: 2100000, guid: 3e979b3745b4a024bbbd5806d425fa75, type: 2}
-  - {fileID: 2100000, guid: 7cce38ba40b7d05439de10ddde5afaf6, type: 2}
-  - {fileID: 2100000, guid: 2d0aba1c7a1f1ad4e8c42037f8c582a7, type: 2}
-  - {fileID: 2100000, guid: 311745311fe655347a9d9a87c17237e2, type: 2}
-  - {fileID: 2100000, guid: faca1b916cb6cc347b1d96b837990085, type: 2}
-  - {fileID: 2100000, guid: 31d1c671c238c7840aad3992140c4bb3, type: 2}
-  - {fileID: 2100000, guid: 0f4a4a4748666ef45a016a969c20d6b5, type: 2}
-  - {fileID: 2100000, guid: 7699a5cbc14565c4cbfbc5c952a54cda, type: 2}
-  - {fileID: 2100000, guid: c2ed91641cada8741bc0741731d82347, type: 2}
-  - {fileID: 2100000, guid: 52a8f403918c40049b5d02835f3b8884, type: 2}
-  positiveMaterials:
-  - {fileID: 2100000, guid: 43fc5432789a3a74f8b6b8311735bfff, type: 2}
-  - {fileID: 2100000, guid: 18496517b06e92c43b8b42ede8e5c6c4, type: 2}
-  - {fileID: 2100000, guid: 25ff4c5a363f8534f8f01b372b225a9f, type: 2}
-  - {fileID: 2100000, guid: 0ce05cbf9ed141a42ba5b14c25ae5fb1, type: 2}
-  - {fileID: 2100000, guid: 91ba25c5e9aad2e4d8693d1840f12d00, type: 2}
-  - {fileID: 2100000, guid: 473a182fd4f82f7488ba8bc5c8f394db, type: 2}
-  - {fileID: 2100000, guid: a29f8f8f2c03b354eb6ac7674bc35868, type: 2}
-  - {fileID: 2100000, guid: 9094332b081ce7443a70eb613ca66142, type: 2}
-  - {fileID: 2100000, guid: 219967ce9dc9a8f4d9ab8a7d1d14cf9d, type: 2}
-  - {fileID: 2100000, guid: 2191478c1f641c245b4fe9449817a0b7, type: 2}
-  - {fileID: 2100000, guid: 14f01ae7a86d50843aa6fce9ffb1242f, type: 2}
-  - {fileID: 2100000, guid: 2ce226ad9b516b948a25223aedb12e72, type: 2}
-  - {fileID: 2100000, guid: 31519c69ca7480a47a2e875057962981, type: 2}
-  - {fileID: 2100000, guid: 57086422479816a4099108803b0a1ef8, type: 2}
-  - {fileID: 2100000, guid: 60bcfd51d8bfeba47b2012cc604195e3, type: 2}
-  - {fileID: 2100000, guid: 2f1eaa18358c5a740b06ca4f0f63168f, type: 2}
-  - {fileID: 2100000, guid: 6103c8eef887e1e40a9157c31cc85185, type: 2}
+  materials: []
+  negativeMaterials: []
+  positiveMaterials: []
   sprites: []
   uiSprite:
   - {fileID: 3652302107200588026}
@@ -3803,16 +3743,14 @@ MonoBehaviour:
   sky: {fileID: 0}
   colorDelta: 0.44
   storeSprite:
-  - {fileID: 21300000, guid: 8f45db8beb7595c409248908feaa59af, type: 3}
-  - {fileID: 21300000, guid: 000490f2e15da45798af356d25025356, type: 3}
-  - {fileID: 21300000, guid: 3cad02fc4c2167a4a8bcbec3d13f383e, type: 3}
-  - {fileID: 21300000, guid: f8302002f432b4004b211630bc55f3e4, type: 3}
-  - {fileID: 21300000, guid: d0565d6ae6ab703468c60500c653e3fa, type: 3}
-  - {fileID: 21300000, guid: ba021a36712022e449871233a14ff239, type: 3}
-  - {fileID: 21300000, guid: 6ebca470ee93947c3b5e56e9abf33e5f, type: 3}
-  - {fileID: 21300000, guid: 640ebd2cfdf964c448abb382cdd2b733, type: 3}
-  - {fileID: 21300000, guid: 2e455bc39665f844a8f430715f3df5ab, type: 3}
-  - {fileID: 21300000, guid: 991b77bbe9bfa684a89bc094d8e9ce41, type: 3}
+  - {fileID: 21300000, guid: e17a386dc9e454cd2a1e46f836230527, type: 3}
+  - {fileID: 21300000, guid: 29394df75cf103b40a93dbe6a38d95b7, type: 3}
+  - {fileID: -7080210960834253404, guid: 40a5bf0d802d84615846fa8cacfb3fe4, type: 3}
+  - {fileID: 21300000, guid: b4cfdde75cdf5425abe75ff265f6f43c, type: 3}
+  - {fileID: 21300000, guid: 90ac1638eb0666e479bda2201bba63fa, type: 3}
+  - {fileID: 21300000, guid: bcf4f92fe1e9e400da47dc9e0cfb0bd3, type: 3}
+  - {fileID: 21300000, guid: 1e0204e4d32684272b7718888c21dd55, type: 3}
+  - {fileID: 21300000, guid: 5a91f80d5ea1241e8b7d531f38f29fc3, type: 3}
   storeManager: {fileID: 3652302106136951394}
   storeText: {fileID: 44076777}
   storePos: {fileID: 2301484139470335903}
@@ -3880,7 +3818,7 @@ MonoBehaviour:
   m_BlockingObjects: 0
   m_BlockingMask:
     serializedVersion: 2
-    m_Bits: 3895
+    m_Bits: 311
 --- !u!1 &3652302106987327675
 GameObject:
   m_ObjectHideFlags: 0
@@ -3918,7 +3856,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -59.296204, y: -60.240845}
+  m_AnchoredPosition: {x: -59.296143, y: -60.240723}
   m_SizeDelta: {x: 118.5924, y: 120.482}
   m_Pivot: {x: 0.50000006, y: 0.5}
 --- !u!222 &3652302106987327652
@@ -4032,7 +3970,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &3652302107200588027
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4319,9 +4257,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'No Product Available '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c9f0ab9a170fa4c3596972aa1db04a9a, type: 2}
-  m_sharedMaterial: {fileID: 2081446301306759604, guid: c9f0ab9a170fa4c3596972aa1db04a9a,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4345,7 +4282,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 31.5
+  m_fontSize: 34.75
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
