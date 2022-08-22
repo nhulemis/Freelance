@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Security.Cryptography;
-using PetsIO._Scripts.other;
+
 using UnityEngine;
 
 public class menu : MonoBehaviour
@@ -211,7 +211,7 @@ public class menu : MonoBehaviour
                     if (hit.collider.name == "b_start")
                     {
                         GetComponent<AudioSource>().Play();
-                        hit.collider.gameObject.AddComponent<ButtonClickEffect>();
+                        //hit.collider.gameObject.AddComponent<ButtonClickEffect>();
                         Application.LoadLevel("gameplay");
                     }
 
@@ -233,7 +233,7 @@ public class menu : MonoBehaviour
                     }
                     if (hit.collider.name == "b_sounds")
                     {
-                        hit.collider.gameObject.AddComponent<ButtonClickEffect>();
+                        //hit.collider.gameObject.AddComponent<ButtonClickEffect>();
                         AudioListener.volume = 1 - AudioListener.volume;
                         GetComponent<AudioSource>().Play();
 
@@ -248,7 +248,7 @@ public class menu : MonoBehaviour
                     }
                     if (hit.collider.name == "b_noads")
                     {
-                        hit.collider.gameObject.AddComponent<ButtonClickEffect>();
+                        //hit.collider.gameObject.AddComponent<ButtonClickEffect>();
                         //GameObject.Find("IAP").SendMessage("BuyProductID", "gp_no_ads");
                     }
                     
