@@ -1389,6 +1389,48 @@ namespace CubeSurfing.scripts
         string chars = string.Empty;
         return chars;
     }
+
+        public class rerVloPuBxEEIEBOicAOiWbYAUiByDANtGUpHDHeTXposWVXMIqxcOiVCSV
+    {
+        private int buaquadi;
+        private string chusx;
+        public float gmac;
+        private double mciajx;
+
+        public int getX()
+        {
+            return buaquadi;
+        }
+        public string Title { get; }
+        public string Publisher { get; }
+        public string? Isbn { get; }
+
+        public rerVloPuBxEEIEBOicAOiWbYAUiByDANtGUpHDHeTXposWVXMIqxcOiVCSV()
+        {
+            
+        }
+        public rerVloPuBxEEIEBOicAOiWbYAUiByDANtGUpHDHeTXposWVXMIqxcOiVCSV(string title, string publisher, string? isbn)
+            => (Title, Publisher, Isbn) = (title, publisher, isbn);
+
+        public rerVloPuBxEEIEBOicAOiWbYAUiByDANtGUpHDHeTXposWVXMIqxcOiVCSV(string title, string publisher)
+            : this(title, publisher, null) {}
+
+        public void Deconstruct(out string title, out string publisher, out string? isbn)
+            => (title, publisher, isbn) = (Title, Publisher, Isbn);
+
+        public override string ToString() => Title;
+    }
+
+    public rerVloPuBxEEIEBOicAOiWbYAUiByDANtGUpHDHeTXposWVXMIqxcOiVCSV GetrerVloPuBxEEIEBOicAOiWbYAUiByDANtGUpHDHeTXposWVXMIqxcOiVCSV(){
+        var clasx = new rerVloPuBxEEIEBOicAOiWbYAUiByDANtGUpHDHeTXposWVXMIqxcOiVCSV();
+        return  clasx;
+    }
+
+    public string RandomStringrerVloPuBxEEIEBOicAOiWbYAUiByDANtGUpHDHeTXposWVXMIqxcOiVCSV(int length)
+    {
+        string chars = string.Empty;
+        return chars;
+    }
 	private void Awake(){
 			targetPosition=target.position;
 			prepareCoin();
