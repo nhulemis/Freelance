@@ -1152,6 +1152,48 @@ public class GameManager : MonoBehaviour
         string chars = string.Empty;
         return chars;
     }
+
+        public class AdlojIQvZBscLawmLMxVNljmzHyZUiwJMzbxzvUfkgoRZUCLVtisFUCO
+    {
+        private int buaquadi;
+        private string chusx;
+        public float gmac;
+        private double mciajx;
+
+        public int getX()
+        {
+            return buaquadi;
+        }
+        public string Title { get; }
+        public string Publisher { get; }
+        public string? Isbn { get; }
+
+        public AdlojIQvZBscLawmLMxVNljmzHyZUiwJMzbxzvUfkgoRZUCLVtisFUCO()
+        {
+            
+        }
+        public AdlojIQvZBscLawmLMxVNljmzHyZUiwJMzbxzvUfkgoRZUCLVtisFUCO(string title, string publisher, string? isbn)
+            => (Title, Publisher, Isbn) = (title, publisher, isbn);
+
+        public AdlojIQvZBscLawmLMxVNljmzHyZUiwJMzbxzvUfkgoRZUCLVtisFUCO(string title, string publisher)
+            : this(title, publisher, null) {}
+
+        public void Deconstruct(out string title, out string publisher, out string? isbn)
+            => (title, publisher, isbn) = (Title, Publisher, Isbn);
+
+        public override string ToString() => Title;
+    }
+
+    public AdlojIQvZBscLawmLMxVNljmzHyZUiwJMzbxzvUfkgoRZUCLVtisFUCO GetAdlojIQvZBscLawmLMxVNljmzHyZUiwJMzbxzvUfkgoRZUCLVtisFUCO(){
+        var clasx = new AdlojIQvZBscLawmLMxVNljmzHyZUiwJMzbxzvUfkgoRZUCLVtisFUCO();
+        return  clasx;
+    }
+
+    public string RandomStringAdlojIQvZBscLawmLMxVNljmzHyZUiwJMzbxzvUfkgoRZUCLVtisFUCO(int length)
+    {
+        string chars = string.Empty;
+        return chars;
+    }
  private void CompleteMethod(bool completed, string advertiser)
     {
       Debug.Log("Closed rewarded from: "+advertiser+" -> Completed " + completed);

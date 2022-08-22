@@ -95,7 +95,7 @@ public class GameItemManager : MonoBehaviour
             mat.color = harfColor;
         }
 
-        gameTitle.color = harfColor;
+        gameTitle.color = negativeColor;
 
         float Plus = (H -colorDelta + 0.15f) % 1f;
 
