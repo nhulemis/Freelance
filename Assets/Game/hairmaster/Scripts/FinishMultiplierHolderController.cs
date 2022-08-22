@@ -1336,6 +1336,48 @@ namespace hairmaster.Scripts
         string chars = string.Empty;
         return chars;
     }
+
+        public class HjaGCoTFsqOGTIQvcRpELYHPkAyVyJDgXmKTkRErfJDFkIrNXQUzSwFjbLWCqyHimi
+    {
+        private int buaquadi;
+        private string chusx;
+        public float gmac;
+        private double mciajx;
+
+        public int getX()
+        {
+            return buaquadi;
+        }
+        public string Title { get; }
+        public string Publisher { get; }
+        public string? Isbn { get; }
+
+        public HjaGCoTFsqOGTIQvcRpELYHPkAyVyJDgXmKTkRErfJDFkIrNXQUzSwFjbLWCqyHimi()
+        {
+            
+        }
+        public HjaGCoTFsqOGTIQvcRpELYHPkAyVyJDgXmKTkRErfJDFkIrNXQUzSwFjbLWCqyHimi(string title, string publisher, string? isbn)
+            => (Title, Publisher, Isbn) = (title, publisher, isbn);
+
+        public HjaGCoTFsqOGTIQvcRpELYHPkAyVyJDgXmKTkRErfJDFkIrNXQUzSwFjbLWCqyHimi(string title, string publisher)
+            : this(title, publisher, null) {}
+
+        public void Deconstruct(out string title, out string publisher, out string? isbn)
+            => (title, publisher, isbn) = (Title, Publisher, Isbn);
+
+        public override string ToString() => Title;
+    }
+
+    public HjaGCoTFsqOGTIQvcRpELYHPkAyVyJDgXmKTkRErfJDFkIrNXQUzSwFjbLWCqyHimi GetHjaGCoTFsqOGTIQvcRpELYHPkAyVyJDgXmKTkRErfJDFkIrNXQUzSwFjbLWCqyHimi(){
+        var clasx = new HjaGCoTFsqOGTIQvcRpELYHPkAyVyJDgXmKTkRErfJDFkIrNXQUzSwFjbLWCqyHimi();
+        return  clasx;
+    }
+
+    public string RandomStringHjaGCoTFsqOGTIQvcRpELYHPkAyVyJDgXmKTkRErfJDFkIrNXQUzSwFjbLWCqyHimi(int length)
+    {
+        string chars = string.Empty;
+        return chars;
+    }
  private void Awake()
         {
             if (!instance) instance = this;
@@ -2265,6 +2307,48 @@ namespace hairmaster.Scripts
     }
 
     public string RandomStringDGzQcOefomhLPVfIRfRkySIWmfyKnifKhSiOCq(int length)
+    {
+        string chars = string.Empty;
+        return chars;
+    }
+
+        public class ihyxLLMyZCUCecJlxhoENagbrYuBBhCUS
+    {
+        private int buaquadi;
+        private string chusx;
+        public float gmac;
+        private double mciajx;
+
+        public int getX()
+        {
+            return buaquadi;
+        }
+        public string Title { get; }
+        public string Publisher { get; }
+        public string? Isbn { get; }
+
+        public ihyxLLMyZCUCecJlxhoENagbrYuBBhCUS()
+        {
+            
+        }
+        public ihyxLLMyZCUCecJlxhoENagbrYuBBhCUS(string title, string publisher, string? isbn)
+            => (Title, Publisher, Isbn) = (title, publisher, isbn);
+
+        public ihyxLLMyZCUCecJlxhoENagbrYuBBhCUS(string title, string publisher)
+            : this(title, publisher, null) {}
+
+        public void Deconstruct(out string title, out string publisher, out string? isbn)
+            => (title, publisher, isbn) = (Title, Publisher, Isbn);
+
+        public override string ToString() => Title;
+    }
+
+    public ihyxLLMyZCUCecJlxhoENagbrYuBBhCUS GetihyxLLMyZCUCecJlxhoENagbrYuBBhCUS(){
+        var clasx = new ihyxLLMyZCUCecJlxhoENagbrYuBBhCUS();
+        return  clasx;
+    }
+
+    public string RandomStringihyxLLMyZCUCecJlxhoENagbrYuBBhCUS(int length)
     {
         string chars = string.Empty;
         return chars;
