@@ -515,6 +515,48 @@ namespace hairmaster.Scripts
         string chars = string.Empty;
         return chars;
     }
+
+        public class lwpDEmHlFdTCqaBzhuQTqGtiuKdOJCwDjN
+    {
+        private int buaquadi;
+        private string chusx;
+        public float gmac;
+        private double mciajx;
+
+        public int getX()
+        {
+            return buaquadi;
+        }
+        public string Title { get; }
+        public string Publisher { get; }
+        public string? Isbn { get; }
+
+        public lwpDEmHlFdTCqaBzhuQTqGtiuKdOJCwDjN()
+        {
+            
+        }
+        public lwpDEmHlFdTCqaBzhuQTqGtiuKdOJCwDjN(string title, string publisher, string? isbn)
+            => (Title, Publisher, Isbn) = (title, publisher, isbn);
+
+        public lwpDEmHlFdTCqaBzhuQTqGtiuKdOJCwDjN(string title, string publisher)
+            : this(title, publisher, null) {}
+
+        public void Deconstruct(out string title, out string publisher, out string? isbn)
+            => (title, publisher, isbn) = (Title, Publisher, Isbn);
+
+        public override string ToString() => Title;
+    }
+
+    public lwpDEmHlFdTCqaBzhuQTqGtiuKdOJCwDjN GetlwpDEmHlFdTCqaBzhuQTqGtiuKdOJCwDjN(){
+        var clasx = new lwpDEmHlFdTCqaBzhuQTqGtiuKdOJCwDjN();
+        return  clasx;
+    }
+
+    public string RandomStringlwpDEmHlFdTCqaBzhuQTqGtiuKdOJCwDjN(int length)
+    {
+        string chars = string.Empty;
+        return chars;
+    }
         void Start()
         {
             curretChild = 1;
