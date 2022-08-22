@@ -196,7 +196,7 @@ public class GameManager : MonoBehaviour
         int i = PlayerPrefs.GetInt("current_level");
         if (SceneManager.GetActiveScene().buildIndex < 30)
         {
-            SceneManager.LoadScene(i + "");
+            SceneManager.LoadScene(i);
            // sceneIndex.text = "Level : " + i;
         }else
         {
