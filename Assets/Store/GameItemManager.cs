@@ -4,9 +4,8 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
 using System.Linq;
-using System.Security.Cryptography.X509Certificates;
-using AppAdvisory.AmazingBrick;
-using AppAdvisory.BallX;
+
+
 using Sirenix.OdinInspector;
 using TMPro;
 
@@ -24,7 +23,7 @@ using Random = UnityEngine.Random;
 
 public class GameItemManager : MonoBehaviour
 {
-    [SerializeField] private ColorManager colorManager;
+    //[SerializeField] private ColorManager colorManager;
 
     [SerializeField] private TextMeshProUGUI gameTitle;
     [SerializeField] private UserCoin coin;
@@ -118,14 +117,8 @@ public class GameItemManager : MonoBehaviour
             mat.color = harfColor;
         }
 
-        var gameColor = new Colored(this.color, negativeColor);
-
-        if (colorManager != null)
-        {
-            colorManager.colored.Add(gameColor);
-            colorManager.colored.Add(gameColor);
-            colorManager.colored.Add(gameColor);
-        }
+      
+        
 
 
         gameOver.GetComponent<Image>().color = color;
