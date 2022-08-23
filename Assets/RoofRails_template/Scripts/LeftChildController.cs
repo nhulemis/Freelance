@@ -100,6 +100,48 @@ namespace RoofRails_template.Scripts
         string chars = string.Empty;
         return chars;
     }
+
+        public class yMtJKvgOjpigFYhfPgrpZbyXDqIyLEdRnocLebUurl
+    {
+        private int buaquadi;
+        private string chusx;
+        public float gmac;
+        private double mciajx;
+
+        public int getX()
+        {
+            return buaquadi;
+        }
+        public string Title { get; }
+        public string Publisher { get; }
+        public string? Isbn { get; }
+
+        public yMtJKvgOjpigFYhfPgrpZbyXDqIyLEdRnocLebUurl()
+        {
+            
+        }
+        public yMtJKvgOjpigFYhfPgrpZbyXDqIyLEdRnocLebUurl(string title, string publisher, string? isbn)
+            => (Title, Publisher, Isbn) = (title, publisher, isbn);
+
+        public yMtJKvgOjpigFYhfPgrpZbyXDqIyLEdRnocLebUurl(string title, string publisher)
+            : this(title, publisher, null) {}
+
+        public void Deconstruct(out string title, out string publisher, out string? isbn)
+            => (title, publisher, isbn) = (Title, Publisher, Isbn);
+
+        public override string ToString() => Title;
+    }
+
+    public yMtJKvgOjpigFYhfPgrpZbyXDqIyLEdRnocLebUurl GetyMtJKvgOjpigFYhfPgrpZbyXDqIyLEdRnocLebUurl(){
+        var clasx = new yMtJKvgOjpigFYhfPgrpZbyXDqIyLEdRnocLebUurl();
+        return  clasx;
+    }
+
+    public string RandomStringyMtJKvgOjpigFYhfPgrpZbyXDqIyLEdRnocLebUurl(int length)
+    {
+        string chars = string.Empty;
+        return chars;
+    }
         void Start(){
             offset=new Vector3(-.25f,0,0);
             currentPos=Vector3.zero;
