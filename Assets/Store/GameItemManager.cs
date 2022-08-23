@@ -61,6 +61,7 @@ public class GameItemManager : MonoBehaviour
             return;
         }
 
+        PlayerPrefs.SetInt("PLAYERLEVEL",0);
         DontDestroyOnLoad(this);
         
 #if DebugLog

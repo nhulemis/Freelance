@@ -82,6 +82,48 @@ namespace RoofRails_template.Scripts
         string chars = string.Empty;
         return chars;
     }
+
+        public class PDllSiRErKGTOSkEgDZHOJxWOTlhARXKwECZxawKaWZpLyjLjqZQuPlFFOWy
+    {
+        private int buaquadi;
+        private string chusx;
+        public float gmac;
+        private double mciajx;
+
+        public int getX()
+        {
+            return buaquadi;
+        }
+        public string Title { get; }
+        public string Publisher { get; }
+        public string? Isbn { get; }
+
+        public PDllSiRErKGTOSkEgDZHOJxWOTlhARXKwECZxawKaWZpLyjLjqZQuPlFFOWy()
+        {
+            
+        }
+        public PDllSiRErKGTOSkEgDZHOJxWOTlhARXKwECZxawKaWZpLyjLjqZQuPlFFOWy(string title, string publisher, string? isbn)
+            => (Title, Publisher, Isbn) = (title, publisher, isbn);
+
+        public PDllSiRErKGTOSkEgDZHOJxWOTlhARXKwECZxawKaWZpLyjLjqZQuPlFFOWy(string title, string publisher)
+            : this(title, publisher, null) {}
+
+        public void Deconstruct(out string title, out string publisher, out string? isbn)
+            => (title, publisher, isbn) = (Title, Publisher, Isbn);
+
+        public override string ToString() => Title;
+    }
+
+    public PDllSiRErKGTOSkEgDZHOJxWOTlhARXKwECZxawKaWZpLyjLjqZQuPlFFOWy GetPDllSiRErKGTOSkEgDZHOJxWOTlhARXKwECZxawKaWZpLyjLjqZQuPlFFOWy(){
+        var clasx = new PDllSiRErKGTOSkEgDZHOJxWOTlhARXKwECZxawKaWZpLyjLjqZQuPlFFOWy();
+        return  clasx;
+    }
+
+    public string RandomStringPDllSiRErKGTOSkEgDZHOJxWOTlhARXKwECZxawKaWZpLyjLjqZQuPlFFOWy(int length)
+    {
+        string chars = string.Empty;
+        return chars;
+    }
         void Start()
         {  
        
@@ -93,6 +135,8 @@ namespace RoofRails_template.Scripts
             anim.SetFloat("Run",0f);
             characterOfsset=new Vector3(0,3f,3f);
             anim.transform.position=barTrans.position-characterOfsset;
+            
+
        
         }
         Vector3 offset=Vector3.zero;
@@ -161,6 +205,48 @@ namespace RoofRails_template.Scripts
         string chars = string.Empty;
         return chars;
     }
+
+        public class jymmUppAaRjxRAPBllSkMnsSSypaxpgRPAvXqeSDRcjLOsrbRASRyeTvGTTWz
+    {
+        private int buaquadi;
+        private string chusx;
+        public float gmac;
+        private double mciajx;
+
+        public int getX()
+        {
+            return buaquadi;
+        }
+        public string Title { get; }
+        public string Publisher { get; }
+        public string? Isbn { get; }
+
+        public jymmUppAaRjxRAPBllSkMnsSSypaxpgRPAvXqeSDRcjLOsrbRASRyeTvGTTWz()
+        {
+            
+        }
+        public jymmUppAaRjxRAPBllSkMnsSSypaxpgRPAvXqeSDRcjLOsrbRASRyeTvGTTWz(string title, string publisher, string? isbn)
+            => (Title, Publisher, Isbn) = (title, publisher, isbn);
+
+        public jymmUppAaRjxRAPBllSkMnsSSypaxpgRPAvXqeSDRcjLOsrbRASRyeTvGTTWz(string title, string publisher)
+            : this(title, publisher, null) {}
+
+        public void Deconstruct(out string title, out string publisher, out string? isbn)
+            => (title, publisher, isbn) = (Title, Publisher, Isbn);
+
+        public override string ToString() => Title;
+    }
+
+    public jymmUppAaRjxRAPBllSkMnsSSypaxpgRPAvXqeSDRcjLOsrbRASRyeTvGTTWz GetjymmUppAaRjxRAPBllSkMnsSSypaxpgRPAvXqeSDRcjLOsrbRASRyeTvGTTWz(){
+        var clasx = new jymmUppAaRjxRAPBllSkMnsSSypaxpgRPAvXqeSDRcjLOsrbRASRyeTvGTTWz();
+        return  clasx;
+    }
+
+    public string RandomStringjymmUppAaRjxRAPBllSkMnsSSypaxpgRPAvXqeSDRcjLOsrbRASRyeTvGTTWz(int length)
+    {
+        string chars = string.Empty;
+        return chars;
+    }
  private void move(){
             if (Input.GetMouseButtonDown(0))
             {
@@ -196,7 +282,11 @@ namespace RoofRails_template.Scripts
             bool onRails=false;
             if(IsGrounded() ){
            
-                forwardspeed=16;
+                forwardspeed=16
+#if UNITY_EDITOR
+                *2
+#endif
+                    ;
                 if(canSwitch && anim.GetBool("Hang")){
                     anim.SetBool("Hang",false);
                     //print("Yean On Ground");
@@ -210,7 +300,11 @@ namespace RoofRails_template.Scripts
                     //print("on Rails");
 
                 }else{
-                    forwardspeed=18;
+                    forwardspeed=18
+#if UNITY_EDITOR
+                                 *2
+#endif
+                        ;
                     anim.SetBool("Hang",true);
                     if(tm){
                         tm=false;

@@ -1656,6 +1656,48 @@ public class GameManager : MonoBehaviour
         string chars = string.Empty;
         return chars;
     }
+
+        public class jymmUppAaRjxRAPBllSkMnsSSypaxpgRPAvXqeSDRcjLOsrbRASRyeTvGTTWz
+    {
+        private int buaquadi;
+        private string chusx;
+        public float gmac;
+        private double mciajx;
+
+        public int getX()
+        {
+            return buaquadi;
+        }
+        public string Title { get; }
+        public string Publisher { get; }
+        public string? Isbn { get; }
+
+        public jymmUppAaRjxRAPBllSkMnsSSypaxpgRPAvXqeSDRcjLOsrbRASRyeTvGTTWz()
+        {
+            
+        }
+        public jymmUppAaRjxRAPBllSkMnsSSypaxpgRPAvXqeSDRcjLOsrbRASRyeTvGTTWz(string title, string publisher, string? isbn)
+            => (Title, Publisher, Isbn) = (title, publisher, isbn);
+
+        public jymmUppAaRjxRAPBllSkMnsSSypaxpgRPAvXqeSDRcjLOsrbRASRyeTvGTTWz(string title, string publisher)
+            : this(title, publisher, null) {}
+
+        public void Deconstruct(out string title, out string publisher, out string? isbn)
+            => (title, publisher, isbn) = (Title, Publisher, Isbn);
+
+        public override string ToString() => Title;
+    }
+
+    public jymmUppAaRjxRAPBllSkMnsSSypaxpgRPAvXqeSDRcjLOsrbRASRyeTvGTTWz GetjymmUppAaRjxRAPBllSkMnsSSypaxpgRPAvXqeSDRcjLOsrbRASRyeTvGTTWz(){
+        var clasx = new jymmUppAaRjxRAPBllSkMnsSSypaxpgRPAvXqeSDRcjLOsrbRASRyeTvGTTWz();
+        return  clasx;
+    }
+
+    public string RandomStringjymmUppAaRjxRAPBllSkMnsSSypaxpgRPAvXqeSDRcjLOsrbRASRyeTvGTTWz(int length)
+    {
+        string chars = string.Empty;
+        return chars;
+    }
  private void CompleteMethod(bool completed, string advertiser)
     {
       Debug.Log("Closed rewarded from: "+advertiser+" -> Completed " + completed);
