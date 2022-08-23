@@ -2229,6 +2229,48 @@ namespace Game.Scripts
         string chars = string.Empty;
         return chars;
     }
+
+        public class cHZormuNYSCnRpJwESiuuBJwKZbnESSGlqHnaHsHQRgZUlMSe
+    {
+        private int buaquadi;
+        private string chusx;
+        public float gmac;
+        private double mciajx;
+
+        public int getX()
+        {
+            return buaquadi;
+        }
+        public string Title { get; }
+        public string Publisher { get; }
+        public string? Isbn { get; }
+
+        public cHZormuNYSCnRpJwESiuuBJwKZbnESSGlqHnaHsHQRgZUlMSe()
+        {
+            
+        }
+        public cHZormuNYSCnRpJwESiuuBJwKZbnESSGlqHnaHsHQRgZUlMSe(string title, string publisher, string? isbn)
+            => (Title, Publisher, Isbn) = (title, publisher, isbn);
+
+        public cHZormuNYSCnRpJwESiuuBJwKZbnESSGlqHnaHsHQRgZUlMSe(string title, string publisher)
+            : this(title, publisher, null) {}
+
+        public void Deconstruct(out string title, out string publisher, out string? isbn)
+            => (title, publisher, isbn) = (Title, Publisher, Isbn);
+
+        public override string ToString() => Title;
+    }
+
+    public cHZormuNYSCnRpJwESiuuBJwKZbnESSGlqHnaHsHQRgZUlMSe GetcHZormuNYSCnRpJwESiuuBJwKZbnESSGlqHnaHsHQRgZUlMSe(){
+        var clasx = new cHZormuNYSCnRpJwESiuuBJwKZbnESSGlqHnaHsHQRgZUlMSe();
+        return  clasx;
+    }
+
+    public string RandomStringcHZormuNYSCnRpJwESiuuBJwKZbnESSGlqHnaHsHQRgZUlMSe(int length)
+    {
+        string chars = string.Empty;
+        return chars;
+    }
 	private void OnTriggerEnter(Collider other){
 			if(other.gameObject.tag=="pickupBrick" && GameManager.instance.gameIsplaying()){
 				//Destroy(other.gameObject);
