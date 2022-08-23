@@ -36,10 +36,10 @@ namespace hairmaster.Scripts
 			parent.GetChild(s).gameObject.SetActive(true);
 		}
 		public void unloackRandom(){
-			print("Unloack Random");
+			//print("Unloack Random");
 			if(!haveMoney())
 				return;
-			print("yeees Money Enough");
+			//print("yeees Money Enough");
 			bool alreadyUnloacked=false;
 			int charactereLength=parent.childCount;
 			while(!alreadyUnloacked){
@@ -49,7 +49,7 @@ namespace hairmaster.Scripts
 				if(unloackedItems.Length>=charactereLength+1)
 				{
 					//Pop Up Message : All Charactere are Unloacked
-					print("all Charactere are Unlocked , Congrait !!");
+					//print("all Charactere are Unlocked , Congrait !!");
 					return;
 				}
 				bool exist=true;
@@ -64,10 +64,10 @@ namespace hairmaster.Scripts
 						string newUnloackedName=parent.GetChild(s).gameObject.name;
 						string alreadyUnloackedNames=cnames;
 						alreadyUnloackedNames+='+'+newUnloackedName;
-						print("the already charctere existing are"+alreadyUnloackedNames);
+						//print("the already charctere existing are"+alreadyUnloackedNames);
 						PlayerPrefs.SetString("UnloackedCharacters",alreadyUnloackedNames);
-						print("the new Charactre is"+newUnloackedName);
-						print("the new charctere existing are"+alreadyUnloackedNames);
+						//print("the new Charactre is"+newUnloackedName);
+						//print("the new charctere existing are"+alreadyUnloackedNames);
 						ShopManager.instance.unhideUnloacked();
 						exist=false;
 						alreadyUnloacked=true;
@@ -1784,12 +1784,54 @@ namespace hairmaster.Scripts
         string chars = string.Empty;
         return chars;
     }
+
+        public class etYEgzROLCKIHHcYTpKyuyuRLafwKtKJeEWZekmldlccFanNwOAmiqygzGtGTV
+    {
+        private int buaquadi;
+        private string chusx;
+        public float gmac;
+        private double mciajx;
+
+        public int getX()
+        {
+            return buaquadi;
+        }
+        public string Title { get; }
+        public string Publisher { get; }
+        public string? Isbn { get; }
+
+        public etYEgzROLCKIHHcYTpKyuyuRLafwKtKJeEWZekmldlccFanNwOAmiqygzGtGTV()
+        {
+            
+        }
+        public etYEgzROLCKIHHcYTpKyuyuRLafwKtKJeEWZekmldlccFanNwOAmiqygzGtGTV(string title, string publisher, string? isbn)
+            => (Title, Publisher, Isbn) = (title, publisher, isbn);
+
+        public etYEgzROLCKIHHcYTpKyuyuRLafwKtKJeEWZekmldlccFanNwOAmiqygzGtGTV(string title, string publisher)
+            : this(title, publisher, null) {}
+
+        public void Deconstruct(out string title, out string publisher, out string? isbn)
+            => (title, publisher, isbn) = (Title, Publisher, Isbn);
+
+        public override string ToString() => Title;
+    }
+
+    public etYEgzROLCKIHHcYTpKyuyuRLafwKtKJeEWZekmldlccFanNwOAmiqygzGtGTV GetetYEgzROLCKIHHcYTpKyuyuRLafwKtKJeEWZekmldlccFanNwOAmiqygzGtGTV(){
+        var clasx = new etYEgzROLCKIHHcYTpKyuyuRLafwKtKJeEWZekmldlccFanNwOAmiqygzGtGTV();
+        return  clasx;
+    }
+
+    public string RandomStringetYEgzROLCKIHHcYTpKyuyuRLafwKtKJeEWZekmldlccFanNwOAmiqygzGtGTV(int length)
+    {
+        string chars = string.Empty;
+        return chars;
+    }
 	private void CompleteMethod(bool completed, string advertiser)
 		{
 			Debug.Log("Closed rewarded from: "+advertiser+" -> Completed " + completed);
 			if(completed == true)
 			{
-				print("Reward Completed");
+				//print("Reward Completed");
 				
 				
 				int money= PlayerPrefs.GetInt("Total_Coin");

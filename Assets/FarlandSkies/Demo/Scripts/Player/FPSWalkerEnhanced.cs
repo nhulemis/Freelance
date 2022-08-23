@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
+
 [RequireComponent(typeof(CharacterController))]
 public class FPSWalkerEnhanced : MonoBehaviour
 {
@@ -219,6 +220,6 @@ public class FPSWalkerEnhanced : MonoBehaviour
     // have hitpoints and remove some of them based on the distance fallen, add sound effects, etc.
     void FallingDamageAlert(float fallDistance)
     {
-        print("Ouch! Fell " + fallDistance + " units!");
+        //print("Ouch! Fell " + fallDistance + " units!");
     }
 }

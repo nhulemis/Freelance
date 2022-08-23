@@ -85,7 +85,7 @@ namespace AppAdvisory.AmazingBrick
 		IEnumerator DOMoveOutWhenVisible()
 		{
 
-			//		print("DOMoveOutWhenVisible - start");
+			//		//print("DOMoveOutWhenVisible - start");
 
 			yield return new WaitForSeconds(1);
 
@@ -114,7 +114,7 @@ namespace AppAdvisory.AmazingBrick
 			#if AADOTWEEN
 			t.DOMoveX(finalPosX,time)
 				.OnComplete( () => {
-					//				print("DOMoveOutWhenVisible - SendMessage Despawn");
+					//				//print("DOMoveOutWhenVisible - SendMessage Despawn");
 					gameObject.SetActive(false);
 					//				transform.parent.gameObject.SendMessage("Despawn",SendMessageOptions.DontRequireReceiver);
 				});

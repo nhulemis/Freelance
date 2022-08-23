@@ -204,7 +204,7 @@ namespace AppAdvisory.AmazingBrick
 				}
 				else
 				{
-					print("failed to get diamonds from rewarded video");
+					//print("failed to get diamonds from rewarded video");
 				}
 			});
 
@@ -212,7 +212,7 @@ namespace AppAdvisory.AmazingBrick
 
 		public void OnClickedGetLifes()
 		{
-			print("OnClickedGetLifes");
+			//print("OnClickedGetLifes");
 
 			ShowRewardedVideo((bool success) => {
 				if(success)
@@ -221,7 +221,7 @@ namespace AppAdvisory.AmazingBrick
 				}
 				else
 				{
-					print("failed to get lifes from rewarded video");
+					//print("failed to get lifes from rewarded video");
 				}
 			});
 		}

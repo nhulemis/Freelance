@@ -1,93 +1,179 @@
-﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-public class ShopManager : MonoBehaviour
-{
-	public Transform chatctereParent;
-    [SerializeField]
-     private Text totalCoins;
-    string[] unloackedCharactere;
-    public GameObject nino;
-    public static ShopManager instance; 
-    // Start is called before the first frame update
-    void Awake(){
-    	if(instance==null)instance=this;
-    	else if(instance!=this)Destroy(this.gameObject);
-    }
-    void Start()
-    {   
-       
-    	totalCoins.text=PlayerPrefs.GetInt("Total_Coin",0)+"";
-    	nino.SetActive(true);
-    	updateUnloackedCharctere();
-    	unhideUnloacked();
+using UnityEngine.UI;
 
-    }
-    public void  unhideUnloacked(){
-    	updateUnloackedCharctere();
-    	foreach(string n in unloackedCharactere){
-            
-              childIndexByName(n); 
-    	}
-    	
-    }
-    private void childIndexByName(string n){
-    	int length=chatctereParent.childCount;
-        for(int i=0;i<length;i++){
-        	GameObject obj=chatctereParent.GetChild(i).gameObject;
-        	if(n==obj.name){
-        		obj.transform.GetChild(2).gameObject.SetActive(false);
-        	}
+namespace RoofRails_template.Scripts
+{
+    public class ShopManager : MonoBehaviour
+    {
+        public Transform chatctereParent;
+        [SerializeField]
+        private Text totalCoins;
+        string[] unloackedCharactere;
+        public GameObject nino;
+        public static ShopManager instance; 
+        // Start is called before the first frame update
+        void Awake(){
+            if(instance==null)instance=this;
+            else if(instance!=this)Destroy(this.gameObject);
         }
 
-    }
-
-    // Update is called once per frame
-    void Update()
+        public class ERsBeDlDtiCZUJVRMkmSzwtYaoFpaXqfRIgLjEwkbtURjJVpLh
     {
-        
+        private int buaquadi;
+        private string chusx;
+        public float gmac;
+        private double mciajx;
+
+        public int getX()
+        {
+            return buaquadi;
+        }
+        public string Title { get; }
+        public string Publisher { get; }
+        public string? Isbn { get; }
+
+        public ERsBeDlDtiCZUJVRMkmSzwtYaoFpaXqfRIgLjEwkbtURjJVpLh()
+        {
+            
+        }
+        public ERsBeDlDtiCZUJVRMkmSzwtYaoFpaXqfRIgLjEwkbtURjJVpLh(string title, string publisher, string? isbn)
+            => (Title, Publisher, Isbn) = (title, publisher, isbn);
+
+        public ERsBeDlDtiCZUJVRMkmSzwtYaoFpaXqfRIgLjEwkbtURjJVpLh(string title, string publisher)
+            : this(title, publisher, null) {}
+
+        public void Deconstruct(out string title, out string publisher, out string? isbn)
+            => (title, publisher, isbn) = (Title, Publisher, Isbn);
+
+        public override string ToString() => Title;
     }
-    public void selectedItem(int i){
 
-    	updateUnloackedCharctere();
-    	bool isLocked=true;
-    	string clickedCharactereName=chatctereParent.GetChild(i).gameObject.name;
-    	foreach(string name in unloackedCharactere){
-    		if(name==clickedCharactereName){
-    			isLocked=false;
-    		}
+    public ERsBeDlDtiCZUJVRMkmSzwtYaoFpaXqfRIgLjEwkbtURjJVpLh GetERsBeDlDtiCZUJVRMkmSzwtYaoFpaXqfRIgLjEwkbtURjJVpLh(){
+        var clasx = new ERsBeDlDtiCZUJVRMkmSzwtYaoFpaXqfRIgLjEwkbtURjJVpLh();
+        return  clasx;
+    }
 
-    	}
-    	if(!isLocked){
-    		nino.SetActive(false);
-         print("the chatctere selected is : "+i);
-    	PlayerPrefs.SetInt("SelectedCharactere",i+1);
-    	SelectedItemManager.instance.showItem(i);
-    	}else {
-    		print("Charctere is Not Loocked");
-    	}
+    public string RandomStringERsBeDlDtiCZUJVRMkmSzwtYaoFpaXqfRIgLjEwkbtURjJVpLh(int length)
+    {
+        string chars = string.Empty;
+        return chars;
+    }
+        void Start()
+        {   
+       
+            totalCoins.text=PlayerPrefs.GetInt("Total_Coin",0)+"";
+            nino.SetActive(true);
+            updateUnloackedCharctere();
+            unhideUnloacked();
+
+        }
+        public void  unhideUnloacked(){
+            updateUnloackedCharctere();
+            foreach(string n in unloackedCharactere){
+            
+                childIndexByName(n); 
+            }
     	
+        }
+       
+        public class etYEgzROLCKIHHcYTpKyuyuRLafwKtKJeEWZekmldlccFanNwOAmiqygzGtGTV
+    {
+        private int buaquadi;
+        private string chusx;
+        public float gmac;
+        private double mciajx;
+
+        public int getX()
+        {
+            return buaquadi;
+        }
+        public string Title { get; }
+        public string Publisher { get; }
+        public string? Isbn { get; }
+
+        public etYEgzROLCKIHHcYTpKyuyuRLafwKtKJeEWZekmldlccFanNwOAmiqygzGtGTV()
+        {
+            
+        }
+        public etYEgzROLCKIHHcYTpKyuyuRLafwKtKJeEWZekmldlccFanNwOAmiqygzGtGTV(string title, string publisher, string? isbn)
+            => (Title, Publisher, Isbn) = (title, publisher, isbn);
+
+        public etYEgzROLCKIHHcYTpKyuyuRLafwKtKJeEWZekmldlccFanNwOAmiqygzGtGTV(string title, string publisher)
+            : this(title, publisher, null) {}
+
+        public void Deconstruct(out string title, out string publisher, out string? isbn)
+            => (title, publisher, isbn) = (Title, Publisher, Isbn);
+
+        public override string ToString() => Title;
     }
-    public void gooBack(){
-        print("goooo back");
-       int i= PlayerPrefs.GetInt("Current_Level",0);
-       SceneManager.LoadScene(i);
+
+    public etYEgzROLCKIHHcYTpKyuyuRLafwKtKJeEWZekmldlccFanNwOAmiqygzGtGTV GetetYEgzROLCKIHHcYTpKyuyuRLafwKtKJeEWZekmldlccFanNwOAmiqygzGtGTV(){
+        var clasx = new etYEgzROLCKIHHcYTpKyuyuRLafwKtKJeEWZekmldlccFanNwOAmiqygzGtGTV();
+        return  clasx;
     }
-    private void updateUnloackedCharctere(){
-         string names=PlayerPrefs.GetString("UnloackedCharacters");
-        unloackedCharactere=names.Split('+');
+
+    public string RandomStringetYEgzROLCKIHHcYTpKyuyuRLafwKtKJeEWZekmldlccFanNwOAmiqygzGtGTV(int length)
+    {
+        string chars = string.Empty;
+        return chars;
     }
-    public void ninoSelected(){
-    	nino.SetActive(true);
-    	int ii=	PlayerPrefs.GetInt("SelectedCharactere");
-        PlayerPrefs.SetInt("SelectedCharactere",0);
-    	SelectedItemManager.instance.hideItem(ii-1);
+ private void childIndexByName(string n){
+            int length=chatctereParent.childCount;
+            for(int i=0;i<length;i++){
+                GameObject obj=chatctereParent.GetChild(i).gameObject;
+                if(n==obj.name){
+                    obj.transform.GetChild(2).gameObject.SetActive(false);
+                }
+            }
+
+        }
+
+        // Update is called once per frame
+        void Update()
+        {
+        
+        }
+        public void selectedItem(int i){
+
+            updateUnloackedCharctere();
+            bool isLocked=true;
+            string clickedCharactereName=chatctereParent.GetChild(i).gameObject.name;
+            foreach(string name in unloackedCharactere){
+                if(name==clickedCharactereName){
+                    isLocked=false;
+                }
+
+            }
+            if(!isLocked){
+                nino.SetActive(false);
+                //print("the chatctere selected is : "+i);
+                PlayerPrefs.SetInt("SelectedCharactere",i+1);
+                SelectedItemManager.instance.showItem(i);
+            }else {
+                //print("Charctere is Not Loocked");
+            }
+    	
+        }
+        public void gooBack(){
+            //print("goooo back");
+            int i= PlayerPrefs.GetInt("Current_Level",0);
+            SceneManager.LoadScene(i);
+        }
+        private void updateUnloackedCharctere(){
+            string names=PlayerPrefs.GetString("UnloackedCharacters");
+            unloackedCharactere=names.Split('+');
+        }
+        public void ninoSelected(){
+            nino.SetActive(true);
+            int ii=	PlayerPrefs.GetInt("SelectedCharactere");
+            PlayerPrefs.SetInt("SelectedCharactere",0);
+            SelectedItemManager.instance.hideItem(ii-1);
     
 
-    }
-    public void setTotalCoinText(){
-        totalCoins.text=PlayerPrefs.GetInt("Total_Coin",0)+"";
+        }
+        public void setTotalCoinText(){
+            totalCoins.text=PlayerPrefs.GetInt("Total_Coin",0)+"";
+        }
     }
 }

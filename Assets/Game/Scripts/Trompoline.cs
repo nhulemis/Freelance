@@ -611,7 +611,7 @@ namespace Game.Scripts
 		}
 		void OnTriggerEnter(Collider other){
 			if(other.gameObject.tag=="Player"){
-				print("Playuer");
+				//print("Playuer");
 				PlayerController.instance.jump(35);
 			}
 		}

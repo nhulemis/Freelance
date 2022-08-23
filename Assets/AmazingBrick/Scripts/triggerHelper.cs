@@ -46,24 +46,24 @@ namespace AppAdvisory.AmazingBrick
 
 		void OnTriggerEnter2D(Collider2D other)
 		{
-			print("OnTriggerEnter2D with + " + other.name);
+			//print("OnTriggerEnter2D with + " + other.name);
 
 			_collider.enabled = false;
-			//		print("OnTriggerEnter2D");
+			//		//print("OnTriggerEnter2D");
 			OnTrigger.Invoke(other);
 		}
 
 		void OnTriggerStay2D(Collider2D other)
 		{
 			_collider.enabled = false;
-			//		print("OnTriggerStay2D");
+			//		//print("OnTriggerStay2D");
 			OnTrigger.Invoke(other);
 		}
 
 		void OnTriggerExit2D(Collider2D other)
 		{
 			_collider.enabled = false;
-			//		print("OnTriggerExit2D");
+			//		//print("OnTriggerExit2D");
 			OnTrigger.Invoke(other);
 		}
 

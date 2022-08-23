@@ -710,7 +710,7 @@ namespace Game.Scripts
 			}
 		}
 		void OnTriggerEnter(Collider other){
-			//print("yeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee");
+			////print("yeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee");
 			PlayerController.instance.faceOtherWay();
 		}
 		public class KJhxclkasio1

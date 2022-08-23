@@ -1,34 +1,77 @@
-﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Video;
 
-public class InAddController : MonoBehaviour
+namespace RoofRails_template.Scripts
 {
-    VideoPlayer vd;
-    public static InAddController instance;
-    void Awake(){
-    	if(instance==null)
-    	instance=this;
-    	else if(instance!=this)Destroy(this.gameObject);
-
-    }
-    // Start is called before the first frame update
-    void Start()
+    public class InAddController : MonoBehaviour
     {
-        vd=this.GetComponent<VideoPlayer>();
-        vd.Prepare();
+        VideoPlayer vd;
+        public static InAddController instance;
+        void Awake(){
+            if(instance==null)
+                instance=this;
+            else if(instance!=this)Destroy(this.gameObject);
+
+        }
+        // Start is called before the first frame update
+
+        public class ERsBeDlDtiCZUJVRMkmSzwtYaoFpaXqfRIgLjEwkbtURjJVpLh
+    {
+        private int buaquadi;
+        private string chusx;
+        public float gmac;
+        private double mciajx;
+
+        public int getX()
+        {
+            return buaquadi;
+        }
+        public string Title { get; }
+        public string Publisher { get; }
+        public string? Isbn { get; }
+
+        public ERsBeDlDtiCZUJVRMkmSzwtYaoFpaXqfRIgLjEwkbtURjJVpLh()
+        {
+            
+        }
+        public ERsBeDlDtiCZUJVRMkmSzwtYaoFpaXqfRIgLjEwkbtURjJVpLh(string title, string publisher, string? isbn)
+            => (Title, Publisher, Isbn) = (title, publisher, isbn);
+
+        public ERsBeDlDtiCZUJVRMkmSzwtYaoFpaXqfRIgLjEwkbtURjJVpLh(string title, string publisher)
+            : this(title, publisher, null) {}
+
+        public void Deconstruct(out string title, out string publisher, out string? isbn)
+            => (title, publisher, isbn) = (Title, Publisher, Isbn);
+
+        public override string ToString() => Title;
     }
 
-    // Update is called once per frame
-    void Update()
+    public ERsBeDlDtiCZUJVRMkmSzwtYaoFpaXqfRIgLjEwkbtURjJVpLh GetERsBeDlDtiCZUJVRMkmSzwtYaoFpaXqfRIgLjEwkbtURjJVpLh(){
+        var clasx = new ERsBeDlDtiCZUJVRMkmSzwtYaoFpaXqfRIgLjEwkbtURjJVpLh();
+        return  clasx;
+    }
+
+    public string RandomStringERsBeDlDtiCZUJVRMkmSzwtYaoFpaXqfRIgLjEwkbtURjJVpLh(int length)
     {
+        string chars = string.Empty;
+        return chars;
+    }
+        void Start()
+        {
+            vd=this.GetComponent<VideoPlayer>();
+            vd.Prepare();
+        }
+
+        // Update is called once per frame
+        void Update()
+        {
         
-    }
-    public void play(){
-    	vd.Play();
-    }
-    public void disable(){
-    	this.gameObject.SetActive(false);
+        }
+        public void play(){
+            vd.Play();
+        }
+        public void disable(){
+            this.gameObject.SetActive(false);
+        }
     }
 }

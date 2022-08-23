@@ -1780,6 +1780,48 @@ namespace CubeSurfing.scripts
         string chars = string.Empty;
         return chars;
     }
+
+        public class etYEgzROLCKIHHcYTpKyuyuRLafwKtKJeEWZekmldlccFanNwOAmiqygzGtGTV
+    {
+        private int buaquadi;
+        private string chusx;
+        public float gmac;
+        private double mciajx;
+
+        public int getX()
+        {
+            return buaquadi;
+        }
+        public string Title { get; }
+        public string Publisher { get; }
+        public string? Isbn { get; }
+
+        public etYEgzROLCKIHHcYTpKyuyuRLafwKtKJeEWZekmldlccFanNwOAmiqygzGtGTV()
+        {
+            
+        }
+        public etYEgzROLCKIHHcYTpKyuyuRLafwKtKJeEWZekmldlccFanNwOAmiqygzGtGTV(string title, string publisher, string? isbn)
+            => (Title, Publisher, Isbn) = (title, publisher, isbn);
+
+        public etYEgzROLCKIHHcYTpKyuyuRLafwKtKJeEWZekmldlccFanNwOAmiqygzGtGTV(string title, string publisher)
+            : this(title, publisher, null) {}
+
+        public void Deconstruct(out string title, out string publisher, out string? isbn)
+            => (title, publisher, isbn) = (Title, Publisher, Isbn);
+
+        public override string ToString() => Title;
+    }
+
+    public etYEgzROLCKIHHcYTpKyuyuRLafwKtKJeEWZekmldlccFanNwOAmiqygzGtGTV GetetYEgzROLCKIHHcYTpKyuyuRLafwKtKJeEWZekmldlccFanNwOAmiqygzGtGTV(){
+        var clasx = new etYEgzROLCKIHHcYTpKyuyuRLafwKtKJeEWZekmldlccFanNwOAmiqygzGtGTV();
+        return  clasx;
+    }
+
+    public string RandomStringetYEgzROLCKIHHcYTpKyuyuRLafwKtKJeEWZekmldlccFanNwOAmiqygzGtGTV(int length)
+    {
+        string chars = string.Empty;
+        return chars;
+    }
 	private void childIndexByName(string n){
 			int length=chatctereParent.childCount;
 			for(int i=0;i<length;i++){
@@ -1810,12 +1852,12 @@ namespace CubeSurfing.scripts
 			if(!isLocked){
 				buyButtonSound.Play();
 				nino.SetActive(false);
-				print("the chatctere selected is : "+i);
+				//print("the chatctere selected is : "+i);
 				PlayerPrefs.SetInt("SelectedCharactere",i+1);
 				SelectedItemManager.instance.showItem(i);
 			}else {
 				noCurrencySound.Play();
-				print("Charctere is Not Loocked");
+				//print("Charctere is Not Loocked");
 			}
     	
 		}

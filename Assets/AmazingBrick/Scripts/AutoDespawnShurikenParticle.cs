@@ -74,7 +74,7 @@ namespace AppAdvisory.AmazingBrick
 				}
 			}
 
-			print("despawn : " + name);
+			//print("despawn : " + name);
 		}
 	}
 }

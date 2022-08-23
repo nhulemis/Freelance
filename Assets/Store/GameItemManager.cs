@@ -29,6 +29,7 @@ public class GameItemManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI gameTitle;
     [SerializeField] private UserCoin coin;
     [SerializeField] private GameObject gameOver;
+    [SerializeField] private List<Material> pureColor;
     [SerializeField] private List<Material> materials;
     [SerializeField] private List<Material> negativeMaterials;
     [SerializeField] private List<Material> positiveMaterials;
@@ -42,6 +43,10 @@ public class GameItemManager : MonoBehaviour
     [SerializeField] private float colorDelta;
     public static GameItemManager Instance { get; set; }
 
+    [SerializeField] private bool customCamera;
+
+    [ReadOnly]
+    public Color negative, half, plus;
     private void Awake()
     {
         SetUpColor();
@@ -79,9 +84,13 @@ public class GameItemManager : MonoBehaviour
         float negativeH = (H + colorDelta) % 1f;
         Color negativeColor = Color.HSVToRGB(negativeH, S, V);
 
-        if (sky == null)
+        if (sky == null && !customCamera)
         {
             sky = Camera.main;
+            
+        }else if (customCamera)
+        {
+            sky = GameObject.FindWithTag("Pickable").GetComponent<Camera>();
         }
 
         sky.backgroundColor = negativeColor;
@@ -95,7 +104,7 @@ public class GameItemManager : MonoBehaviour
             mat.color = harfColor;
         }
 
-        gameTitle.color = negativeColor;
+        gameTitle.color = harfColor;
 
         float Plus = (H -colorDelta + 0.15f) % 1f;
 
@@ -127,7 +136,9 @@ public class GameItemManager : MonoBehaviour
             colorManager.colored.Add(gameColor);
         }
 
-
+        negative = negativeColor;
+        this.half = harfColor;
+        this.plus = plusColor;
         gameOver.GetComponent<Image>().color = color;
     }
 

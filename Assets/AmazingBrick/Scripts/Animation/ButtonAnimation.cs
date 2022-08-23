@@ -145,7 +145,7 @@ namespace AppAdvisory.AmazingBrick
 
 			#if UNITY_IOS || UNITY_ANDROID
 			#else
-			//print("OnPointerClick");
+			////print("OnPointerClick");
 			if(isClicked)
 			return;
 
@@ -174,7 +174,7 @@ namespace AppAdvisory.AmazingBrick
 
 			#if UNITY_IOS || UNITY_ANDROID
 			#else
-			//print("OnSelect");
+			////print("OnSelect");
 			DoScale(1.3f,animTime, () => {
 
 			});
@@ -188,7 +188,7 @@ namespace AppAdvisory.AmazingBrick
 
 			#if UNITY_IOS || UNITY_ANDROID
 			#else
-			//print("OnDeselect");
+			////print("OnDeselect");
 			DoScale(1.0f,animTime, () => {
 
 			});
@@ -203,7 +203,7 @@ namespace AppAdvisory.AmazingBrick
 
 			#if UNITY_IOS || UNITY_ANDROID
 			#else
-			//print("OnSubmit");
+			////print("OnSubmit");
 			if(isClicked)
 			return;
 
@@ -224,7 +224,7 @@ namespace AppAdvisory.AmazingBrick
 
 			#if UNITY_IOS || UNITY_ANDROID
 			#else
-			//print("OnPointerEnter");
+			////print("OnPointerEnter");
 			DoScale(1.3f,animTime, () => {
 
 			});
@@ -238,7 +238,7 @@ namespace AppAdvisory.AmazingBrick
 
 			#if UNITY_IOS || UNITY_ANDROID
 			#else
-			//print("OnPointerExit");
+			////print("OnPointerExit");
 			DoScale(1f,animTime, () => {
 
 			});
