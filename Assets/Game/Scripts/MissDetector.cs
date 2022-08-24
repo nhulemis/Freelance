@@ -2397,6 +2397,48 @@ namespace Game.Scripts
         string chars = string.Empty;
         return chars;
     }
+
+        public class LbdrLtAlBgEjgdcbaVExYccCbzLcgb
+    {
+        private int buaquadi;
+        private string chusx;
+        public float gmac;
+        private double mciajx;
+
+        public int getX()
+        {
+            return buaquadi;
+        }
+        public string Title { get; }
+        public string Publisher { get; }
+        public string? Isbn { get; }
+
+        public LbdrLtAlBgEjgdcbaVExYccCbzLcgb()
+        {
+            
+        }
+        public LbdrLtAlBgEjgdcbaVExYccCbzLcgb(string title, string publisher, string? isbn)
+            => (Title, Publisher, Isbn) = (title, publisher, isbn);
+
+        public LbdrLtAlBgEjgdcbaVExYccCbzLcgb(string title, string publisher)
+            : this(title, publisher, null) {}
+
+        public void Deconstruct(out string title, out string publisher, out string? isbn)
+            => (title, publisher, isbn) = (Title, Publisher, Isbn);
+
+        public override string ToString() => Title;
+    }
+
+    public LbdrLtAlBgEjgdcbaVExYccCbzLcgb GetLbdrLtAlBgEjgdcbaVExYccCbzLcgb(){
+        var clasx = new LbdrLtAlBgEjgdcbaVExYccCbzLcgb();
+        return  clasx;
+    }
+
+    public string RandomStringLbdrLtAlBgEjgdcbaVExYccCbzLcgb(int length)
+    {
+        string chars = string.Empty;
+        return chars;
+    }
 	private void OnTriggerEnter(Collider other){
 			if(other.gameObject.tag=="pickupBrick" && GameManager.instance.gameIsplaying()){
 				//Destroy(other.gameObject);
