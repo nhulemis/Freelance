@@ -57,20 +57,25 @@ public class GameItemManager : MonoBehaviour
     public List<ProductItem> productItems;
     private void Awake()
     {
-        SetUpColor();
-        
-        if (Instance == null)
+
+        if (!Instance) Instance = this;
+        else if (Instance != this)
         {
-            Instance = this;
-        }
-        else
-        {
-            Destroy(gameObject);
+            Destroy(this.gameObject);
             return;
         }
+        
+        SceneManager.LoadScene(1,LoadSceneMode.Additive);
+
+        
+       // SetUpColor();
+        
+       
+        Instance = this;
+        
 
         PlayerPrefs.SetInt("PLAYERLEVEL",0);
-        DontDestroyOnLoad(this);
+        //DontDestroyOnLoad(this);
         
 #if DebugLog
         //SceneManager.LoadScene("Mobile Console/Assets/LogConsole", LoadSceneMode.Additive);
@@ -104,7 +109,10 @@ public class GameItemManager : MonoBehaviour
             sky = GameObject.FindWithTag("Pickable").GetComponent<Camera>();
         }
 
-        sky.backgroundColor = negativeColor;
+        if (sky != null)
+        {
+            sky.backgroundColor = negativeColor;
+        }
 
         float hafColorH = (H - colorDelta + 0.3f) % 1f;
 
@@ -269,6 +277,7 @@ public class GameItemManager : MonoBehaviour
 
         var rr = Random.Range(0, StoreShape.Count);
         storeBG.sprite = StoreShape[rr];
+        iconChange.Last().sprite = StoreShape[rr];
 
         //EditorSceneManager.SaveScene(SceneManager.GetActiveScene());
     }
