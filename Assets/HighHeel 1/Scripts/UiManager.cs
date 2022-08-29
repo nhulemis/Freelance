@@ -743,7 +743,7 @@ public class UiManager : MonoBehaviour
     {
         AudioController.instance.buttonClick();
 
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        SceneManager.LoadScene(currentLevelIndex);
     }
     public void startPlay()
     {
