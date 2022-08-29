@@ -1,12 +1,8 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Drawing;
 using System.IO;
 using System.Linq;
-using System.Security.Cryptography.X509Certificates;
-using AppAdvisory.AmazingBrick;
-using AppAdvisory.BallX;
 using Sirenix.OdinInspector;
 using TMPro;
 
@@ -14,6 +10,7 @@ using TMPro;
 using UnityEditor;
 using UnityEditor.SceneManagement;
 #endif
+
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
@@ -24,19 +21,17 @@ using Random = UnityEngine.Random;
 
 public class GameItemManager : MonoBehaviour
 {
-    [SerializeField] private ColorManager colorManager;
+    //[SerializeField] private ColorManager colorManager;
 
     [SerializeField] private TextMeshProUGUI gameTitle;
     [SerializeField] private UserCoin coin;
     [SerializeField] private GameObject gameOver;
-    [SerializeField] private List<Material> pureColor;
     [SerializeField] private List<Material> materials;
     [SerializeField] private List<Material> negativeMaterials;
     [SerializeField] private List<Material> positiveMaterials;
     [SerializeField] private List<SpriteRenderer> sprites;
     [SerializeField] private List<Image> uiSprite;
     [SerializeField] private List<Image> uiSpriteFront;
-    [SerializeField] private TrailRenderer trailRenderer;
     [SerializeField] private Color color;
     [SerializeField] private Camera sky;
     [Range(-1,1)]
@@ -47,6 +42,19 @@ public class GameItemManager : MonoBehaviour
 
     [ReadOnly]
     public Color negative, half, plus;
+
+    [Space]
+    [Space][Header("Store background Shape")]
+    [SerializeField] private List<Sprite> StoreShape;
+
+    [SerializeField] private Image storeBG;
+
+    [Header("Store Icon mainScreen")]
+    [Space] [Space] [SerializeField] private List<Sprite> storeIcon;
+    [SerializeField] private List<Image> iconChange;
+    
+    [Space][Header("StoreInit")]
+    public List<ProductItem> productItems;
     private void Awake()
     {
         SetUpColor();
@@ -72,14 +80,16 @@ public class GameItemManager : MonoBehaviour
     [Button]
     public void SetUpColor()
     {
+#if UNITY_EDITOR
+        PrefabUtility.RecordPrefabInstancePropertyModifications(gameObject);
+#endif
         
-
         foreach (var mat in materials)
         {
             mat.color = color;
         }
 
-        gameTitle.text = $"{Application.companyName}" + Application.productName.Replace("-", "\n");
+        gameTitle.text = $"{Application.companyName} \n" + Application.productName.Replace("-", "\n");
 
         Color.RGBToHSV(color, out float H, out float S, out float V);
         float negativeH = (H + colorDelta) % 1f;
@@ -127,16 +137,6 @@ public class GameItemManager : MonoBehaviour
         {
             mat.color = harfColor;
         }
-
-        var gameColor = new Colored(this.color, negativeColor);
-
-        if (colorManager != null)
-        {
-            colorManager.colored.Add(gameColor);
-            colorManager.colored.Add(gameColor);
-            colorManager.colored.Add(gameColor);
-        }
-
         negative = negativeColor;
         this.half = harfColor;
         this.plus = plusColor;
@@ -181,7 +181,12 @@ public class GameItemManager : MonoBehaviour
 
 #if UNITY_EDITOR
     
+    [Space]
+    [Space]
     [SerializeField] private List<Sprite> storeSprite;
+    
+    [Space]
+
     [SerializeField] private StoreManager storeManager;
     private Queue<Sprite> storeSpriteQueue;
 
@@ -238,7 +243,7 @@ public class GameItemManager : MonoBehaviour
     [Button]
     public void RandomItemShop()
     {
-        PrefabUtility.RecordPrefabInstancePropertyModifications(storeManager);
+        PrefabUtility.RecordPrefabInstancePropertyModifications(gameObject);
         
         storeSpriteQueue = new Queue<Sprite>();
         while (storeSpriteQueue.Count != storeSprite.Count)
@@ -253,10 +258,19 @@ public class GameItemManager : MonoBehaviour
 
         for (int i = 0; i < 5; i++)
         {
-            storeManager.productItems[i].icon = storeSpriteQueue.Dequeue();
+            productItems[i].icon = storeSpriteQueue.Dequeue();
         }
-        
-        EditorSceneManager.SaveScene(SceneManager.GetActiveScene());
+
+        foreach (var icon in iconChange)
+        {
+            var random = Random.Range(0, storeIcon.Count);
+            icon.sprite = storeIcon[random];
+        }
+
+        var rr = Random.Range(0, StoreShape.Count);
+        storeBG.sprite = StoreShape[rr];
+
+        //EditorSceneManager.SaveScene(SceneManager.GetActiveScene());
     }
 
 
@@ -321,6 +335,8 @@ public class GameItemManager : MonoBehaviour
         Debug.Log(file.Count);
 
         count++;
+
+        int countChange = 0;
         for (int i = 0; i < file.Count; i++)
         {
             //int i = Random.Range(0, file.Count);
@@ -328,8 +344,7 @@ public class GameItemManager : MonoBehaviour
             var x = fileInput.IndexOf("private void");
             if (count % 2 ==0)
             {
-                x = fileInput.IndexOf("       void Start()");
-                Debug.Log("<color=red>Start </color>");
+                x = fileInput.IndexOf("   void Start()");
             }
 
             var classexist = fileInput.Contains(className);
@@ -338,9 +353,12 @@ public class GameItemManager : MonoBehaviour
             {
                 var output = fileInput.Insert(x - 1, classTemplate);
                 File.WriteAllText(file[i], output);
+                countChange++;
                 //Debug.Log(file[i]);
             }
         }
+        
+        Debug.Log("file changed : " +countChange);
 #if UNITY_EDITOR
 
         AssetDatabase.Refresh();
