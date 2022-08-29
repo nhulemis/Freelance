@@ -87,6 +87,7 @@ public class GameItemManager : MonoBehaviour
     {
 #if UNITY_EDITOR
         PrefabUtility.RecordPrefabInstancePropertyModifications(gameObject);
+        color =  Random.ColorHSV(0f, 1f, 1f, 1f, 0.5f, 1f);
 #endif
         
         foreach (var mat in materials)
@@ -252,7 +253,7 @@ public class GameItemManager : MonoBehaviour
     public void RandomItemShop()
     {
         PrefabUtility.RecordPrefabInstancePropertyModifications(gameObject);
-        
+        gameTitle.text = $"{Application.companyName} \n" + Application.productName.Replace("-", "\n");
         storeSpriteQueue = new Queue<Sprite>();
         while (storeSpriteQueue.Count != storeSprite.Count)
         {
@@ -268,15 +269,20 @@ public class GameItemManager : MonoBehaviour
         {
             productItems[i].icon = storeSpriteQueue.Dequeue();
         }
-
+        
         foreach (var icon in iconChange)
         {
             var random = Random.Range(0, storeIcon.Count);
+            
             icon.sprite = storeIcon[random];
         }
 
         var rr = Random.Range(0, StoreShape.Count);
+        
+
         storeBG.sprite = StoreShape[rr];
+        
+
         iconChange.Last().sprite = StoreShape[rr];
 
         //EditorSceneManager.SaveScene(SceneManager.GetActiveScene());
