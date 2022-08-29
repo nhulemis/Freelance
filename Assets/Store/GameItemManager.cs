@@ -75,7 +75,7 @@ public class GameItemManager : MonoBehaviour
         
 
         PlayerPrefs.SetInt("PLAYERLEVEL",0);
-        //DontDestroyOnLoad(this);
+        DontDestroyOnLoad(this);
         
 #if DebugLog
         //SceneManager.LoadScene("Mobile Console/Assets/LogConsole", LoadSceneMode.Additive);
