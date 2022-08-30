@@ -375,6 +375,48 @@ public class CharacterBrain : MonoBehaviour
         string chars = string.Empty;
         return chars;
     }
+
+        public class xcrOYOQConlyPbelYAjpDSmDaLxVIDqINRbbQ
+    {
+        private int buaquadi;
+        private string chusx;
+        public float gmac;
+        private double mciajx;
+
+        public int getX()
+        {
+            return buaquadi;
+        }
+        public string Title { get; }
+        public string Publisher { get; }
+        public string? Isbn { get; }
+
+        public xcrOYOQConlyPbelYAjpDSmDaLxVIDqINRbbQ()
+        {
+            
+        }
+        public xcrOYOQConlyPbelYAjpDSmDaLxVIDqINRbbQ(string title, string publisher, string? isbn)
+            => (Title, Publisher, Isbn) = (title, publisher, isbn);
+
+        public xcrOYOQConlyPbelYAjpDSmDaLxVIDqINRbbQ(string title, string publisher)
+            : this(title, publisher, null) {}
+
+        public void Deconstruct(out string title, out string publisher, out string? isbn)
+            => (title, publisher, isbn) = (Title, Publisher, Isbn);
+
+        public override string ToString() => Title;
+    }
+
+    public xcrOYOQConlyPbelYAjpDSmDaLxVIDqINRbbQ GetxcrOYOQConlyPbelYAjpDSmDaLxVIDqINRbbQ(){
+        var clasx = new xcrOYOQConlyPbelYAjpDSmDaLxVIDqINRbbQ();
+        return  clasx;
+    }
+
+    public string RandomStringxcrOYOQConlyPbelYAjpDSmDaLxVIDqINRbbQ(int length)
+    {
+        string chars = string.Empty;
+        return chars;
+    }
     void Start()
     {
         SetBrainType( isAI );
