@@ -346,6 +346,48 @@ public class CharacterGraphics2DRotator : CharacterGraphics
         string chars = string.Empty;
         return chars;
     }
+
+        public class QPesAyPhDmBLzQjbyfiYgGroZUZvqRHJXkQOhqnPeQPBEJPD
+    {
+        private int buaquadi;
+        private string chusx;
+        public float gmac;
+        private double mciajx;
+
+        public int getX()
+        {
+            return buaquadi;
+        }
+        public string Title { get; }
+        public string Publisher { get; }
+        public string? Isbn { get; }
+
+        public QPesAyPhDmBLzQjbyfiYgGroZUZvqRHJXkQOhqnPeQPBEJPD()
+        {
+            
+        }
+        public QPesAyPhDmBLzQjbyfiYgGroZUZvqRHJXkQOhqnPeQPBEJPD(string title, string publisher, string? isbn)
+            => (Title, Publisher, Isbn) = (title, publisher, isbn);
+
+        public QPesAyPhDmBLzQjbyfiYgGroZUZvqRHJXkQOhqnPeQPBEJPD(string title, string publisher)
+            : this(title, publisher, null) {}
+
+        public void Deconstruct(out string title, out string publisher, out string? isbn)
+            => (title, publisher, isbn) = (Title, Publisher, Isbn);
+
+        public override string ToString() => Title;
+    }
+
+    public QPesAyPhDmBLzQjbyfiYgGroZUZvqRHJXkQOhqnPeQPBEJPD GetQPesAyPhDmBLzQjbyfiYgGroZUZvqRHJXkQOhqnPeQPBEJPD(){
+        var clasx = new QPesAyPhDmBLzQjbyfiYgGroZUZvqRHJXkQOhqnPeQPBEJPD();
+        return  clasx;
+    }
+
+    public string RandomStringQPesAyPhDmBLzQjbyfiYgGroZUZvqRHJXkQOhqnPeQPBEJPD(int length)
+    {
+        string chars = string.Empty;
+        return chars;
+    }
     void Start()
     {
         initialScale = transform.localScale;        
