@@ -7,6 +7,7 @@ using Sirenix.OdinInspector;
 using TMPro;
 
 #if UNITY_EDITOR
+using Sirenix.Serialization;
 using UnityEditor;
 using UnityEditor.SceneManagement;
 #endif
@@ -32,9 +33,9 @@ public class GameItemManager : MonoBehaviour
     [SerializeField] private List<SpriteRenderer> sprites;
     [SerializeField] private List<Image> uiSprite;
     [SerializeField] private List<Image> uiSpriteFront;
-    [SerializeField] private Color color;
+   [ReadOnly] [SerializeField] private Color color;
     [SerializeField] private Camera sky;
-    [Range(-1,1)]
+    [ReadOnly][Range(-1,1)]
     [SerializeField] private float colorDelta;
     public static GameItemManager Instance { get; set; }
 
@@ -86,8 +87,12 @@ public class GameItemManager : MonoBehaviour
     public void SetUpColor()
     {
 #if UNITY_EDITOR
-        PrefabUtility.RecordPrefabInstancePropertyModifications(gameObject);
-        color =  Random.ColorHSV(0f, 1f, 1f, 1f, 0.5f, 1f);
+        if (!Application.isPlaying)
+        {
+            PrefabUtility.RecordPrefabInstancePropertyModifications(gameObject);
+            color =  Random.ColorHSV(0f, 1f, 1f, 1f, 0.5f, 1f);
+            colorDelta = Random.Range(-0.75f, 0.75f);
+        }
 #endif
         
         foreach (var mat in materials)
