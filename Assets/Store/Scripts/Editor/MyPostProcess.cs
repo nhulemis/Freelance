@@ -24,7 +24,9 @@ namespace Game.Scripts.Editor
                 
                 File.Copy(pathToBuiltProject,newPath,true);
             }
-            
+
         }
     }
+    
+    
 }

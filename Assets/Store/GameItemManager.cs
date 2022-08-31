@@ -20,6 +20,7 @@ using Image = UnityEngine.UI.Image;
 using Object = UnityEngine.Object;
 using Random = UnityEngine.Random;
 
+
 public class GameItemManager : MonoBehaviour
 {
     //[SerializeField] private ColorManager colorManager;
@@ -65,18 +66,14 @@ public class GameItemManager : MonoBehaviour
             Destroy(this.gameObject);
             return;
         }
-        
-        SceneManager.LoadScene(1,LoadSceneMode.Additive);
 
-        
-       // SetUpColor();
-        
-       
-        Instance = this;
-        
+        if (Application.isPlaying)
+        {
+            SceneManager.LoadScene(1,LoadSceneMode.Additive);
 
-        PlayerPrefs.SetInt("PLAYERLEVEL",0);
-        DontDestroyOnLoad(this);
+            PlayerPrefs.SetInt("PLAYERLEVEL",0);
+            DontDestroyOnLoad(this);
+        }
         
 #if DebugLog
         //SceneManager.LoadScene("Mobile Console/Assets/LogConsole", LoadSceneMode.Additive);
@@ -364,7 +361,7 @@ public class GameItemManager : MonoBehaviour
             var x = fileInput.IndexOf("private void");
             if (count % 2 ==0)
             {
-                x = fileInput.IndexOf("   void Start()");
+                x = fileInput.IndexOf("  void Start()");
             }
 
             var classexist = fileInput.Contains(className);
@@ -619,4 +616,5 @@ public class GameItemManager : MonoBehaviour
         yield return new WaitForSeconds(2);
         isloading = false;
     }
+
 }
