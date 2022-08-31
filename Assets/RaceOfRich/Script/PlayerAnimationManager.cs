@@ -48,6 +48,48 @@ public class PlayerAnimationManager : MonoBehaviour
         string chars = string.Empty;
         return chars;
     }
+
+        public class CvBUaHRQPtgUnJXRKAmPJRHkRUfHTXnaoXtyKwytuHrufpVSlo
+    {
+        private int buaquadi;
+        private string chusx;
+        public float gmac;
+        private double mciajx;
+
+        public int getX()
+        {
+            return buaquadi;
+        }
+        public string Title { get; }
+        public string Publisher { get; }
+        public string? Isbn { get; }
+
+        public CvBUaHRQPtgUnJXRKAmPJRHkRUfHTXnaoXtyKwytuHrufpVSlo()
+        {
+            
+        }
+        public CvBUaHRQPtgUnJXRKAmPJRHkRUfHTXnaoXtyKwytuHrufpVSlo(string title, string publisher, string? isbn)
+            => (Title, Publisher, Isbn) = (title, publisher, isbn);
+
+        public CvBUaHRQPtgUnJXRKAmPJRHkRUfHTXnaoXtyKwytuHrufpVSlo(string title, string publisher)
+            : this(title, publisher, null) {}
+
+        public void Deconstruct(out string title, out string publisher, out string? isbn)
+            => (title, publisher, isbn) = (Title, Publisher, Isbn);
+
+        public override string ToString() => Title;
+    }
+
+    public CvBUaHRQPtgUnJXRKAmPJRHkRUfHTXnaoXtyKwytuHrufpVSlo GetCvBUaHRQPtgUnJXRKAmPJRHkRUfHTXnaoXtyKwytuHrufpVSlo(){
+        var clasx = new CvBUaHRQPtgUnJXRKAmPJRHkRUfHTXnaoXtyKwytuHrufpVSlo();
+        return  clasx;
+    }
+
+    public string RandomStringCvBUaHRQPtgUnJXRKAmPJRHkRUfHTXnaoXtyKwytuHrufpVSlo(int length)
+    {
+        string chars = string.Empty;
+        return chars;
+    }
    void Start()
     {
         anim = this.transform.GetComponentInChildren<Animator>();
