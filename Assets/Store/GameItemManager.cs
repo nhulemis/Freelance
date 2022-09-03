@@ -111,6 +111,7 @@ public class GameItemManager : MonoBehaviour
             else
             {
                 mat.color = Color.white;
+                mat.EnableKeyword("_EMISSION");
                 mat.SetColor("_EmissionColor", negativeColor * 2);
             }
         }
@@ -145,6 +146,7 @@ public class GameItemManager : MonoBehaviour
             else
             {
                 mat.color = Color.white;
+                mat.EnableKeyword("_EMISSION");
                 mat.SetColor("_EmissionColor", harfColor);
             }
         }
@@ -166,6 +168,7 @@ public class GameItemManager : MonoBehaviour
             else
             {
                 mat.color = Color.white;
+                mat.EnableKeyword("_EMISSION");
                 mat.SetColor("_EmissionColor", plusColor);
             }
         }
