@@ -106,12 +106,12 @@ public class GameItemManager : MonoBehaviour
             if (!n_emission)
             {
                 mat.color = negativeColor;
-
+                mat.DisableKeyword("_EMISSION");
             }
             else
             {
                 mat.color = Color.white;
-                mat.SetColor("_EmissionColor", negativeColor);
+                mat.SetColor("_EmissionColor", negativeColor * 2);
             }
         }
         
@@ -126,6 +126,7 @@ public class GameItemManager : MonoBehaviour
 
         if (sky != null)
         {
+            sky.clearFlags = CameraClearFlags.SolidColor;
             sky.backgroundColor = color;
         }
 
@@ -139,6 +140,7 @@ public class GameItemManager : MonoBehaviour
             {
                 mat.color = harfColor;
 
+                mat.DisableKeyword("_EMISSION");
             }
             else
             {
@@ -159,6 +161,7 @@ public class GameItemManager : MonoBehaviour
             {
                 mat.color = plusColor;
 
+                mat.DisableKeyword("_EMISSION");
             }
             else
             {
