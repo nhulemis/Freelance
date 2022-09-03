@@ -28,10 +28,13 @@ public class GameItemManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI gameTitle;
     [SerializeField] private UserCoin coin;
     [SerializeField] private GameObject gameOver;
+    [Space] [SerializeField] private bool m_emission;
     [SerializeField] private List<Material> materials;
+    [Space] [SerializeField] private bool n_emission;
     [SerializeField] private List<Material> negativeMaterials;
+    [Space] [SerializeField] private bool p_emission;
     [SerializeField] private List<Material> positiveMaterials;
-    [SerializeField] private List<SpriteRenderer> sprites;
+    [Space][SerializeField] private List<SpriteRenderer> sprites;
     [SerializeField] private List<Image> uiSprite;
     [SerializeField] private List<Image> uiSpriteFront;
    [ReadOnly] [SerializeField] private Color color;
@@ -91,11 +94,6 @@ public class GameItemManager : MonoBehaviour
             colorDelta = Random.Range(-0.75f, 0.75f);
         }
 #endif
-        
-        foreach (var mat in materials)
-        {
-            mat.color = color;
-        }
 
         gameTitle.text = $"{Application.companyName} \n" + Application.productName.Replace("-", "\n");
 
@@ -103,6 +101,20 @@ public class GameItemManager : MonoBehaviour
         float negativeH = (H + colorDelta) % 1f;
         Color negativeColor = Color.HSVToRGB(negativeH, S, V);
 
+        foreach (var mat in materials)
+        {
+            if (!n_emission)
+            {
+                mat.color = negativeColor;
+
+            }
+            else
+            {
+                mat.color = Color.white;
+                mat.SetColor("_EmissionColor", negativeColor);
+            }
+        }
+        
         if (sky == null && !customCamera)
         {
             sky = Camera.main;
@@ -114,7 +126,7 @@ public class GameItemManager : MonoBehaviour
 
         if (sky != null)
         {
-            sky.backgroundColor = negativeColor;
+            sky.backgroundColor = color;
         }
 
         float hafColorH = (H - colorDelta + 0.3f) % 1f;
@@ -123,7 +135,16 @@ public class GameItemManager : MonoBehaviour
 
         foreach (var mat in negativeMaterials)
         {
-            mat.color = harfColor;
+            if (!n_emission)
+            {
+                mat.color = harfColor;
+
+            }
+            else
+            {
+                mat.color = Color.white;
+                mat.SetColor("_EmissionColor", harfColor);
+            }
         }
 
         gameTitle.color = harfColor;
@@ -134,7 +155,16 @@ public class GameItemManager : MonoBehaviour
 
         foreach (var mat in positiveMaterials)
         {
-            mat.color = plusColor;
+            if (!p_emission)
+            {
+                mat.color = plusColor;
+
+            }
+            else
+            {
+                mat.color = Color.white;
+                mat.SetColor("_EmissionColor", plusColor);
+            }
         }
         foreach (var mat in sprites)
         {
@@ -472,7 +502,7 @@ public class GameItemManager : MonoBehaviour
         foreach (var file in fileTocopy)
         {
             if (file.Contains("app_icon") || file.Contains(Application.productName.Replace(" ", ""))
-                || file.Contains($"{appName}.aab") || file.Contains($"{appName}.apk"))
+                || file.Contains($"{Application.productName}.aab") || file.Contains($"{Application.productName}.apk"))
             {
                 File.Copy(file, Path.Combine(indexPath, Path.GetFileName(file)), true);
             }
