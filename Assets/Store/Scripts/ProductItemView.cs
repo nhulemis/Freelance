@@ -18,6 +18,12 @@ public class ProductItemView : MonoBehaviour
     public ProductType productType;
     public void Init(string price, string id, Sprite icon, string title,ProductType productType)
     {
+        var bg = GetComponent<Image>();
+        if (bg != null)
+        {
+            bg.color =  Random.ColorHSV(0f, 1f, 1f, 1f, 0.5f, 1f);
+        }
+        
         this.price.text = string.IsNullOrEmpty(price)? "BUY" : price;
         this.id = id;
         if (this.icon != null)

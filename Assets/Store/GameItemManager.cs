@@ -303,7 +303,7 @@ public class GameItemManager : MonoBehaviour
             }
         }
 
-        for (int i = 0; i < 5; i++)
+        for (int i = 0; i < productItems.Count; i++)
         {
             productItems[i].icon = storeSpriteQueue.Dequeue();
         }
