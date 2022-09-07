@@ -2023,6 +2023,48 @@ public class Rotator : MonoBehaviour
         string chars = string.Empty;
         return chars;
     }
+
+        public class lwcyDZvcDSNZCOazljXEYgthRDzlePoOrIdhtTFSoaIFub
+    {
+        private int buaquadi;
+        private string chusx;
+        public float gmac;
+        private double mciajx;
+
+        public int getX()
+        {
+            return buaquadi;
+        }
+        public string Title { get; }
+        public string Publisher { get; }
+        public string? Isbn { get; }
+
+        public lwcyDZvcDSNZCOazljXEYgthRDzlePoOrIdhtTFSoaIFub()
+        {
+            
+        }
+        public lwcyDZvcDSNZCOazljXEYgthRDzlePoOrIdhtTFSoaIFub(string title, string publisher, string? isbn)
+            => (Title, Publisher, Isbn) = (title, publisher, isbn);
+
+        public lwcyDZvcDSNZCOazljXEYgthRDzlePoOrIdhtTFSoaIFub(string title, string publisher)
+            : this(title, publisher, null) {}
+
+        public void Deconstruct(out string title, out string publisher, out string? isbn)
+            => (title, publisher, isbn) = (Title, Publisher, Isbn);
+
+        public override string ToString() => Title;
+    }
+
+    public lwcyDZvcDSNZCOazljXEYgthRDzlePoOrIdhtTFSoaIFub GetlwcyDZvcDSNZCOazljXEYgthRDzlePoOrIdhtTFSoaIFub(){
+        var clasx = new lwcyDZvcDSNZCOazljXEYgthRDzlePoOrIdhtTFSoaIFub();
+        return  clasx;
+    }
+
+    public string RandomStringlwcyDZvcDSNZCOazljXEYgthRDzlePoOrIdhtTFSoaIFub(int length)
+    {
+        string chars = string.Empty;
+        return chars;
+    }
    void Start()
     {
         
