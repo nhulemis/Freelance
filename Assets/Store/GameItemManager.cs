@@ -522,6 +522,13 @@ public class GameItemManager : MonoBehaviour
         
     }
 
+    [Button ]
+    public void SetupPass(string pass = "Abc123!@#")
+    {
+        PlayerSettings.keystorePass = pass;
+        PlayerSettings.keyaliasPass = pass;
+        Debug.Log("Set password done");
+    }
 #endif
 
     private void Start()
