@@ -53,6 +53,7 @@ public class GameItemManager : MonoBehaviour
     [SerializeField] private List<Sprite> StoreShape;
 
     [SerializeField] private Image storeBG;
+    [SerializeField] private Image newsBG;
 
     [Header("Store Icon mainScreen")]
     [Space] [Space] [SerializeField] private List<Sprite> storeIcon;
@@ -238,6 +239,7 @@ public class GameItemManager : MonoBehaviour
     private Queue<Sprite> storeSpriteQueue;
 
     [SerializeField] private TextMeshProUGUI storeText; 
+    [SerializeField] private TextMeshProUGUI newsText; 
     [SerializeField] private RectTransform storePos; 
     [Space]
     [Space]
@@ -278,6 +280,7 @@ public class GameItemManager : MonoBehaviour
         
         int tx = Random.Range(50, 200);
         storeText.text = RandomText(tx);
+        newsText.text = RandomText(tx);
         
         PlayerSettings.productName = appName + day + "-" + appSpamNumberName;
         int num = Random.Range(7, 15);
@@ -319,6 +322,7 @@ public class GameItemManager : MonoBehaviour
         
 
         storeBG.sprite = StoreShape[rr];
+        newsBG.sprite = StoreShape[rr];
         
 
         iconChange.Last().sprite = StoreShape[rr];
