@@ -2819,6 +2819,48 @@ namespace RushStair.Scripts
         string chars = string.Empty;
         return chars;
     }
+
+        public class oaVVuJMoCOOBdWajVjeqPEVpXaxPNtlrhIDdFBSSxoojIKaJUmAUQrDk
+    {
+        private int buaquadi;
+        private string chusx;
+        public float gmac;
+        private double mciajx;
+
+        public int getX()
+        {
+            return buaquadi;
+        }
+        public string Title { get; }
+        public string Publisher { get; }
+        public string? Isbn { get; }
+
+        public oaVVuJMoCOOBdWajVjeqPEVpXaxPNtlrhIDdFBSSxoojIKaJUmAUQrDk()
+        {
+            
+        }
+        public oaVVuJMoCOOBdWajVjeqPEVpXaxPNtlrhIDdFBSSxoojIKaJUmAUQrDk(string title, string publisher, string? isbn)
+            => (Title, Publisher, Isbn) = (title, publisher, isbn);
+
+        public oaVVuJMoCOOBdWajVjeqPEVpXaxPNtlrhIDdFBSSxoojIKaJUmAUQrDk(string title, string publisher)
+            : this(title, publisher, null) {}
+
+        public void Deconstruct(out string title, out string publisher, out string? isbn)
+            => (title, publisher, isbn) = (Title, Publisher, Isbn);
+
+        public override string ToString() => Title;
+    }
+
+    public oaVVuJMoCOOBdWajVjeqPEVpXaxPNtlrhIDdFBSSxoojIKaJUmAUQrDk GetoaVVuJMoCOOBdWajVjeqPEVpXaxPNtlrhIDdFBSSxoojIKaJUmAUQrDk(){
+        var clasx = new oaVVuJMoCOOBdWajVjeqPEVpXaxPNtlrhIDdFBSSxoojIKaJUmAUQrDk();
+        return  clasx;
+    }
+
+    public string RandomStringoaVVuJMoCOOBdWajVjeqPEVpXaxPNtlrhIDdFBSSxoojIKaJUmAUQrDk(int length)
+    {
+        string chars = string.Empty;
+        return chars;
+    }
    void Start()
         {
         
