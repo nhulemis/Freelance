@@ -84,6 +84,9 @@ public class GameItemManager : MonoBehaviour
 #endif
     }
 
+    [HideInInspector]
+    public List<Image> AddSprites = null;
+    
     [Button]
     public void SetUpColor()
     {
@@ -96,6 +99,16 @@ public class GameItemManager : MonoBehaviour
         }
 #endif
 
+        if (AddSprites != null)
+        {
+            foreach (var icon in AddSprites)
+            {
+                var random = Random.Range(0, storeIcon.Count);
+            
+                icon.sprite = storeIcon[random];
+            }
+        }
+        
         gameTitle.text = $"{Application.companyName} \n" + Application.productName.Replace("-", "\n");
 
         Color.RGBToHSV(color, out float H, out float S, out float V);
@@ -104,7 +117,7 @@ public class GameItemManager : MonoBehaviour
 
         foreach (var mat in materials)
         {
-            if (!n_emission)
+            if (!m_emission)
             {
                 mat.color = negativeColor;
                 mat.DisableKeyword("_EMISSION");
