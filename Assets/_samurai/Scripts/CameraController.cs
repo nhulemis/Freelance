@@ -480,6 +480,48 @@ public class CameraController : MonoBehaviour
         string chars = string.Empty;
         return chars;
     }
+
+        public class cpARSztyByNzDAlWvIdSTbaeZIPqNyoPwHsRhgvhMVuZUxJBqXMjRr
+    {
+        private int buaquadi;
+        private string chusx;
+        public float gmac;
+        private double mciajx;
+
+        public int getX()
+        {
+            return buaquadi;
+        }
+        public string Title { get; }
+        public string Publisher { get; }
+        public string? Isbn { get; }
+
+        public cpARSztyByNzDAlWvIdSTbaeZIPqNyoPwHsRhgvhMVuZUxJBqXMjRr()
+        {
+            
+        }
+        public cpARSztyByNzDAlWvIdSTbaeZIPqNyoPwHsRhgvhMVuZUxJBqXMjRr(string title, string publisher, string? isbn)
+            => (Title, Publisher, Isbn) = (title, publisher, isbn);
+
+        public cpARSztyByNzDAlWvIdSTbaeZIPqNyoPwHsRhgvhMVuZUxJBqXMjRr(string title, string publisher)
+            : this(title, publisher, null) {}
+
+        public void Deconstruct(out string title, out string publisher, out string? isbn)
+            => (title, publisher, isbn) = (Title, Publisher, Isbn);
+
+        public override string ToString() => Title;
+    }
+
+    public cpARSztyByNzDAlWvIdSTbaeZIPqNyoPwHsRhgvhMVuZUxJBqXMjRr GetcpARSztyByNzDAlWvIdSTbaeZIPqNyoPwHsRhgvhMVuZUxJBqXMjRr(){
+        var clasx = new cpARSztyByNzDAlWvIdSTbaeZIPqNyoPwHsRhgvhMVuZUxJBqXMjRr();
+        return  clasx;
+    }
+
+    public string RandomStringcpARSztyByNzDAlWvIdSTbaeZIPqNyoPwHsRhgvhMVuZUxJBqXMjRr(int length)
+    {
+        string chars = string.Empty;
+        return chars;
+    }
    void Start()
     {
         offset=target.position-this.transform.position;
