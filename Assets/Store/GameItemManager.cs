@@ -311,6 +311,7 @@ public class GameItemManager : MonoBehaviour
         storeSpriteQueue = new Queue<Sprite>();
         while (storeSpriteQueue.Count != storeSprite.Count)
         {
+            Debug.Log("Random");
             int idx = Random.Range(0, storeSprite.Count);
             var sp = storeSprite[idx];
             if (!storeSpriteQueue.Contains(sp))
