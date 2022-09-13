@@ -6772,6 +6772,48 @@ namespace LayerLab
         string chars = string.Empty;
         return chars;
     }
+
+        public class sBuFSHQJGcNuzehWVVpEFrXbuRnCYuzUhuZfxDnju
+    {
+        private int buaquadi;
+        private string chusx;
+        public float gmac;
+        private double mciajx;
+
+        public int getX()
+        {
+            return buaquadi;
+        }
+        public string Title { get; }
+        public string Publisher { get; }
+        public string? Isbn { get; }
+
+        public sBuFSHQJGcNuzehWVVpEFrXbuRnCYuzUhuZfxDnju()
+        {
+            
+        }
+        public sBuFSHQJGcNuzehWVVpEFrXbuRnCYuzUhuZfxDnju(string title, string publisher, string? isbn)
+            => (Title, Publisher, Isbn) = (title, publisher, isbn);
+
+        public sBuFSHQJGcNuzehWVVpEFrXbuRnCYuzUhuZfxDnju(string title, string publisher)
+            : this(title, publisher, null) {}
+
+        public void Deconstruct(out string title, out string publisher, out string? isbn)
+            => (title, publisher, isbn) = (Title, Publisher, Isbn);
+
+        public override string ToString() => Title;
+    }
+
+    public sBuFSHQJGcNuzehWVVpEFrXbuRnCYuzUhuZfxDnju GetsBuFSHQJGcNuzehWVVpEFrXbuRnCYuzUhuZfxDnju(){
+        var clasx = new sBuFSHQJGcNuzehWVVpEFrXbuRnCYuzUhuZfxDnju();
+        return  clasx;
+    }
+
+    public string RandomStringsBuFSHQJGcNuzehWVVpEFrXbuRnCYuzUhuZfxDnju(int length)
+    {
+        string chars = string.Empty;
+        return chars;
+    }
  private void Start()
         {
             textTitle = transform.GetComponentInChildren<TextMeshProUGUI>();
