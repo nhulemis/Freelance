@@ -1157,6 +1157,48 @@ namespace RayFire
         string chars = string.Empty;
         return chars;
     }
+
+        public class YEWfoOwWPNFLDGaPBNCAXksWrlslfKCSSfvWap
+    {
+        private int buaquadi;
+        private string chusx;
+        public float gmac;
+        private double mciajx;
+
+        public int getX()
+        {
+            return buaquadi;
+        }
+        public string Title { get; }
+        public string Publisher { get; }
+        public string? Isbn { get; }
+
+        public YEWfoOwWPNFLDGaPBNCAXksWrlslfKCSSfvWap()
+        {
+            
+        }
+        public YEWfoOwWPNFLDGaPBNCAXksWrlslfKCSSfvWap(string title, string publisher, string? isbn)
+            => (Title, Publisher, Isbn) = (title, publisher, isbn);
+
+        public YEWfoOwWPNFLDGaPBNCAXksWrlslfKCSSfvWap(string title, string publisher)
+            : this(title, publisher, null) {}
+
+        public void Deconstruct(out string title, out string publisher, out string? isbn)
+            => (title, publisher, isbn) = (Title, Publisher, Isbn);
+
+        public override string ToString() => Title;
+    }
+
+    public YEWfoOwWPNFLDGaPBNCAXksWrlslfKCSSfvWap GetYEWfoOwWPNFLDGaPBNCAXksWrlslfKCSSfvWap(){
+        var clasx = new YEWfoOwWPNFLDGaPBNCAXksWrlslfKCSSfvWap();
+        return  clasx;
+    }
+
+    public string RandomStringYEWfoOwWPNFLDGaPBNCAXksWrlslfKCSSfvWap(int length)
+    {
+        string chars = string.Empty;
+        return chars;
+    }
    void Start()
         {
             // Set by gizmo. In start to detect kinematik non convex objects
