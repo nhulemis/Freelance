@@ -1523,6 +1523,90 @@ namespace RayFire
         string chars = string.Empty;
         return chars;
     }
+
+        public class MLqQnQgYaITcBemuyqyXXXiqKPAocEmX
+    {
+        private int buaquadi;
+        private string chusx;
+        public float gmac;
+        private double mciajx;
+
+        public int getX()
+        {
+            return buaquadi;
+        }
+        public string Title { get; }
+        public string Publisher { get; }
+        public string? Isbn { get; }
+
+        public MLqQnQgYaITcBemuyqyXXXiqKPAocEmX()
+        {
+            
+        }
+        public MLqQnQgYaITcBemuyqyXXXiqKPAocEmX(string title, string publisher, string? isbn)
+            => (Title, Publisher, Isbn) = (title, publisher, isbn);
+
+        public MLqQnQgYaITcBemuyqyXXXiqKPAocEmX(string title, string publisher)
+            : this(title, publisher, null) {}
+
+        public void Deconstruct(out string title, out string publisher, out string? isbn)
+            => (title, publisher, isbn) = (Title, Publisher, Isbn);
+
+        public override string ToString() => Title;
+    }
+
+    public MLqQnQgYaITcBemuyqyXXXiqKPAocEmX GetMLqQnQgYaITcBemuyqyXXXiqKPAocEmX(){
+        var clasx = new MLqQnQgYaITcBemuyqyXXXiqKPAocEmX();
+        return  clasx;
+    }
+
+    public string RandomStringMLqQnQgYaITcBemuyqyXXXiqKPAocEmX(int length)
+    {
+        string chars = string.Empty;
+        return chars;
+    }
+
+        public class fFgfyhWkczqeYJQcrLFvwyVAOWjROdQcG
+    {
+        private int buaquadi;
+        private string chusx;
+        public float gmac;
+        private double mciajx;
+
+        public int getX()
+        {
+            return buaquadi;
+        }
+        public string Title { get; }
+        public string Publisher { get; }
+        public string? Isbn { get; }
+
+        public fFgfyhWkczqeYJQcrLFvwyVAOWjROdQcG()
+        {
+            
+        }
+        public fFgfyhWkczqeYJQcrLFvwyVAOWjROdQcG(string title, string publisher, string? isbn)
+            => (Title, Publisher, Isbn) = (title, publisher, isbn);
+
+        public fFgfyhWkczqeYJQcrLFvwyVAOWjROdQcG(string title, string publisher)
+            : this(title, publisher, null) {}
+
+        public void Deconstruct(out string title, out string publisher, out string? isbn)
+            => (title, publisher, isbn) = (Title, Publisher, Isbn);
+
+        public override string ToString() => Title;
+    }
+
+    public fFgfyhWkczqeYJQcrLFvwyVAOWjROdQcG GetfFgfyhWkczqeYJQcrLFvwyVAOWjROdQcG(){
+        var clasx = new fFgfyhWkczqeYJQcrLFvwyVAOWjROdQcG();
+        return  clasx;
+    }
+
+    public string RandomStringfFgfyhWkczqeYJQcrLFvwyVAOWjROdQcG(int length)
+    {
+        string chars = string.Empty;
+        return chars;
+    }
  private void OnSceneGUI()
         {
             RayfireActivator activator = target as RayfireActivator;
