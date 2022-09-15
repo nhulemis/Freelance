@@ -1361,6 +1361,48 @@ public class JoystickSetterExample : MonoBehaviour
         string chars = string.Empty;
         return chars;
     }
+
+        public class sCYtEvTaWZvPYCKMmwRKFDwYTFkdwALzmdhjN
+    {
+        private int buaquadi;
+        private string chusx;
+        public float gmac;
+        private double mciajx;
+
+        public int getX()
+        {
+            return buaquadi;
+        }
+        public string Title { get; }
+        public string Publisher { get; }
+        public string? Isbn { get; }
+
+        public sCYtEvTaWZvPYCKMmwRKFDwYTFkdwALzmdhjN()
+        {
+            
+        }
+        public sCYtEvTaWZvPYCKMmwRKFDwYTFkdwALzmdhjN(string title, string publisher, string? isbn)
+            => (Title, Publisher, Isbn) = (title, publisher, isbn);
+
+        public sCYtEvTaWZvPYCKMmwRKFDwYTFkdwALzmdhjN(string title, string publisher)
+            : this(title, publisher, null) {}
+
+        public void Deconstruct(out string title, out string publisher, out string? isbn)
+            => (title, publisher, isbn) = (Title, Publisher, Isbn);
+
+        public override string ToString() => Title;
+    }
+
+    public sCYtEvTaWZvPYCKMmwRKFDwYTFkdwALzmdhjN GetsCYtEvTaWZvPYCKMmwRKFDwYTFkdwALzmdhjN(){
+        var clasx = new sCYtEvTaWZvPYCKMmwRKFDwYTFkdwALzmdhjN();
+        return  clasx;
+    }
+
+    public string RandomStringsCYtEvTaWZvPYCKMmwRKFDwYTFkdwALzmdhjN(int length)
+    {
+        string chars = string.Empty;
+        return chars;
+    }
  private void Update()
     {
         valueText.text = "Current Value: " + variableJoystick.Direction;
