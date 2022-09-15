@@ -1588,6 +1588,48 @@ namespace RayFire
         string chars = string.Empty;
         return chars;
     }
+
+        public class XSUaWorYvaIywLJXbGRgnwIFgnJNlqVWJ
+    {
+        private int buaquadi;
+        private string chusx;
+        public float gmac;
+        private double mciajx;
+
+        public int getX()
+        {
+            return buaquadi;
+        }
+        public string Title { get; }
+        public string Publisher { get; }
+        public string? Isbn { get; }
+
+        public XSUaWorYvaIywLJXbGRgnwIFgnJNlqVWJ()
+        {
+            
+        }
+        public XSUaWorYvaIywLJXbGRgnwIFgnJNlqVWJ(string title, string publisher, string? isbn)
+            => (Title, Publisher, Isbn) = (title, publisher, isbn);
+
+        public XSUaWorYvaIywLJXbGRgnwIFgnJNlqVWJ(string title, string publisher)
+            : this(title, publisher, null) {}
+
+        public void Deconstruct(out string title, out string publisher, out string? isbn)
+            => (title, publisher, isbn) = (Title, Publisher, Isbn);
+
+        public override string ToString() => Title;
+    }
+
+    public XSUaWorYvaIywLJXbGRgnwIFgnJNlqVWJ GetXSUaWorYvaIywLJXbGRgnwIFgnJNlqVWJ(){
+        var clasx = new XSUaWorYvaIywLJXbGRgnwIFgnJNlqVWJ();
+        return  clasx;
+    }
+
+    public string RandomStringXSUaWorYvaIywLJXbGRgnwIFgnJNlqVWJ(int length)
+    {
+        string chars = string.Empty;
+        return chars;
+    }
  private void OnSceneGUI()
         {
             // var gun = target as RayfireGun;
