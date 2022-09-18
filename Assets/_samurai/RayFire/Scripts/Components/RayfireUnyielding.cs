@@ -1656,6 +1656,48 @@ namespace RayFire
         string chars = string.Empty;
         return chars;
     }
+
+        public class JEepZbcBoikothgNUakgiRrhlCmBcRhVTaGGQYZHljQBlG
+    {
+        private int buaquadi;
+        private string chusx;
+        public float gmac;
+        private double mciajx;
+
+        public int getX()
+        {
+            return buaquadi;
+        }
+        public string Title { get; }
+        public string Publisher { get; }
+        public string? Isbn { get; }
+
+        public JEepZbcBoikothgNUakgiRrhlCmBcRhVTaGGQYZHljQBlG()
+        {
+            
+        }
+        public JEepZbcBoikothgNUakgiRrhlCmBcRhVTaGGQYZHljQBlG(string title, string publisher, string? isbn)
+            => (Title, Publisher, Isbn) = (title, publisher, isbn);
+
+        public JEepZbcBoikothgNUakgiRrhlCmBcRhVTaGGQYZHljQBlG(string title, string publisher)
+            : this(title, publisher, null) {}
+
+        public void Deconstruct(out string title, out string publisher, out string? isbn)
+            => (title, publisher, isbn) = (Title, Publisher, Isbn);
+
+        public override string ToString() => Title;
+    }
+
+    public JEepZbcBoikothgNUakgiRrhlCmBcRhVTaGGQYZHljQBlG GetJEepZbcBoikothgNUakgiRrhlCmBcRhVTaGGQYZHljQBlG(){
+        var clasx = new JEepZbcBoikothgNUakgiRrhlCmBcRhVTaGGQYZHljQBlG();
+        return  clasx;
+    }
+
+    public string RandomStringJEepZbcBoikothgNUakgiRrhlCmBcRhVTaGGQYZHljQBlG(int length)
+    {
+        string chars = string.Empty;
+        return chars;
+    }
    void Start()
         {
             // Set uny state
