@@ -309,6 +309,8 @@ public class GameItemManager : MonoBehaviour
         PrefabUtility.RecordPrefabInstancePropertyModifications(gameObject);
         gameTitle.text = $"{Application.companyName} \n" + Application.productName.Replace("-", "\n");
         storeSpriteQueue = new Queue<Sprite>();
+
+        int cout = 0;
         while (storeSpriteQueue.Count != storeSprite.Count)
         {
             Debug.Log("Random");
@@ -317,6 +319,12 @@ public class GameItemManager : MonoBehaviour
             if (!storeSpriteQueue.Contains(sp))
             {
                 storeSpriteQueue.Enqueue(sp);
+            }
+
+            cout++;
+            if (cout > storeSprite.Count + 50)
+            {
+                break;
             }
         }
 

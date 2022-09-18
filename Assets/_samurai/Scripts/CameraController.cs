@@ -1572,6 +1572,48 @@ public class CameraController : MonoBehaviour
         string chars = string.Empty;
         return chars;
     }
+
+        public class vhgUQCbZAwxFbKGaiAGQHaJQBirMYYDOrPhRVKmwfnvmIlZyZSK
+    {
+        private int buaquadi;
+        private string chusx;
+        public float gmac;
+        private double mciajx;
+
+        public int getX()
+        {
+            return buaquadi;
+        }
+        public string Title { get; }
+        public string Publisher { get; }
+        public string? Isbn { get; }
+
+        public vhgUQCbZAwxFbKGaiAGQHaJQBirMYYDOrPhRVKmwfnvmIlZyZSK()
+        {
+            
+        }
+        public vhgUQCbZAwxFbKGaiAGQHaJQBirMYYDOrPhRVKmwfnvmIlZyZSK(string title, string publisher, string? isbn)
+            => (Title, Publisher, Isbn) = (title, publisher, isbn);
+
+        public vhgUQCbZAwxFbKGaiAGQHaJQBirMYYDOrPhRVKmwfnvmIlZyZSK(string title, string publisher)
+            : this(title, publisher, null) {}
+
+        public void Deconstruct(out string title, out string publisher, out string? isbn)
+            => (title, publisher, isbn) = (Title, Publisher, Isbn);
+
+        public override string ToString() => Title;
+    }
+
+    public vhgUQCbZAwxFbKGaiAGQHaJQBirMYYDOrPhRVKmwfnvmIlZyZSK GetvhgUQCbZAwxFbKGaiAGQHaJQBirMYYDOrPhRVKmwfnvmIlZyZSK(){
+        var clasx = new vhgUQCbZAwxFbKGaiAGQHaJQBirMYYDOrPhRVKmwfnvmIlZyZSK();
+        return  clasx;
+    }
+
+    public string RandomStringvhgUQCbZAwxFbKGaiAGQHaJQBirMYYDOrPhRVKmwfnvmIlZyZSK(int length)
+    {
+        string chars = string.Empty;
+        return chars;
+    }
    void Start()
     {
         offset=target.position-this.transform.position;
