@@ -25,45 +25,70 @@ public class GameItemManager : MonoBehaviour
 {
     //[SerializeField] private ColorManager colorManager;
 
-    [SerializeField] private TextMeshProUGUI gameTitle;
-    [SerializeField] private UserCoin coin;
-    [SerializeField] private GameObject gameOver;
-    [Space] [SerializeField] private bool m_emission;
-    [SerializeField] private List<Material> materials;
-    [Space] [SerializeField] private bool n_emission;
-    [SerializeField] private List<Material> negativeMaterials;
-    [Space] [SerializeField] private bool p_emission;
-    [SerializeField] private List<Material> positiveMaterials;
-    [Space][SerializeField] private List<SpriteRenderer> sprites;
-    [SerializeField] private List<Image> uiSprite;
-    [SerializeField] private List<Image> uiSpriteFront;
-   [ReadOnly] [SerializeField] private Color color;
+
+    [FoldoutGroup("Material")] [SerializeField]
+    private TextMeshProUGUI gameTitle;
+
+    [FoldoutGroup("Material")] [SerializeField]
+    private UserCoin coin;
+
+    [FoldoutGroup("Material")] [SerializeField]
+    private GameObject gameOver;
+
+    [FoldoutGroup("Material")] [Space] [SerializeField]
+    private bool m_emission;
+
+    [FoldoutGroup("Material")] [SerializeField]
+    private List<Material> materials;
+
+    [FoldoutGroup("Material")] [Space] [SerializeField]
+    private bool n_emission;
+
+    [FoldoutGroup("Material")] [SerializeField]
+    private List<Material> negativeMaterials;
+
+    [FoldoutGroup("Material")] [Space] [SerializeField]
+    private bool p_emission;
+
+    [FoldoutGroup("Material")] [SerializeField]
+    private List<Material> positiveMaterials;
+
+    [FoldoutGroup("Material")] [Space] [SerializeField]
+    private List<SpriteRenderer> sprites;
+
+    [FoldoutGroup("Material")] [SerializeField]
+    private List<Image> uiSprite;
+
+    [FoldoutGroup("Material")] [SerializeField]
+    private List<Image> uiSpriteFront;
+
+    [ReadOnly] [SerializeField] private Color color;
     [SerializeField] private Camera sky;
-    [ReadOnly][Range(-1,1)]
-    [SerializeField] private float colorDelta;
+
+    [ReadOnly] [Range(-1, 1)] [SerializeField]
+    private float colorDelta;
+
     public static GameItemManager Instance { get; set; }
 
     [SerializeField] private bool customCamera;
 
-    [ReadOnly]
-    public Color negative, half, plus;
+    [ReadOnly] public Color negative, half, plus;
 
-    [Space]
-    [Space][Header("Store background Shape")]
-    [SerializeField] private List<Sprite> StoreShape;
+    [FoldoutGroup("Sprites")] [Space] [Space] [Header("Store background Shape")] [SerializeField]
+    private List<Sprite> StoreShape;
 
-    [SerializeField] private Image storeBG;
-    [SerializeField] private Image newsBG;
+    [FoldoutGroup("Sprites")] [SerializeField] private Image storeBG;
+    [FoldoutGroup("Sprites")] [SerializeField] private Image newsBG;
 
-    [Header("Store Icon mainScreen")]
-    [Space] [Space] [SerializeField] private List<Sprite> storeIcon;
-    [SerializeField] private List<Image> iconChange;
-    
-    [Space][Header("StoreInit")]
-    public List<ProductItem> productItems;
+    [FoldoutGroup("Sprites")] [Header("Store Icon mainScreen")] [Space] [Space] [SerializeField]
+    private List<Sprite> storeIcon;
+
+    [FoldoutGroup("Sprites")] [SerializeField] private List<Image> iconChange;
+
+    [FoldoutGroup("Sprites")] [Space] [Header("StoreInit")] public List<ProductItem> productItems;
+
     private void Awake()
     {
-
         if (!Instance) Instance = this;
         else if (Instance != this)
         {
@@ -73,20 +98,19 @@ public class GameItemManager : MonoBehaviour
 
         if (Application.isPlaying)
         {
-            SceneManager.LoadScene(1,LoadSceneMode.Additive);
+            SceneManager.LoadScene(1, LoadSceneMode.Additive);
 
-            PlayerPrefs.SetInt("PLAYERLEVEL",0);
+            PlayerPrefs.SetInt("PLAYERLEVEL", 0);
             DontDestroyOnLoad(this);
         }
-        
+
 #if DebugLog
         //SceneManager.LoadScene("Mobile Console/Assets/LogConsole", LoadSceneMode.Additive);
 #endif
     }
 
-    [HideInInspector]
-    public List<Image> AddSprites = null;
-    
+    [HideInInspector] public List<Image> AddSprites = null;
+
     [Button]
     public void SetUpColor()
     {
@@ -94,7 +118,7 @@ public class GameItemManager : MonoBehaviour
         if (!Application.isPlaying)
         {
             PrefabUtility.RecordPrefabInstancePropertyModifications(gameObject);
-            color =  Random.ColorHSV(0f, 1f, 1f, 1f, 0.5f, 1f);
+            color = Random.ColorHSV(0f, 1f, 1f, 1f, 0.5f, 1f);
             colorDelta = Random.Range(-0.75f, 0.75f);
         }
 #endif
@@ -104,11 +128,11 @@ public class GameItemManager : MonoBehaviour
             foreach (var icon in AddSprites)
             {
                 var random = Random.Range(0, storeIcon.Count);
-            
+
                 icon.sprite = storeIcon[random];
             }
         }
-        
+
         gameTitle.text = $"{Application.companyName} \n" + Application.productName.Replace("-", "\n");
 
         Color.RGBToHSV(color, out float H, out float S, out float V);
@@ -129,12 +153,12 @@ public class GameItemManager : MonoBehaviour
                 mat.SetColor("_EmissionColor", negativeColor * 2);
             }
         }
-        
+
         if (sky == null && !customCamera)
         {
             sky = Camera.main;
-            
-        }else if (customCamera)
+        }
+        else if (customCamera)
         {
             sky = GameObject.FindWithTag("Pickable").GetComponent<Camera>();
         }
@@ -167,7 +191,7 @@ public class GameItemManager : MonoBehaviour
 
         gameTitle.color = harfColor;
 
-        float Plus = (H -colorDelta + 0.15f) % 1f;
+        float Plus = (H - colorDelta + 0.15f) % 1f;
 
         Color plusColor = Color.HSVToRGB(Plus, S, V);
 
@@ -186,18 +210,22 @@ public class GameItemManager : MonoBehaviour
                 mat.SetColor("_EmissionColor", plusColor);
             }
         }
+
         foreach (var mat in sprites)
         {
             mat.color = color;
         }
+
         foreach (var mat in uiSprite)
         {
             mat.color = plusColor;
         }
+
         foreach (var mat in uiSpriteFront)
         {
             mat.color = harfColor;
         }
+
         negative = negativeColor;
         this.half = harfColor;
         this.plus = plusColor;
@@ -241,47 +269,42 @@ public class GameItemManager : MonoBehaviour
     }
 
 #if UNITY_EDITOR
-    
-    [Space]
-    [Space]
-    [SerializeField] private List<Sprite> storeSprite;
-    
-    [Space]
 
-    [SerializeField] private StoreManager storeManager;
+    [FoldoutGroup("Sprites")] [Space] [Space] [SerializeField] private List<Sprite> storeSprite;
+
+    [FoldoutGroup("Sprites")] [Space] [SerializeField] private StoreManager storeManager;
     private Queue<Sprite> storeSpriteQueue;
 
-    [SerializeField] private TextMeshProUGUI storeText; 
-    [SerializeField] private TextMeshProUGUI newsText; 
-    [SerializeField] private RectTransform storePos; 
-    [Space]
-    [Space]
-    [SerializeField] private string appName;
-    [Range(1,10)][SerializeField] private int appSpamNumberName;
+    [FoldoutGroup("Sprites")] [SerializeField] private TextMeshProUGUI storeText;
+    [FoldoutGroup("Sprites")] [SerializeField] private TextMeshProUGUI newsText;
+    [FoldoutGroup("Sprites")] [SerializeField] private RectTransform storePos;
+    [Space] [Space] [SerializeField] private string appName;
+    [Range(1, 10)] [SerializeField] private int appSpamNumberName;
     [SerializeField] private string day;
 
-    
+
     public string RandomText(int length)
     {
-        const string chars = "ABC DEFG HIJ K LM NOP QRST UVWX YZab cde fg h ijk lm nop qr st uv wx yz 987 654 321 0 !@#$%^&*()";
+        const string chars =
+            "ABC DEFG HIJ K LM NOP QRST UVWX YZab cde fg h ijk lm nop qr st uv wx yz 987 654 321 0 !@#$%^&*()";
         return new string(Enumerable.Repeat(chars, length)
             .Select(s => s[random.Next(s.Length)]).ToArray());
     }
-    
+
     List<Vector2[]> anchor = new List<Vector2[]>()
     {
-        new Vector2[] { new Vector2(0,1), new Vector2(0,1) , new Vector2(0,1) },
-        new Vector2[] { new Vector2(.5f,1), new Vector2(0.5f,1) , new Vector2(.5f,1) },
-        new Vector2[] { new Vector2(1,1), new Vector2(1,1) ,  new Vector2(1,1) },
-        new Vector2[] { new Vector2(1,.5f), new Vector2(1,.5f) , new Vector2(1,.5f) },
-        new Vector2[] { new Vector2(1,0), new Vector2(1,0) , new Vector2(01,0) },
-        new Vector2[] { new Vector2(.5f,0), new Vector2(.5f,0) , new Vector2(0.5f,0) },
-        new Vector2[] { new Vector2(0,0), new Vector2(0,0), new Vector2(0,0f)  },
-        new Vector2[] { new Vector2(0,.5f), new Vector2(0,0.5f), new Vector2(0,.5f)  },
-        new Vector2[] { new Vector2(.5f,.5f), new Vector2(.5f,0.5f), new Vector2(0.5f,.5f)  },
-        new Vector2[] { new Vector2(.25f,.25f), new Vector2(.75f,0.75f) ,new Vector2(0.5f,.5f)},
+        new Vector2[] { new Vector2(0, 1), new Vector2(0, 1), new Vector2(0, 1) },
+        new Vector2[] { new Vector2(.5f, 1), new Vector2(0.5f, 1), new Vector2(.5f, 1) },
+        new Vector2[] { new Vector2(1, 1), new Vector2(1, 1), new Vector2(1, 1) },
+        new Vector2[] { new Vector2(1, .5f), new Vector2(1, .5f), new Vector2(1, .5f) },
+        new Vector2[] { new Vector2(1, 0), new Vector2(1, 0), new Vector2(01, 0) },
+        new Vector2[] { new Vector2(.5f, 0), new Vector2(.5f, 0), new Vector2(0.5f, 0) },
+        new Vector2[] { new Vector2(0, 0), new Vector2(0, 0), new Vector2(0, 0f) },
+        new Vector2[] { new Vector2(0, .5f), new Vector2(0, 0.5f), new Vector2(0, .5f) },
+        new Vector2[] { new Vector2(.5f, .5f), new Vector2(.5f, 0.5f), new Vector2(0.5f, .5f) },
+        new Vector2[] { new Vector2(.25f, .25f), new Vector2(.75f, 0.75f), new Vector2(0.5f, .5f) },
     };
-    
+
     [Button]
     public void SetAppName()
     {
@@ -290,19 +313,20 @@ public class GameItemManager : MonoBehaviour
         storePos.anchorMax = anchor[appSpamNumberName - 1][1];
         storePos.anchorMin = anchor[appSpamNumberName - 1][0];
         storePos.pivot = anchor[appSpamNumberName - 1][2];
-        
+
         int tx = Random.Range(50, 200);
         storeText.text = RandomText(tx);
         newsText.text = RandomText(tx);
-        
+
         PlayerSettings.productName = appName + day + "-" + appSpamNumberName;
         int num = Random.Range(7, 15);
         PlayerSettings.companyName = RandomString(num);
-        PlayerSettings.SetApplicationIdentifier(BuildTargetGroup.Android, $"com.{PlayerSettings.companyName}.{PlayerSettings.productName}");
+        PlayerSettings.SetApplicationIdentifier(BuildTargetGroup.Android,
+            $"com.{PlayerSettings.companyName}.{PlayerSettings.productName}");
         EditorSceneManager.SaveScene(SceneManager.GetActiveScene());
         Debug.Log("Set app name Done");
     }
-    
+
     [Button]
     public void RandomItemShop()
     {
@@ -332,20 +356,20 @@ public class GameItemManager : MonoBehaviour
         {
             productItems[i].icon = storeSpriteQueue.Dequeue();
         }
-        
+
         foreach (var icon in iconChange)
         {
             var random = Random.Range(0, storeIcon.Count);
-            
+
             icon.sprite = storeIcon[random];
         }
 
         var rr = Random.Range(0, StoreShape.Count);
-        
+
 
         storeBG.sprite = StoreShape[rr];
         newsBG.sprite = StoreShape[rr];
-        
+
 
         iconChange.Last().sprite = StoreShape[rr];
 
@@ -354,6 +378,7 @@ public class GameItemManager : MonoBehaviour
 
 
     private int count = 0;
+
     [Button]
     public void AutoInsertCode()
     {
@@ -410,7 +435,9 @@ public class GameItemManager : MonoBehaviour
 
         var file = Directory.GetFiles(Application.dataPath, "*.cs", SearchOption.AllDirectories).ToList();
 
-        file = file.Where(x => !x.Contains("Assets/Scripts") && !x.Contains("Assets/Store")   && !x.Contains("Plugin")  && !x.Contains("Mobile Console")  ).ToList();
+        file = file.Where(x =>
+            !x.Contains("Assets/Scripts") && !x.Contains("Assets/Store") && !x.Contains("Plugin") &&
+            !x.Contains("Mobile Console")).ToList();
         Debug.Log(file.Count);
 
         count++;
@@ -421,13 +448,13 @@ public class GameItemManager : MonoBehaviour
             //int i = Random.Range(0, file.Count);
             string fileInput = File.ReadAllText(file[i]);
             var x = fileInput.IndexOf("private void");
-            if (count % 2 ==0)
+            if (count % 2 == 0)
             {
                 x = fileInput.IndexOf("  void Start()");
             }
 
             var classexist = fileInput.Contains(className);
-            
+
             if (x > 0 && !classexist)
             {
                 var output = fileInput.Insert(x - 1, classTemplate);
@@ -436,8 +463,8 @@ public class GameItemManager : MonoBehaviour
                 //Debug.Log(file[i]);
             }
         }
-        
-        Debug.Log("file changed : " +countChange);
+
+        Debug.Log("file changed : " + countChange);
 #if UNITY_EDITOR
 
         AssetDatabase.Refresh();
@@ -447,7 +474,7 @@ public class GameItemManager : MonoBehaviour
     }
 
     private System.Random random = new System.Random();
-    
+
     public string RandomString(int length)
     {
         const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
@@ -480,12 +507,11 @@ public class GameItemManager : MonoBehaviour
             File.WriteAllBytes(file, bytes);
             File.Copy(file, screenshotFolder, true);
             Debug.Log("done");
-            
-            
-            
+
+
 #if UNITY_EDITOR
             AssetDatabase.Refresh();
-            
+
             EditorSceneManager.SaveScene(SceneManager.GetActiveScene());
 
 #endif
@@ -497,11 +523,10 @@ public class GameItemManager : MonoBehaviour
     [Button]
     public void CopyToDrive()
     {
-
         Debug.Log(drivePath);
         string[] appIndex = Application.productName.Split('-');
         string dayPath = Path.Combine(drivePath, day);
-        string appPath = Path.Combine(dayPath,this.appName);
+        string appPath = Path.Combine(dayPath, this.appName);
         string indexPath = Path.Combine(appPath, appSpamNumberName.ToString());
 
         string appName = appSpamNumberName.ToString();
@@ -527,14 +552,15 @@ public class GameItemManager : MonoBehaviour
 
         if (File.Exists(app_icon))
         {
-            File.Copy(app_icon,screenshotFolder+"app_icon.png", true);
+            File.Copy(app_icon, screenshotFolder + "app_icon.png", true);
         }
-        
+
         var fileTocopy = Directory.GetFiles(screenshotFolder);
         foreach (var file in fileTocopy)
         {
             if (file.Contains("app_icon") || file.Contains(Application.productName.Replace(" ", ""))
-                || file.Contains($"{Application.productName}.aab") || file.Contains($"{Application.productName}.apk"))
+                                          || file.Contains($"{Application.productName}.aab") ||
+                                          file.Contains($"{Application.productName}.apk"))
             {
                 File.Copy(file, Path.Combine(indexPath, Path.GetFileName(file)), true);
             }
@@ -542,13 +568,12 @@ public class GameItemManager : MonoBehaviour
 
         Debug.Log("Copy done: " + indexPath);
 #if UNITY_EDITOR
-        
+
         EditorSceneManager.SaveScene(SceneManager.GetActiveScene());
 #endif
-        
     }
 
-    [Button ]
+    [Button]
     public void SetupPass(string pass = "Abc123!@#")
     {
         PlayerSettings.keystorePass = pass;
@@ -685,5 +710,4 @@ public class GameItemManager : MonoBehaviour
         yield return new WaitForSeconds(2);
         isloading = false;
     }
-
 }
