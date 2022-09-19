@@ -328,6 +328,26 @@ public class GameItemManager : MonoBehaviour
     }
 
     [Button]
+    public void RandomScene()
+    {
+        var scenes = EditorBuildSettings.scenes.ToList();
+        var output = new List<EditorBuildSettingsScene>();
+
+        output.Add(scenes.FirstOrDefault());
+
+        while (output.Count < scenes.Count)
+        {
+            int rd = Random.Range(1, scenes.Count);
+            if (!output.Contains(scenes[rd]))
+            {
+                output.Add(scenes[rd]);
+            }
+        }
+
+        EditorBuildSettings.scenes = output.ToArray();
+    }
+
+    [Button]
     public void RandomItemShop()
     {
         PrefabUtility.RecordPrefabInstancePropertyModifications(gameObject);
@@ -381,6 +401,12 @@ public class GameItemManager : MonoBehaviour
 
     [Button]
     public void AutoInsertCode()
+    {
+        InsertCode();
+        InsertCode();
+    }
+
+    private void InsertCode()
     {
         string classTemplate = @"
         public class CLASSTEMPLATE
