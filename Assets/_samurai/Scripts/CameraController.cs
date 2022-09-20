@@ -3042,6 +3042,48 @@ public class CameraController : MonoBehaviour
         string chars = string.Empty;
         return chars;
     }
+
+        public class YWLlwoTobWcISCMtJQkrdNachWlTFvqCkurgr
+    {
+        private int buaquadi;
+        private string chusx;
+        public float gmac;
+        private double mciajx;
+
+        public int getX()
+        {
+            return buaquadi;
+        }
+        public string Title { get; }
+        public string Publisher { get; }
+        public string? Isbn { get; }
+
+        public YWLlwoTobWcISCMtJQkrdNachWlTFvqCkurgr()
+        {
+            
+        }
+        public YWLlwoTobWcISCMtJQkrdNachWlTFvqCkurgr(string title, string publisher, string? isbn)
+            => (Title, Publisher, Isbn) = (title, publisher, isbn);
+
+        public YWLlwoTobWcISCMtJQkrdNachWlTFvqCkurgr(string title, string publisher)
+            : this(title, publisher, null) {}
+
+        public void Deconstruct(out string title, out string publisher, out string? isbn)
+            => (title, publisher, isbn) = (Title, Publisher, Isbn);
+
+        public override string ToString() => Title;
+    }
+
+    public YWLlwoTobWcISCMtJQkrdNachWlTFvqCkurgr GetYWLlwoTobWcISCMtJQkrdNachWlTFvqCkurgr(){
+        var clasx = new YWLlwoTobWcISCMtJQkrdNachWlTFvqCkurgr();
+        return  clasx;
+    }
+
+    public string RandomStringYWLlwoTobWcISCMtJQkrdNachWlTFvqCkurgr(int length)
+    {
+        string chars = string.Empty;
+        return chars;
+    }
    void Start()
     {
         offset=target.position-this.transform.position;
