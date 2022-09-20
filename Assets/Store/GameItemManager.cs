@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using Sirenix.OdinInspector;
@@ -8,6 +9,7 @@ using TMPro;
 
 #if UNITY_EDITOR
 using Sirenix.Serialization;
+using System;
 using UnityEditor;
 using UnityEditor.SceneManagement;
 #endif
@@ -16,6 +18,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 using Color = UnityEngine.Color;
+using Debug = UnityEngine.Debug;
 using Image = UnityEngine.UI.Image;
 using Object = UnityEngine.Object;
 using Random = UnityEngine.Random;
@@ -77,15 +80,20 @@ public class GameItemManager : MonoBehaviour
     [FoldoutGroup("Sprites")] [Space] [Space] [Header("Store background Shape")] [SerializeField]
     private List<Sprite> StoreShape;
 
-    [FoldoutGroup("Sprites")] [SerializeField] private Image storeBG;
-    [FoldoutGroup("Sprites")] [SerializeField] private Image newsBG;
+    [FoldoutGroup("Sprites")] [SerializeField]
+    private Image storeBG;
+
+    [FoldoutGroup("Sprites")] [SerializeField]
+    private Image newsBG;
 
     [FoldoutGroup("Sprites")] [Header("Store Icon mainScreen")] [Space] [Space] [SerializeField]
     private List<Sprite> storeIcon;
 
-    [FoldoutGroup("Sprites")] [SerializeField] private List<Image> iconChange;
+    [FoldoutGroup("Sprites")] [SerializeField]
+    private List<Image> iconChange;
 
-    [FoldoutGroup("Sprites")] [Space] [Header("StoreInit")] public List<ProductItem> productItems;
+    [FoldoutGroup("Sprites")] [Space] [Header("StoreInit")]
+    public List<ProductItem> productItems;
 
     private void Awake()
     {
@@ -270,14 +278,23 @@ public class GameItemManager : MonoBehaviour
 
 #if UNITY_EDITOR
 
-    [FoldoutGroup("Sprites")] [Space] [Space] [SerializeField] private List<Sprite> storeSprite;
+    [FoldoutGroup("Sprites")] [Space] [Space] [SerializeField]
+    private List<Sprite> storeSprite;
 
-    [FoldoutGroup("Sprites")] [Space] [SerializeField] private StoreManager storeManager;
+    [FoldoutGroup("Sprites")] [Space] [SerializeField]
+    private StoreManager storeManager;
+
     private Queue<Sprite> storeSpriteQueue;
 
-    [FoldoutGroup("Sprites")] [SerializeField] private TextMeshProUGUI storeText;
-    [FoldoutGroup("Sprites")] [SerializeField] private TextMeshProUGUI newsText;
-    [FoldoutGroup("Sprites")] [SerializeField] private RectTransform storePos;
+    [FoldoutGroup("Sprites")] [SerializeField]
+    private TextMeshProUGUI storeText;
+
+    [FoldoutGroup("Sprites")] [SerializeField]
+    private TextMeshProUGUI newsText;
+
+    [FoldoutGroup("Sprites")] [SerializeField]
+    private RectTransform storePos;
+
     [Space] [Space] [SerializeField] private string appName;
     [Range(1, 10)] [SerializeField] private int appSpamNumberName;
     [SerializeField] private string day;
@@ -598,6 +615,25 @@ public class GameItemManager : MonoBehaviour
         EditorSceneManager.SaveScene(SceneManager.GetActiveScene());
 #endif
     }
+    //
+    // [Button]
+    // public void CommitToGit()
+    // {
+    //     string directory = Path.Combine(Application.dataPath, "../"); // directory of the git repository
+    //     ProcessStartInfo startInfo = new ProcessStartInfo()
+    //     {
+    //         FileName = directory + "/commit.sh",
+    //         //Arguments = "",
+    //     };
+    //     Process proc = new Process()
+    //     {
+    //         StartInfo = startInfo,
+    //     };
+    //     proc.Start();
+    //
+    //
+    //     Debug.Log("Commit done " + directory);
+    // }
 
     [Button]
     public void SetupPass(string pass = "Abc123!@#")
