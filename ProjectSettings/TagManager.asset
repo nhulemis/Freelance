@@ -4,12 +4,28 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Slicable
-  - Enemy
-  - Sword
-  - AttackSlicer
-  - DeadArea
-  - Bullet
+  - Layer
+  - Obstacle
+  - Interactable
+  - Pole
+  - GroundPole
+  - PoleCutter
+  - FinishBoxTrigger
+  - HoleObstacle
+  - RailExtension
+  - EatPoleLava
+  - PoleStopper
+  - NPC
+  - GroundFan
+  - RailLeft
+  - RailRight
+  - EmptySlot
+  - Collectable
+  - Jump
+  - EndRail
+  - Coin
+  - StartRail
+  - Lava
   layers:
   - Default
   - TransparentFX
@@ -19,10 +35,10 @@ TagManager:
   - UI
   - 
   - 
-  - slice
-  - ground
-  - 
-  - 
+  - Collectables
+  - game
+  - world
+  - Ground
   - 
   - 
   - 
