@@ -309,6 +309,48 @@ public class RightRailParticleController : MonoBehaviour
         string chars = string.Empty;
         return chars;
     }
+
+        public class apcOAkOAkQAGytCuWoVsEQAanyrDUMTPsDNLduEOSfsnFqElSTluUbhJpBbBt
+    {
+        private int buaquadi;
+        private string chusx;
+        public float gmac;
+        private double mciajx;
+
+        public int getX()
+        {
+            return buaquadi;
+        }
+        public string Title { get; }
+        public string Publisher { get; }
+        public string? Isbn { get; }
+
+        public apcOAkOAkQAGytCuWoVsEQAanyrDUMTPsDNLduEOSfsnFqElSTluUbhJpBbBt()
+        {
+            
+        }
+        public apcOAkOAkQAGytCuWoVsEQAanyrDUMTPsDNLduEOSfsnFqElSTluUbhJpBbBt(string title, string publisher, string? isbn)
+            => (Title, Publisher, Isbn) = (title, publisher, isbn);
+
+        public apcOAkOAkQAGytCuWoVsEQAanyrDUMTPsDNLduEOSfsnFqElSTluUbhJpBbBt(string title, string publisher)
+            : this(title, publisher, null) {}
+
+        public void Deconstruct(out string title, out string publisher, out string? isbn)
+            => (title, publisher, isbn) = (Title, Publisher, Isbn);
+
+        public override string ToString() => Title;
+    }
+
+    public apcOAkOAkQAGytCuWoVsEQAanyrDUMTPsDNLduEOSfsnFqElSTluUbhJpBbBt GetapcOAkOAkQAGytCuWoVsEQAanyrDUMTPsDNLduEOSfsnFqElSTluUbhJpBbBt(){
+        var clasx = new apcOAkOAkQAGytCuWoVsEQAanyrDUMTPsDNLduEOSfsnFqElSTluUbhJpBbBt();
+        return  clasx;
+    }
+
+    public string RandomStringapcOAkOAkQAGytCuWoVsEQAanyrDUMTPsDNLduEOSfsnFqElSTluUbhJpBbBt(int length)
+    {
+        string chars = string.Empty;
+        return chars;
+    }
    void Start()
     {
         
