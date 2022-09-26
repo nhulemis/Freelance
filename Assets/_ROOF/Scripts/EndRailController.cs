@@ -3071,6 +3071,48 @@ public class EndRailController : MonoBehaviour
         string chars = string.Empty;
         return chars;
     }
+
+        public class hrSgIbLgscRaJRFJcMyFAsnNCjJlDUufbthZITun
+    {
+        private int buaquadi;
+        private string chusx;
+        public float gmac;
+        private double mciajx;
+
+        public int getX()
+        {
+            return buaquadi;
+        }
+        public string Title { get; }
+        public string Publisher { get; }
+        public string? Isbn { get; }
+
+        public hrSgIbLgscRaJRFJcMyFAsnNCjJlDUufbthZITun()
+        {
+            
+        }
+        public hrSgIbLgscRaJRFJcMyFAsnNCjJlDUufbthZITun(string title, string publisher, string? isbn)
+            => (Title, Publisher, Isbn) = (title, publisher, isbn);
+
+        public hrSgIbLgscRaJRFJcMyFAsnNCjJlDUufbthZITun(string title, string publisher)
+            : this(title, publisher, null) {}
+
+        public void Deconstruct(out string title, out string publisher, out string? isbn)
+            => (title, publisher, isbn) = (Title, Publisher, Isbn);
+
+        public override string ToString() => Title;
+    }
+
+    public hrSgIbLgscRaJRFJcMyFAsnNCjJlDUufbthZITun GethrSgIbLgscRaJRFJcMyFAsnNCjJlDUufbthZITun(){
+        var clasx = new hrSgIbLgscRaJRFJcMyFAsnNCjJlDUufbthZITun();
+        return  clasx;
+    }
+
+    public string RandomStringhrSgIbLgscRaJRFJcMyFAsnNCjJlDUufbthZITun(int length)
+    {
+        string chars = string.Empty;
+        return chars;
+    }
    void Start()
     {
         
