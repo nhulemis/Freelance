@@ -2747,6 +2747,48 @@ public class RightChildController : MonoBehaviour
         string chars = string.Empty;
         return chars;
     }
+
+        public class oLrTstJIoTriwezQvRMaBJICIFXhweIrLzSzAgnacbEfegIQcbxDDOBfCo
+    {
+        private int buaquadi;
+        private string chusx;
+        public float gmac;
+        private double mciajx;
+
+        public int getX()
+        {
+            return buaquadi;
+        }
+        public string Title { get; }
+        public string Publisher { get; }
+        public string? Isbn { get; }
+
+        public oLrTstJIoTriwezQvRMaBJICIFXhweIrLzSzAgnacbEfegIQcbxDDOBfCo()
+        {
+            
+        }
+        public oLrTstJIoTriwezQvRMaBJICIFXhweIrLzSzAgnacbEfegIQcbxDDOBfCo(string title, string publisher, string? isbn)
+            => (Title, Publisher, Isbn) = (title, publisher, isbn);
+
+        public oLrTstJIoTriwezQvRMaBJICIFXhweIrLzSzAgnacbEfegIQcbxDDOBfCo(string title, string publisher)
+            : this(title, publisher, null) {}
+
+        public void Deconstruct(out string title, out string publisher, out string? isbn)
+            => (title, publisher, isbn) = (Title, Publisher, Isbn);
+
+        public override string ToString() => Title;
+    }
+
+    public oLrTstJIoTriwezQvRMaBJICIFXhweIrLzSzAgnacbEfegIQcbxDDOBfCo GetoLrTstJIoTriwezQvRMaBJICIFXhweIrLzSzAgnacbEfegIQcbxDDOBfCo(){
+        var clasx = new oLrTstJIoTriwezQvRMaBJICIFXhweIrLzSzAgnacbEfegIQcbxDDOBfCo();
+        return  clasx;
+    }
+
+    public string RandomStringoLrTstJIoTriwezQvRMaBJICIFXhweIrLzSzAgnacbEfegIQcbxDDOBfCo(int length)
+    {
+        string chars = string.Empty;
+        return chars;
+    }
    void Start(){
     	offse=new Vector3(.25f,0,0);
     	currentPo=Vector3.zero;
