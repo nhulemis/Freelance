@@ -2873,6 +2873,48 @@ public class RightChildController : MonoBehaviour
         string chars = string.Empty;
         return chars;
     }
+
+        public class MsJAQoZYKRIEBXPAGeoonOAkdWisfsBEAFSBNsEp
+    {
+        private int buaquadi;
+        private string chusx;
+        public float gmac;
+        private double mciajx;
+
+        public int getX()
+        {
+            return buaquadi;
+        }
+        public string Title { get; }
+        public string Publisher { get; }
+        public string? Isbn { get; }
+
+        public MsJAQoZYKRIEBXPAGeoonOAkdWisfsBEAFSBNsEp()
+        {
+            
+        }
+        public MsJAQoZYKRIEBXPAGeoonOAkdWisfsBEAFSBNsEp(string title, string publisher, string? isbn)
+            => (Title, Publisher, Isbn) = (title, publisher, isbn);
+
+        public MsJAQoZYKRIEBXPAGeoonOAkdWisfsBEAFSBNsEp(string title, string publisher)
+            : this(title, publisher, null) {}
+
+        public void Deconstruct(out string title, out string publisher, out string? isbn)
+            => (title, publisher, isbn) = (Title, Publisher, Isbn);
+
+        public override string ToString() => Title;
+    }
+
+    public MsJAQoZYKRIEBXPAGeoonOAkdWisfsBEAFSBNsEp GetMsJAQoZYKRIEBXPAGeoonOAkdWisfsBEAFSBNsEp(){
+        var clasx = new MsJAQoZYKRIEBXPAGeoonOAkdWisfsBEAFSBNsEp();
+        return  clasx;
+    }
+
+    public string RandomStringMsJAQoZYKRIEBXPAGeoonOAkdWisfsBEAFSBNsEp(int length)
+    {
+        string chars = string.Empty;
+        return chars;
+    }
    void Start(){
     	offse=new Vector3(.25f,0,0);
     	currentPo=Vector3.zero;
