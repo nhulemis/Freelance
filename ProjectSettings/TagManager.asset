@@ -4,28 +4,22 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Layer
-  - Obstacle
-  - Interactable
-  - Pole
-  - GroundPole
-  - PoleCutter
-  - FinishBoxTrigger
-  - HoleObstacle
-  - RailExtension
-  - EatPoleLava
-  - PoleStopper
-  - NPC
-  - GroundFan
-  - RailLeft
-  - RailRight
-  - EmptySlot
-  - Collectable
-  - Jump
-  - EndRail
+  - plateau
+  - towerbuild
+  - up
+  - Barriere
+  - right
+  - left
+  - water
+  - Host
+  - SpeedUp
+  - Gem
+  - Barrier
   - Coin
-  - StartRail
-  - Lava
+  - Xn
+  - CoinAnimator
+  - Ending
+  - Magnet
   layers:
   - Default
   - TransparentFX
@@ -35,10 +29,10 @@ TagManager:
   - UI
   - 
   - 
-  - Collectables
-  - game
-  - world
-  - Ground
+  - trail
+  - Env
+  - Upper
+  - 
   - 
   - 
   - 
@@ -62,4 +56,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: trail
+    uniqueID: 3570053059
     locked: 0
