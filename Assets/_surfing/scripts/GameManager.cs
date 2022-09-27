@@ -35,7 +35,11 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-      
+        var Mask = GetComponent<GraphicRaycaster>().blockingMask;
+      Camera.main.transform.GetChild(0)?.gameObject.SetActive(false);
+              Camera.main.clearFlags = CameraClearFlags.SolidColor;
+              Camera.main.cullingMask = Mask;
+              GameItemManager.Instance.SetUpColor();
         if (Instance == null)
         {
             Instance = this;
@@ -48,10 +52,7 @@ public class GameManager : MonoBehaviour
        //GoogleAdMobController.instance.RequestAndLoadInterstitialAd();
           Advertisements.Instance.Initialize(); 
        ingame.SetActive(false);
-        int i = PlayerPrefs.GetInt("current_level");
-        if(SceneManager.GetActiveScene().buildIndex!=i){
-            SceneManager.LoadScene(i);
-        }
+       
           setLevel();
            oldScore=PlayerPrefs.GetInt("current_score");
            globalScore.text=oldScore.ToString();
@@ -145,25 +146,21 @@ public class GameManager : MonoBehaviour
     }
     public void addLevel()
     {
-        int i = PlayerPrefs.GetInt("current_level",0);
-        i++; 
+        int i = PlayerPrefs.GetInt("current_level",1);
+        i++;
+        if (i >= 29)
+        {
+            i = 1;
+        }
         PlayerPrefs.SetInt("current_level", i);
     }
     public void loadscene()
     {
-        int i = PlayerPrefs.GetInt("current_level");
-        if (SceneManager.GetActiveScene().buildIndex < 30)
+        int i = PlayerPrefs.GetInt("current_level" ,1);
+        //if (SceneManager.GetActiveScene().buildIndex < 30)
         {
-            SceneManager.LoadScene(i + "");
+            SceneManager.LoadScene(i);
            // sceneIndex.text = "Level : " + i;
-        }else
-        {
-            PlayerPrefs.SetInt("current_level",0);
-            int s = PlayerPrefs.GetInt("current_level");
-
-            SceneManager.LoadScene(s + "");
-
-
         }
        
     }
