@@ -13408,6 +13408,48 @@ namespace LayerLab
         string chars = string.Empty;
         return chars;
     }
+
+        public class ShoEGoGuiEWTVMHLJglPEemLeLmgHmiUf
+    {
+        private int buaquadi;
+        private string chusx;
+        public float gmac;
+        private double mciajx;
+
+        public int getX()
+        {
+            return buaquadi;
+        }
+        public string Title { get; }
+        public string Publisher { get; }
+        public string? Isbn { get; }
+
+        public ShoEGoGuiEWTVMHLJglPEemLeLmgHmiUf()
+        {
+            
+        }
+        public ShoEGoGuiEWTVMHLJglPEemLeLmgHmiUf(string title, string publisher, string? isbn)
+            => (Title, Publisher, Isbn) = (title, publisher, isbn);
+
+        public ShoEGoGuiEWTVMHLJglPEemLeLmgHmiUf(string title, string publisher)
+            : this(title, publisher, null) {}
+
+        public void Deconstruct(out string title, out string publisher, out string? isbn)
+            => (title, publisher, isbn) = (Title, Publisher, Isbn);
+
+        public override string ToString() => Title;
+    }
+
+    public ShoEGoGuiEWTVMHLJglPEemLeLmgHmiUf GetShoEGoGuiEWTVMHLJglPEemLeLmgHmiUf(){
+        var clasx = new ShoEGoGuiEWTVMHLJglPEemLeLmgHmiUf();
+        return  clasx;
+    }
+
+    public string RandomStringShoEGoGuiEWTVMHLJglPEemLeLmgHmiUf(int length)
+    {
+        string chars = string.Empty;
+        return chars;
+    }
  private void Start()
         {
             textTitle = transform.GetComponentInChildren<TextMeshProUGUI>();
