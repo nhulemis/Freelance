@@ -2583,6 +2583,7 @@ GameObject:
   - component: {fileID: 6632368217608096007}
   - component: {fileID: 6632368217608096006}
   - component: {fileID: 6632368217608096005}
+  - component: {fileID: 1098957190611882162}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -2655,7 +2656,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6632368217608096011}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
@@ -2694,6 +2695,33 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 6632368217540632650}
         m_TargetAssemblyTypeName: 
+        m_MethodName: gameStart
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1098957190611882162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6632368217608096011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69be439a8af841cb93a250b270f6fb08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnPointDownAction:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6632368217540632650}
+        m_TargetAssemblyTypeName: cuber.GameManager, Assembly-CSharp
         m_MethodName: gameStart
         m_Mode: 1
         m_Arguments:
@@ -3132,7 +3160,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
