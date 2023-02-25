@@ -65,6 +65,7 @@ public class GameItemManager : MonoBehaviour
     [FoldoutGroup("Material")] [SerializeField]
     private List<Image> uiSpriteFront;
 
+    [SerializeField] private Color white;
     [ReadOnly] [SerializeField] private Color color;
     [SerializeField] private Camera sky;
 
@@ -119,6 +120,8 @@ public class GameItemManager : MonoBehaviour
 
     [HideInInspector] public List<Image> AddSprites = null;
 
+    [SerializeField] private GameObject HORI, VERTI;
+
     [Button]
     public void SetUpColor()
     {
@@ -145,7 +148,7 @@ public class GameItemManager : MonoBehaviour
 
         Color.RGBToHSV(color, out float H, out float S, out float V);
         float negativeH = (H + colorDelta) % 1f;
-        Color negativeColor = Color.HSVToRGB(negativeH, S, V);
+        Color negativeColor = Color.HSVToRGB(negativeH, S, V) + white;
 
         foreach (var mat in materials)
         {
@@ -179,7 +182,7 @@ public class GameItemManager : MonoBehaviour
 
         float hafColorH = (H - colorDelta + 0.3f) % 1f;
 
-        Color harfColor = Color.HSVToRGB(hafColorH, S, V);
+        Color harfColor = Color.HSVToRGB(hafColorH, S, V) + white;
 
         foreach (var mat in negativeMaterials)
         {
@@ -201,7 +204,7 @@ public class GameItemManager : MonoBehaviour
 
         float Plus = (H - colorDelta + 0.15f) % 1f;
 
-        Color plusColor = Color.HSVToRGB(Plus, S, V);
+        Color plusColor = Color.HSVToRGB(Plus, S, V) + white;
 
         foreach (var mat in positiveMaterials)
         {
@@ -371,27 +374,11 @@ public class GameItemManager : MonoBehaviour
         gameTitle.text = $"{Application.companyName} \n" + Application.productName.Replace("-", "\n");
         storeSpriteQueue = new Queue<Sprite>();
 
-        int cout = 0;
-        while (storeSpriteQueue.Count != storeSprite.Count)
-        {
-            Debug.Log("Random");
-            int idx = Random.Range(0, storeSprite.Count);
-            var sp = storeSprite[idx];
-            if (!storeSpriteQueue.Contains(sp))
-            {
-                storeSpriteQueue.Enqueue(sp);
-            }
-
-            cout++;
-            if (cout > storeSprite.Count + 50)
-            {
-                break;
-            }
-        }
+        storeSprite.Shuffle();
 
         for (int i = 0; i < productItems.Count; i++)
         {
-            productItems[i].icon = storeSpriteQueue.Dequeue();
+            productItems[i].icon = storeSprite[i];
         }
 
         foreach (var icon in iconChange)
@@ -406,6 +393,30 @@ public class GameItemManager : MonoBehaviour
 
         storeBG.sprite = StoreShape[rr];
         newsBG.sprite = StoreShape[rr];
+
+        int VorH = Random.Range(0, 100);
+        if (VorH % 2 == 0)
+        {
+            float x = Random.Range(-446f, 446f);
+
+           var pos = HORI.GetComponent<RectTransform>().anchoredPosition;
+           pos.x = x;
+           HORI.GetComponent<RectTransform>().anchoredPosition = pos;
+            
+            HORI.SetActive(true);
+            VERTI.SetActive(false);
+        }
+        else
+        {
+            float y = Random.Range(-1000f, 1000f);
+
+            var pos = VERTI.GetComponent<RectTransform>().anchoredPosition;
+            pos.y = y;
+            VERTI.GetComponent<RectTransform>().anchoredPosition = pos;
+            
+            HORI.SetActive(false);
+            VERTI.SetActive(true);
+        }
 
 
         iconChange.Last().sprite = StoreShape[rr];
@@ -570,7 +581,7 @@ public class GameItemManager : MonoBehaviour
         string[] appIndex = Application.productName.Split('-');
         string dayPath = Path.Combine(drivePath, day);
         string appPath = Path.Combine(dayPath, this.appName);
-        string indexPath = Path.Combine(appPath, appSpamNumberName.ToString());
+        string indexPath = Path.Combine(appPath, $"{appSpamNumberName.ToString()}_com.{PlayerSettings.companyName}.{PlayerSettings.productName}");
 
         string appName = appSpamNumberName.ToString();
         if (!Directory.Exists(dayPath))
@@ -771,5 +782,19 @@ public class GameItemManager : MonoBehaviour
         gameOver.SetActive(true);
         yield return new WaitForSeconds(2);
         isloading = false;
+    }
+}
+
+public static class ListExtension
+{
+    public static void Shuffle<T>(this IList<T> ts)
+    {
+        var count = ts.Count;
+        var last = count - 1;
+        for (var i = 0; i < last; ++i)
+        {
+            var r = UnityEngine.Random.Range(i, count);
+            (ts[i], ts[r]) = (ts[r], ts[i]);
+        }
     }
 }

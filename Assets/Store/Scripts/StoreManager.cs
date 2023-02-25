@@ -160,6 +160,11 @@ public class StoreManager : MonoBehaviour , IStoreListener
         HideLoading();
     }
 
+    public void OnInitializeFailed(InitializationFailureReason error, string message)
+    {
+        Debug.LogError($"{error.ToString()}  {message}");
+    }
+
     public PurchaseProcessingResult ProcessPurchase(PurchaseEventArgs purchaseEvent)
     {
         var product = purchaseEvent.purchasedProduct;
