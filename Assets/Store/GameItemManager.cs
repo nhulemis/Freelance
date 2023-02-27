@@ -390,9 +390,9 @@ public class GameItemManager : MonoBehaviour
 
         var rr = Random.Range(0, StoreShape.Count);
 
-
-        storeBG.sprite = StoreShape[rr];
-        newsBG.sprite = StoreShape[rr];
+        StoreShape.Shuffle();
+        storeBG.sprite = StoreShape[0];
+        newsBG.sprite = StoreShape[1];
 
         int VorH = Random.Range(0, 100);
         if (VorH % 2 == 0)
