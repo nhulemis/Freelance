@@ -8,8 +8,6 @@ using Sirenix.OdinInspector;
 using TMPro;
 
 #if UNITY_EDITOR
-using Sirenix.Serialization;
-using System;
 using UnityEditor;
 using UnityEditor.SceneManagement;
 #endif
@@ -347,6 +345,24 @@ public class GameItemManager : MonoBehaviour
         Debug.Log("Set app name Done");
     }
 
+    private void ResetAppName()
+    {
+        PrefabUtility.RecordPrefabInstancePropertyModifications(this);
+
+        storePos.anchorMax = anchor[appSpamNumberName - 1][1];
+        storePos.anchorMin = anchor[appSpamNumberName - 1][0];
+        storePos.pivot = anchor[appSpamNumberName - 1][2];
+
+        int tx = Random.Range(50, 200);
+        storeText.text = RandomText(tx);
+        newsText.text = RandomText(tx);
+        PlayerSettings.SetApplicationIdentifier(BuildTargetGroup.Android,
+            $"com.{PlayerSettings.companyName}.{PlayerSettings.productName}");
+        EditorSceneManager.SaveScene(SceneManager.GetActiveScene());
+        Debug.Log("Set app name Done");
+    }
+    
+
     [Button]
     public void RandomScene()
     {
@@ -652,6 +668,38 @@ public class GameItemManager : MonoBehaviour
         PlayerSettings.keystorePass = pass;
         PlayerSettings.keyaliasPass = pass;
         Debug.Log("Set password done");
+    }
+
+
+    
+    [Button]
+    public void ReSetupBuild(string path)
+    {
+        var files = Directory.GetFiles(path,"*.*",SearchOption.AllDirectories).ToList();
+
+        string findIcon = "app_icon.png";
+        string findF = PlayerSettings.productName =appName + day + "-" + appSpamNumberName;
+        files = files.Where(x => x.Contains(findF)).ToList();
+        string icon = files.Find(x => x.Contains(findIcon));
+
+        var dirs = icon.Split("/").FirstOrDefault(x => x.Contains("_com."));
+        string company = dirs.Split(".")[1];
+        Debug.Log(company);
+        PlayerSettings.companyName = company;
+
+        SetUpColor();
+        ResetAppName();
+        RandomScene();
+        RandomItemShop();
+        CopyIcon(icon);
+        AutoInsertCode();
+    }
+
+    private void CopyIcon(string icon)
+    {
+        var dirPath = Application.dataPath + "/Sprites/";
+        string file = Path.Combine(dirPath, "app_icon.png");
+        File.Copy(icon,file,overwrite:true);
     }
 #endif
 
