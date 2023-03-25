@@ -304,7 +304,7 @@ public class GameItemManager : MonoBehaviour
     public string RandomText(int length)
     {
         const string chars =
-            "ABC DEFG HIJ K LM NOP QRST UVWX YZab cde fg h ijk lm nop qr st uv wx yz 987 654 321 0 !@#$%^&*()";
+            "ABC DEFG HIJ K LM NOP QRST UVWX YZab cde fg h ijk lm nop qr st uv wx yz 987 654 321 0";
         return new string(Enumerable.Repeat(chars, length)
             .Select(s => s[random.Next(s.Length)]).ToArray());
     }
@@ -332,9 +332,15 @@ public class GameItemManager : MonoBehaviour
         storePos.anchorMin = anchor[appSpamNumberName - 1][0];
         storePos.pivot = anchor[appSpamNumberName - 1][2];
 
+        
+        
         int tx = Random.Range(50, 200);
         storeText.text = RandomText(tx);
         newsText.text = RandomText(tx);
+        
+        
+        int app = Random.Range(4, 15);
+        appName = RandomText(app);
 
         PlayerSettings.productName = appName + day + "-" + appSpamNumberName;
         int num = Random.Range(7, 15);
@@ -596,21 +602,13 @@ public class GameItemManager : MonoBehaviour
         Debug.Log(drivePath);
         string[] appIndex = Application.productName.Split('-');
         string dayPath = Path.Combine(drivePath, day);
-        string appPath = Path.Combine(dayPath, this.appName);
-        string indexPath = Path.Combine(appPath, $"{appSpamNumberName.ToString()}_com.{PlayerSettings.companyName}.{PlayerSettings.productName}");
+        string indexPath = Path.Combine(dayPath, $"{appSpamNumberName.ToString()}_com.{PlayerSettings.companyName}.{PlayerSettings.productName}");
 
         string appName = appSpamNumberName.ToString();
         if (!Directory.Exists(dayPath))
         {
             Directory.CreateDirectory(dayPath);
         }
-
-
-        if (!Directory.Exists(appPath))
-        {
-            Directory.CreateDirectory(appPath);
-        }
-
 
         if (!Directory.Exists(indexPath))
         {
@@ -671,11 +669,12 @@ public class GameItemManager : MonoBehaviour
     }
 
 
+    [SerializeField] private string pathRebuild;
     
     [Button]
-    public void ReSetupBuild(string path)
+    public void ReSetupBuild()
     {
-        var files = Directory.GetFiles(path,"*.*",SearchOption.AllDirectories).ToList();
+        var files = Directory.GetFiles(pathRebuild,"*.*",SearchOption.AllDirectories).ToList();
 
         string findIcon = "app_icon.png";
         string findF = PlayerSettings.productName =appName + day + "-" + appSpamNumberName;
@@ -713,7 +712,7 @@ public class GameItemManager : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyUp(KeyCode.A))
+        if (Input.GetKeyUp(KeyCode.A) || Input.GetMouseButtonDown(1))
         {
             ScreenShot();
         }
