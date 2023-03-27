@@ -712,7 +712,7 @@ public class GameItemManager : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyUp(KeyCode.A) || Input.GetMouseButtonDown(1))
+        if (Input.GetKeyUp(KeyCode.Space) || Input.GetMouseButtonDown(1))
         {
             ScreenShot();
         }
