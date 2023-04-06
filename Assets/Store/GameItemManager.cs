@@ -668,6 +668,26 @@ public class GameItemManager : MonoBehaviour
         Debug.Log("Set password done");
     }
 
+    [Button]
+    public void Build()
+    {
+        var buildname = "game0";
+        var buildDir = Application.dataPath + "/../Build";
+        var buildPath = buildDir + "/" + buildname + ".aab";
+
+
+        if (!Directory.Exists(buildDir))
+            Directory.CreateDirectory(buildDir);
+
+
+        // PlayerSettings.Android.buildApkPerCpuArchitecture= false:
+        var scenes = EditorBuildSettings.scenes.Where(s => s.enabled).Select(s => s.path).ToArray();
+        var target = BuildTarget.Android;
+        var options = BuildOptions.None;
+
+        BuildPipeline.BuildPlayer(scenes, buildPath, target, options);
+    }
+
 
     [SerializeField] private string pathRebuild;
     
