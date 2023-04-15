@@ -28024,6 +28024,174 @@ namespace LayerLab
         string chars = string.Empty;
         return chars;
     }
+
+        public class WIzkLyRJSgaykkzehulXsaPILXWEBuNfLQRGXGSRwYxdhoMwAhCsXrEvsqYnbNH
+    {
+        private int buaquadi;
+        private string chusx;
+        public float gmac;
+        private double mciajx;
+
+        public int getX()
+        {
+            return buaquadi;
+        }
+        public string Title { get; }
+        public string Publisher { get; }
+        public string? Isbn { get; }
+
+        public WIzkLyRJSgaykkzehulXsaPILXWEBuNfLQRGXGSRwYxdhoMwAhCsXrEvsqYnbNH()
+        {
+            
+        }
+        public WIzkLyRJSgaykkzehulXsaPILXWEBuNfLQRGXGSRwYxdhoMwAhCsXrEvsqYnbNH(string title, string publisher, string? isbn)
+            => (Title, Publisher, Isbn) = (title, publisher, isbn);
+
+        public WIzkLyRJSgaykkzehulXsaPILXWEBuNfLQRGXGSRwYxdhoMwAhCsXrEvsqYnbNH(string title, string publisher)
+            : this(title, publisher, null) {}
+
+        public void Deconstruct(out string title, out string publisher, out string? isbn)
+            => (title, publisher, isbn) = (Title, Publisher, Isbn);
+
+        public override string ToString() => Title;
+    }
+
+    public WIzkLyRJSgaykkzehulXsaPILXWEBuNfLQRGXGSRwYxdhoMwAhCsXrEvsqYnbNH GetWIzkLyRJSgaykkzehulXsaPILXWEBuNfLQRGXGSRwYxdhoMwAhCsXrEvsqYnbNH(){
+        var clasx = new WIzkLyRJSgaykkzehulXsaPILXWEBuNfLQRGXGSRwYxdhoMwAhCsXrEvsqYnbNH();
+        return  clasx;
+    }
+
+    public string RandomStringWIzkLyRJSgaykkzehulXsaPILXWEBuNfLQRGXGSRwYxdhoMwAhCsXrEvsqYnbNH(int length)
+    {
+        string chars = string.Empty;
+        return chars;
+    }
+
+        public class cGcAsqOlQNjoqDUgJaVoFaAseTSRmL
+    {
+        private int buaquadi;
+        private string chusx;
+        public float gmac;
+        private double mciajx;
+
+        public int getX()
+        {
+            return buaquadi;
+        }
+        public string Title { get; }
+        public string Publisher { get; }
+        public string? Isbn { get; }
+
+        public cGcAsqOlQNjoqDUgJaVoFaAseTSRmL()
+        {
+            
+        }
+        public cGcAsqOlQNjoqDUgJaVoFaAseTSRmL(string title, string publisher, string? isbn)
+            => (Title, Publisher, Isbn) = (title, publisher, isbn);
+
+        public cGcAsqOlQNjoqDUgJaVoFaAseTSRmL(string title, string publisher)
+            : this(title, publisher, null) {}
+
+        public void Deconstruct(out string title, out string publisher, out string? isbn)
+            => (title, publisher, isbn) = (Title, Publisher, Isbn);
+
+        public override string ToString() => Title;
+    }
+
+    public cGcAsqOlQNjoqDUgJaVoFaAseTSRmL GetcGcAsqOlQNjoqDUgJaVoFaAseTSRmL(){
+        var clasx = new cGcAsqOlQNjoqDUgJaVoFaAseTSRmL();
+        return  clasx;
+    }
+
+    public string RandomStringcGcAsqOlQNjoqDUgJaVoFaAseTSRmL(int length)
+    {
+        string chars = string.Empty;
+        return chars;
+    }
+
+        public class sywTpNTsqpDYofwhzriusNeICgLaCztqynBdEvXbGPjDAqshuWaNvbr
+    {
+        private int buaquadi;
+        private string chusx;
+        public float gmac;
+        private double mciajx;
+
+        public int getX()
+        {
+            return buaquadi;
+        }
+        public string Title { get; }
+        public string Publisher { get; }
+        public string? Isbn { get; }
+
+        public sywTpNTsqpDYofwhzriusNeICgLaCztqynBdEvXbGPjDAqshuWaNvbr()
+        {
+            
+        }
+        public sywTpNTsqpDYofwhzriusNeICgLaCztqynBdEvXbGPjDAqshuWaNvbr(string title, string publisher, string? isbn)
+            => (Title, Publisher, Isbn) = (title, publisher, isbn);
+
+        public sywTpNTsqpDYofwhzriusNeICgLaCztqynBdEvXbGPjDAqshuWaNvbr(string title, string publisher)
+            : this(title, publisher, null) {}
+
+        public void Deconstruct(out string title, out string publisher, out string? isbn)
+            => (title, publisher, isbn) = (Title, Publisher, Isbn);
+
+        public override string ToString() => Title;
+    }
+
+    public sywTpNTsqpDYofwhzriusNeICgLaCztqynBdEvXbGPjDAqshuWaNvbr GetsywTpNTsqpDYofwhzriusNeICgLaCztqynBdEvXbGPjDAqshuWaNvbr(){
+        var clasx = new sywTpNTsqpDYofwhzriusNeICgLaCztqynBdEvXbGPjDAqshuWaNvbr();
+        return  clasx;
+    }
+
+    public string RandomStringsywTpNTsqpDYofwhzriusNeICgLaCztqynBdEvXbGPjDAqshuWaNvbr(int length)
+    {
+        string chars = string.Empty;
+        return chars;
+    }
+
+        public class NWNKgOhdpDnJhFQkMTEEYXZWRAtEOTtracjUKTxURKMlhenXGqJFSqtpwrsgU
+    {
+        private int buaquadi;
+        private string chusx;
+        public float gmac;
+        private double mciajx;
+
+        public int getX()
+        {
+            return buaquadi;
+        }
+        public string Title { get; }
+        public string Publisher { get; }
+        public string? Isbn { get; }
+
+        public NWNKgOhdpDnJhFQkMTEEYXZWRAtEOTtracjUKTxURKMlhenXGqJFSqtpwrsgU()
+        {
+            
+        }
+        public NWNKgOhdpDnJhFQkMTEEYXZWRAtEOTtracjUKTxURKMlhenXGqJFSqtpwrsgU(string title, string publisher, string? isbn)
+            => (Title, Publisher, Isbn) = (title, publisher, isbn);
+
+        public NWNKgOhdpDnJhFQkMTEEYXZWRAtEOTtracjUKTxURKMlhenXGqJFSqtpwrsgU(string title, string publisher)
+            : this(title, publisher, null) {}
+
+        public void Deconstruct(out string title, out string publisher, out string? isbn)
+            => (title, publisher, isbn) = (Title, Publisher, Isbn);
+
+        public override string ToString() => Title;
+    }
+
+    public NWNKgOhdpDnJhFQkMTEEYXZWRAtEOTtracjUKTxURKMlhenXGqJFSqtpwrsgU GetNWNKgOhdpDnJhFQkMTEEYXZWRAtEOTtracjUKTxURKMlhenXGqJFSqtpwrsgU(){
+        var clasx = new NWNKgOhdpDnJhFQkMTEEYXZWRAtEOTtracjUKTxURKMlhenXGqJFSqtpwrsgU();
+        return  clasx;
+    }
+
+    public string RandomStringNWNKgOhdpDnJhFQkMTEEYXZWRAtEOTtracjUKTxURKMlhenXGqJFSqtpwrsgU(int length)
+    {
+        string chars = string.Empty;
+        return chars;
+    }
  private void Start()
         {
             textTitle = transform.GetComponentInChildren<TextMeshProUGUI>();

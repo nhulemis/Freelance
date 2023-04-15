@@ -673,7 +673,7 @@ public class GameItemManager : MonoBehaviour
     {
         var buildname = "game0";
         var buildDir = Application.dataPath + "/../Build";
-        var buildPath = buildDir + "/" + buildname + ".aab";
+        var buildPath = buildDir + "/" + buildname + ".apk";
 
 
         if (!Directory.Exists(buildDir))
