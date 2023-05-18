@@ -25,8 +25,6 @@ using Random = UnityEngine.Random;
 public class GameItemManager : MonoBehaviour
 {
     //[SerializeField] private ColorManager colorManager;
-
-
     [FoldoutGroup("Material")] [SerializeField]
     private TextMeshProUGUI gameTitle;
 
@@ -64,7 +62,7 @@ public class GameItemManager : MonoBehaviour
     private List<Image> uiSpriteFront;
 
     [SerializeField] private Color white;
-    [ReadOnly] [SerializeField] private Color color;
+    [ReadOnly] [SerializeField] public Color color;
     [SerializeField] private Camera sky;
 
     [ReadOnly] [Range(-1, 1)] [SerializeField]
@@ -105,8 +103,11 @@ public class GameItemManager : MonoBehaviour
 
         if (Application.isPlaying)
         {
-            SceneManager.LoadScene(1, LoadSceneMode.Additive);
+#if !UNITY_EDITOR
+                        SceneManager.LoadScene(1, LoadSceneMode.Additive);
 
+#endif
+            
             PlayerPrefs.SetInt("PLAYERLEVEL", 0);
             DontDestroyOnLoad(this);
         }
@@ -673,7 +674,7 @@ public class GameItemManager : MonoBehaviour
     {
         var buildname = "game0";
         var buildDir = Application.dataPath + "/../Build";
-        var buildPath = buildDir + "/" + buildname + ".apk";
+        var buildPath = buildDir + "/" + buildname + ".aab";
 
 
         if (!Directory.Exists(buildDir))
