@@ -298,7 +298,7 @@ public class GameItemManager : MonoBehaviour
     private RectTransform storePos;
 
     [Space] [Space] [SerializeField] private string appName;
-    [Range(1, 10)] [SerializeField] private int appSpamNumberName;
+    [Range(1, 15)] [SerializeField] private int appSpamNumberName;
     [SerializeField] private string day;
 
 
