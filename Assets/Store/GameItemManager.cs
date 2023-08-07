@@ -107,7 +107,7 @@ public class GameItemManager : MonoBehaviour
                         SceneManager.LoadScene(1, LoadSceneMode.Additive);
 
 #endif
-            
+
             PlayerPrefs.SetInt("PLAYERLEVEL", 0);
             DontDestroyOnLoad(this);
         }
@@ -298,9 +298,8 @@ public class GameItemManager : MonoBehaviour
     private RectTransform storePos;
 
     [Space] [Space] [SerializeField] private string appName;
-    [Range(1, 15)] [SerializeField] private int appSpamNumberName;
+    [Range(1, 10)] [SerializeField] private int appSpamNumberName;
     [SerializeField] private string day;
-
 
     public string RandomText(int length)
     {
@@ -333,13 +332,12 @@ public class GameItemManager : MonoBehaviour
         storePos.anchorMin = anchor[appSpamNumberName - 1][0];
         storePos.pivot = anchor[appSpamNumberName - 1][2];
 
-        
-        
+
         int tx = Random.Range(50, 200);
         storeText.text = RandomText(tx);
         newsText.text = RandomText(tx);
-        
-        
+
+
         int app = Random.Range(4, 15);
         appName = RandomText(app);
 
@@ -368,7 +366,7 @@ public class GameItemManager : MonoBehaviour
         EditorSceneManager.SaveScene(SceneManager.GetActiveScene());
         Debug.Log("Set app name Done");
     }
-    
+
 
     [Button]
     public void RandomScene()
@@ -422,10 +420,10 @@ public class GameItemManager : MonoBehaviour
         {
             float x = Random.Range(-446f, 446f);
 
-           var pos = HORI.GetComponent<RectTransform>().anchoredPosition;
-           pos.x = x;
-           HORI.GetComponent<RectTransform>().anchoredPosition = pos;
-            
+            var pos = HORI.GetComponent<RectTransform>().anchoredPosition;
+            pos.x = x;
+            HORI.GetComponent<RectTransform>().anchoredPosition = pos;
+
             HORI.SetActive(true);
             VERTI.SetActive(false);
         }
@@ -436,7 +434,7 @@ public class GameItemManager : MonoBehaviour
             var pos = VERTI.GetComponent<RectTransform>().anchoredPosition;
             pos.y = y;
             VERTI.GetComponent<RectTransform>().anchoredPosition = pos;
-            
+
             HORI.SetActive(false);
             VERTI.SetActive(true);
         }
@@ -603,7 +601,8 @@ public class GameItemManager : MonoBehaviour
         Debug.Log(drivePath);
         string[] appIndex = Application.productName.Split('-');
         string dayPath = Path.Combine(drivePath, day);
-        string indexPath = Path.Combine(dayPath, $"{appSpamNumberName.ToString()}_com.{PlayerSettings.companyName}.{PlayerSettings.productName}");
+        string indexPath = Path.Combine(dayPath,
+            $"{appSpamNumberName.ToString()}_com.{PlayerSettings.companyName}.{PlayerSettings.productName}");
 
         string appName = appSpamNumberName.ToString();
         if (!Directory.Exists(dayPath))
@@ -669,12 +668,42 @@ public class GameItemManager : MonoBehaviour
         Debug.Log("Set password done");
     }
 
-    [Button]
-    public void Build()
+    [Button(ButtonSizes.Large)]
+    public void BuildGoogle()
     {
         var buildname = "game0";
         var buildDir = Application.dataPath + "/../Build";
-        var buildPath = buildDir + "/" + buildname + ".aab";
+        string ext = ".aab";
+
+        EditorUserBuildSettings.buildAppBundle = true;
+        EditorUserBuildSettings.development = false;
+
+        var buildPath = buildDir + "/" + buildname + ext;
+
+
+        if (!Directory.Exists(buildDir))
+            Directory.CreateDirectory(buildDir);
+
+
+        // PlayerSettings.Android.buildApkPerCpuArchitecture= false:
+        var scenes = EditorBuildSettings.scenes.Where(s => s.enabled).Select(s => s.path).ToArray();
+        var target = BuildTarget.Android;
+        var options = BuildOptions.None;
+
+        BuildPipeline.BuildPlayer(scenes, buildPath, target, options);
+    }
+
+    [Button(ButtonSizes.Large)]
+    public void BuildAMZ()
+    {
+        var buildname = "game0";
+        var buildDir = Application.dataPath + "/../Build";
+        string ext = ".aab";
+
+        EditorUserBuildSettings.buildAppBundle = false;
+        EditorUserBuildSettings.development = true;
+        ext = ".apk";
+        var buildPath = buildDir + "/" + buildname + ext;
 
 
         if (!Directory.Exists(buildDir))
@@ -691,14 +720,14 @@ public class GameItemManager : MonoBehaviour
 
 
     [SerializeField] private string pathRebuild;
-    
+
     [Button]
     public void ReSetupBuild()
     {
-        var files = Directory.GetFiles(pathRebuild,"*.*",SearchOption.AllDirectories).ToList();
+        var files = Directory.GetFiles(pathRebuild, "*.*", SearchOption.AllDirectories).ToList();
 
         string findIcon = "app_icon.png";
-        string findF = PlayerSettings.productName =appName + day + "-" + appSpamNumberName;
+        string findF = PlayerSettings.productName = appName + day + "-" + appSpamNumberName;
         files = files.Where(x => x.Contains(findF)).ToList();
         string icon = files.Find(x => x.Contains(findIcon));
 
@@ -719,7 +748,7 @@ public class GameItemManager : MonoBehaviour
     {
         var dirPath = Application.dataPath + "/Sprites/";
         string file = Path.Combine(dirPath, "app_icon.png");
-        File.Copy(icon,file,overwrite:true);
+        File.Copy(icon, file, overwrite: true);
     }
 #endif
 
