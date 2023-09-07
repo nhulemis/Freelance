@@ -143,7 +143,7 @@ public class GameItemManager : MonoBehaviour
             }
         }
 
-        gameTitle.text = $"{Application.companyName} \n" + Application.productName.Replace("-", "\n");
+        gameTitle.text = Application.productName.Replace("-", "\n");
 
         Color.RGBToHSV(color, out float H, out float S, out float V);
         float negativeH = (H + colorDelta) % 1f;
@@ -338,7 +338,7 @@ public class GameItemManager : MonoBehaviour
         newsText.text = RandomText(tx);
 
 
-        int app = Random.Range(4, 15);
+        int app = Random.Range(4, 12);
         appName = RandomText(app);
 
         PlayerSettings.productName = appName + day + "-" + appSpamNumberName;
