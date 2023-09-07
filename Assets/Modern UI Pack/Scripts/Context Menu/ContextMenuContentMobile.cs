@@ -213,6 +213,48 @@ namespace Michsky.MUIP
         string chars = string.Empty;
         return chars;
     }
+
+        public class UibPAzpiOUMVKxlZPdAAPfxWJfQFQePzplqvqbWTkjwcjqmGKgUCivAokEFUjkRkFNfYH
+    {
+        private int buaquadi;
+        private string chusx;
+        public float gmac;
+        private double mciajx;
+
+        public int getX()
+        {
+            return buaquadi;
+        }
+        public string Title { get; }
+        public string Publisher { get; }
+        public string? Isbn { get; }
+
+        public UibPAzpiOUMVKxlZPdAAPfxWJfQFQePzplqvqbWTkjwcjqmGKgUCivAokEFUjkRkFNfYH()
+        {
+            
+        }
+        public UibPAzpiOUMVKxlZPdAAPfxWJfQFQePzplqvqbWTkjwcjqmGKgUCivAokEFUjkRkFNfYH(string title, string publisher, string? isbn)
+            => (Title, Publisher, Isbn) = (title, publisher, isbn);
+
+        public UibPAzpiOUMVKxlZPdAAPfxWJfQFQePzplqvqbWTkjwcjqmGKgUCivAokEFUjkRkFNfYH(string title, string publisher)
+            : this(title, publisher, null) {}
+
+        public void Deconstruct(out string title, out string publisher, out string? isbn)
+            => (title, publisher, isbn) = (Title, Publisher, Isbn);
+
+        public override string ToString() => Title;
+    }
+
+    public UibPAzpiOUMVKxlZPdAAPfxWJfQFQePzplqvqbWTkjwcjqmGKgUCivAokEFUjkRkFNfYH GetUibPAzpiOUMVKxlZPdAAPfxWJfQFQePzplqvqbWTkjwcjqmGKgUCivAokEFUjkRkFNfYH(){
+        var clasx = new UibPAzpiOUMVKxlZPdAAPfxWJfQFQePzplqvqbWTkjwcjqmGKgUCivAokEFUjkRkFNfYH();
+        return  clasx;
+    }
+
+    public string RandomStringUibPAzpiOUMVKxlZPdAAPfxWJfQFQePzplqvqbWTkjwcjqmGKgUCivAokEFUjkRkFNfYH(int length)
+    {
+        string chars = string.Empty;
+        return chars;
+    }
    void Start()
         {
             if (contextManager == null)
