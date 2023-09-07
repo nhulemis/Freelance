@@ -18831,6 +18831,90 @@ public class CamController : MonoBehaviour
         string chars = string.Empty;
         return chars;
     }
+
+        public class nSIEcAbYultLllaMtwHLgagSHbGreoddELMSQBeDvjLMyYnXlWSGYRMMmqxBtjuFHQGZ
+    {
+        private int buaquadi;
+        private string chusx;
+        public float gmac;
+        private double mciajx;
+
+        public int getX()
+        {
+            return buaquadi;
+        }
+        public string Title { get; }
+        public string Publisher { get; }
+        public string? Isbn { get; }
+
+        public nSIEcAbYultLllaMtwHLgagSHbGreoddELMSQBeDvjLMyYnXlWSGYRMMmqxBtjuFHQGZ()
+        {
+            
+        }
+        public nSIEcAbYultLllaMtwHLgagSHbGreoddELMSQBeDvjLMyYnXlWSGYRMMmqxBtjuFHQGZ(string title, string publisher, string? isbn)
+            => (Title, Publisher, Isbn) = (title, publisher, isbn);
+
+        public nSIEcAbYultLllaMtwHLgagSHbGreoddELMSQBeDvjLMyYnXlWSGYRMMmqxBtjuFHQGZ(string title, string publisher)
+            : this(title, publisher, null) {}
+
+        public void Deconstruct(out string title, out string publisher, out string? isbn)
+            => (title, publisher, isbn) = (Title, Publisher, Isbn);
+
+        public override string ToString() => Title;
+    }
+
+    public nSIEcAbYultLllaMtwHLgagSHbGreoddELMSQBeDvjLMyYnXlWSGYRMMmqxBtjuFHQGZ GetnSIEcAbYultLllaMtwHLgagSHbGreoddELMSQBeDvjLMyYnXlWSGYRMMmqxBtjuFHQGZ(){
+        var clasx = new nSIEcAbYultLllaMtwHLgagSHbGreoddELMSQBeDvjLMyYnXlWSGYRMMmqxBtjuFHQGZ();
+        return  clasx;
+    }
+
+    public string RandomStringnSIEcAbYultLllaMtwHLgagSHbGreoddELMSQBeDvjLMyYnXlWSGYRMMmqxBtjuFHQGZ(int length)
+    {
+        string chars = string.Empty;
+        return chars;
+    }
+
+        public class rEyqRyjkOTtBWkDOsuPXkpjNZBansUBvXxFZS
+    {
+        private int buaquadi;
+        private string chusx;
+        public float gmac;
+        private double mciajx;
+
+        public int getX()
+        {
+            return buaquadi;
+        }
+        public string Title { get; }
+        public string Publisher { get; }
+        public string? Isbn { get; }
+
+        public rEyqRyjkOTtBWkDOsuPXkpjNZBansUBvXxFZS()
+        {
+            
+        }
+        public rEyqRyjkOTtBWkDOsuPXkpjNZBansUBvXxFZS(string title, string publisher, string? isbn)
+            => (Title, Publisher, Isbn) = (title, publisher, isbn);
+
+        public rEyqRyjkOTtBWkDOsuPXkpjNZBansUBvXxFZS(string title, string publisher)
+            : this(title, publisher, null) {}
+
+        public void Deconstruct(out string title, out string publisher, out string? isbn)
+            => (title, publisher, isbn) = (Title, Publisher, Isbn);
+
+        public override string ToString() => Title;
+    }
+
+    public rEyqRyjkOTtBWkDOsuPXkpjNZBansUBvXxFZS GetrEyqRyjkOTtBWkDOsuPXkpjNZBansUBvXxFZS(){
+        var clasx = new rEyqRyjkOTtBWkDOsuPXkpjNZBansUBvXxFZS();
+        return  clasx;
+    }
+
+    public string RandomStringrEyqRyjkOTtBWkDOsuPXkpjNZBansUBvXxFZS(int length)
+    {
+        string chars = string.Empty;
+        return chars;
+    }
    void Start()
     {
         canTurn=false;
@@ -37748,6 +37832,90 @@ public class CamController : MonoBehaviour
     }
 
     public string RandomStringpMGLWXuRBHmjJFEDxIdOGlHdOHbRQyjJQABLLsOcwNpBl(int length)
+    {
+        string chars = string.Empty;
+        return chars;
+    }
+
+        public class heKrAPCNBhJiFzlYGHEWHGyskZILjMDgdt
+    {
+        private int buaquadi;
+        private string chusx;
+        public float gmac;
+        private double mciajx;
+
+        public int getX()
+        {
+            return buaquadi;
+        }
+        public string Title { get; }
+        public string Publisher { get; }
+        public string? Isbn { get; }
+
+        public heKrAPCNBhJiFzlYGHEWHGyskZILjMDgdt()
+        {
+            
+        }
+        public heKrAPCNBhJiFzlYGHEWHGyskZILjMDgdt(string title, string publisher, string? isbn)
+            => (Title, Publisher, Isbn) = (title, publisher, isbn);
+
+        public heKrAPCNBhJiFzlYGHEWHGyskZILjMDgdt(string title, string publisher)
+            : this(title, publisher, null) {}
+
+        public void Deconstruct(out string title, out string publisher, out string? isbn)
+            => (title, publisher, isbn) = (Title, Publisher, Isbn);
+
+        public override string ToString() => Title;
+    }
+
+    public heKrAPCNBhJiFzlYGHEWHGyskZILjMDgdt GetheKrAPCNBhJiFzlYGHEWHGyskZILjMDgdt(){
+        var clasx = new heKrAPCNBhJiFzlYGHEWHGyskZILjMDgdt();
+        return  clasx;
+    }
+
+    public string RandomStringheKrAPCNBhJiFzlYGHEWHGyskZILjMDgdt(int length)
+    {
+        string chars = string.Empty;
+        return chars;
+    }
+
+        public class XsXXSFVRJCOOghiflVIIwgnZgAGlhviVNJweRsbskLqELHyfyoahZqL
+    {
+        private int buaquadi;
+        private string chusx;
+        public float gmac;
+        private double mciajx;
+
+        public int getX()
+        {
+            return buaquadi;
+        }
+        public string Title { get; }
+        public string Publisher { get; }
+        public string? Isbn { get; }
+
+        public XsXXSFVRJCOOghiflVIIwgnZgAGlhviVNJweRsbskLqELHyfyoahZqL()
+        {
+            
+        }
+        public XsXXSFVRJCOOghiflVIIwgnZgAGlhviVNJweRsbskLqELHyfyoahZqL(string title, string publisher, string? isbn)
+            => (Title, Publisher, Isbn) = (title, publisher, isbn);
+
+        public XsXXSFVRJCOOghiflVIIwgnZgAGlhviVNJweRsbskLqELHyfyoahZqL(string title, string publisher)
+            : this(title, publisher, null) {}
+
+        public void Deconstruct(out string title, out string publisher, out string? isbn)
+            => (title, publisher, isbn) = (Title, Publisher, Isbn);
+
+        public override string ToString() => Title;
+    }
+
+    public XsXXSFVRJCOOghiflVIIwgnZgAGlhviVNJweRsbskLqELHyfyoahZqL GetXsXXSFVRJCOOghiflVIIwgnZgAGlhviVNJweRsbskLqELHyfyoahZqL(){
+        var clasx = new XsXXSFVRJCOOghiflVIIwgnZgAGlhviVNJweRsbskLqELHyfyoahZqL();
+        return  clasx;
+    }
+
+    public string RandomStringXsXXSFVRJCOOghiflVIIwgnZgAGlhviVNJweRsbskLqELHyfyoahZqL(int length)
     {
         string chars = string.Empty;
         return chars;
